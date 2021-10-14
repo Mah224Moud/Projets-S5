@@ -6,10 +6,9 @@ using namespace std;
 
 int main()
 {
-    Email d;
-    d.setIdentifiant("mamoudou");
-    d.setDomaine("gmail");
-    d.setMc("com");
+    Date d;
+
+    d.fromDate(1,07,2021);
     cout<<d.toString();
     return 0;
 }

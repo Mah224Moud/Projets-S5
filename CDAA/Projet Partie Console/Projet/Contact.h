@@ -7,7 +7,6 @@
 class Contact
 {
     private:
-        //attributs
         std::string nom;
         std::string prenom;
         std::string entreprise;
@@ -19,11 +18,8 @@ class Contact
 
 
     public:
-    //constructors
     Contact();
 
-
-    //accessors
     std::string getNom();
     void setNom(std::string name);
 
@@ -39,10 +35,6 @@ class Contact
     std::string getPhoto();
     void setPhoto(std::string pic);
 
-
-
-
-    //methodes
 
 };
 
