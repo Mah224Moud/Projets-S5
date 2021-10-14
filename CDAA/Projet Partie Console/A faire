@@ -1,0 +1,16 @@
+Il faut être inscrit à une groupe de projet ! Pendant que les enseignants évaluent chaque groupe, les autres étudiants travaillent sur le sujet du TP.
+
+Pour l'évaluation :
+
+    les classes C++ de votre projet (contacts et leur gestion, interactions et leur gestion, todos et leur gestion, gestion des dates),
+    ces classes doivent être fonctionnelles, les accesseurs/mutateurs écrits, les traitements éventuels implantés,
+    les points 1-4 du projet doivent être possibles (sans interaction avec QT, sans BDD, sans signaux/slots, seulement les fonctions membres de chaque classe)
+        créer la fiche d’un contact (nom, prénom, entreprise, mail, téléphone, photo, date de création),
+        modifier un contact, supprimer une fiche. Attention les opérations doivent être horodatées automatiquement : on doit être capable quand une fiche a été modifiée, ou de la date de la dernière suppression (pas de notion de corbeille, les fiches sont réellement supprimées),
+        ajouter une interaction : un rendez-vous, un commentaire... sous forme d’un champ texte mais horodaté. On doit donc pouvoir lister l’ensemble des interactions d’un contact, avec les dates de modification triées,
+        « tagger » des mots pour pouvoir les indexer dans la note liée à une interaction. 
+    les sources doivent être commentées, pour les déclaration de classe et de fonction au moins,
+    un main() fonctionnel permettant de tester les constructions et fonctionnalités de ces classes doit être fourni,
+    un document PDF doit être fourni, qui explique/justifie en 3 pages au maximum, la conception des classes, leurs relations,
+    les sources de ce projet doivent être déposées, sous forme d'une archive zip, avec le document PDF -> "Rendu Jalon 1" de la section Projet
+

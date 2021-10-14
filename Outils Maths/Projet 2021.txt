@@ -1,0 +1,10 @@
+Q1: Programmer la transformée de Fourier directe discrète pour une image
+Q2: Programmer la transformée de Fourier rapide discrète 1D
+Q3: Programmer la transformée de Fourier rapide discrète  2D
+Q4: Faire un rapport (au maximum 12 pages) expliquant les algorithmes utilisés
+Q5: Même travail pour la transformée de Fourier inverse rapide 1D et 2D
+
+Les étudiants se répartiront par binomes (et non trinome....).
+Le langage de programmation est libre. Vous devez rendre, le jour de la soutenance, un rapport papier (au maximum 12 pages) expliquant les différents algorithmes utilisés.
+
+DATE de la soutenance:   Semaine du 4 décembre  2017 pendant les horaires de TPS habituels de OUTILS MATHEMATQUES
