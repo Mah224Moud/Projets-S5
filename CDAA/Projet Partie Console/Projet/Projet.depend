@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1634206929 source:/home/mamoudou/L3/S5/CDAA/Projet/Projet/main.cpp
+	<iostream>
+	"Date.h"
+	"Email.h"
+
+1634206873 source:/home/mamoudou/L3/S5/CDAA/Projet/Projet/Email.cpp
+	"Email.h"
+	<string>
+
+1634140317 source:/home/mamoudou/L3/S5/CDAA/Projet/Projet/Contact.cpp
+	"Contact.h"
+
+1634142189 /home/mamoudou/L3/S5/CDAA/Projet/Projet/Contact.h
+	<string>
+	"Email.h"
+	"Date.h"
+
+1634139538 /home/mamoudou/L3/S5/CDAA/Projet/Projet/Email.h
+	<string>
+
+1634143419 /home/mamoudou/L3/S5/CDAA/Projet/Projet/Date.h
+	<string>
+	<ctime>
+
+1634145190 source:/home/mamoudou/L3/S5/CDAA/Projet/Projet/Date.cpp
+	"Date.h"
+
