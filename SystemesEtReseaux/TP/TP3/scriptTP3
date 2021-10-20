@@ -1,1 +1,0 @@
-echo il y a $# paramètres :  $*
