@@ -1,0 +1,719 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.20)  21 OCT 2021 00:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**annotated.tex class_contact.tex class_date.tex class_email.tex _contact_8cpp.
+tex _contact_8h.tex _date_8cpp.tex _date_8h.tex _email_8cpp.tex _email_8h.tex f
+iles.tex footer.tex header.tex main_8cpp.tex namespacestd.tex namespaces.tex re
+fman.tex structtm.tex
+(./annotated.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+! Undefined control sequence.
+l.1 \doxysubsection
+                   {Liste des classes}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \doxysubsection{L
+                     iste des classes}
+? 
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+LaTeX Font Info:    Trying to load font information for +cmr on input line 2.
+LaTeX Font Info:    No file cmr.fd. on input line 2.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 2.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.2 ...uctures, unions et interfaces avec une brè
+                                                  ve description \+:\begin{D...
+
+? 
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 2.
+
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.2 ...t interfaces avec une brève description \+
+                                                  :\begin{DoxyCompactList}
+? 
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactList undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...ève description \+:\begin{DoxyCompactList}
+                                                  
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]
+ []
+
+
+Overfull \hbox (9.44446pt too wide) in paragraph at lines 1--3
+\/cmr/m/n/10 ^^Re 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_contact}{Contact}} }{...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {class_contact}{Contact}
+l.3 ...}{\mbox{\hyperlink{class_contact}{Contact}}
+                                                   }{\pageref{class_contact}}{}
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.3 ...}{\mbox{\hyperlink{class_contact}{Contact}}
+                                                   }{\pageref{class_contact}}{}
+
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+! Extra }, or forgotten $.
+<argument> \hyperlink {class_contact}
+                                     {Contact}
+l.3 ...}{\mbox{\hyperlink{class_contact}{Contact}}
+                                                   }{\pageref{class_contact}}{}
+
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.3 ...}{\mbox{\hyperlink{class_contact}{Contact}}
+                                                   }{\pageref{class_contact}}{}
+
+? 
+! Extra }, or forgotten $.
+l.3 ...\mbox{\hyperlink{class_contact}{Contact}} }
+                                                  {\pageref{class_contact}}{}
+? 
+! Undefined control sequence.
+<write> ...rence `class_contact' on page \thepage 
+                                                  \space undefined\on@line .
+l.3 ...ontact}{Contact}} }{\pageref{class_contact}
+                                                  }{}
+? 
+
+LaTeX Warning: Reference `class_contact' on page  undefined on input line 3.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item
+         \contentsline{section}{\mbox{\hyperlink{class_date}{Date}} \\*La cl...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_date}{Date}} \\*La cl...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_date}{Date}} \\*La cl...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_date}{Date}} \\*La cl...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {class_date}{Date}
+l.4 ...ection}{\mbox{\hyperlink{class_date}{Date}}
+                                                   \\*La classe \mbox{\hyper...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 ...ection}{\mbox{\hyperlink{class_date}{Date}}
+                                                   \\*La classe \mbox{\hyper...
+
+? 
+! Extra }, or forgotten $.
+<argument> \hyperlink {class_date}
+                                  {Date}
+l.4 ...ection}{\mbox{\hyperlink{class_date}{Date}}
+                                                   \\*La classe \mbox{\hyper...
+
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.4 ...ection}{\mbox{\hyperlink{class_date}{Date}}
+                                                   \\*La classe \mbox{\hyper...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {class_date}{Date}
+l.4 ... classe \mbox{\hyperlink{class_date}{Date}}
+                                                   permet de stocker des dat...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 ... classe \mbox{\hyperlink{class_date}{Date}}
+                                                   permet de stocker des dat...
+
+? 
+! Extra }, or forgotten $.
+<argument> \hyperlink {class_date}
+                                  {Date}
+l.4 ... classe \mbox{\hyperlink{class_date}{Date}}
+                                                   permet de stocker des dat...
+
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.4 ... classe \mbox{\hyperlink{class_date}{Date}}
+                                                   permet de stocker des dat...
+
+? 
+! Extra }, or forgotten $.
+l.4 ... stocker des dates dans des structures tm }
+                                                  {\pageref{class_date}}{}
+? 
+! Undefined control sequence.
+<write> ...eference `class_date' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...ns des structures tm }{\pageref{class_date}
+                                                  }{}
+? 
+
+LaTeX Warning: Reference `class_date' on page  undefined on input line 4.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item
+         \contentsline{section}{\mbox{\hyperlink{class_email}{Email}} }{\pag...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_email}{Email}} }{\pag...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_email}{Email}} }{\pag...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_email}{Email}} }{\pag...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{class_email}{Email}} }{\pag...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {class_email}{Email}
+l.5 ...tion}{\mbox{\hyperlink{class_email}{Email}}
+                                                   }{\pageref{class_email}}{}
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 ...tion}{\mbox{\hyperlink{class_email}{Email}}
+                                                   }{\pageref{class_email}}{}
+? 
+! Extra }, or forgotten $.
+<argument> \hyperlink {class_email}
+                                   {Email}
+l.5 ...tion}{\mbox{\hyperlink{class_email}{Email}}
+                                                   }{\pageref{class_email}}{}
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.5 ...tion}{\mbox{\hyperlink{class_email}{Email}}
+                                                   }{\pageref{class_email}}{}
+? 
+! Extra }, or forgotten $.
+l.5 ...on}{\mbox{\hyperlink{class_email}{Email}} }
+                                                  {\pageref{class_email}}{}
+? 
+! Undefined control sequence.
+<write> ...ference `class_email' on page \thepage 
+                                                  \space undefined\on@line .
+l.5 ...lass_email}{Email}} }{\pageref{class_email}
+                                                  }{}
+? 
+
+LaTeX Warning: Reference `class_email' on page  undefined on input line 5.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \item
+         \contentsline{section}{\mbox{\hyperlink{structtm}{tm}} \\*Structure...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.6 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtm}{tm}} \\*Structure...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtm}{tm}} \\*Structure...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtm}{tm}} \\*Structure...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtm}{tm}} \\*Structure...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {structtm}{tm}
+l.6 ...ne{section}{\mbox{\hyperlink{structtm}{tm}}
+                                                   \\*Structure simple du C/...
+
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no / in font nullfont!
+! Undefined control sequence.
+l.6 ...{structtm}{tm}} \\*Structure simple du C/\+
+                                                  C++ pour manipuler les dat...
+
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+<write> ... Reference `structtm' on page \thepage 
+                                                  \space undefined\on@line .
+l.6 ...ur manipuler les dates }{\pageref{structtm}
+                                                  }{}
+? 
+
+LaTeX Warning: Reference `structtm' on page  undefined on input line 6.
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactList}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.7 \end{DoxyCompactList}
+                         
+? 
+)
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<*> annotated.tex class_
+                        contact.tex class_date.tex class_email.tex _contact_...
+
+? 
+
+*
+! Missing $ inserted.
+<inserted text> 
+                $
+<*> 
+    
+? 
+
+Overfull \hbox (530.5054pt too wide) in paragraph at lines 3--0
+[]
+ []
+
+
+Overfull \hbox (953.67052pt too wide) in paragraph at lines 3--0
+[]\OML/cmm/m/it/10 ontact:texclass[]ate:texclass[]mail:tex[]ontact[]cpp:tex[]on
+tact[]h:tex[]ate[]cpp:tex[]ate[]h:tex[]mail[]cpp:tex[]mail[]h:texfiles:texfoote
+r:texheader:texmain[]cpp:texnamespacestd:texnamespaces:texrefman:texstructtm:te
+x$ 
+ []
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*end
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> e
+     nd
+? \end
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? x
+ 
+Here is how much of TeX's memory you used:
+ 38 strings out of 479304
+ 733 string characters out of 5869779
+ 272122 words of memory out of 5000000
+ 17327 multiletter control sequences out of 15000+600000
+ 403738 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,12n,42p,487b,158s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
