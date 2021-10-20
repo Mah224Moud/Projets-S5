@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt]{exam}
+\usepackage{style/styleCompteRendu}
+
+
+
+\begin{document}
+
+\Noms{Marie Dupond \\ Maurice Durand}
+\Titre{TP3 -  Processus, droits et communication}
+
+
+%/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+\exercice{Processus}
+{
+	Manipulation de processus.
+	\begin{enumerate}
+	\item Visualiser les processus en cours par la commande \texttt{ps}.
+\reponse{...}		
+	\item Lancer gedit en tâche de fond.
+\reponse{\commande{>...}}
+	\item Relancer la commande \texttt{ps}.
+\reponse{.(commentaires)..}	
+	\item Lancer la commande \texttt{ps -al}.
+	    \begin{enumerate}
+	    \item Quelles sont les PID et les PPID des processus \texttt{ps} et \texttt{gedit}?
+\reponse{...}
+	    \item Quels sont les pères de ces deux processus?
+\reponse{...}
+	    \end{enumerate}
+	\item Tuer le processus \texttt{gedit} par la commande \texttt{kill}.
+	\item Bloquer un processus :
+	    \begin{itemize}
+	    \item Lancer un processus puis taper \texttt{Ctrl-Z}. 
+	    \item Passer le en tâche de fond par la commande \texttt{bg}.
+\reponse{...}
+	    \end{itemize}
+	 \item Afficher la charge CPU des applications liées à votre nom d'utilisateur. Laquelle consomme le plus?
+\reponse{\commande{>...}\ ...}	
+ 	\item Utiliser la commande \texttt{time} avant une commande pour déterminer le temps consommé par cette commande.
+ \reponse{\commande{>...}\\Commentaires : ...}	
+ 	\item Utiliser la commande \texttt{>echo ``bash endormi'';sleep 15;echo ``bash reveillé''} pour endormir le processus bash.
+ \reponse{\commande{>...}\\Commentaires : ...}	
+	\end{enumerate}
+}
+
+%/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+\exercice{Droits}
+{
+	  Créer dans le répertoire \texttt{TP3} le fichier texte \texttt{scriptTP3} contenant le texte suivant : \fbox{\texttt{echo il y a \$\# paramètres : \$*}}
+	  \begin{enumerate}
+	  \item Visualiser les droits de ce fichier. Pouvez-vous l’exécuter?
+ \reponse{\commande{>...}\\Commentaires : ...}		  
+	  \item Modifier en les droits pour pouvoir l’exécuter. Qu'obtenez-vous?
+ \reponse{\commande{>...}\\Commentaires : ...}		  
+	  \item Modifier les droits sous les deux formes possibles.
+ \reponse{\commande{>...\\>...\\>...}}		
+ 	  \item Où faudrait-il placer ce fichier pour pouvoir l'utiliser quelque soit le répertoire courant?
+  \reponse{}
+	  \end{enumerate}
+}
+ 
+%/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+\exercice{Communication}
+{
+	    Connectez-vous au compte d'un de vos camarades par \textbf{sftp}.
+	    \begin{enumerate}
+	    \item Déplacez-vous dans votre compte et le compte distant. Après chaque déplacement, utilisez les commandes \texttt{pwd} et  \texttt{lpwd}.
+	    \item Lister le contenu du répertoire courant sur votre compte et le compte distant.
+ \reponse{\commande{>...}}		    
+	    \item Copier sur votre compte un fichier du compte distant.
+ \reponse{\commande{>...}}		    
+	    \item Vérifier sur votre console que ce fichier a bien été copié.
+ \reponse{\commande{>...} ...}	    
+	    \item Copier sur le compte distant un fichier de votre compte.
+ \reponse{\commande{>...}}	
+ 	    \item Vérifier sur votre console que ce fichier a bien été copié.
+ \reponse{\commande{>...} ...}
+            \item Afficher le nombre de fichiers PDF de plus de 200ko sur le compte distant. 
+ \reponse{\commande{>...} ...}
+	    \end{enumerate}
+}
+
+
+
+\end{document}
+
+

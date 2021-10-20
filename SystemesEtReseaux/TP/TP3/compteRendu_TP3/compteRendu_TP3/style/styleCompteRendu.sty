@@ -1,0 +1,52 @@
+%% Informations générales
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{UB}[2017/03/17]
+
+%% Chargement des extensions
+\RequirePackage[francais]{babel}
+\RequirePackage[utf8]{inputenc}  
+\RequirePackage[T1]{fontenc}  
+\RequirePackage{graphicx} 
+\RequirePackage[top=1cm]{geometry}
+\RequirePackage{color,xcolor}
+
+% commande pour afficher un entête avec le nom des élèves à gauche
+\newcommand{\Noms}[1]{
+  \noindent
+  \begin{minipage}{0.5\linewidth}   #1  \end{minipage}
+  \hfill
+  \begin{minipage}{0.1\linewidth}   \includegraphics[width=\linewidth]{style/ub.png}  \end{minipage}
+  \vspace{0.5cm}
+}
+
+% commande pour afficher le titre du compte rendu
+\newcommand{\Titre}[2]{
+  \begin{center}
+    \textbf{\large Compte-rendu #1}\\
+    L3 - Systèmes et Réseaux - \today\\
+  \rule{\textwidth}{1px}
+  \end{center}
+}
+
+% commande pour afficher le titre puis l'énoncé d'un exercice
+\newcounter{PbNb}
+\newcommand{\exercice}[2]{
+\stepcounter{PbNb}
+\noindent \textbf{Exercice \thePbNb : } \textbf{#1}\\
+\noindent #2
+}
+
+% commandes pour afficher une commande bash
+\newcommand{\commande}[1]{
+\noindent \fcolorbox{white}{black}{ \begin{minipage}{5cm}     \footnotesize \textcolor{white}{\texttt{#1}} \end{minipage} }
+}
+
+% commande pour afficher la réponse à une question
+\newcommand{\reponse}[1]{
+\\ \noindent \fbox{\begin{minipage}{\linewidth} \textbf{Réponse : }          #1 \end{minipage}}
+}
+
+
+
+
+\endinput
