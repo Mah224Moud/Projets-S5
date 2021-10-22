@@ -37,6 +37,7 @@ class Date
         int getAnnee();
 
         void fromDate(const int day, const int month, const int year);
+        void operator= (Date&);
         std::string toString();
 };
 

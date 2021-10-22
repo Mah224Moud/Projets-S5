@@ -6,9 +6,12 @@ using namespace std;
 
 int main()
 {
-    Date d;
+    Date d, e;
 
     d.fromDate(1,07,2021);
-    cout<<d.toString();
+
+
+    cout<<"d = "<<d.toString()<<endl;
+    cout<<"e = "<<e.toString()<<endl;
     return 0;
 }

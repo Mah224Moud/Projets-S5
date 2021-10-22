@@ -4,6 +4,21 @@
 #include "Email.h"
 #include "Date.h"
 
+/**
+    *@file Contact.h
+    *@brief Fichier d'entête de la classe Contact
+    *@author DIALLO Mamoudou
+    BAH Saikou Oumar
+*/
+
+
+/**
+    *@class Contact
+    *@brief La classe Contact permet de représenter un contact.
+    *@details Un contact est représenté par avec un nom, un prénom,
+    une entreprise, un ou plusieurs numéros de téléphone, une photo
+    et une liste d'intéraction
+*/
 class Contact
 {
     private:

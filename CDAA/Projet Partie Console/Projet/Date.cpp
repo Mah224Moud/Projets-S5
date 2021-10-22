@@ -56,6 +56,11 @@ void Date::fromDate(const int day, const int month, const int year)
     d = localtime(&nt);
 }
 
+void Date::operator=(Date& autre)
+{
+    this->fromDate(autre.getJour(), autre.getMois(), autre.getAnnee());
+}
+
 /**
     @brief Récupération de la date avec le format jj/mm/aaaa
     @return Chaine de caractère contenant la date
@@ -64,3 +69,5 @@ string Date::toString()
 {
     return std::to_string( getJour())+"/"+std::to_string(getMois())+"/"+to_string(getAnnee());
 }
+
+
