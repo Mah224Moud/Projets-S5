@@ -24,11 +24,11 @@ public:
     Interaction(const Date&, const std::string &); /// Constructeur avec paramètres
     ~Interaction(); /// Destructeur
 
-    // Accesseurs
+    /// Accesseurs
     tm getDate() const;
     std::string getContenu() const;
 
-    // Mutateurs
+    /// Mutateurs
     void setDate(const Date&);
     void setContenu(const std::string&);
 

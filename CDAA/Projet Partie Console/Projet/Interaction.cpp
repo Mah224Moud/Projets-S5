@@ -59,16 +59,31 @@ std::string Interaction::getContenu() const
 
 /// Mutateurs
 
+/**
+    *@brief Pour affecter une date à l'interaction.
+    *@param t : structure tm représentant la date à affecter.
+    *@details La structure tm t passée en paramètre est copié dans l'instance pointée par date.
+*/
 void Interaction::setDate(const tm & t)
 {
     this->*date= t;
 }
 
+/**
+    *@brief Pour affecter un contenu à l'interaction.
+    *@param c : string à affecter au contenu.
+*/
 void Interaction::setContenu(const std:: string & c)
 {
     this->contenu= c;
 }
 
+/**
+    *@brief Surcharge de l'opérateur << pour l'affichage.
+    *@param os : de type ostream.
+    *@param i: de type Interaction qui represente l'interface à afficher.
+    *@details Pour afficher une Interaction, on affiche la date de l'interaction suivie son contenu.
+*/
 std::ostream& operator<<(std::ostream& os, const Interaction& i)
 {
     tm* t= new tm(i.getDate());
