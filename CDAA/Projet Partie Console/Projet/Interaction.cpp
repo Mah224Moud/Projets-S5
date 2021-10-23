@@ -43,7 +43,7 @@ Interaction::~Interaction()
 */
 tm Interaction::getDate() const
 {
-
+    return this.date;
 }
 
 
