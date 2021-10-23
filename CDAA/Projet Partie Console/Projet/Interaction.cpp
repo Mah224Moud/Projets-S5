@@ -46,4 +46,7 @@ tm Interaction::getDate() const
     return this.date;
 }
 
+std::string Interaction::getContenu() const
+{
 
+}
