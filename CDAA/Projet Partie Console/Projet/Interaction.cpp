@@ -46,8 +46,10 @@ tm Interaction::getDate() const
     return this->*date;
 }
 
-/**
 
+/**
+    *@brief Pour recupérer le contenu de l'interaction.
+    *@details Cette fonction renvoie la chaine contenu de l'interaction.
 */
 std::string Interaction::getContenu() const
 {
