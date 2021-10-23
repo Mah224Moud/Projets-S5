@@ -43,7 +43,7 @@ Interaction::~Interaction()
 */
 tm Interaction::getDate() const
 {
-    return this.date;
+    return this->*date;
 }
 
 /**
@@ -51,23 +51,29 @@ tm Interaction::getDate() const
 */
 std::string Interaction::getContenu() const
 {
-
+    return this->contenu;
 }
 
 
 /// Mutateurs
 
-void Interaction::setDate()
+void Interaction::setDate(const tm & t)
 {
-
+    this->*date= t;
 }
 
-void Interaction::setContenu()
+void Interaction::setContenu(const std:: string & c)
 {
-
+    this->contenu= c;
 }
 
 std::ostream& operator<<(std::ostream& os, const Interaction& i)
 {
+    tm* t= new tm(i.getDate());
+    char *d= asctime(t);
 
+    os<<d<<" "<<i.getContenu();
+    delete t;
+
+    return os;
 }
