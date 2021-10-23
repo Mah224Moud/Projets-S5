@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['date_65',['Date',['../class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd',1,'Date']]]
+  ['fromdate_30',['fromDate',['../class_date.html#a21c46ba7a74d45d1299f92330a43533a',1,'Date']]]
 ];

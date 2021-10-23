@@ -21,7 +21,7 @@ private:
 
 public:
     Interaction(); /// Constructeur par défaut
-    Interaction(const Date&, const std::string &); /// Constructeur avec paramètres
+    Interaction(const tm&, const std::string &); /// Constructeur avec paramètres
     ~Interaction(); /// Destructeur
 
     /// Accesseurs
@@ -29,7 +29,7 @@ public:
     std::string getContenu() const;
 
     /// Mutateurs
-    void setDate(const Date&);
+    void setDate(const tm&);
     void setContenu(const std::string&);
 
     friend std::ostream& operator<<(std::ostream&, const Interaction &);

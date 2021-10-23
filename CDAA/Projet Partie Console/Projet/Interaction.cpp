@@ -14,13 +14,14 @@ Interaction::Interaction()
 
 /**
     *@brief Constructeur avec paramètre
+    *@details Ce constructeur initialise une interaction avec un contenu et une date connus et passés en paramètre.
     *@param date : la date de l'interaction
     *@param c : le contenu de l'interaction
 */
 Interaction::Interaction(const tm & date, const std::string& contenu)
 {
-    if(date != nullptr)
-        date = new tm();
+    if(this->date != nullptr)
+        this->date = new tm();
 
     this -> setDate(date);
     this -> setContenu(contenu);
@@ -43,7 +44,7 @@ Interaction::~Interaction()
 */
 tm Interaction::getDate() const
 {
-    return this->*date;
+    return *date;
 }
 
 
@@ -66,7 +67,7 @@ std::string Interaction::getContenu() const
 */
 void Interaction::setDate(const tm & t)
 {
-    this->*date= t;
+    *date= t;
 }
 
 /**

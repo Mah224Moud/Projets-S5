@@ -40,6 +40,8 @@
 		<Unit filename="Email.h" />
 		<Unit filename="Interaction.cpp" />
 		<Unit filename="Interaction.h" />
+		<Unit filename="Todo.cpp" />
+		<Unit filename="Todo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

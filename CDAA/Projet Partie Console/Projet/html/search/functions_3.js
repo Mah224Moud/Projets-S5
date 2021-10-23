@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['fromdate_67',['fromDate',['../class_date.html#a21c46ba7a74d45d1299f92330a43533a',1,'Date']]],
-  ['fromstring_68',['fromString',['../class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6',1,'Email']]]
+  ['interaction_36',['Interaction',['../class_interaction.html#aadfd0e254296043c26508d47090ace76',1,'Interaction::Interaction()'],['../class_interaction.html#a407c1b9c8190af0ec9e0285c9273e226',1,'Interaction::Interaction(const tm &amp;, const std::string &amp;)']]]
 ];
