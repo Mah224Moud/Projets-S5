@@ -28,10 +28,22 @@ Interaction::Interaction(const tm & date, const std::string& contenu)
 
 /**
     *@brief Destructeur de la classe Interaction
-    *
-    *
+    *@details Libération de l'espace mémoire alloué par date
 */
 Interaction::~Interaction()
 {
     delete date;
 }
+
+/// Accesseurs
+
+/**
+    *@brief
+    *
+*/
+tm Interaction::getDate() const
+{
+
+}
+
+
