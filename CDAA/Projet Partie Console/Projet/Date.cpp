@@ -4,6 +4,11 @@
 */
 using namespace std;
 
+/**
+    *@brief Constructueur par défaut.
+    *@details Avec le constructeur par défaut, la date est initialisé à la date courante
+*/
+
 Date:: Date()
 {
     time_t n= time(0);

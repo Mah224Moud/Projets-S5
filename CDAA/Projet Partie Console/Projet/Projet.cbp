@@ -38,6 +38,8 @@
 		<Unit filename="Date.h" />
 		<Unit filename="Email.cpp" />
 		<Unit filename="Email.h" />
+		<Unit filename="Interaction.cpp" />
+		<Unit filename="Interaction.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

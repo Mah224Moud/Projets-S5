@@ -11,7 +11,7 @@
 
 /**
     @class Interaction
-    @brief Cette Classe décrit des intéractions dans l'application, les détails et la date de l'interaction;
+    @brief Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;
     @details
 */
 class Interaction{
