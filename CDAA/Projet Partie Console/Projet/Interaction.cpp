@@ -46,7 +46,28 @@ tm Interaction::getDate() const
     return this.date;
 }
 
+/**
+
+*/
 std::string Interaction::getContenu() const
+{
+
+}
+
+
+/// Mutateurs
+
+void Interaction::setDate()
+{
+
+}
+
+void Interaction::setContenu()
+{
+
+}
+
+std::ostream& operator<<(std::ostream& os, const Interaction& i)
 {
 
 }
