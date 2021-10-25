@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['d_84',['d',['../class_date.html#a3abae78c6dad6b0b32debfffa4da5c26',1,'Date']]],
-  ['datecreation_85',['dateCreation',['../class_contact.html#a48d9212b01a1bc7e4d8d5beae5a3aaee',1,'Contact']]],
-  ['domaine_86',['domaine',['../class_email.html#adbf96bf6ecf0163270786b511ca9073f',1,'Email']]]
+  ['contenu_118',['contenu',['../class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1',1,'Interaction::contenu()'],['../class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256',1,'Todo::contenu()']]]
 ];

@@ -1,4 +1,4 @@
-\hypertarget{class_interaction}{}\doxysection{Interaction Class Reference}
+\hypertarget{class_interaction}{}\doxysection{Référence de la classe Interaction}
 \label{class_interaction}\index{Interaction@{Interaction}}
 
 
@@ -9,7 +9,7 @@ Cette classe décrit des intéractions dans l\textquotesingle{}application, le c
 
 {\ttfamily \#include $<$Interaction.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_interaction_aadfd0e254296043c26508d47090ace76}{Interaction}} ()
@@ -26,17 +26,21 @@ void \mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{set\+
 \begin{DoxyCompactList}\small\item\em Mutateurs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{set\+Contenu}} (const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Pour affecter un contenu à l\textquotesingle{}interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Friends}
+\doxysubsection*{Amis}
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \mbox{\hyperlink{class_interaction_a60099cfbe5db8c8d2d10fb60e100e4bf}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
 \begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Description détaillée}
 Cette classe décrit des intéractions dans l\textquotesingle{}application, le contenu et la date de l\textquotesingle{}interaction;. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+Définition à la ligne 20 du fichier Interaction.\+h.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{class_interaction_aadfd0e254296043c26508d47090ace76}\label{class_interaction_aadfd0e254296043c26508d47090ace76}} 
 \index{Interaction@{Interaction}!Interaction@{Interaction}}
 \index{Interaction@{Interaction}!Interaction@{Interaction}}
@@ -49,7 +53,11 @@ Détails de l\textquotesingle{}intéraction.
 
 Constructeur par défaut.
 
-Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante. \mbox{\Hypertarget{class_interaction_a407c1b9c8190af0ec9e0285c9273e226}\label{class_interaction_a407c1b9c8190af0ec9e0285c9273e226}} 
+Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante. 
+
+Définition à la ligne 13 du fichier Interaction.\+cpp.
+
+\mbox{\Hypertarget{class_interaction_a407c1b9c8190af0ec9e0285c9273e226}\label{class_interaction_a407c1b9c8190af0ec9e0285c9273e226}} 
 \index{Interaction@{Interaction}!Interaction@{Interaction}}
 \index{Interaction@{Interaction}!Interaction@{Interaction}}
 \doxysubsubsection{\texorpdfstring{Interaction()}{Interaction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -62,12 +70,16 @@ Constructeur par défaut.
 Constructeur avec paramètre.
 
 Ce constructeur initialise une interaction avec un contenu et une date connus et passés en paramètre. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em date} & \+: la date de l\textquotesingle{}interaction \\
 \hline
 {\em c} & \+: le contenu de l\textquotesingle{}interaction \\
 \hline
 \end{DoxyParams}
+
+
+Définition à la ligne 27 du fichier Interaction.\+cpp.
+
 \mbox{\Hypertarget{class_interaction_a6610199fedc7fae617003cb2f397c825}\label{class_interaction_a6610199fedc7fae617003cb2f397c825}} 
 \index{Interaction@{Interaction}!````~Interaction@{$\sim$Interaction}}
 \index{````~Interaction@{$\sim$Interaction}!Interaction@{Interaction}}
@@ -82,7 +94,11 @@ Destructeur de la classe \mbox{\hyperlink{class_interaction}{Interaction}}.
 
 Libération de l\textquotesingle{}espace mémoire alloué par date. 
 
-\doxysubsection{Member Function Documentation}
+Définition à la ligne 40 du fichier Interaction.\+cpp.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{class_interaction_a0e194616267d53075169f189f6d71c60}\label{class_interaction_a0e194616267d53075169f189f6d71c60}} 
 \index{Interaction@{Interaction}!getContenu@{getContenu}}
 \index{getContenu@{getContenu}!Interaction@{Interaction}}
@@ -93,7 +109,11 @@ Libération de l\textquotesingle{}espace mémoire alloué par date.
 
 Pour recupérer le contenu de l\textquotesingle{}interaction. 
 
-Cette fonction renvoie la chaine contenu de l\textquotesingle{}interaction. \mbox{\Hypertarget{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}\label{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}} 
+Cette fonction renvoie la chaine contenu de l\textquotesingle{}interaction. 
+
+Définition à la ligne 61 du fichier Interaction.\+cpp.
+
+\mbox{\Hypertarget{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}\label{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}} 
 \index{Interaction@{Interaction}!getDate@{getDate}}
 \index{getDate@{getDate}!Interaction@{Interaction}}
 \doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
@@ -109,7 +129,11 @@ Accesseurs
 
 Pour récupérer la date.
 
-Cette fonction renvoie l\textquotesingle{}instance pointée par date. \mbox{\Hypertarget{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}\label{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}} 
+Cette fonction renvoie l\textquotesingle{}instance pointée par date. 
+
+Définition à la ligne 51 du fichier Interaction.\+cpp.
+
+\mbox{\Hypertarget{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}\label{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}} 
 \index{Interaction@{Interaction}!setContenu@{setContenu}}
 \index{setContenu@{setContenu}!Interaction@{Interaction}}
 \doxysubsubsection{\texorpdfstring{setContenu()}{setContenu()}}
@@ -120,10 +144,18 @@ Cette fonction renvoie l\textquotesingle{}instance pointée par date. \mbox{\Hyp
 Pour affecter un contenu à l\textquotesingle{}interaction. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em c} & \+: string à affecter au contenu. \\
 \hline
 \end{DoxyParams}
+
+
+Définition à la ligne 83 du fichier Interaction.\+cpp.
+
+
+
+Référencé par Interaction(), et main().
+
 \mbox{\Hypertarget{class_interaction_ac9fc375bb97461c87e140a592f4fa122}\label{class_interaction_ac9fc375bb97461c87e140a592f4fa122}} 
 \index{Interaction@{Interaction}!setDate@{setDate}}
 \index{setDate@{setDate}!Interaction@{Interaction}}
@@ -135,13 +167,21 @@ Pour affecter un contenu à l\textquotesingle{}interaction.
 Mutateurs. 
 
 Pour affecter une date à l\textquotesingle{}interaction. 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em t} & \+: structure tm représentant la date à affecter.\\
 \hline
 \end{DoxyParams}
 La structure tm t passée en paramètre est copié dans l\textquotesingle{}instance pointée par date. 
 
-\doxysubsection{Friends And Related Function Documentation}
+Définition à la ligne 74 du fichier Interaction.\+cpp.
+
+
+
+Référencé par Interaction(), et main().
+
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
 \mbox{\Hypertarget{class_interaction_a60099cfbe5db8c8d2d10fb60e100e4bf}\label{class_interaction_a60099cfbe5db8c8d2d10fb60e100e4bf}} 
 \index{Interaction@{Interaction}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!Interaction@{Interaction}}
@@ -153,7 +193,7 @@ La structure tm t passée en paramètre est copié dans l\textquotesingle{}insta
 Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em os} & \+: de type ostream. \\
 \hline
 {\em i} & de type \mbox{\hyperlink{class_interaction}{Interaction}} qui represente l\textquotesingle{}interface à afficher.\\
@@ -161,7 +201,11 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 \end{DoxyParams}
 Pour afficher une \mbox{\hyperlink{class_interaction}{Interaction}}, on affiche la date de l\textquotesingle{}interaction suivie son contenu. 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+Définition à la ligne 94 du fichier Interaction.\+cpp.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{_interaction_8h}{Interaction.\+h}}\item 
-Interaction.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{_interaction_8cpp}{Interaction.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="class_contact" kind="class" language="C++" prot="public">
+    <compoundname>Contact</compoundname>
+    <includes refid="_contact_8h" local="no">Contact.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Contact::nom</definition>
+        <argsstring></argsstring>
+        <name>nom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="25" column="21" bodyfile="Contact.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_contact_1a8cb1baee1f3971f8fbf660c55668e973" compoundref="_contact_8cpp" startline="9" endline="12">getNom</referencedby>
+        <referencedby refid="class_contact_1a4ebd00669ba7668e2f984bb9f018ee97" compoundref="_contact_8cpp" startline="13" endline="16">setNom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1a6d85467851d61def44445912b58d52a4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Contact::prenom</definition>
+        <argsstring></argsstring>
+        <name>prenom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="26" column="21" bodyfile="Contact.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_contact_1ad7a1da560c1b1cdc3e3164e2e76158c3" compoundref="_contact_8cpp" startline="19" endline="22">getPrenom</referencedby>
+        <referencedby refid="class_contact_1a4b0cc83fdd164993c82998a1d333ce51" compoundref="_contact_8cpp" startline="23" endline="26">setPrenom</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Contact::entreprise</definition>
+        <argsstring></argsstring>
+        <name>entreprise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="27" column="21" bodyfile="Contact.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_contact_1a374f626bc4c92969c73769996902abf1" compoundref="_contact_8cpp" startline="29" endline="32">getEntreprise</referencedby>
+        <referencedby refid="class_contact_1ab297d4a58fdb593896eabb815c9b7a72" compoundref="_contact_8cpp" startline="33" endline="36">setEntreprise</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1a045666ea797063981360d3c926c4d58f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Contact::telephone</definition>
+        <argsstring></argsstring>
+        <name>telephone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="28" column="21" bodyfile="Contact.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_contact_1a0e4aa4bd56b39a3d4b911d2ea369f65c" compoundref="_contact_8cpp" startline="39" endline="42">getTelephone</referencedby>
+        <referencedby refid="class_contact_1a332e713c1abce72cbffd5b1d2bc493c9" compoundref="_contact_8cpp" startline="43" endline="46">setTelephone</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Contact::URIphoto</definition>
+        <argsstring></argsstring>
+        <name>URIphoto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="29" column="21" bodyfile="Contact.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_contact_1a9e7136c8703b2865b79671b459ae2308" compoundref="_contact_8cpp" startline="49" endline="52">getPhoto</referencedby>
+        <referencedby refid="class_contact_1ac91e6bfc9851bf01c74d39d9e67c9f17" compoundref="_contact_8cpp" startline="55" endline="58">setPhoto</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1a48d9212b01a1bc7e4d8d5beae5a3aaee" prot="private" static="no" mutable="no">
+        <type><ref refid="class_date" kindref="compound">Date</ref></type>
+        <definition>Date Contact::dateCreation</definition>
+        <argsstring></argsstring>
+        <name>dateCreation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="30" column="14" bodyfile="Contact.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1a4eed023b75f8342bc8b8310cdce5f3b6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_email" kindref="compound">Email</ref></type>
+        <definition>Email Contact::mail</definition>
+        <argsstring></argsstring>
+        <name>mail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="31" column="15" bodyfile="Contact.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_contact_1ae39444f378e6de7fd6c3e60981949af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Contact::Contact</definition>
+        <argsstring>()</argsstring>
+        <name>Contact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="36" column="5" bodyfile="Contact.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a8cb1baee1f3971f8fbf660c55668e973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Contact::getNom</definition>
+        <argsstring>()</argsstring>
+        <name>getNom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="38" column="17" bodyfile="Contact.cpp" bodystart="9" bodyend="12"/>
+        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="25">nom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a4ebd00669ba7668e2f984bb9f018ee97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Contact::setNom</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>setNom</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="39" column="10" bodyfile="Contact.cpp" bodystart="13" bodyend="16"/>
+        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="25">nom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1ad7a1da560c1b1cdc3e3164e2e76158c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Contact::getPrenom</definition>
+        <argsstring>()</argsstring>
+        <name>getPrenom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="41" column="17" bodyfile="Contact.cpp" bodystart="19" bodyend="22"/>
+        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="26">prenom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a4b0cc83fdd164993c82998a1d333ce51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Contact::setPrenom</definition>
+        <argsstring>(std::string lastname)</argsstring>
+        <name>setPrenom</name>
+        <param>
+          <type>std::string</type>
+          <declname>lastname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="42" column="10" bodyfile="Contact.cpp" bodystart="23" bodyend="26"/>
+        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="26">prenom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a374f626bc4c92969c73769996902abf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Contact::getEntreprise</definition>
+        <argsstring>()</argsstring>
+        <name>getEntreprise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="44" column="17" bodyfile="Contact.cpp" bodystart="29" bodyend="32"/>
+        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="27">entreprise</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1ab297d4a58fdb593896eabb815c9b7a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Contact::setEntreprise</definition>
+        <argsstring>(std::string company)</argsstring>
+        <name>setEntreprise</name>
+        <param>
+          <type>std::string</type>
+          <declname>company</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="45" column="10" bodyfile="Contact.cpp" bodystart="33" bodyend="36"/>
+        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="27">entreprise</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a0e4aa4bd56b39a3d4b911d2ea369f65c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Contact::getTelephone</definition>
+        <argsstring>()</argsstring>
+        <name>getTelephone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="47" column="17" bodyfile="Contact.cpp" bodystart="39" bodyend="42"/>
+        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="28">telephone</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a332e713c1abce72cbffd5b1d2bc493c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Contact::setTelephone</definition>
+        <argsstring>(std::string phone)</argsstring>
+        <name>setTelephone</name>
+        <param>
+          <type>std::string</type>
+          <declname>phone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="48" column="10" bodyfile="Contact.cpp" bodystart="43" bodyend="46"/>
+        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="28">telephone</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1a9e7136c8703b2865b79671b459ae2308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Contact::getPhoto</definition>
+        <argsstring>()</argsstring>
+        <name>getPhoto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="50" column="17" bodyfile="Contact.cpp" bodystart="49" bodyend="52"/>
+        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="29">URIphoto</references>
+      </memberdef>
+      <memberdef kind="function" id="class_contact_1ac91e6bfc9851bf01c74d39d9e67c9f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Contact::setPhoto</definition>
+        <argsstring>(std::string pic)</argsstring>
+        <name>setPhoto</name>
+        <param>
+          <type>std::string</type>
+          <declname>pic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="51" column="10" bodyfile="Contact.cpp" bodystart="55" bodyend="58"/>
+        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="29">URIphoto</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>La classe <ref refid="class_contact" kindref="compound">Contact</ref> permet de représenter un contact. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Un contact est représenté par avec un nom, un prénom, une entreprise, un ou plusieurs numéros de téléphone, une photo et une liste d&apos;intéraction </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>Contact</label>
+        <link refid="class_contact"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-mail</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-URIphoto</edgelabel>
+          <edgelabel>-entreprise</edgelabel>
+          <edgelabel>-nom</edgelabel>
+          <edgelabel>-prenom</edgelabel>
+          <edgelabel>-telephone</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-dateCreation</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Email</label>
+        <link refid="class_email"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-domaine</edgelabel>
+          <edgelabel>-identifiant</edgelabel>
+          <edgelabel>-mc</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Date</label>
+        <link refid="class_date"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-d</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tm</label>
+        <link refid="structtm"/>
+      </node>
+    </collaborationgraph>
+    <location file="Contact.h" line="22" column="1" bodyfile="Contact.h" bodystart="23" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" prot="public" virt="non-virtual"><scope>Contact</scope><name>Contact</name></member>
+      <member refid="class_contact_1a48d9212b01a1bc7e4d8d5beae5a3aaee" prot="private" virt="non-virtual"><scope>Contact</scope><name>dateCreation</name></member>
+      <member refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" prot="private" virt="non-virtual"><scope>Contact</scope><name>entreprise</name></member>
+      <member refid="class_contact_1a374f626bc4c92969c73769996902abf1" prot="public" virt="non-virtual"><scope>Contact</scope><name>getEntreprise</name></member>
+      <member refid="class_contact_1a8cb1baee1f3971f8fbf660c55668e973" prot="public" virt="non-virtual"><scope>Contact</scope><name>getNom</name></member>
+      <member refid="class_contact_1a9e7136c8703b2865b79671b459ae2308" prot="public" virt="non-virtual"><scope>Contact</scope><name>getPhoto</name></member>
+      <member refid="class_contact_1ad7a1da560c1b1cdc3e3164e2e76158c3" prot="public" virt="non-virtual"><scope>Contact</scope><name>getPrenom</name></member>
+      <member refid="class_contact_1a0e4aa4bd56b39a3d4b911d2ea369f65c" prot="public" virt="non-virtual"><scope>Contact</scope><name>getTelephone</name></member>
+      <member refid="class_contact_1a4eed023b75f8342bc8b8310cdce5f3b6" prot="private" virt="non-virtual"><scope>Contact</scope><name>mail</name></member>
+      <member refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" prot="private" virt="non-virtual"><scope>Contact</scope><name>nom</name></member>
+      <member refid="class_contact_1a6d85467851d61def44445912b58d52a4" prot="private" virt="non-virtual"><scope>Contact</scope><name>prenom</name></member>
+      <member refid="class_contact_1ab297d4a58fdb593896eabb815c9b7a72" prot="public" virt="non-virtual"><scope>Contact</scope><name>setEntreprise</name></member>
+      <member refid="class_contact_1a4ebd00669ba7668e2f984bb9f018ee97" prot="public" virt="non-virtual"><scope>Contact</scope><name>setNom</name></member>
+      <member refid="class_contact_1ac91e6bfc9851bf01c74d39d9e67c9f17" prot="public" virt="non-virtual"><scope>Contact</scope><name>setPhoto</name></member>
+      <member refid="class_contact_1a4b0cc83fdd164993c82998a1d333ce51" prot="public" virt="non-virtual"><scope>Contact</scope><name>setPrenom</name></member>
+      <member refid="class_contact_1a332e713c1abce72cbffd5b1d2bc493c9" prot="public" virt="non-virtual"><scope>Contact</scope><name>setTelephone</name></member>
+      <member refid="class_contact_1a045666ea797063981360d3c926c4d58f" prot="private" virt="non-virtual"><scope>Contact</scope><name>telephone</name></member>
+      <member refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" prot="private" virt="non-virtual"><scope>Contact</scope><name>URIphoto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

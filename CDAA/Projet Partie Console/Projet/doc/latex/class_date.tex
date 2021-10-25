@@ -1,4 +1,4 @@
-\hypertarget{class_date}{}\doxysubsection{Référence de la classe Date}
+\hypertarget{class_date}{}\doxysection{Référence de la classe Date}
 \label{class_date}\index{Date@{Date}}
 
 
@@ -12,58 +12,102 @@ La classe \mbox{\hyperlink{class_date}{Date}} permet de stocker des dates dans d
 
 
 Graphe de collaboration de Date\+:
-% FIG 0
-\doxysubsubsection*{Fonctions membres publiques}
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_date__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructueur par défaut. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_date_af3efa227a00ac2ae993c424ca62c340c}{Date}} (const int, const int, const int)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètre. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_date_a961e64bff2fdff7ee95bc335ca400d2f}{get\+Jour}} ()
 \begin{DoxyCompactList}\small\item\em Récupération du jour de la date. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}{get\+Mois}} ()
 \begin{DoxyCompactList}\small\item\em Récupération du mois de la date. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_date_a99c5677274bdaffadaedad4c888ccbca}{get\+Annee}} ()
 \begin{DoxyCompactList}\small\item\em Récupération de l\textquotesingle{}année de la date. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtm}{tm}} \mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{get\+Date}} ()
+\item 
 void \mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{from\+Date}} (const int day, const int month, const int year)
 \begin{DoxyCompactList}\small\item\em Récupération en fonction des paramètres day, month et year d\textquotesingle{}une structure tm contenant la date définie. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{to\+String}} ()
 \begin{DoxyCompactList}\small\item\em Récupération de la date avec le format jj/mm/aaaa. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Attributs privés}
+\doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_date_a3abae78c6dad6b0b32debfffa4da5c26}{d}}
+\mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsubsection{Description détaillée}
+\doxysubsection{Description détaillée}
 La classe \mbox{\hyperlink{class_date}{Date}} permet de stocker des dates dans des structures tm. 
 
 La classe \mbox{\hyperlink{class_date}{Date}} permet \begin{DoxyItemize}
 \item de stocker une date, par défaut la date du système; \item de récuperer séparement le jour, le mois et l\textquotesingle{}année; \item de récuperer la date sous forme de string; \end{DoxyItemize}
 
 
-\doxysubsubsection{Documentation des constructeurs et destructeur}
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}} 
 \index{Date@{Date}!Date@{Date}}
 \index{Date@{Date}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{Date()}{Date()}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Constructueur par défaut. 
+
+Avec le constructeur par défaut, la date est initialisé à la date courante 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8 \{}
-\DoxyCodeLine{9     time\_t n= time(0);}
-\DoxyCodeLine{10     \mbox{\hyperlink{class_date_a3abae78c6dad6b0b32debfffa4da5c26}{d}}= localtime(\&n);}
-\DoxyCodeLine{11 \}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     time\_t n= time(0);}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}= localtime(\&n);}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_date_af3efa227a00ac2ae993c424ca62c340c}\label{class_date_af3efa227a00ac2ae993c424ca62c340c}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{const int}]{day,  }\item[{const int}]{month,  }\item[{const int}]{year }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètre. 
+
+Avec ce constructeur, on indique le jour, le mois et l\textquotesingle{}année souhaité 
+\begin{DoxyParams}{Paramètres}
+{\em day} & \+: le jour; \\
+\hline
+{\em month} & \+: le mois; \\
+\hline
+{\em year} & \+: l\textquotesingle{}année; \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     time\_t n= time(0);}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} = localtime(\&n);}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} -\/> tm\_mday = day;}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} -\/> tm\_mon = month -\/ 1;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} -\/> tm\_year = year -\/ 1900;}
+\DoxyCodeLine{31 \}}
 
 \end{DoxyCode}
 
 
-\doxysubsubsection{Documentation des fonctions membres}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{class_date_a21c46ba7a74d45d1299f92330a43533a}\label{class_date_a21c46ba7a74d45d1299f92330a43533a}} 
 \index{Date@{Date}!fromDate@{fromDate}}
 \index{fromDate@{fromDate}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{fromDate()}{fromDate()}}
+\doxysubsubsection{\texorpdfstring{fromDate()}{fromDate()}}
 {\footnotesize\ttfamily void Date\+::from\+Date (\begin{DoxyParamCaption}\item[{const int}]{day,  }\item[{const int}]{month,  }\item[{const int}]{year }\end{DoxyParamCaption})}
 
 
@@ -81,17 +125,17 @@ Récupération en fonction des paramètres day, month et year d\textquotesingle{
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47 \{}
-\DoxyCodeLine{48     time\_t nt = time(NULL);}
-\DoxyCodeLine{49     \textcolor{keyword}{struct }\mbox{\hyperlink{structtm}{tm}}* nd = localtime(\&nt);}
-\DoxyCodeLine{50 }
-\DoxyCodeLine{51     nd -\/> tm\_mday= day;}
-\DoxyCodeLine{52     nd -\/> tm\_mon= month -\/ 1;}
-\DoxyCodeLine{53     nd -\/> tm\_year= year -\/ 1900;}
-\DoxyCodeLine{54 }
-\DoxyCodeLine{55     nt = mktime(nd);}
-\DoxyCodeLine{56     \mbox{\hyperlink{class_date_a3abae78c6dad6b0b32debfffa4da5c26}{d}} = localtime(\&nt);}
-\DoxyCodeLine{57 \}}
+\DoxyCodeLine{67 \{}
+\DoxyCodeLine{68     time\_t nt = time(NULL);}
+\DoxyCodeLine{69     \textcolor{keyword}{struct }\mbox{\hyperlink{structtm}{tm}}* nd = localtime(\&nt);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     nd -\/> tm\_mday= day;}
+\DoxyCodeLine{72     nd -\/> tm\_mon= month -\/ 1;}
+\DoxyCodeLine{73     nd -\/> tm\_year= year -\/ 1900;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     nt = mktime(nd);}
+\DoxyCodeLine{76     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} = localtime(\&nt);}
+\DoxyCodeLine{77 \}}
 
 \end{DoxyCode}
 
@@ -101,7 +145,7 @@ Référencé par main().
 \mbox{\Hypertarget{class_date_a99c5677274bdaffadaedad4c888ccbca}\label{class_date_a99c5677274bdaffadaedad4c888ccbca}} 
 \index{Date@{Date}!getAnnee@{getAnnee}}
 \index{getAnnee@{getAnnee}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{getAnnee()}{getAnnee()}}
+\doxysubsubsection{\texorpdfstring{getAnnee()}{getAnnee()}}
 {\footnotesize\ttfamily int Date\+::get\+Annee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -113,15 +157,32 @@ un entier qui représente l\textquotesingle{}année
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{36 \{}
-\DoxyCodeLine{37     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a3abae78c6dad6b0b32debfffa4da5c26}{d}}-\/>tm\_year + 1900;}
-\DoxyCodeLine{38 \}}
+\DoxyCodeLine{56 \{}
+\DoxyCodeLine{57     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_year + 1900;}
+\DoxyCodeLine{58 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{class_date_a53dcab03c7834448fd67ef453ff34195}\label{class_date_a53dcab03c7834448fd67ef453ff34195}} 
+\index{Date@{Date}!getDate@{getDate}}
+\index{getDate@{getDate}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtm}{tm}} Date\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83 \{}
+\DoxyCodeLine{84     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}};}
+\DoxyCodeLine{85 \}}
+
+\end{DoxyCode}
+
+
+Référencé par main().
+
 \mbox{\Hypertarget{class_date_a961e64bff2fdff7ee95bc335ca400d2f}\label{class_date_a961e64bff2fdff7ee95bc335ca400d2f}} 
 \index{Date@{Date}!getJour@{getJour}}
 \index{getJour@{getJour}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{getJour()}{getJour()}}
+\doxysubsubsection{\texorpdfstring{getJour()}{getJour()}}
 {\footnotesize\ttfamily int Date\+::get\+Jour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -133,15 +194,15 @@ un entier qui représente le jour
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{18 \{}
-\DoxyCodeLine{19     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a3abae78c6dad6b0b32debfffa4da5c26}{d}}-\/>tm\_mday;}
-\DoxyCodeLine{20 \}}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mday;}
+\DoxyCodeLine{40 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}\label{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}} 
 \index{Date@{Date}!getMois@{getMois}}
 \index{getMois@{getMois}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{getMois()}{getMois()}}
+\doxysubsubsection{\texorpdfstring{getMois()}{getMois()}}
 {\footnotesize\ttfamily int Date\+::get\+Mois (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -153,15 +214,15 @@ un entier qui représente le mois
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{27 \{}
-\DoxyCodeLine{28     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a3abae78c6dad6b0b32debfffa4da5c26}{d}}-\/>tm\_mon+1;}
-\DoxyCodeLine{29 \}}
+\DoxyCodeLine{47 \{}
+\DoxyCodeLine{48     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mon+1;}
+\DoxyCodeLine{49 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_adebdb45904dc2fbfacc66aa7528e0c04}\label{class_date_adebdb45904dc2fbfacc66aa7528e0c04}} 
 \index{Date@{Date}!toString@{toString}}
 \index{toString@{toString}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{toString()}{toString()}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
 {\footnotesize\ttfamily string Date\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -173,9 +234,9 @@ Chaine de caractère contenant la date
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{64 \{}
-\DoxyCodeLine{65     \textcolor{keywordflow}{return} std::to\_string( \mbox{\hyperlink{class_date_a961e64bff2fdff7ee95bc335ca400d2f}{getJour}}())+\textcolor{stringliteral}{"{}/"{}}+std::to\_string(\mbox{\hyperlink{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}{getMois}}())+\textcolor{stringliteral}{"{}/"{}}+to\_string(\mbox{\hyperlink{class_date_a99c5677274bdaffadaedad4c888ccbca}{getAnnee}}());}
-\DoxyCodeLine{66 \}}
+\DoxyCodeLine{92 \{}
+\DoxyCodeLine{93     \textcolor{keywordflow}{return} std::to\_string( \mbox{\hyperlink{class_date_a961e64bff2fdff7ee95bc335ca400d2f}{getJour}}())+\textcolor{stringliteral}{"{}/"{}}+std::to\_string(\mbox{\hyperlink{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}{getMois}}())+\textcolor{stringliteral}{"{}/"{}}+to\_string(\mbox{\hyperlink{class_date_a99c5677274bdaffadaedad4c888ccbca}{getAnnee}}());}
+\DoxyCodeLine{94 \}}
 
 \end{DoxyCode}
 
@@ -184,12 +245,12 @@ Référencé par main().
 
 
 
-\doxysubsubsection{Documentation des données membres}
-\mbox{\Hypertarget{class_date_a3abae78c6dad6b0b32debfffa4da5c26}\label{class_date_a3abae78c6dad6b0b32debfffa4da5c26}} 
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_date_a51a979c64305d841600f0a25b39d01f8}\label{class_date_a51a979c64305d841600f0a25b39d01f8}} 
 \index{Date@{Date}!d@{d}}
 \index{d@{d}!Date@{Date}}
-\doxyparagraph{\texorpdfstring{d}{d}}
-{\footnotesize\ttfamily struct \mbox{\hyperlink{structtm}{tm}}$\ast$ Date\+::d\hspace{0.3cm}{\ttfamily [private]}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtm}{tm}}$\ast$ Date\+::d\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

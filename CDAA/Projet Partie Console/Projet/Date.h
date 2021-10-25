@@ -27,17 +27,18 @@ class Date
         @brief structure simple du C/C++ pour manipuler les dates
         @see https://www.cplusplus.com/reference/ctime/tm/
     */
-        struct tm *d;
+        tm* d;
 
     public:
         Date();
+        Date(const int, const int, const int);
 
         int getJour();
         int getMois();
         int getAnnee();
+        tm getDate();
 
         void fromDate(const int day, const int month, const int year);
-        void operator= (Date&);
         std::string toString();
 };
 

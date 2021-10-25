@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="structtm" kind="struct" language="C++" prot="private">
+    <compoundname>tm</compoundname>
+    <briefdescription>
+<para>structure simple du C/C++ pour manipuler les dates </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://www.cplusplus.com/reference/ctime/tm/">https://www.cplusplus.com/reference/ctime/tm/</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>tm</label>
+        <link refid="structtm"/>
+      </node>
+    </collaborationgraph>
+    <location file="Date.h" line="26" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

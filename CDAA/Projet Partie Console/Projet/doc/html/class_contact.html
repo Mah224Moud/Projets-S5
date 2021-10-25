@@ -27,7 +27,6 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">My Project
    </div>
-   <div id="projectbrief">Projet CDAA</div>
   </td>
  </tr>
  </tbody>
@@ -91,11 +90,21 @@ $(document).ready(function(){initNavTree('class_contact.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>La classe <a class="el" href="class_contact.html" title="La classe Contact permet de représenter un contact.">Contact</a> permet de représenter un contact.  
+ <a href="class_contact.html#details">Plus de détails...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_contact_8h_source.html">Contact.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe de collaboration de Contact:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_contact__coll__graph.png" border="0" usemap="#a_contact_coll__map" alt="Collaboration graph"/></div>
+<map name="a_contact_coll__map" id="a_contact_coll__map">
+<area shape="rect" title="La classe Contact permet de représenter un contact." alt="" coords="108,432,243,656"/>
+<area shape="rect" href="class_email.html" title=" " alt="" coords="108,175,243,369"/>
+<area shape="rect" title=" " alt="" coords="23,5,82,83"/>
+<area shape="rect" href="class_date.html" title="La classe Date permet de stocker des dates dans des structures tm." alt="" coords="267,182,377,362"/>
+<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="302,5,342,83"/>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -140,7 +149,10 @@ Attributs privés</h2></td></tr>
 <tr class="memitem:a4eed023b75f8342bc8b8310cdce5f3b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_email.html">Email</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a4eed023b75f8342bc8b8310cdce5f3b6">mail</a></td></tr>
 <tr class="separator:a4eed023b75f8342bc8b8310cdce5f3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>La classe <a class="el" href="class_contact.html" title="La classe Contact permet de représenter un contact.">Contact</a> permet de représenter un contact. </p>
+<p>Un contact est représenté par avec un nom, un prénom, une entreprise, un ou plusieurs numéros de téléphone, une photo et une liste d'intéraction </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="ae39444f378e6de7fd6c3e60981949af5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae39444f378e6de7fd6c3e60981949af5">&#9670;&nbsp;</a></span>Contact()</h2>
 
@@ -179,7 +191,7 @@ Attributs privés</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a786cf3e7f36e558af773e64a3302fbf8"><div class="ttname"><a href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">Contact::entreprise</a></div><div class="ttdeci">std::string entreprise</div><div class="ttdef"><b>Definition:</b> Contact.h:12</div></div>
+<div class="ttc" id="aclass_contact_html_a786cf3e7f36e558af773e64a3302fbf8"><div class="ttname"><a href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">Contact::entreprise</a></div><div class="ttdeci">std::string entreprise</div><div class="ttdef"><b>Definition:</b> Contact.h:27</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>.</p>
 
@@ -202,7 +214,7 @@ Attributs privés</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a837ec32c95f8815511ba1fb88d6e6870"><div class="ttname"><a href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">Contact::nom</a></div><div class="ttdeci">std::string nom</div><div class="ttdef"><b>Definition:</b> Contact.h:10</div></div>
+<div class="ttc" id="aclass_contact_html_a837ec32c95f8815511ba1fb88d6e6870"><div class="ttname"><a href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">Contact::nom</a></div><div class="ttdeci">std::string nom</div><div class="ttdef"><b>Definition:</b> Contact.h:25</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>.</p>
 
@@ -225,7 +237,7 @@ Attributs privés</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_aff78eb5c73608f1bc7b300b9427a878e"><div class="ttname"><a href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">Contact::URIphoto</a></div><div class="ttdeci">std::string URIphoto</div><div class="ttdef"><b>Definition:</b> Contact.h:14</div></div>
+<div class="ttc" id="aclass_contact_html_aff78eb5c73608f1bc7b300b9427a878e"><div class="ttname"><a href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">Contact::URIphoto</a></div><div class="ttdeci">std::string URIphoto</div><div class="ttdef"><b>Definition:</b> Contact.h:29</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
 
@@ -248,7 +260,7 @@ Attributs privés</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a6d85467851d61def44445912b58d52a4"><div class="ttname"><a href="class_contact.html#a6d85467851d61def44445912b58d52a4">Contact::prenom</a></div><div class="ttdeci">std::string prenom</div><div class="ttdef"><b>Definition:</b> Contact.h:11</div></div>
+<div class="ttc" id="aclass_contact_html_a6d85467851d61def44445912b58d52a4"><div class="ttname"><a href="class_contact.html#a6d85467851d61def44445912b58d52a4">Contact::prenom</a></div><div class="ttdeci">std::string prenom</div><div class="ttdef"><b>Definition:</b> Contact.h:26</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>.</p>
 
@@ -271,7 +283,7 @@ Attributs privés</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a045666ea797063981360d3c926c4d58f"><div class="ttname"><a href="class_contact.html#a045666ea797063981360d3c926c4d58f">Contact::telephone</a></div><div class="ttdeci">std::string telephone</div><div class="ttdef"><b>Definition:</b> Contact.h:13</div></div>
+<div class="ttc" id="aclass_contact_html_a045666ea797063981360d3c926c4d58f"><div class="ttname"><a href="class_contact.html#a045666ea797063981360d3c926c4d58f">Contact::telephone</a></div><div class="ttdeci">std::string telephone</div><div class="ttdef"><b>Definition:</b> Contact.h:28</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>.</p>
 

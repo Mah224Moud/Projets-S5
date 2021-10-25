@@ -1,13 +1,16 @@
-#include <ostream>
-#include <string>
-
-#include "Date.h"
-
 /**
     *@file Interaction.h
     *@brief Fichier en-tete de la classe Interaction
     *@author
 */
+
+#ifndef INTERACTION_H
+#define INTERACTION_H
+
+#include <ostream>
+#include <string>
+#include <ctime>
+
 
 /**
     @class Interaction
@@ -34,3 +37,5 @@ public:
 
     friend std::ostream& operator<<(std::ostream&, const Interaction &);
 };
+
+#endif // INTERACTION_H

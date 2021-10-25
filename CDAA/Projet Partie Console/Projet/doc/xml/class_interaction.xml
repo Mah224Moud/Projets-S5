@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="class_interaction" kind="class" language="C++" prot="public">
+    <compoundname>Interaction</compoundname>
+    <includes refid="_interaction_8h" local="no">Interaction.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_interaction_1ac665f161e276527cfd1767abe47936b5" prot="private" static="no" mutable="no">
+        <type><ref refid="structtm" kindref="compound">tm</ref> *</type>
+        <definition>tm* Interaction::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="22" column="9" bodyfile="Interaction.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="51" endline="54">getDate</referencedby>
+        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
+        <referencedby refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="74" endline="77">setDate</referencedby>
+        <referencedby refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" compoundref="_interaction_8cpp" startline="40" endline="43">~Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Interaction::contenu</definition>
+        <argsstring></argsstring>
+        <name>contenu</name>
+        <briefdescription>
+<para>La date de l&apos;intéraction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="23" column="17" bodyfile="Interaction.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="61" endline="64">getContenu</referencedby>
+        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
+        <referencedby refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="83" endline="86">setContenu</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_interaction_1aadfd0e254296043c26508d47090ace76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Interaction::Interaction</definition>
+        <argsstring>()</argsstring>
+        <name>Interaction</name>
+        <briefdescription>
+<para>Détails de l&apos;intéraction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur par défaut.</para>
+<para>Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="26" column="5" bodyfile="Interaction.cpp" bodystart="13" bodyend="19"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="23">contenu</references>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="22">date</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="74" endline="77">setDate</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Interaction::Interaction</definition>
+        <argsstring>(const tm &amp;, const std::string &amp;)</argsstring>
+        <name>Interaction</name>
+        <param>
+          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
+          <defname>date</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>contenu</defname>
+        </param>
+        <briefdescription>
+<para>Constructeur par défaut. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur avec paramètre.</para>
+<para>Ce constructeur initialise une interaction avec un contenu et une date connus et passés en paramètre. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la date de l&apos;interaction </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu de l&apos;interaction </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="27" column="5" bodyfile="Interaction.cpp" bodystart="27" bodyend="34"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="23">contenu</references>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="22">date</references>
+        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="83" endline="86">setContenu</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="74" endline="77">setDate</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a6610199fedc7fae617003cb2f397c825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Interaction::~Interaction</definition>
+        <argsstring>()</argsstring>
+        <name>~Interaction</name>
+        <briefdescription>
+<para>Constructeur avec paramètres. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_interaction" kindref="compound">Interaction</ref>.</para>
+<para>Libération de l&apos;espace mémoire alloué par date. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="28" column="5" bodyfile="Interaction.cpp" bodystart="40" bodyend="43"/>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="22">date</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtm" kindref="compound">tm</ref></type>
+        <definition>tm Interaction::getDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getDate</name>
+        <briefdescription>
+<para>Destructeur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accesseurs.</para>
+<para>Accesseurs</para>
+<para>Pour récupérer la date.</para>
+<para>Cette fonction renvoie l&apos;instance pointée par date. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="31" column="8" bodyfile="Interaction.cpp" bodystart="51" bodyend="54"/>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="22">date</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a0e194616267d53075169f189f6d71c60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Interaction::getContenu</definition>
+        <argsstring>() const</argsstring>
+        <name>getContenu</name>
+        <briefdescription>
+<para>Pour recupérer le contenu de l&apos;interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cette fonction renvoie la chaine contenu de l&apos;interaction. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="32" column="17" bodyfile="Interaction.cpp" bodystart="61" bodyend="64"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="23">contenu</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction::setDate</definition>
+        <argsstring>(const tm &amp;)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+<para>Mutateurs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pour affecter une date à l&apos;interaction. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: structure tm représentant la date à affecter.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+La structure tm t passée en paramètre est copié dans l&apos;instance pointée par date. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="35" column="10" bodyfile="Interaction.cpp" bodystart="74" bodyend="77"/>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="22">date</references>
+        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="28">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction::setContenu</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setContenu</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>c</defname>
+        </param>
+        <briefdescription>
+<para>Pour affecter un contenu à l&apos;interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: string à affecter au contenu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="36" column="10" bodyfile="Interaction.cpp" bodystart="83" bodyend="86"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="23">contenu</references>
+        <referencedby refid="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" compoundref="_interaction_8cpp" startline="27" endline="34">Interaction</referencedby>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="28">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Interaction &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+<para>Surcharge de l&apos;opérateur &lt;&lt; pour l&apos;affichage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: de type ostream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de type <ref refid="class_interaction" kindref="compound">Interaction</ref> qui represente l&apos;interface à afficher.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Pour afficher une <ref refid="class_interaction" kindref="compound">Interaction</ref>, on affiche la date de l&apos;interaction suivie son contenu. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Interaction.h" line="38" column="12" bodyfile="Interaction.cpp" bodystart="94" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cette classe décrit des intéractions dans l&apos;application, le contenu et la date de l&apos;interaction;. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Interaction</label>
+        <link refid="class_interaction"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-contenu</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-date</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>tm</label>
+        <link refid="structtm"/>
+      </node>
+    </collaborationgraph>
+    <location file="Interaction.h" line="20" column="1" bodyfile="Interaction.h" bodystart="20" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" prot="private" virt="non-virtual"><scope>Interaction</scope><name>contenu</name></member>
+      <member refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" prot="private" virt="non-virtual"><scope>Interaction</scope><name>date</name></member>
+      <member refid="class_interaction_1a0e194616267d53075169f189f6d71c60" prot="public" virt="non-virtual"><scope>Interaction</scope><name>getContenu</name></member>
+      <member refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" prot="public" virt="non-virtual"><scope>Interaction</scope><name>getDate</name></member>
+      <member refid="class_interaction_1aadfd0e254296043c26508d47090ace76" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Interaction</name></member>
+      <member refid="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Interaction</name></member>
+      <member refid="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" prot="public" virt="non-virtual"><scope>Interaction</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" prot="public" virt="non-virtual"><scope>Interaction</scope><name>setContenu</name></member>
+      <member refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" prot="public" virt="non-virtual"><scope>Interaction</scope><name>setDate</name></member>
+      <member refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" prot="public" virt="non-virtual"><scope>Interaction</scope><name>~Interaction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

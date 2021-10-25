@@ -1,0 +1,62 @@
+\hypertarget{_interaction_8cpp}{}\doxysection{Référence du fichier Interaction.\+cpp}
+\label{_interaction_8cpp}\index{Interaction.cpp@{Interaction.cpp}}
+
+
+Fichier CPP de la classe \mbox{\hyperlink{class_interaction}{Interaction}}.  
+
+
+{\ttfamily \#include \char`\"{}Interaction.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de Interaction.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{_interaction_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_interaction_8cpp_a0474aeea9f966416f60720e9e440bbb3}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_interaction}{Interaction}} \&i)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier CPP de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. 
+
+\begin{DoxyAuthor}{Auteur}
+
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_interaction_8cpp_a0474aeea9f966416f60720e9e440bbb3}\label{_interaction_8cpp_a0474aeea9f966416f60720e9e440bbb3}} 
+\index{Interaction.cpp@{Interaction.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Interaction.cpp@{Interaction.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em i} & de type \mbox{\hyperlink{class_interaction}{Interaction}} qui represente l\textquotesingle{}interface à afficher.\\
+\hline
+\end{DoxyParams}
+Pour afficher une \mbox{\hyperlink{class_interaction}{Interaction}}, on affiche la date de l\textquotesingle{}interaction suivie son contenu. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95 \{}
+\DoxyCodeLine{96     \mbox{\hyperlink{structtm}{tm}}* t= \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
+\DoxyCodeLine{97     \textcolor{keywordtype}{char}* d= asctime(t);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     os<<d<<\textcolor{stringliteral}{"{} "{}}<<i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
+\DoxyCodeLine{100     \textcolor{keyword}{delete} t;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{103 \}}
+
+\end{DoxyCode}

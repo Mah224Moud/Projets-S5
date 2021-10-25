@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project:  Fichier source de Todo.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Todo.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_todo_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_todo_8h.html">Todo.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">   12</a></span>&#160;<a class="code" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo::Todo</a>()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    time_t n = time(0);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    date = <span class="keyword">new</span> tm();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;contenu = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_todo.html#a813a202cf72925aee8c44e9a3ca183b9">   24</a></span>&#160;<a class="code" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo::Todo</a>(<span class="keyword">const</span> <a class="code" href="class_interaction.html">Interaction</a>&amp; i, <span class="keyword">const</span> std::string&amp; c, <span class="keyword">const</span> tm&amp; t)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span>(date != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        date = <span class="keyword">new</span> tm();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate</a>(t);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction</a>(i);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<a class="code" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu</a>(c);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">   39</a></span>&#160;<a class="code" href="class_interaction.html">Interaction</a> <a class="code" href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">Todo::getInteraction</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> *lienInteraction;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">   48</a></span>&#160;tm <a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> *date;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">   57</a></span>&#160;std::string <a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">Todo::getContenu</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> this-&gt;contenu;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">Todo::setInteraction</a>(<span class="keyword">const</span> <a class="code" href="class_interaction.html">Interaction</a>&amp; inter)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    *lienInteraction = inter;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">Todo::setDate</a>(<span class="keyword">const</span> tm &amp; t)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    *date= t;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">   87</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu</a>(<span class="keyword">const</span> std:: string &amp; c)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    contenu= c;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_todo.html#adbad530f8aaeb15de3c96ab898a08efb">   98</a></span>&#160;std::ostream&amp; <a class="code" href="_todo_8cpp.html#ac66d2ad0470f4bc4f7f356a11b6d0117">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_todo.html">Todo</a>&amp; td)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    tm* t= <span class="keyword">new</span> tm(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">char</span>* d= asctime(t);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    os&lt;&lt;<span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; d;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">delete</span> t;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="ttc" id="a_todo_8cpp_html_ac66d2ad0470f4bc4f7f356a11b6d0117"><div class="ttname"><a href="_todo_8cpp.html#ac66d2ad0470f4bc4f7f356a11b6d0117">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Todo &amp;td)</div><div class="ttdoc">Surcharge de l'opérateur &lt;&lt; pour l'affichage.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00098">Todo.cpp:98</a></div></div>
+<div class="ttc" id="a_todo_8h_html"><div class="ttname"><a href="_todo_8h.html">Todo.h</a></div><div class="ttdoc">Fichier en-tête de la classe Todo.</div></div>
+<div class="ttc" id="aclass_interaction_html"><div class="ttname"><a href="class_interaction.html">Interaction</a></div><div class="ttdoc">Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;.</div><div class="ttdef"><b>Definition:</b> <a href="_interaction_8h_source.html#l00020">Interaction.h:20</a></div></div>
+<div class="ttc" id="aclass_todo_html"><div class="ttname"><a href="class_todo.html">Todo</a></div><div class="ttdoc">Cette classe ...</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8h_source.html#l00018">Todo.h:19</a></div></div>
+<div class="ttc" id="aclass_todo_html_a336fa1a249ac6acd320058902c8f40e2"><div class="ttname"><a href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">Todo::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00057">Todo.cpp:57</a></div></div>
+<div class="ttc" id="aclass_todo_html_a3ee7c0d0dfb18d895758a2bb1862a5a8"><div class="ttname"><a href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">Todo::getInteraction</a></div><div class="ttdeci">Interaction getInteraction() const</div><div class="ttdoc">Accesseurs.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00039">Todo.cpp:39</a></div></div>
+<div class="ttc" id="aclass_todo_html_a4bc4c583115b304d665a3169e168105e"><div class="ttname"><a href="class_todo.html#a4bc4c583115b304d665a3169e168105e">Todo::setInteraction</a></div><div class="ttdeci">void setInteraction(const Interaction &amp;)</div><div class="ttdoc">Mutateurs.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00068">Todo.cpp:68</a></div></div>
+<div class="ttc" id="aclass_todo_html_a5fbb1de89a8e2e99941f6a175cc6da91"><div class="ttname"><a href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo::Todo</a></div><div class="ttdeci">Todo()</div><div class="ttdoc">La date.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00012">Todo.cpp:12</a></div></div>
+<div class="ttc" id="aclass_todo_html_a7585477bfb8bff408e5d5736a326ef7e"><div class="ttname"><a href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">Todo::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Pour affecter une date à l'interaction.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00078">Todo.cpp:78</a></div></div>
+<div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00048">Todo.cpp:48</a></div></div>
+<div class="ttc" id="aclass_todo_html_ad880a5598520b267d883ec6ce22f7f45"><div class="ttname"><a href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> <a href="_todo_8cpp_source.html#l00087">Todo.cpp:87</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

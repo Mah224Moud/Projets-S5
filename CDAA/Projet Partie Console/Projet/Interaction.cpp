@@ -1,5 +1,10 @@
+/**
+    *@file Interaction.cpp
+    *@brief Fichier CPP de la classe Interaction
+    *@author
+*/
+
 #include "Interaction.h"
-#include <ctime>
 
 /**
     *@brief Constructeur par défaut.
@@ -10,6 +15,7 @@ Interaction::Interaction()
     time_t n = time(0);
     date = new tm();
     this->setDate(*localtime(&n));
+    this->contenu = "";
 }
 
 /**
@@ -88,7 +94,7 @@ void Interaction::setContenu(const std:: string & c)
 std::ostream& operator<<(std::ostream& os, const Interaction& i)
 {
     tm* t= new tm(i.getDate());
-    char *d= asctime(t);
+    char* d= asctime(t);
 
     os<<d<<" "<<i.getContenu();
     delete t;

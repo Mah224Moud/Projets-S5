@@ -1,12 +1,4 @@
 var searchData=
 [
-  ['setdomaine_33',['setDomaine',['../class_email.html#a231811fbacf19c0c92701cd02e1af2ee',1,'Email']]],
-  ['setentreprise_34',['setEntreprise',['../class_contact.html#ab297d4a58fdb593896eabb815c9b7a72',1,'Contact']]],
-  ['setidentifiant_35',['setIdentifiant',['../class_email.html#af2f194db726282fb4111b2553e9ba4a2',1,'Email']]],
-  ['setmc_36',['setMc',['../class_email.html#ae96ece68648719caa85f9db3a70ab42f',1,'Email']]],
-  ['setnom_37',['setNom',['../class_contact.html#a4ebd00669ba7668e2f984bb9f018ee97',1,'Contact']]],
-  ['setphoto_38',['setPhoto',['../class_contact.html#ac91e6bfc9851bf01c74d39d9e67c9f17',1,'Contact']]],
-  ['setprenom_39',['setPrenom',['../class_contact.html#a4b0cc83fdd164993c82998a1d333ce51',1,'Contact']]],
-  ['settelephone_40',['setTelephone',['../class_contact.html#a332e713c1abce72cbffd5b1d2bc493c9',1,'Contact']]],
-  ['std_41',['std',['../namespacestd.html',1,'']]]
+  ['operator_3c_3c_42',['operator&lt;&lt;',['../class_interaction.html#a60099cfbe5db8c8d2d10fb60e100e4bf',1,'Interaction::operator&lt;&lt;()'],['../class_todo.html#adbad530f8aaeb15de3c96ab898a08efb',1,'Todo::operator&lt;&lt;()'],['../_interaction_8cpp.html#a0474aeea9f966416f60720e9e440bbb3',1,'operator&lt;&lt;(std::ostream &amp;os, const Interaction &amp;i):&#160;Interaction.cpp'],['../_todo_8cpp.html#ac66d2ad0470f4bc4f7f356a11b6d0117',1,'operator&lt;&lt;(std::ostream &amp;os, const Todo &amp;td):&#160;Todo.cpp']]]
 ];

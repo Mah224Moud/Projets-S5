@@ -27,7 +27,6 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">My Project
    </div>
-   <div id="projectbrief">Projet CDAA</div>
   </td>
  </tr>
  </tbody>
@@ -90,11 +89,22 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="_date_8h_source.html">Date.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_email_8h_source.html">Email.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_interaction_8h_source.html">Interaction.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_todo_8h_source.html">Todo.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title=" " alt="" coords="107,5,189,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" href="_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="31,155,97,181"/>
+<area shape="rect" href="_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="121,155,225,181"/>
+<area shape="rect" href="_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="220,80,284,107"/>
+<area shape="rect" title=" " alt="" coords="48,229,107,256"/>
+<area shape="rect" title=" " alt="" coords="144,229,203,256"/>
+<area shape="rect" title=" " alt="" coords="251,229,327,256"/>
+</map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -117,18 +127,37 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    d.<a class="code" href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">fromDate</a>(1,07,2021);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    cout&lt;&lt;d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;sd</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_todo.html">Todo</a> i;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    i.<a class="code" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu</a>(<span class="stringliteral">&quot;Todo Quelconque&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    d.<a class="code" href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">fromDate</a>(14,07,2001);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    i.setDate(d.<a class="code" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">getDate</a>());</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_interaction.html">Interaction</a> t;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    t.<a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(<span class="stringliteral">&quot;Interaction Quelconque&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    d.<a class="code" href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">fromDate</a>(1,1,2001);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    t.<a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(d.<a class="code" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">getDate</a>());</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;d = &quot;</span>&lt;&lt;d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>()&lt;&lt;endl;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    cout&lt;&lt;i&lt;&lt;endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    cout&lt;&lt;t&lt;&lt;endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
-<div class="ttc" id="aclass_date_html_a21c46ba7a74d45d1299f92330a43533a"><div class="ttname"><a href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">Date::fromDate</a></div><div class="ttdeci">void fromDate(const int day, const int month, const int year)</div><div class="ttdoc">Récupération en fonction des paramètres day, month et year d'une structure tm contenant la date défin...</div><div class="ttdef"><b>Definition:</b> Date.cpp:46</div></div>
-<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:63</div></div>
+<div class="ttc" id="aclass_date_html_a21c46ba7a74d45d1299f92330a43533a"><div class="ttname"><a href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">Date::fromDate</a></div><div class="ttdeci">void fromDate(const int day, const int month, const int year)</div><div class="ttdoc">Récupération en fonction des paramètres day, month et year d'une structure tm contenant la date défin...</div><div class="ttdef"><b>Definition:</b> Date.cpp:66</div></div>
+<div class="ttc" id="aclass_date_html_a53dcab03c7834448fd67ef453ff34195"><div class="ttname"><a href="class_date.html#a53dcab03c7834448fd67ef453ff34195">Date::getDate</a></div><div class="ttdeci">tm getDate()</div><div class="ttdef"><b>Definition:</b> Date.cpp:82</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:91</div></div>
+<div class="ttc" id="aclass_interaction_html"><div class="ttname"><a href="class_interaction.html">Interaction</a></div><div class="ttdoc">Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;.</div><div class="ttdef"><b>Definition:</b> Interaction.h:20</div></div>
+<div class="ttc" id="aclass_interaction_html_a5ca60953b855d3e31f27a05e118f81d3"><div class="ttname"><a href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:83</div></div>
+<div class="ttc" id="aclass_interaction_html_ac9fc375bb97461c87e140a592f4fa122"><div class="ttname"><a href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Interaction::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Mutateurs.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:74</div></div>
+<div class="ttc" id="aclass_todo_html"><div class="ttname"><a href="class_todo.html">Todo</a></div><div class="ttdoc">Cette classe ...</div><div class="ttdef"><b>Definition:</b> Todo.h:19</div></div>
+<div class="ttc" id="aclass_todo_html_ad880a5598520b267d883ec6ce22f7f45"><div class="ttname"><a href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:87</div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">Date::fromDate()</a>, et <a class="el" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString()</a>.</p>
+<p class="reference">Références <a class="el" href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">Date::fromDate()</a>, <a class="el" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">Date::getDate()</a>, <a class="el" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu()</a>, <a class="el" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu()</a>, <a class="el" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Interaction::setDate()</a>, et <a class="el" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString()</a>.</p>
 
 </div>
 </div>

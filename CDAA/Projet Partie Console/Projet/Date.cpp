@@ -8,11 +8,26 @@ using namespace std;
     *@brief Constructueur par défaut.
     *@details Avec le constructeur par défaut, la date est initialisé à la date courante
 */
-
-Date:: Date()
+Date::Date()
 {
     time_t n= time(0);
     d= localtime(&n);
+}
+
+/**
+    *@brief Constructeur avec paramètre.
+    *@details Avec ce constructeur, on indique le jour, le mois et l'année souhaité
+    *@param day : le jour;
+    *@param month : le mois;
+    *@param year : l'année;
+*/
+Date::Date(const int day, const int month, const int year)
+{
+    time_t n= time(0);
+    d = localtime(&n);
+    d -> tm_mday = day;
+    d -> tm_mon = month - 1;
+    d -> tm_year = year - 1900;
 }
 
 /**
@@ -61,9 +76,12 @@ void Date::fromDate(const int day, const int month, const int year)
     d = localtime(&nt);
 }
 
-void Date::operator=(Date& autre)
+/**
+
+*/
+tm Date::getDate()
 {
-    this->fromDate(autre.getJour(), autre.getMois(), autre.getAnnee());
+    return *d;
 }
 
 /**

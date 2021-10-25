@@ -1,0 +1,350 @@
+\hypertarget{class_todo}{}\doxysection{Référence de la classe Todo}
+\label{class_todo}\index{Todo@{Todo}}
+
+
+Cette classe ...  
+
+
+
+
+{\ttfamily \#include $<$Todo.\+h$>$}
+
+
+
+Graphe de collaboration de Todo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_todo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_todo_a5fbb1de89a8e2e99941f6a175cc6da91}{Todo}} ()
+\begin{DoxyCompactList}\small\item\em La date. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_todo_a813a202cf72925aee8c44e9a3ca183b9}{Todo}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&, const std\+::string \&, const \mbox{\hyperlink{structtm}{tm}} \&)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interaction}{Interaction}} \mbox{\hyperlink{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}{get\+Interaction}} () const
+\begin{DoxyCompactList}\small\item\em Accesseurs. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{get\+Contenu}} () const
+\begin{DoxyCompactList}\small\item\em Pour recupérer le contenu de l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structtm}{tm}} \mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{get\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Pour récupérer la date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{set\+Interaction}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
+\begin{DoxyCompactList}\small\item\em Mutateurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{set\+Contenu}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Pour affecter un contenu à l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{set\+Date}} (const \mbox{\hyperlink{structtm}{tm}} \&)
+\begin{DoxyCompactList}\small\item\em Pour affecter une date à l\textquotesingle{}interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interaction}{Interaction}} $\ast$ \mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lien\+Interaction}}
+\item 
+std\+::string \mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}}
+\begin{DoxyCompactList}\small\item\em Lien vers l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}}
+\begin{DoxyCompactList}\small\item\em Le contenu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_todo_adbad530f8aaeb15de3c96ab898a08efb}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_todo}{Todo}} \&)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Cette classe ... 
+
+... 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_todo_a5fbb1de89a8e2e99941f6a175cc6da91}\label{class_todo_a5fbb1de89a8e2e99941f6a175cc6da91}} 
+\index{Todo@{Todo}!Todo@{Todo}}
+\index{Todo@{Todo}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{Todo()}{Todo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Todo\+::\+Todo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+La date. 
+
+Constructeur par défaut de la classe \mbox{\hyperlink{class_todo}{Todo}}.
+
+Ce constructeur initialise à la date courante un \mbox{\hyperlink{class_todo}{Todo}} avec un contenu vide n\textquotesingle{}étant relié à aucune interaction; 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     time\_t n = time(0);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{16     this-\/>\mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{setDate}}(*localtime(\&n));}
+\DoxyCodeLine{17     this-\/>\mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+
+
+Références contenu, date, et set\+Date().
+
+\mbox{\Hypertarget{class_todo_a813a202cf72925aee8c44e9a3ca183b9}\label{class_todo_a813a202cf72925aee8c44e9a3ca183b9}} 
+\index{Todo@{Todo}!Todo@{Todo}}
+\index{Todo@{Todo}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{Todo()}{Todo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Todo\+::\+Todo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{i,  }\item[{const std\+::string \&}]{c,  }\item[{const \mbox{\hyperlink{structtm}{tm}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}. 
+
+Ce constructeur initialise à une date donnée un \mbox{\hyperlink{class_todo}{Todo}} avec un contenu vide n\textquotesingle{}étainteraction; 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{28     this-\/>\mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{setDate}}(t);}
+\DoxyCodeLine{29     this-\/>\mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{setInteraction}}(i);}
+\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(c);}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+
+
+Références date, set\+Contenu(), set\+Date(), et set\+Interaction().
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_todo_a336fa1a249ac6acd320058902c8f40e2}\label{class_todo_a336fa1a249ac6acd320058902c8f40e2}} 
+\index{Todo@{Todo}!getContenu@{getContenu}}
+\index{getContenu@{getContenu}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{getContenu()}{getContenu()}}
+{\footnotesize\ttfamily std\+::string Todo\+::get\+Contenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pour recupérer le contenu de l\textquotesingle{}interaction. 
+
+Cette fonction renvoie la chaine contenu de l\textquotesingle{}interaction. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}};}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+
+
+Références contenu.
+
+\mbox{\Hypertarget{class_todo_a8d260ac9059c249a9393d8d54067bbd3}\label{class_todo_a8d260ac9059c249a9393d8d54067bbd3}} 
+\index{Todo@{Todo}!getDate@{getDate}}
+\index{getDate@{getDate}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtm}{tm}} Todo\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pour récupérer la date. 
+
+Cette fonction renvoie l\textquotesingle{}instance pointée par date. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{}
+\DoxyCodeLine{50     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}};}
+\DoxyCodeLine{51 \}}
+
+\end{DoxyCode}
+
+
+Références date.
+
+\mbox{\Hypertarget{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}\label{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}} 
+\index{Todo@{Todo}!getInteraction@{getInteraction}}
+\index{getInteraction@{getInteraction}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{getInteraction()}{getInteraction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_interaction}{Interaction}} Todo\+::get\+Interaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseurs. 
+
+Pour récuperer l\textquotesingle{}intéraction à laquelle apppartient le \mbox{\hyperlink{class_todo}{Todo}}.
+
+Ce fontion renvoie l\textquotesingle{}instance Intéraction à laquelle appartient le \mbox{\hyperlink{class_todo}{Todo}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}};}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+
+
+Références lien\+Interaction.
+
+\mbox{\Hypertarget{class_todo_ad880a5598520b267d883ec6ce22f7f45}\label{class_todo_ad880a5598520b267d883ec6ce22f7f45}} 
+\index{Todo@{Todo}!setContenu@{setContenu}}
+\index{setContenu@{setContenu}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{setContenu()}{setContenu()}}
+{\footnotesize\ttfamily void Todo\+::set\+Contenu (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Pour affecter un contenu à l\textquotesingle{}interaction. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & \+: string à affecter au contenu. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88 \{}
+\DoxyCodeLine{89     \mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}}= c;}
+\DoxyCodeLine{90 \}}
+
+\end{DoxyCode}
+
+
+Références contenu.
+
+
+
+Référencé par main(), et Todo().
+
+\mbox{\Hypertarget{class_todo_a7585477bfb8bff408e5d5736a326ef7e}\label{class_todo_a7585477bfb8bff408e5d5736a326ef7e}} 
+\index{Todo@{Todo}!setDate@{setDate}}
+\index{setDate@{setDate}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void Todo\+::set\+Date (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structtm}{tm}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Pour affecter une date à l\textquotesingle{}interaction. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: structure tm représentant la date à affecter.\\
+\hline
+\end{DoxyParams}
+La structure tm t passée en paramètre est copié dans l\textquotesingle{}instance pointée par date. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{}
+\DoxyCodeLine{80     *\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}}= t;}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+
+
+Références date.
+
+
+
+Référencé par Todo().
+
+\mbox{\Hypertarget{class_todo_a4bc4c583115b304d665a3169e168105e}\label{class_todo_a4bc4c583115b304d665a3169e168105e}} 
+\index{Todo@{Todo}!setInteraction@{setInteraction}}
+\index{setInteraction@{setInteraction}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{setInteraction()}{setInteraction()}}
+{\footnotesize\ttfamily void Todo\+::set\+Interaction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{inter }\end{DoxyParamCaption})}
+
+
+
+Mutateurs. 
+
+Pour lier une intéraction à la classe \mbox{\hyperlink{class_todo}{Todo}}. 
+\begin{DoxyParams}{Paramètres}
+{\em inter} & \+: l\textquotesingle{}intéraction à lier au \mbox{\hyperlink{class_todo}{Todo}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{}
+\DoxyCodeLine{70     *\mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}} = inter;}
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+
+
+Références lien\+Interaction.
+
+
+
+Référencé par Todo().
+
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_todo_adbad530f8aaeb15de3c96ab898a08efb}\label{class_todo_adbad530f8aaeb15de3c96ab898a08efb}} 
+\index{Todo@{Todo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_todo}{Todo}} \&}]{td }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em td} & de type \mbox{\hyperlink{class_todo}{Todo}} qui represente le \mbox{\hyperlink{class_todo}{Todo}} à afficher.\\
+\hline
+\end{DoxyParams}
+Pour afficher un \mbox{\hyperlink{class_todo}{Todo}}, on affiche son contenu suivie de sa date. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99 \{}
+\DoxyCodeLine{100     \mbox{\hyperlink{structtm}{tm}}* t= \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
+\DoxyCodeLine{101     \textcolor{keywordtype}{char}* d= asctime(t);}
+\DoxyCodeLine{102     os<<\textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << d;}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     \textcolor{keyword}{delete} t;}
+\DoxyCodeLine{105     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{106 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}\label{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}} 
+\index{Todo@{Todo}!contenu@{contenu}}
+\index{contenu@{contenu}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{contenu}{contenu}}
+{\footnotesize\ttfamily std\+::string Todo\+::contenu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lien vers l\textquotesingle{}interaction. 
+
+
+
+Référencé par get\+Contenu(), set\+Contenu(), et Todo().
+
+\mbox{\Hypertarget{class_todo_aff30bd207a1423697cca38322d42557f}\label{class_todo_aff30bd207a1423697cca38322d42557f}} 
+\index{Todo@{Todo}!date@{date}}
+\index{date@{date}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structtm}{tm}}$\ast$ Todo\+::date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Le contenu. 
+
+
+
+Référencé par get\+Date(), set\+Date(), et Todo().
+
+\mbox{\Hypertarget{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}\label{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}} 
+\index{Todo@{Todo}!lienInteraction@{lienInteraction}}
+\index{lienInteraction@{lienInteraction}!Todo@{Todo}}
+\doxysubsubsection{\texorpdfstring{lienInteraction}{lienInteraction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_interaction}{Interaction}}$\ast$ Todo\+::lien\+Interaction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par get\+Interaction(), et set\+Interaction().
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_todo_8h}{Todo.\+h}}\item 
+\mbox{\hyperlink{_todo_8cpp}{Todo.\+cpp}}\end{DoxyCompactItemize}

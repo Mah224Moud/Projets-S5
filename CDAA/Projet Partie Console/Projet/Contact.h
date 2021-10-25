@@ -8,7 +8,7 @@
     *@file Contact.h
     *@brief Fichier d'entête de la classe Contact
     *@author DIALLO Mamoudou
-    BAH Saikou Oumar
+    *@author BAH Saikou Oumar
 */
 
 

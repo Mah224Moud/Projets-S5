@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tostring_39',['toString',['../class_date.html#adebdb45904dc2fbfacc66aa7528e0c04',1,'Date']]]
+  ['interaction_84',['Interaction',['../class_interaction.html#aadfd0e254296043c26508d47090ace76',1,'Interaction::Interaction()'],['../class_interaction.html#a407c1b9c8190af0ec9e0285c9273e226',1,'Interaction::Interaction(const tm &amp;, const std::string &amp;)']]]
 ];
