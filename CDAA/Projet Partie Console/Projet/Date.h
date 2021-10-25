@@ -36,10 +36,14 @@ class Date
         int getJour();
         int getMois();
         int getAnnee();
+
         tm getDate();
+        void setDate(const tm&);
 
         void fromDate(const int day, const int month, const int year);
         std::string toString();
+
+        bool operator==(const tm&);
 };
 
 

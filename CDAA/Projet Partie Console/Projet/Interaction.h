@@ -11,6 +11,7 @@
 #include <string>
 #include <ctime>
 
+#include "Date.h"
 
 /**
     @class Interaction

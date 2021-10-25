@@ -153,6 +153,7 @@
         </inbodydescription>
         <location file="Todo.h" line="33" column="12" bodyfile="Todo.cpp" bodystart="48" bodyend="51"/>
         <references refid="class_todo_1aff30bd207a1423697cca38322d42557f" compoundref="_todo_8h" startline="23">date</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="31">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a4bc4c583115b304d665a3169e168105e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -212,7 +213,7 @@
         </inbodydescription>
         <location file="Todo.h" line="37" column="14" bodyfile="Todo.cpp" bodystart="87" bodyend="90"/>
         <references refid="class_todo_1ae00f4ec991a678ebd1af1fe4a7940256" compoundref="_todo_8h" startline="22">contenu</references>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="28">main</referencedby>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="31">main</referencedby>
         <referencedby refid="class_todo_1a813a202cf72925aee8c44e9a3ca183b9" compoundref="_todo_8cpp" startline="24" endline="31">Todo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -281,11 +282,11 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-Pour afficher un <ref refid="class_todo" kindref="compound">Todo</ref>, on affiche son contenu suivie de sa date. </para>
+Pour afficher un <ref refid="class_todo" kindref="compound">Todo</ref>, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd&apos;hui). </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="40" column="16" bodyfile="Todo.cpp" bodystart="98" bodyend="106"/>
+        <location file="Todo.h" line="40" column="16" bodyfile="Todo.cpp" bodystart="98" bodyend="108"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

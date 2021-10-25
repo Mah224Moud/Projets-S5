@@ -93,14 +93,16 @@ void Todo::setContenu(const std:: string & c)
     *@brief Surcharge de l'opérateur << pour l'affichage.
     *@param os : de type ostream.
     *@param td: de type Todo qui represente le Todo à afficher.
-    *@details Pour afficher un Todo, on affiche son contenu suivie de sa date.
+    *@details Pour afficher un Todo, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui).
 */
 std::ostream& operator<<(std::ostream& os, const Todo& td)
 {
-    tm* t= new tm(td.getDate());
-    char* d= asctime(t);
-    os<<"@todo " << td.getContenu() << d;
-
-    delete t;
+    Date d;
+    os << "@todo " << td.getContenu() << " ";
+    if(!(d == td.getDate()))
+    {
+        d.setDate(td.getDate());
+        os << "@date " << d.toString();
+    }
     return os;
 }

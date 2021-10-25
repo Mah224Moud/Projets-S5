@@ -99,8 +99,8 @@ Graphe de collaboration de Date:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_date__coll__graph.png" border="0" usemap="#a_date_coll__map" alt="Collaboration graph"/></div>
 <map name="a_date_coll__map" id="a_date_coll__map">
-<area shape="rect" title="La classe Date permet de stocker des dates dans des structures tm." alt="" coords="5,145,115,325"/>
-<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="40,5,80,83"/>
+<area shape="rect" title="La classe Date permet de stocker des dates dans des structures tm." alt="" coords="5,145,129,355"/>
+<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="47,5,87,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,13 +122,19 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a99c5677274bdaffadaedad4c888ccbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupération de l'année de la date.  <a href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a99c5677274bdaffadaedad4c888ccbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53dcab03c7834448fd67ef453ff34195"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtm.html">tm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">getDate</a> ()</td></tr>
+<tr class="memdesc:a53dcab03c7834448fd67ef453ff34195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupération de la date.  <a href="class_date.html#a53dcab03c7834448fd67ef453ff34195">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a53dcab03c7834448fd67ef453ff34195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f644265141e1b856af83715177a7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a> (const <a class="el" href="structtm.html">tm</a> &amp;)</td></tr>
+<tr class="separator:af7f644265141e1b856af83715177a7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21c46ba7a74d45d1299f92330a43533a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">fromDate</a> (const int day, const int month, const int year)</td></tr>
 <tr class="memdesc:a21c46ba7a74d45d1299f92330a43533a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupération en fonction des paramètres day, month et year d'une structure tm contenant la date définie.  <a href="class_date.html#a21c46ba7a74d45d1299f92330a43533a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a21c46ba7a74d45d1299f92330a43533a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebdb45904dc2fbfacc66aa7528e0c04"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a> ()</td></tr>
 <tr class="memdesc:adebdb45904dc2fbfacc66aa7528e0c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupération de la date avec le format jj/mm/aaaa.  <a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Plus de détails...</a><br /></td></tr>
 <tr class="separator:adebdb45904dc2fbfacc66aa7528e0c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e18eb4e080c723df03af0be4f0487e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_date.html#ab6e18eb4e080c723df03af0be4f0487e">operator==</a> (const <a class="el" href="structtm.html">tm</a> &amp;)</td></tr>
+<tr class="memdesc:ab6e18eb4e080c723df03af0be4f0487e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surchage de l'opérateur d'égalité  <a href="class_date.html#ab6e18eb4e080c723df03af0be4f0487e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab6e18eb4e080c723df03af0be4f0487e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
@@ -261,21 +267,19 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    time_t nt = time(NULL);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtm.html">tm</a>* nd = localtime(&amp;nt);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    nd -&gt; tm_mday= day;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    nd -&gt; tm_mon= month - 1;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    nd -&gt; tm_year= year - 1900;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    nt = mktime(nd);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = localtime(&amp;nt);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    time_t nt = time(NULL);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtm.html">tm</a>* nd = localtime(&amp;nt);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    nd -&gt; tm_mday= day;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    nd -&gt; tm_mon= month - 1;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    nd -&gt; tm_year= year - 1900;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    nt = mktime(nd);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = localtime(&amp;nt);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment -->
-<p class="reference">Référencé par <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
-
 </div>
 </div>
 <a id="a99c5677274bdaffadaedad4c888ccbca"></a>
@@ -315,12 +319,13 @@ Attributs privés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">Référencé par <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
 
+<p>Récupération de la date. </p>
+<p>Cette fonction renvoie l'instance tm pointée par d. </p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a961e64bff2fdff7ee95bc335ca400d2f"></a>
@@ -369,6 +374,58 @@ Attributs privés</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ab6e18eb4e080c723df03af0be4f0487e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e18eb4e080c723df03af0be4f0487e">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Date::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtm.html">tm</a> &amp;&#160;</td>
+          <td class="paramname"><em>autre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Surchage de l'opérateur d'égalité </p>
+<p>Cette fonction compare deux dates. Elle renvoie true si les jours, mois et années sont identiques. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autre</td><td>: le tm à comparer avec le tm de la date actuelle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mday == autre.tm_mday &amp;&amp; <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mon == autre.tm_mon &amp;&amp; <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_year == autre.tm_year;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af7f644265141e1b856af83715177a7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f644265141e1b856af83715177a7e7">&#9670;&nbsp;</a></span>setDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Date::setDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtm.html">tm</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = t;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
 <a id="adebdb45904dc2fbfacc66aa7528e0c04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adebdb45904dc2fbfacc66aa7528e0c04">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -386,9 +443,9 @@ Attributs privés</h2></td></tr>
 
 <p>Récupération de la date avec le format jj/mm/aaaa. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>Chaine de caractère contenant la date </dd></dl>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> std::to_string( <a class="code" href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">getJour</a>())+<span class="stringliteral">&quot;/&quot;</span>+std::to_string(<a class="code" href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">getMois</a>())+<span class="stringliteral">&quot;/&quot;</span>+to_string(<a class="code" href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">getAnnee</a>());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> std::to_string( <a class="code" href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">getJour</a>())+<span class="stringliteral">&quot;/&quot;</span>+std::to_string(<a class="code" href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">getMois</a>())+<span class="stringliteral">&quot;/&quot;</span>+to_string(<a class="code" href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">getAnnee</a>());</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="aclass_date_html_a6b16211abaa2c22418e82b8cd9d08bfe"><div class="ttname"><a href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">Date::getMois</a></div><div class="ttdeci">int getMois()</div><div class="ttdoc">Récupération du mois de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:46</div></div>
 <div class="ttc" id="aclass_date_html_a961e64bff2fdff7ee95bc335ca400d2f"><div class="ttname"><a href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">Date::getJour</a></div><div class="ttdeci">int getJour()</div><div class="ttdoc">Récupération du jour de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:37</div></div>
 <div class="ttc" id="aclass_date_html_a99c5677274bdaffadaedad4c888ccbca"><div class="ttname"><a href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">Date::getAnnee</a></div><div class="ttdeci">int getAnnee()</div><div class="ttdoc">Récupération de l'année de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:55</div></div>

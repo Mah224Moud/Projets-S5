@@ -11,7 +11,7 @@ Graphe des dépendances par inclusion de Todo.\+cpp\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=263pt]{_todo_8cpp__incl}
+\includegraphics[width=294pt]{_todo_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions}
@@ -47,15 +47,17 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 {\em td} & de type \mbox{\hyperlink{class_todo}{Todo}} qui represente le \mbox{\hyperlink{class_todo}{Todo}} à afficher.\\
 \hline
 \end{DoxyParams}
-Pour afficher un \mbox{\hyperlink{class_todo}{Todo}}, on affiche son contenu suivie de sa date. 
+Pour afficher un \mbox{\hyperlink{class_todo}{Todo}}, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd\textquotesingle{}hui). 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{99 \{}
-\DoxyCodeLine{100     \mbox{\hyperlink{structtm}{tm}}* t= \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
-\DoxyCodeLine{101     \textcolor{keywordtype}{char}* d= asctime(t);}
-\DoxyCodeLine{102     os<<\textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << d;}
-\DoxyCodeLine{103 }
-\DoxyCodeLine{104     \textcolor{keyword}{delete} t;}
-\DoxyCodeLine{105     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{106 \}}
+\DoxyCodeLine{100     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{101     os << \textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{102     \textcolor{keywordflow}{if}(!(d == td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}()))}
+\DoxyCodeLine{103     \{}
+\DoxyCodeLine{104         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
+\DoxyCodeLine{105         os << \textcolor{stringliteral}{"{}@date "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}();}
+\DoxyCodeLine{106     \}}
+\DoxyCodeLine{107     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{108 \}}
 
 \end{DoxyCode}

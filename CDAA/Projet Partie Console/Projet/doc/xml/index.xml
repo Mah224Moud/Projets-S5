@@ -28,8 +28,10 @@
     <member refid="class_date_1a6b16211abaa2c22418e82b8cd9d08bfe" kind="function"><name>getMois</name></member>
     <member refid="class_date_1a99c5677274bdaffadaedad4c888ccbca" kind="function"><name>getAnnee</name></member>
     <member refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kind="function"><name>getDate</name></member>
+    <member refid="class_date_1af7f644265141e1b856af83715177a7e7" kind="function"><name>setDate</name></member>
     <member refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kind="function"><name>fromDate</name></member>
     <member refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" kind="function"><name>toString</name></member>
+    <member refid="class_date_1ab6e18eb4e080c723df03af0be4f0487e" kind="function"><name>operator==</name></member>
   </compound>
   <compound refid="class_email" kind="class"><name>Email</name>
     <member refid="class_email_1a51c860409672625164d836055511fbe7" kind="variable"><name>identifiant</name></member>

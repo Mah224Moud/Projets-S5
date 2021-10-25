@@ -64,30 +64,38 @@
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;d-&gt;tm_year<sp/>+<sp/>1900;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66" refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">Date::fromDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year)</highlight></codeline>
-<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>nt<sp/>=<sp/>time(NULL);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref>*<sp/>nd<sp/>=<sp/>localtime(&amp;nt);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>nd<sp/>-&gt;<sp/>tm_mday=<sp/>day;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>nd<sp/>-&gt;<sp/>tm_mon=<sp/>month<sp/>-<sp/>1;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>nd<sp/>-&gt;<sp/>tm_year=<sp/>year<sp/>-<sp/>1900;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>nt<sp/>=<sp/>mktime(nd);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>localtime(&amp;nt);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="class_date_1a53dcab03c7834448fd67ef453ff34195" refkind="member"><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref><sp/><ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">Date::getDate</ref>()</highlight></codeline>
-<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*d;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91" refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" kindref="member">Date::toString</ref>()</highlight></codeline>
-<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::to_string(<sp/>getJour())+</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">+std::to_string(getMois())+</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">+to_string(getAnnee());</highlight></codeline>
-<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_date_1a53dcab03c7834448fd67ef453ff34195" refkind="member"><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref><sp/><ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">Date::getDate</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*d;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_date_1af7f644265141e1b856af83715177a7e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_date_1af7f644265141e1b856af83715177a7e7" kindref="member">Date::setDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>&amp;<sp/>t)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>*d<sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">Date::fromDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>nt<sp/>=<sp/>time(NULL);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref>*<sp/>nd<sp/>=<sp/>localtime(&amp;nt);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>nd<sp/>-&gt;<sp/>tm_mday=<sp/>day;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>nd<sp/>-&gt;<sp/>tm_mon=<sp/>month<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>nd<sp/>-&gt;<sp/>tm_year=<sp/>year<sp/>-<sp/>1900;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>nt<sp/>=<sp/>mktime(nd);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>localtime(&amp;nt);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" kindref="member">Date::toString</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::to_string(<sp/>getJour())+</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">+std::to_string(getMois())+</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">+to_string(getAnnee());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="class_date_1ab6e18eb4e080c723df03af0be4f0487e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_date_1ab6e18eb4e080c723df03af0be4f0487e" kindref="member">Date::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>&amp;<sp/>autre)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d-&gt;tm_mday<sp/>==<sp/>autre.tm_mday<sp/>&amp;&amp;<sp/>d-&gt;tm_mon<sp/>==<sp/>autre.tm_mon<sp/>&amp;&amp;<sp/>d-&gt;tm_year<sp/>==<sp/>autre.tm_year;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Date.cpp"/>
   </compounddef>

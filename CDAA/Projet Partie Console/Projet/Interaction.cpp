@@ -89,15 +89,17 @@ void Interaction::setContenu(const std:: string & c)
     *@brief Surcharge de l'opérateur << pour l'affichage.
     *@param os : de type ostream.
     *@param i: de type Interaction qui represente l'interface à afficher.
-    *@details Pour afficher une Interaction, on affiche la date de l'interaction suivie son contenu.
+    *@details Pour afficher une Interaction, on affiche la date de l'interaction, ou Aujourd'hui s'il s'agit de la date courante, suivie son contenu.
 */
 std::ostream& operator<<(std::ostream& os, const Interaction& i)
 {
-    tm* t= new tm(i.getDate());
-    char* d= asctime(t);
-
-    os<<d<<" "<<i.getContenu();
-    delete t;
-
+    Date d;
+    if(d == i.getDate())    os << "Aujourd'hui ";
+    else
+    {
+        d.setDate(i.getDate());
+        os << d.toString()<<" ";
+    }
+    os << i.getContenu();
     return os;
 }

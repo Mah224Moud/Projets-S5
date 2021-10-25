@@ -96,11 +96,12 @@ Graphe des dépendances par inclusion de Interaction.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_interaction_8cpp__incl.png" border="0" usemap="#a_interaction_8cpp" alt=""/></div>
 <map name="a_interaction_8cpp" id="a_interaction_8cpp">
-<area shape="rect" title="Fichier CPP de la classe Interaction." alt="" coords="76,5,195,32"/>
-<area shape="rect" href="_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="83,80,187,107"/>
+<area shape="rect" title="Fichier CPP de la classe Interaction." alt="" coords="95,5,213,32"/>
+<area shape="rect" href="_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="102,80,206,107"/>
 <area shape="rect" title=" " alt="" coords="5,155,81,181"/>
-<area shape="rect" title=" " alt="" coords="106,155,165,181"/>
-<area shape="rect" title=" " alt="" coords="189,155,247,181"/>
+<area shape="rect" title=" " alt="" coords="119,229,178,256"/>
+<area shape="rect" title=" " alt="" coords="217,229,275,256"/>
+<area shape="rect" href="_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="157,155,223,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -148,19 +149,23 @@ Fonctions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Pour afficher une <a class="el" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;.">Interaction</a>, on affiche la date de l'interaction suivie son contenu. </p>
+<p>Pour afficher une <a class="el" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;.">Interaction</a>, on affiche la date de l'interaction, ou Aujourd'hui s'il s'agit de la date courante, suivie son contenu. </p>
 <div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="structtm.html">tm</a>* t= <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>(i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>());</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">char</span>* d= asctime(t);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    os&lt;&lt;d&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;i.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">delete</span> t;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span>(d == i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>())    os &lt;&lt; <span class="stringliteral">&quot;Aujourd&#39;hui &quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        os &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>()&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    os &lt;&lt; i.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:101</div></div>
+<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:73</div></div>
 <div class="ttc" id="aclass_interaction_html_a0e194616267d53075169f189f6d71c60"><div class="ttname"><a href="class_interaction.html#a0e194616267d53075169f189f6d71c60">Interaction::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:61</div></div>
 <div class="ttc" id="aclass_interaction_html_ac1bb679065bb3cbbf11ec02fee4da0e0"><div class="ttname"><a href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">Interaction::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Destructeur.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:51</div></div>
-<div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment -->
 </div>
 </div>

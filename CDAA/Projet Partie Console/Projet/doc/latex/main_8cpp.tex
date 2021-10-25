@@ -9,7 +9,7 @@ Graphe des dépendances par inclusion de main.\+cpp\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=322pt]{main_8cpp__incl}
+\includegraphics[width=347pt]{main_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions}
@@ -30,27 +30,30 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \begin{DoxyCode}{0}
 \DoxyCodeLine{9 \{}
 \DoxyCodeLine{10     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{11 sd}
+\DoxyCodeLine{11 }
 \DoxyCodeLine{12 }
 \DoxyCodeLine{13     \mbox{\hyperlink{class_todo}{Todo}} i;}
 \DoxyCodeLine{14     i.\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(\textcolor{stringliteral}{"{}Todo Quelconque"{}});}
-\DoxyCodeLine{15     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(14,07,2001);}
-\DoxyCodeLine{16     i.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{15     \textcolor{comment}{//d.fromDate(14,07,2001);}}
+\DoxyCodeLine{16     \textcolor{comment}{//i.setDate(d.getDate());}}
 \DoxyCodeLine{17 }
 \DoxyCodeLine{18     \mbox{\hyperlink{class_interaction}{Interaction}} t;}
 \DoxyCodeLine{19     t.\mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(\textcolor{stringliteral}{"{}Interaction Quelconque"{}});}
-\DoxyCodeLine{20     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(1,1,2001);}
-\DoxyCodeLine{21     t.\mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{20     \textcolor{comment}{//d.fromDate(1,1,2001);}}
+\DoxyCodeLine{21     \textcolor{comment}{//t.setDate(d.getDate());}}
 \DoxyCodeLine{22 }
-\DoxyCodeLine{23     cout<<\textcolor{stringliteral}{"{}d = "{}}<<d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<endl;}
+\DoxyCodeLine{23     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
 \DoxyCodeLine{24 }
-\DoxyCodeLine{25     cout<<i<<endl;}
-\DoxyCodeLine{26     cout<<t<<endl;}
-\DoxyCodeLine{27     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{28 \}}
+\DoxyCodeLine{25     cout<<\textcolor{stringliteral}{"{}d = "{}}<<d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<endl;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     cout<<i<<endl;}
+\DoxyCodeLine{28     cout<<t<<endl;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{31 \}}
 
 \end{DoxyCode}
 
 
-Références Date\+::from\+Date(), Date\+::get\+Date(), Interaction\+::set\+Contenu(), Todo\+::set\+Contenu(), Interaction\+::set\+Date(), et Date\+::to\+String().
+Références Todo\+::get\+Date(), Interaction\+::set\+Contenu(), Todo\+::set\+Contenu(), Date\+::set\+Date(), et Date\+::to\+String().
 

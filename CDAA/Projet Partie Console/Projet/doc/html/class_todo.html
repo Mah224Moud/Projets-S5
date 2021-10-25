@@ -285,6 +285,8 @@ Amis</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>.</p>
 
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
 </div>
 </div>
 <a id="a3ee7c0d0dfb18d895758a2bb1862a5a8"></a>
@@ -457,15 +459,20 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Pour afficher un <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>, on affiche son contenu suivie de sa date. </p>
+<p>Pour afficher un <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui). </p>
 <div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="structtm.html">tm</a>* t= <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">char</span>* d= asctime(t);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    os&lt;&lt;<span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; d;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">delete</span> t;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span>(!(d == td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>()))</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;@date &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:101</div></div>
+<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:73</div></div>
 <div class="ttc" id="aclass_todo_html_a336fa1a249ac6acd320058902c8f40e2"><div class="ttname"><a href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">Todo::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:57</div></div>
 <div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:48</div></div>
 </div><!-- fragment -->
