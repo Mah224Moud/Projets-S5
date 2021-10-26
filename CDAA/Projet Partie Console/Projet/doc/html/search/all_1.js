@@ -6,6 +6,7 @@ var searchData=
   ['date_7',['Date',['../class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd',1,'Date::Date()'],['../class_date.html#af3efa227a00ac2ae993c424ca62c340c',1,'Date::Date(const int, const int, const int)']]],
   ['date_2ecpp_8',['Date.cpp',['../_date_8cpp.html',1,'']]],
   ['date_2eh_9',['Date.h',['../_date_8h.html',1,'']]],
-  ['datecreation_10',['dateCreation',['../class_contact.html#a48d9212b01a1bc7e4d8d5beae5a3aaee',1,'Contact']]],
-  ['domaine_11',['domaine',['../class_email.html#adbf96bf6ecf0163270786b511ca9073f',1,'Email']]]
+  ['datecreation_10',['dateCreation',['../class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4',1,'Contact']]],
+  ['datelastmodif_11',['dateLastModif',['../class_contact.html#a147a152073d3f091c40a3d5a77d6a27f',1,'Contact']]],
+  ['domaine_12',['domaine',['../class_email.html#adbf96bf6ecf0163270786b511ca9073f',1,'Email']]]
 ];

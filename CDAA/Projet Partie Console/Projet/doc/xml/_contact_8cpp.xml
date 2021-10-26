@@ -13,9 +13,14 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>string</label>
+      </node>
+      <node id="9">
+        <label>ostream</label>
       </node>
       <node id="1">
         <label>Contact.cpp</label>
@@ -45,6 +50,18 @@
       <node id="5">
         <label>iostream</label>
       </node>
+      <node id="8">
+        <label>Interaction.h</label>
+        <link refid="_interaction_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <briefdescription>
     </briefdescription>
@@ -59,53 +76,53 @@
 <codeline lineno="6"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9" refid="class_contact_1a8cb1baee1f3971f8fbf660c55668e973" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a8cb1baee1f3971f8fbf660c55668e973" kindref="member">Contact:: getNom</ref>()</highlight></codeline>
+<codeline lineno="9" refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" kindref="member">Contact:: getNom</ref>()</highlight></codeline>
 <codeline lineno="10"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" kindref="member">nom</ref>;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="13" refid="class_contact_1a4ebd00669ba7668e2f984bb9f018ee97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1a4ebd00669ba7668e2f984bb9f018ee97" kindref="member">Contact:: setNom</ref>(std::string<sp/>name)</highlight></codeline>
+<codeline lineno="13" refid="class_contact_1a1bb48dc09983e6c3b42dc1fc2fd06ea1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1a1bb48dc09983e6c3b42dc1fc2fd06ea1" kindref="member">Contact:: setNom</ref>(std::string<sp/>name)</highlight></codeline>
 <codeline lineno="14"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" kindref="member">nom</ref>=<sp/>name;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="class_contact_1ad7a1da560c1b1cdc3e3164e2e76158c3" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1ad7a1da560c1b1cdc3e3164e2e76158c3" kindref="member">Contact:: getPrenom</ref>()</highlight></codeline>
+<codeline lineno="19" refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" kindref="member">Contact:: getPrenom</ref>()</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_contact_1a6d85467851d61def44445912b58d52a4" kindref="member">prenom</ref>;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="23" refid="class_contact_1a4b0cc83fdd164993c82998a1d333ce51" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1a4b0cc83fdd164993c82998a1d333ce51" kindref="member">Contact:: setPrenom</ref>(std::string<sp/>lastname)</highlight></codeline>
+<codeline lineno="23" refid="class_contact_1a543b1fc15222db095ec2aff7bd4b840c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1a543b1fc15222db095ec2aff7bd4b840c" kindref="member">Contact:: setPrenom</ref>(std::string<sp/>lastname)</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_contact_1a6d85467851d61def44445912b58d52a4" kindref="member">prenom</ref>=<sp/>lastname;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="class_contact_1a374f626bc4c92969c73769996902abf1" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a374f626bc4c92969c73769996902abf1" kindref="member">Contact:: getEntreprise</ref>()</highlight></codeline>
+<codeline lineno="29" refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" kindref="member">Contact:: getEntreprise</ref>()</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" kindref="member">entreprise</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="33" refid="class_contact_1ab297d4a58fdb593896eabb815c9b7a72" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1ab297d4a58fdb593896eabb815c9b7a72" kindref="member">Contact:: setEntreprise</ref>(std::string<sp/>company)</highlight></codeline>
+<codeline lineno="33" refid="class_contact_1aa729bc315274b5951849452e5e94231c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1aa729bc315274b5951849452e5e94231c" kindref="member">Contact:: setEntreprise</ref>(std::string<sp/>company)</highlight></codeline>
 <codeline lineno="34"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" kindref="member">entreprise</ref>=<sp/>company;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39" refid="class_contact_1a0e4aa4bd56b39a3d4b911d2ea369f65c" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a0e4aa4bd56b39a3d4b911d2ea369f65c" kindref="member">Contact:: getTelephone</ref>()</highlight></codeline>
+<codeline lineno="39" refid="class_contact_1aea5e3bb308317bafb43f2554f1c52e51" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1aea5e3bb308317bafb43f2554f1c52e51" kindref="member">Contact:: getTelephone</ref>()</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_contact_1a045666ea797063981360d3c926c4d58f" kindref="member">telephone</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_contact_1a6d2c1a0e98e352b06782465adee0d965" kindref="member">telephone</ref>;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="43" refid="class_contact_1a332e713c1abce72cbffd5b1d2bc493c9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1a332e713c1abce72cbffd5b1d2bc493c9" kindref="member">Contact:: setTelephone</ref>(std::string<sp/>phone)</highlight></codeline>
+<codeline lineno="43" refid="class_contact_1aae2a746f91cd8c9ae78945c61adc5c50" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1aae2a746f91cd8c9ae78945c61adc5c50" kindref="member">Contact:: setTelephone</ref>(std::string<sp/>phone)</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_contact_1a045666ea797063981360d3c926c4d58f" kindref="member">telephone</ref>=<sp/>phone;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_contact_1a6d2c1a0e98e352b06782465adee0d965" kindref="member">telephone</ref>=<sp/>phone;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="class_contact_1a9e7136c8703b2865b79671b459ae2308" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a9e7136c8703b2865b79671b459ae2308" kindref="member">Contact:: getPhoto</ref>()</highlight></codeline>
+<codeline lineno="49" refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" kindref="member">Contact:: getPhoto</ref>()</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" kindref="member">URIphoto</ref>;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55" refid="class_contact_1ac91e6bfc9851bf01c74d39d9e67c9f17" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1ac91e6bfc9851bf01c74d39d9e67c9f17" kindref="member">Contact:: setPhoto</ref>(std::string<sp/>pic)</highlight></codeline>
+<codeline lineno="55" refid="class_contact_1a11eac4b0dab5605623eca9a130f5b762" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_contact_1a11eac4b0dab5605623eca9a130f5b762" kindref="member">Contact:: setPhoto</ref>(std::string<sp/>pic)</highlight></codeline>
 <codeline lineno="56"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" kindref="member">URIphoto</ref>=<sp/>pic;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal">}</highlight></codeline>

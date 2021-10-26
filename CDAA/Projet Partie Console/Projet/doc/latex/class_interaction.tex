@@ -22,15 +22,15 @@ Graphe de collaboration de Interaction\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_interaction_aadfd0e254296043c26508d47090ace76}{Interaction}} ()
-\begin{DoxyCompactList}\small\item\em Détails de l\textquotesingle{}intéraction. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_interaction_a407c1b9c8190af0ec9e0285c9273e226}{Interaction}} (const \mbox{\hyperlink{structtm}{tm}} \&, const std\+::string \&)
-\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres date et contenu de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_interaction_a6610199fedc7fae617003cb2f397c825}{$\sim$\+Interaction}} ()
-\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtm}{tm}} \mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{get\+Date}} () const
-\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Accéder à la date. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{get\+Contenu}} () const
-\begin{DoxyCompactList}\small\item\em Pour recupérer le contenu de l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Accéder au contenu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{set\+Date}} (const \mbox{\hyperlink{structtm}{tm}} \&)
 \begin{DoxyCompactList}\small\item\em Mutateurs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{set\+Contenu}} (const std\+::string \&)
@@ -39,9 +39,9 @@ void \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{set\+
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}}
-\item 
+\begin{DoxyCompactList}\small\item\em La date de l\textquotesingle{}intéraction. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}}
-\begin{DoxyCompactList}\small\item\em La date de l\textquotesingle{}intéraction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Détails de l\textquotesingle{}intéraction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Amis}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,7 +61,7 @@ Cette classe décrit des intéractions dans l\textquotesingle{}application, le c
 
 
 
-Détails de l\textquotesingle{}intéraction. 
+Constructeur par défaut de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. 
 
 Constructeur par défaut.
 
@@ -87,7 +87,7 @@ Références contenu, date, et set\+Date().
 
 
 
-Constructeur par défaut. 
+Constructeur avec paramètres date et contenu de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. 
 
 Constructeur avec paramètre.
 
@@ -121,9 +121,7 @@ Références contenu, date, set\+Contenu(), et set\+Date().
 
 
 
-Constructeur avec paramètres. 
-
-Destructeur de la classe \mbox{\hyperlink{class_interaction}{Interaction}}.
+Destructeur de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. 
 
 Libération de l\textquotesingle{}espace mémoire alloué par date. 
 \begin{DoxyCode}{0}
@@ -147,7 +145,9 @@ Références date.
 
 
 
-Pour recupérer le contenu de l\textquotesingle{}interaction. 
+Accéder au contenu. 
+
+Pour recupérer le contenu de l\textquotesingle{}interaction.
 
 Cette fonction renvoie la chaine contenu de l\textquotesingle{}interaction. 
 \begin{DoxyCode}{0}
@@ -168,11 +168,9 @@ Références contenu.
 
 
 
-Destructeur. 
+Accéder à la date. 
 
 Accesseurs.
-
-Accesseurs
 
 Pour récupérer la date.
 
@@ -293,7 +291,7 @@ Pour afficher une \mbox{\hyperlink{class_interaction}{Interaction}}, on affiche 
 
 
 
-La date de l\textquotesingle{}intéraction. 
+Détails de l\textquotesingle{}intéraction. 
 
 
 
@@ -304,6 +302,10 @@ Référencé par get\+Contenu(), Interaction(), et set\+Contenu().
 \index{date@{date}!Interaction@{Interaction}}
 \doxysubsubsection{\texorpdfstring{date}{date}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structtm}{tm}}$\ast$ Interaction\+::date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La date de l\textquotesingle{}intéraction. 
 
 
 

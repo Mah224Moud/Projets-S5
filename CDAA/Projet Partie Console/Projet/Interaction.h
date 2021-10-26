@@ -21,19 +21,25 @@
 */
 class Interaction{
 private:
-    tm * date; /// La date de l'intéraction
-    std::string contenu; /// Détails de l'intéraction
+    /// La date de l'intéraction
+    tm * date;
+    /// Détails de l'intéraction
+    std::string contenu;
 
 public:
-    Interaction(); /// Constructeur par défaut
-    Interaction(const tm&, const std::string &); /// Constructeur avec paramètres
-    ~Interaction(); /// Destructeur
+    /// Constructeur par défaut de la classe Interaction
+    Interaction();
+    /// Constructeur avec paramètres date et contenu de la classe Interaction
+    Interaction(const tm&, const std::string &);
+    /// Destructeur de la classe Interaction
+    ~Interaction();
 
-    /// Accesseurs
+    /// Accéder à la date
     tm getDate() const;
+    /// Accéder au contenu
     std::string getContenu() const;
 
-    /// Mutateurs
+
     void setDate(const tm&);
     void setContenu(const std::string&);
 

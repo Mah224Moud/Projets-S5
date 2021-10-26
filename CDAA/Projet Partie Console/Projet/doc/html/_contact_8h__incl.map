@@ -1,8 +1,10 @@
 <map id="Contact.h" name="Contact.h">
-<area shape="rect" id="node1" title="Fichier d&#39;entête de la classe Contact." alt="" coords="97,5,181,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="109,155,168,181"/>
-<area shape="rect" id="node3" href="$_email_8h.html" title="Fichier d&#39;entête de la classe Email." alt="" coords="30,80,101,107"/>
-<area shape="rect" id="node5" href="$_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="177,80,242,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,155,85,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="192,155,251,181"/>
+<area shape="rect" id="node1" title="Fichier d&#39;entête de la classe Contact." alt="" coords="161,5,245,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="136,229,195,256"/>
+<area shape="rect" id="node3" href="$_email_8h.html" title="Fichier d&#39;entête de la classe Email." alt="" coords="27,80,98,107"/>
+<area shape="rect" id="node5" href="$_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="381,155,446,181"/>
+<area shape="rect" id="node7" href="$_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="215,80,319,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="23,155,103,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="348,229,407,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="229,155,305,181"/>
 </map>

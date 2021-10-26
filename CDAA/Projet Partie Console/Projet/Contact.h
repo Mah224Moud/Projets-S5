@@ -8,8 +8,11 @@
 #ifndef CONTACT_H_INCLUDED
 #define CONTACT_H_INCLUDED
 #include <string>
+#include <list>
+#include <ctime>
 #include "Email.h"
 #include "Date.h"
+#include "Interaction.h"
 
 /**
     *@class Contact Contact.h "Contact.h"
@@ -21,34 +24,51 @@
 class Contact
 {
     private:
-        std::string nom;
-        std::string prenom;
-        std::string entreprise;
-        std::string telephone;
-        std::string URIphoto;
-        Date dateCreation;
-        Email mail;
-
+        std::string nom; /// Le nom du contact
+        std::string prenom; /// Le prénom du contact
+        std::string entreprise; /// Le nom de l'entreprise
+        std::list<unsigned> telephone; /// Les numéros du contact
+        std::string URIphoto; /// La photo du contact
+        tm* dateCreation; /// La date de création du contact
+        tm* dateLastModif; /// La date de dernière modification
+        Email* mail; /// Adresse Mail du contact
+        std::list<Interaction> listInteractions;/// La liste des intéractions du contact
 
 
     public:
+    /// Constructeur par défaut de la classe Contact.
     Contact();
+    /// Constructeur avec paramètre nom, prénom, entreprise.
+    Contact(const std::string&, const std::string&, const std::string&);
+    /// Destructeur de la classe Contact
+    ~Contact();
 
-    std::string getNom();
-    void setNom(std::string name);
+    std::string getNom() const;
+    std::string getPrenom() const;
+    std::string getEntreprise() const;
+    std::list<unsigned> getLesTelephones() const;
+    std::string getTelephone(int);
+    std::string getPhoto() const;
+    tm getDateCreation() const;
+    tm getDateLastModif() const;
+    Email getEmail() const;
+    std::list<Interaction> getListInteractions();
 
-    std::string getPrenom();
-    void setPrenom(std::string lastname);
 
-    std::string getEntreprise();
-    void setEntreprise(std::string company);
+    void setNom(const std::string&);
+    void setPrenom(const std::string&);
+    void setEntreprise(const std::string&);
+    void setTelephone(const std::list<unsigned>);
+    void setPhoto(const std::string&);
+    void setDateCreation(const tm&);
+    void setDateLastModif(const tm&);
+    void setEmail(const std::string&);
 
-    std::string getTelephone();
-    void setTelephone (std::string phone);
 
-    std::string getPhoto();
-    void setPhoto(std::string pic);
-
+    void addTelephone(const unsigned tel);
+    unsigned removeTelephone(const unsigned tel) const;
+    void addInteraction(const Interaction&);
+    void removeInteraction(const Interaction&);
 
 };
 

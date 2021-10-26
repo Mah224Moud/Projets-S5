@@ -19,18 +19,23 @@
 class Email
 {
     private:
-        std::string identifiant; /// l'dentifiant de l'adresse
-        std::string domaine; /// le domaine de l'adresse
-        std::string mc; /// le mc de l'adresse
+        /// L'identifiant de l'adresse
+        std::string identifiant;
+        /// Le domaine de l'adresse
+        std::string domaine;
+        /// Le mc de l'adresse
+        std::string mc;
 
     public:
+        /// Constructeur par défaut de la classe Email
         Email();
+        /// Constructeur avec paramètre de la classe Email
         Email(const std::string&);
-        /// Accesseurs
+
         std::string getIdentifiant() const;
         std::string getDomaine() const;
         std::string getMc() const;
-        /// Mutateurs
+
         void setDomaine(const std::string&);
         void setIdentifiant(const std::string&);
         void setMc(const std::string&);

@@ -11,8 +11,7 @@ La classe \mbox{\hyperlink{class_email}{Email}} permet de stocker l\textquotesin
 
 
 
-Graphe de collaboration de Email\+:
-\nopagebreak
+Graphe de collaboration de Email\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,17 +22,17 @@ Graphe de collaboration de Email\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_email_a2cfcfea1e55511208e7858c33f48ad9d}{Email}} ()
-\begin{DoxyCompactList}\small\item\em le mc de l\textquotesingle{}adresse \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \mbox{\hyperlink{class_email}{Email}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_email_a61920b1f7602e5eb80edf1e4bd96e6c7}{Email}} (const std\+::string \&)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètre de la classe \mbox{\hyperlink{class_email}{Email}}. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{get\+Identifiant}} () const
-\begin{DoxyCompactList}\small\item\em Accesseurs. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pour récuperer la partie identifiant de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{get\+Domaine}} () const
 \begin{DoxyCompactList}\small\item\em Pour récuperer la partie domaine de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{get\+Mc}} () const
 \begin{DoxyCompactList}\small\item\em Pour récuperer la partie mc de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_email_a55e706122fc07c360e8d000a32ec2a7a}{set\+Domaine}} (const std\+::string \&)
-\begin{DoxyCompactList}\small\item\em Mutateurs. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pour definir la partie domaine de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_email_aeada00eb01f8ec7252099b7421fe6ab1}{set\+Identifiant}} (const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Pour definir la partie Identifiant de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_email_a69a9d94cb62cfe37069f9046adb254a3}{set\+Mc}} (const std\+::string \&)
@@ -46,11 +45,11 @@ std\+::string \mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{to
 \begin{DoxyCompactItemize}
 \item 
 std\+::string \mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}}
-\item 
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}identifiant de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}}
-\begin{DoxyCompactList}\small\item\em l\textquotesingle{}dentifiant de l\textquotesingle{}adresse \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Le domaine de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}}
-\begin{DoxyCompactList}\small\item\em le domaine de l\textquotesingle{}adresse \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Le mc de l\textquotesingle{}adresse. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
@@ -67,9 +66,7 @@ Dans la classe email, nous pouvons manipuler séparement toutes les parties de l
 
 
 
-le mc de l\textquotesingle{}adresse 
-
-Constructeur par défaut de la classe \mbox{\hyperlink{class_email}{Email}}.
+Constructeur par défaut de la classe \mbox{\hyperlink{class_email}{Email}}. 
 
 Ce constructeur initialise une adresse mail vide. 
 \begin{DoxyCode}{0}
@@ -85,6 +82,10 @@ Ce constructeur initialise une adresse mail vide.
 \index{Email@{Email}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{Email()}{Email()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Email\+::\+Email (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètre de la classe \mbox{\hyperlink{class_email}{Email}}. 
 
 
 
@@ -169,9 +170,7 @@ Référencé par main().
 
 
 
-Accesseurs. 
-
-Pour récuperer la partie identifiant de l\textquotesingle{}adresse.
+Pour récuperer la partie identifiant de l\textquotesingle{}adresse. 
 
 Cette fonction renvoie la partie qui se trouve avant le \textquotesingle{}@\textquotesingle{} dans l\textquotesingle{}adresse mail. 
 \begin{DoxyCode}{0}
@@ -213,9 +212,7 @@ Référencé par main().
 
 
 
-Mutateurs. 
-
-Pour definir la partie domaine de l\textquotesingle{}adresse.
+Pour definir la partie domaine de l\textquotesingle{}adresse. 
 
 
 \begin{DoxyParams}{Paramètres}
@@ -282,9 +279,11 @@ Pour definir la partie mc de l\textquotesingle{}adresse.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{115 \{}
-\DoxyCodeLine{116 }
-\DoxyCodeLine{117     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}()+\textcolor{stringliteral}{"{}@"{}}+\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}()+\textcolor{stringliteral}{"{}."{}}+\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}();}
-\DoxyCodeLine{118 \}}
+\DoxyCodeLine{116     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}() !=  \textcolor{stringliteral}{"{}"{}} \&\& \mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}() != \textcolor{stringliteral}{"{}"{}} \&\& \mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}() != \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{117         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}()+\textcolor{stringliteral}{"{}@"{}}+\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}()+\textcolor{stringliteral}{"{}."{}}+\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}();}
+\DoxyCodeLine{118     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{119         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{120 \}}
 
 \end{DoxyCode}
 
@@ -302,13 +301,17 @@ Référencé par main().
 
 
 
-l\textquotesingle{}dentifiant de l\textquotesingle{}adresse 
+Le domaine de l\textquotesingle{}adresse. 
 
 \mbox{\Hypertarget{class_email_a51c860409672625164d836055511fbe7}\label{class_email_a51c860409672625164d836055511fbe7}} 
 \index{Email@{Email}!identifiant@{identifiant}}
 \index{identifiant@{identifiant}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{identifiant}{identifiant}}
 {\footnotesize\ttfamily std\+::string Email\+::identifiant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}identifiant de l\textquotesingle{}adresse. 
 
 \mbox{\Hypertarget{class_email_a546db0116c6ef2d38440ecf35fc642f4}\label{class_email_a546db0116c6ef2d38440ecf35fc642f4}} 
 \index{Email@{Email}!mc@{mc}}
@@ -318,7 +321,7 @@ l\textquotesingle{}dentifiant de l\textquotesingle{}adresse
 
 
 
-le domaine de l\textquotesingle{}adresse 
+Le mc de l\textquotesingle{}adresse. 
 
 
 

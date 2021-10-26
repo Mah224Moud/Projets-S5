@@ -30,7 +30,9 @@ class Date
         tm* d;
 
     public:
+        /// Constructeur par défaut de la classe Date
         Date();
+        /// Constructeur avec paramètre jour, mois et année de la classe Date
         Date(const int, const int, const int);
 
         int getJour();

@@ -106,9 +106,11 @@
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
 <codeline lineno="114" refid="class_email_1acfd186a5418525a835fbcf2030620a9a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">Email:: toString</ref>()</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getIdentifiant()+</highlight><highlight class="stringliteral">&quot;@&quot;</highlight><highlight class="normal">+getDomaine()+</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">+getMc();</highlight></codeline>
-<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(getIdentifiant()<sp/>!=<sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>getDomaine()<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>getMc()<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getIdentifiant()+</highlight><highlight class="stringliteral">&quot;@&quot;</highlight><highlight class="normal">+getDomaine()+</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">+getMc();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Email.cpp"/>
   </compounddef>

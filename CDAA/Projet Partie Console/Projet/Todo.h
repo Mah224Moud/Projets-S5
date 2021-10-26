@@ -19,21 +19,23 @@
 class Todo
 {
     private:
-        Interaction *lienInteraction; /// Lien vers l'interaction
-        std::string contenu; /// Le contenu
-        struct tm * date; /// La date
-
+        /// Lien vers l'interaction
+        Interaction *lienInteraction;
+        /// Le contenu
+        std::string contenu;
+        /// La date
+        struct tm * date;
 
     public:
-        Todo(); /// Constructeur par défaut
-        Todo(const Interaction&, const std::string&, const tm&);/// Constructeur avec paramètres
+        /// Constructeur par défaut
+        Todo();
+        /// Constructeur avec paramètres
+        Todo(const Interaction&, const std::string&, const tm&);
 
-        /// Accesseurs
         Interaction getInteraction() const;
         std::string getContenu() const;
         tm getDate() const;
 
-        /// Mutateurs
         void setInteraction(const Interaction&);
         void setContenu(const std::string&);
         void setDate(const tm&);

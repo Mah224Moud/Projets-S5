@@ -10,12 +10,13 @@
         <argsstring></argsstring>
         <name>date</name>
         <briefdescription>
+<para>La date de l&apos;intéraction. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="24" column="9" bodyfile="Interaction.h" bodystart="24" bodyend="-1"/>
+        <location file="Interaction.h" line="25" column="9" bodyfile="Interaction.h" bodystart="25" bodyend="-1"/>
         <referencedby refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="51" endline="54">getDate</referencedby>
         <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
         <referencedby refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="74" endline="77">setDate</referencedby>
@@ -27,13 +28,13 @@
         <argsstring></argsstring>
         <name>contenu</name>
         <briefdescription>
-<para>La date de l&apos;intéraction. </para>
+<para>Détails de l&apos;intéraction. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="25" column="17" bodyfile="Interaction.h" bodystart="25" bodyend="-1"/>
+        <location file="Interaction.h" line="27" column="17" bodyfile="Interaction.h" bodystart="27" bodyend="-1"/>
         <referencedby refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="61" endline="64">getContenu</referencedby>
         <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
         <referencedby refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="83" endline="86">setContenu</referencedby>
@@ -46,7 +47,7 @@
         <argsstring>()</argsstring>
         <name>Interaction</name>
         <briefdescription>
-<para>Détails de l&apos;intéraction. </para>
+<para>Constructeur par défaut de la classe <ref refid="class_interaction" kindref="compound">Interaction</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para>Constructeur par défaut.</para>
@@ -54,9 +55,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="28" column="5" bodyfile="Interaction.cpp" bodystart="13" bodyend="19"/>
-        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="25">contenu</references>
-        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="24">date</references>
+        <location file="Interaction.h" line="31" column="5" bodyfile="Interaction.cpp" bodystart="13" bodyend="19"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
         <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="74" endline="77">setDate</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -73,7 +74,7 @@
           <defname>contenu</defname>
         </param>
         <briefdescription>
-<para>Constructeur par défaut. </para>
+<para>Constructeur avec paramètres date et contenu de la classe <ref refid="class_interaction" kindref="compound">Interaction</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para>Constructeur avec paramètre.</para>
@@ -98,9 +99,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="29" column="5" bodyfile="Interaction.cpp" bodystart="27" bodyend="34"/>
-        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="25">contenu</references>
-        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="24">date</references>
+        <location file="Interaction.h" line="33" column="5" bodyfile="Interaction.cpp" bodystart="27" bodyend="34"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
         <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="83" endline="86">setContenu</references>
         <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="74" endline="77">setDate</references>
       </memberdef>
@@ -110,16 +111,15 @@
         <argsstring>()</argsstring>
         <name>~Interaction</name>
         <briefdescription>
-<para>Constructeur avec paramètres. </para>
+<para>Destructeur de la classe <ref refid="class_interaction" kindref="compound">Interaction</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Destructeur de la classe <ref refid="class_interaction" kindref="compound">Interaction</ref>.</para>
 <para>Libération de l&apos;espace mémoire alloué par date. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="30" column="5" bodyfile="Interaction.cpp" bodystart="40" bodyend="43"/>
-        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="24">date</references>
+        <location file="Interaction.h" line="35" column="5" bodyfile="Interaction.cpp" bodystart="40" bodyend="43"/>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structtm" kindref="compound">tm</ref></type>
@@ -127,18 +127,17 @@
         <argsstring>() const</argsstring>
         <name>getDate</name>
         <briefdescription>
-<para>Destructeur. </para>
+<para>Accéder à la date. </para>
         </briefdescription>
         <detaileddescription>
 <para>Accesseurs.</para>
-<para>Accesseurs</para>
 <para>Pour récupérer la date.</para>
 <para>Cette fonction renvoie l&apos;instance pointée par date. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="33" column="8" bodyfile="Interaction.cpp" bodystart="51" bodyend="54"/>
-        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="24">date</references>
+        <location file="Interaction.h" line="38" column="8" bodyfile="Interaction.cpp" bodystart="51" bodyend="54"/>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a0e194616267d53075169f189f6d71c60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -146,15 +145,16 @@
         <argsstring>() const</argsstring>
         <name>getContenu</name>
         <briefdescription>
-<para>Pour recupérer le contenu de l&apos;interaction. </para>
+<para>Accéder au contenu. </para>
         </briefdescription>
         <detaileddescription>
+<para>Pour recupérer le contenu de l&apos;interaction.</para>
 <para>Cette fonction renvoie la chaine contenu de l&apos;interaction. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="34" column="17" bodyfile="Interaction.cpp" bodystart="61" bodyend="64"/>
-        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="25">contenu</references>
+        <location file="Interaction.h" line="40" column="17" bodyfile="Interaction.cpp" bodystart="61" bodyend="64"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -182,8 +182,8 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="37" column="10" bodyfile="Interaction.cpp" bodystart="74" bodyend="77"/>
-        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="24">date</references>
+        <location file="Interaction.h" line="43" column="10" bodyfile="Interaction.cpp" bodystart="74" bodyend="77"/>
+        <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
         <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -212,8 +212,8 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="38" column="10" bodyfile="Interaction.cpp" bodystart="83" bodyend="86"/>
-        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="25">contenu</references>
+        <location file="Interaction.h" line="44" column="10" bodyfile="Interaction.cpp" bodystart="83" bodyend="86"/>
+        <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
         <referencedby refid="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" compoundref="_interaction_8cpp" startline="27" endline="34">Interaction</referencedby>
       </memberdef>
       </sectiondef>
@@ -256,7 +256,7 @@ Pour afficher une <ref refid="class_interaction" kindref="compound">Interaction<
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="40" column="12" bodyfile="Interaction.cpp" bodystart="94" bodyend="105"/>
+        <location file="Interaction.h" line="46" column="12" bodyfile="Interaction.cpp" bodystart="94" bodyend="105"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -283,7 +283,7 @@ Pour afficher une <ref refid="class_interaction" kindref="compound">Interaction<
         <link refid="structtm"/>
       </node>
     </collaborationgraph>
-    <location file="Interaction.h" line="22" column="1" bodyfile="Interaction.h" bodystart="22" bodyend="41"/>
+    <location file="Interaction.h" line="22" column="1" bodyfile="Interaction.h" bodystart="22" bodyend="47"/>
     <listofallmembers>
       <member refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" prot="private" virt="non-virtual"><scope>Interaction</scope><name>contenu</name></member>
       <member refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" prot="private" virt="non-virtual"><scope>Interaction</scope><name>date</name></member>

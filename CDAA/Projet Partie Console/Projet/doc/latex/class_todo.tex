@@ -22,11 +22,11 @@ Graphe de collaboration de Todo\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_todo_a5fbb1de89a8e2e99941f6a175cc6da91}{Todo}} ()
-\begin{DoxyCompactList}\small\item\em La date. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_todo_a813a202cf72925aee8c44e9a3ca183b9}{Todo}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&, const std\+::string \&, const \mbox{\hyperlink{structtm}{tm}} \&)
 \begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_interaction}{Interaction}} \mbox{\hyperlink{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}{get\+Interaction}} () const
+\mbox{\hyperlink{class_todo_a813a202cf72925aee8c44e9a3ca183b9}{Todo}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&, const std\+::string \&, const \mbox{\hyperlink{structtm}{tm}} \&)
 \begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_interaction}{Interaction}} \mbox{\hyperlink{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}{get\+Interaction}} () const
+\begin{DoxyCompactList}\small\item\em Accesseurs. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{get\+Contenu}} () const
 \begin{DoxyCompactList}\small\item\em Pour recupérer le contenu de l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtm}{tm}} \mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{get\+Date}} () const
@@ -41,11 +41,11 @@ void \mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{set\+Date}} 
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_interaction}{Interaction}} $\ast$ \mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lien\+Interaction}}
-\item 
-std\+::string \mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}}
 \begin{DoxyCompactList}\small\item\em Lien vers l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}}
+\begin{DoxyCompactList}\small\item\em Le contenu. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}}
-\begin{DoxyCompactList}\small\item\em Le contenu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em La date. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Amis}
 \begin{DoxyCompactItemize}
 \item 
@@ -67,7 +67,7 @@ Cette classe ...
 
 
 
-La date. 
+Constructeur par défaut. 
 
 Constructeur par défaut de la classe \mbox{\hyperlink{class_todo}{Todo}}.
 
@@ -93,7 +93,7 @@ Références contenu, date, et set\+Date().
 
 
 
-Constructeur par défaut. 
+Constructeur avec paramètres. 
 
 Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}.
 
@@ -165,11 +165,7 @@ Références date.
 
 
 
-Constructeur avec paramètres. 
-
-Accesseurs.
-
-Accesseurs
+Accesseurs. 
 
 Pour récuperer l\textquotesingle{}intéraction à laquelle apppartient le \mbox{\hyperlink{class_todo}{Todo}}.
 
@@ -319,7 +315,7 @@ Pour afficher un \mbox{\hyperlink{class_todo}{Todo}}, on affiche son contenu sui
 
 
 
-Lien vers l\textquotesingle{}interaction. 
+Le contenu. 
 
 
 
@@ -333,7 +329,7 @@ Référencé par get\+Contenu(), set\+Contenu(), et Todo().
 
 
 
-Le contenu. 
+La date. 
 
 
 
@@ -344,6 +340,10 @@ Référencé par get\+Date(), set\+Date(), et Todo().
 \index{lienInteraction@{lienInteraction}!Todo@{Todo}}
 \doxysubsubsection{\texorpdfstring{lienInteraction}{lienInteraction}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_interaction}{Interaction}}$\ast$ Todo\+::lien\+Interaction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lien vers l\textquotesingle{}interaction. 
 
 
 

@@ -25,14 +25,15 @@
         <argsstring>()</argsstring>
         <name>Date</name>
         <briefdescription>
-<para>Constructueur par défaut. </para>
+<para>Constructeur par défaut de la classe <ref refid="class_date" kindref="compound">Date</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para>Constructueur par défaut.</para>
 <para>Avec le constructeur par défaut, la date est initialisé à la date courante </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="33" column="9" bodyfile="Date.cpp" bodystart="11" bodyend="15"/>
+        <location file="Date.h" line="34" column="9" bodyfile="Date.cpp" bodystart="11" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1af3efa227a00ac2ae993c424ca62c340c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -52,9 +53,10 @@
           <defname>year</defname>
         </param>
         <briefdescription>
-<para>Constructeur avec paramètre. </para>
+<para>Constructeur avec paramètre jour, mois et année de la classe <ref refid="class_date" kindref="compound">Date</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para>Constructeur avec paramètre.</para>
 <para>Avec ce constructeur, on indique le jour, le mois et l&apos;année souhaité <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>day</parametername>
@@ -84,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="34" column="9" bodyfile="Date.cpp" bodystart="24" bodyend="31"/>
+        <location file="Date.h" line="36" column="9" bodyfile="Date.cpp" bodystart="24" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a961e64bff2fdff7ee95bc335ca400d2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -101,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="36" column="13" bodyfile="Date.cpp" bodystart="37" bodyend="40"/>
+        <location file="Date.h" line="38" column="13" bodyfile="Date.cpp" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a6b16211abaa2c22418e82b8cd9d08bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -118,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="37" column="13" bodyfile="Date.cpp" bodystart="46" bodyend="49"/>
+        <location file="Date.h" line="39" column="13" bodyfile="Date.cpp" bodystart="46" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a99c5677274bdaffadaedad4c888ccbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -135,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="38" column="13" bodyfile="Date.cpp" bodystart="55" bodyend="58"/>
+        <location file="Date.h" line="40" column="13" bodyfile="Date.cpp" bodystart="55" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a53dcab03c7834448fd67ef453ff34195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structtm" kindref="compound">tm</ref></type>
@@ -150,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="40" column="12" bodyfile="Date.cpp" bodystart="64" bodyend="67"/>
+        <location file="Date.h" line="42" column="12" bodyfile="Date.cpp" bodystart="64" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1af7f644265141e1b856af83715177a7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -167,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="41" column="14" bodyfile="Date.cpp" bodystart="73" bodyend="76"/>
+        <location file="Date.h" line="43" column="14" bodyfile="Date.cpp" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a21c46ba7a74d45d1299f92330a43533a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -219,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="43" column="14" bodyfile="Date.cpp" bodystart="84" bodyend="95"/>
+        <location file="Date.h" line="45" column="14" bodyfile="Date.cpp" bodystart="84" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -236,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="44" column="21" bodyfile="Date.cpp" bodystart="101" bodyend="104"/>
+        <location file="Date.h" line="46" column="21" bodyfile="Date.cpp" bodystart="101" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1ab6e18eb4e080c723df03af0be4f0487e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -264,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="46" column="14" bodyfile="Date.cpp" bodystart="112" bodyend="115"/>
+        <location file="Date.h" line="48" column="14" bodyfile="Date.cpp" bodystart="112" bodyend="115"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -294,7 +296,7 @@
         <link refid="structtm"/>
       </node>
     </collaborationgraph>
-    <location file="Date.h" line="22" column="1" bodyfile="Date.h" bodystart="23" bodyend="47"/>
+    <location file="Date.h" line="22" column="1" bodyfile="Date.h" bodystart="23" bodyend="49"/>
     <listofallmembers>
       <member refid="class_date_1a51a979c64305d841600f0a25b39d01f8" prot="private" virt="non-virtual"><scope>Date</scope><name>d</name></member>
       <member refid="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" prot="public" virt="non-virtual"><scope>Date</scope><name>Date</name></member>

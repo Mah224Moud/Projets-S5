@@ -4,21 +4,30 @@
     <member refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" kind="variable"><name>nom</name></member>
     <member refid="class_contact_1a6d85467851d61def44445912b58d52a4" kind="variable"><name>prenom</name></member>
     <member refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" kind="variable"><name>entreprise</name></member>
-    <member refid="class_contact_1a045666ea797063981360d3c926c4d58f" kind="variable"><name>telephone</name></member>
+    <member refid="class_contact_1a6d2c1a0e98e352b06782465adee0d965" kind="variable"><name>telephone</name></member>
     <member refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" kind="variable"><name>URIphoto</name></member>
-    <member refid="class_contact_1a48d9212b01a1bc7e4d8d5beae5a3aaee" kind="variable"><name>dateCreation</name></member>
-    <member refid="class_contact_1a4eed023b75f8342bc8b8310cdce5f3b6" kind="variable"><name>mail</name></member>
+    <member refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" kind="variable"><name>dateCreation</name></member>
+    <member refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" kind="variable"><name>dateLastModif</name></member>
+    <member refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" kind="variable"><name>mail</name></member>
+    <member refid="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" kind="variable"><name>listInteractions</name></member>
     <member refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" kind="function"><name>Contact</name></member>
-    <member refid="class_contact_1a8cb1baee1f3971f8fbf660c55668e973" kind="function"><name>getNom</name></member>
-    <member refid="class_contact_1a4ebd00669ba7668e2f984bb9f018ee97" kind="function"><name>setNom</name></member>
-    <member refid="class_contact_1ad7a1da560c1b1cdc3e3164e2e76158c3" kind="function"><name>getPrenom</name></member>
-    <member refid="class_contact_1a4b0cc83fdd164993c82998a1d333ce51" kind="function"><name>setPrenom</name></member>
-    <member refid="class_contact_1a374f626bc4c92969c73769996902abf1" kind="function"><name>getEntreprise</name></member>
-    <member refid="class_contact_1ab297d4a58fdb593896eabb815c9b7a72" kind="function"><name>setEntreprise</name></member>
-    <member refid="class_contact_1a0e4aa4bd56b39a3d4b911d2ea369f65c" kind="function"><name>getTelephone</name></member>
-    <member refid="class_contact_1a332e713c1abce72cbffd5b1d2bc493c9" kind="function"><name>setTelephone</name></member>
-    <member refid="class_contact_1a9e7136c8703b2865b79671b459ae2308" kind="function"><name>getPhoto</name></member>
-    <member refid="class_contact_1ac91e6bfc9851bf01c74d39d9e67c9f17" kind="function"><name>setPhoto</name></member>
+    <member refid="class_contact_1a442a15aeaf696631b86a2298fd436f5c" kind="function"><name>Contact</name></member>
+    <member refid="class_contact_1ab68013cc59e3d640735c573e52c35219" kind="function"><name>~Contact</name></member>
+    <member refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" kind="function"><name>getNom</name></member>
+    <member refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" kind="function"><name>getPrenom</name></member>
+    <member refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" kind="function"><name>getEntreprise</name></member>
+    <member refid="class_contact_1a3abe8055e117e6d8a69b95f88ab03f33" kind="function"><name>getLesTelephones</name></member>
+    <member refid="class_contact_1aea5e3bb308317bafb43f2554f1c52e51" kind="function"><name>getTelephone</name></member>
+    <member refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" kind="function"><name>getPhoto</name></member>
+    <member refid="class_contact_1af1b8218175c3c88bc10375fe098e851a" kind="function"><name>getDateCreation</name></member>
+    <member refid="class_contact_1a977dfc1a358b7a34774621041837512e" kind="function"><name>getDateLastModif</name></member>
+    <member refid="class_contact_1aad1c8863604ad42aca8601aea644bf89" kind="function"><name>getEmail</name></member>
+    <member refid="class_contact_1a786829ed6ac446dfbb0cd004972636b7" kind="function"><name>getListInteractions</name></member>
+    <member refid="class_contact_1a1bb48dc09983e6c3b42dc1fc2fd06ea1" kind="function"><name>setNom</name></member>
+    <member refid="class_contact_1a543b1fc15222db095ec2aff7bd4b840c" kind="function"><name>setPrenom</name></member>
+    <member refid="class_contact_1aa729bc315274b5951849452e5e94231c" kind="function"><name>setEntreprise</name></member>
+    <member refid="class_contact_1aae2a746f91cd8c9ae78945c61adc5c50" kind="function"><name>setTelephone</name></member>
+    <member refid="class_contact_1a11eac4b0dab5605623eca9a130f5b762" kind="function"><name>setPhoto</name></member>
   </compound>
   <compound refid="class_date" kind="class"><name>Date</name>
     <member refid="class_date_1a51a979c64305d841600f0a25b39d01f8" kind="variable"><name>d</name></member>
