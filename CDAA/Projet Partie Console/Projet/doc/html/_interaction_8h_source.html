@@ -86,45 +86,45 @@ $(document).ready(function(){initNavTree('_interaction_8h_source.html',''); init
 </div><!--header-->
 <div class="contents">
 <a href="_interaction_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef INTERACTION_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define INTERACTION_H</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_date_8h.html">Date.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_interaction.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interaction.html">Interaction</a>{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">   23</a></span>&#160;    <a class="code" href="structtm.html">tm</a> * <a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">   24</a></span>&#160;    std::string <a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction</a>(); </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction</a>(<span class="keyword">const</span> <a class="code" href="structtm.html">tm</a>&amp;, <span class="keyword">const</span> std::string &amp;); </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_interaction.html#a6610199fedc7fae617003cb2f397c825">~Interaction</a>(); </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structtm.html">tm</a> <a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string <a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(<span class="keyword">const</span> <a class="code" href="structtm.html">tm</a>&amp;);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(<span class="keyword">const</span> std::string&amp;);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_interaction.html#a60099cfbe5db8c8d2d10fb60e100e4bf">operator&lt;&lt;</a>(std::ostream&amp;, <span class="keyword">const</span> <a class="code" href="class_interaction.html">Interaction</a> &amp;);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// INTERACTION_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef INTERACTION_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define INTERACTION_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_date_8h.html">Date.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_interaction.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interaction.html">Interaction</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">   24</a></span>&#160;    <a class="code" href="structtm.html">tm</a> * <a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">   25</a></span>&#160;    std::string <a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction</a>(); </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction</a>(<span class="keyword">const</span> <a class="code" href="structtm.html">tm</a>&amp;, <span class="keyword">const</span> std::string &amp;); </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_interaction.html#a6610199fedc7fae617003cb2f397c825">~Interaction</a>(); </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="structtm.html">tm</a> <a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string <a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(<span class="keyword">const</span> <a class="code" href="structtm.html">tm</a>&amp;);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(<span class="keyword">const</span> std::string&amp;);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_interaction.html#a60099cfbe5db8c8d2d10fb60e100e4bf">operator&lt;&lt;</a>(std::ostream&amp;, <span class="keyword">const</span> <a class="code" href="class_interaction.html">Interaction</a> &amp;);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// INTERACTION_H</span></div>
 <div class="ttc" id="a_date_8h_html"><div class="ttname"><a href="_date_8h.html">Date.h</a></div><div class="ttdoc">Fichier d'entête de la classe Date.</div></div>
-<div class="ttc" id="aclass_interaction_html"><div class="ttname"><a href="class_interaction.html">Interaction</a></div><div class="ttdoc">Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;.</div><div class="ttdef"><b>Definition:</b> Interaction.h:21</div></div>
+<div class="ttc" id="aclass_interaction_html"><div class="ttname"><a href="class_interaction.html">Interaction</a></div><div class="ttdoc">Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;.</div><div class="ttdef"><b>Definition:</b> Interaction.h:22</div></div>
 <div class="ttc" id="aclass_interaction_html_a0e194616267d53075169f189f6d71c60"><div class="ttname"><a href="class_interaction.html#a0e194616267d53075169f189f6d71c60">Interaction::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:61</div></div>
 <div class="ttc" id="aclass_interaction_html_a5ca60953b855d3e31f27a05e118f81d3"><div class="ttname"><a href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:83</div></div>
 <div class="ttc" id="aclass_interaction_html_a60099cfbe5db8c8d2d10fb60e100e4bf"><div class="ttname"><a href="class_interaction.html#a60099cfbe5db8c8d2d10fb60e100e4bf">Interaction::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;, const Interaction &amp;)</div><div class="ttdoc">Surcharge de l'opérateur &lt;&lt; pour l'affichage.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:94</div></div>
 <div class="ttc" id="aclass_interaction_html_a6610199fedc7fae617003cb2f397c825"><div class="ttname"><a href="class_interaction.html#a6610199fedc7fae617003cb2f397c825">Interaction::~Interaction</a></div><div class="ttdeci">~Interaction()</div><div class="ttdoc">Constructeur avec paramètres.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:40</div></div>
-<div class="ttc" id="aclass_interaction_html_a7e16a252239dbdf2a67a6cfedfe642a1"><div class="ttname"><a href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">Interaction::contenu</a></div><div class="ttdeci">std::string contenu</div><div class="ttdoc">La date de l'intéraction.</div><div class="ttdef"><b>Definition:</b> Interaction.h:24</div></div>
+<div class="ttc" id="aclass_interaction_html_a7e16a252239dbdf2a67a6cfedfe642a1"><div class="ttname"><a href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">Interaction::contenu</a></div><div class="ttdeci">std::string contenu</div><div class="ttdoc">La date de l'intéraction.</div><div class="ttdef"><b>Definition:</b> Interaction.h:25</div></div>
 <div class="ttc" id="aclass_interaction_html_aadfd0e254296043c26508d47090ace76"><div class="ttname"><a href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction::Interaction</a></div><div class="ttdeci">Interaction()</div><div class="ttdoc">Détails de l'intéraction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:13</div></div>
 <div class="ttc" id="aclass_interaction_html_ac1bb679065bb3cbbf11ec02fee4da0e0"><div class="ttname"><a href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">Interaction::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Destructeur.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:51</div></div>
-<div class="ttc" id="aclass_interaction_html_ac665f161e276527cfd1767abe47936b5"><div class="ttname"><a href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">Interaction::date</a></div><div class="ttdeci">tm * date</div><div class="ttdef"><b>Definition:</b> Interaction.h:23</div></div>
+<div class="ttc" id="aclass_interaction_html_ac665f161e276527cfd1767abe47936b5"><div class="ttname"><a href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">Interaction::date</a></div><div class="ttdeci">tm * date</div><div class="ttdef"><b>Definition:</b> Interaction.h:24</div></div>
 <div class="ttc" id="aclass_interaction_html_ac9fc375bb97461c87e140a592f4fa122"><div class="ttname"><a href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Interaction::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Mutateurs.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:74</div></div>
 <div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment --></div><!-- contents -->

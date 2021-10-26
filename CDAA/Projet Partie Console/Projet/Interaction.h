@@ -1,7 +1,8 @@
 /**
     *@file Interaction.h
     *@brief Fichier en-tete de la classe Interaction
-    *@author
+    *@author BAH Saikou Oumar
+    *@author DIALLO Mamoudou
 */
 
 #ifndef INTERACTION_H
@@ -14,7 +15,7 @@
 #include "Date.h"
 
 /**
-    @class Interaction
+    @class Interaction Interaction.h "Interaction.h"
     @brief Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;
     @details
 */

@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
   <compounddef id="class_email" kind="class" language="C++" prot="public">
     <compoundname>Email</compoundname>
-    <includes refid="_email_8h" local="no">Email.h</includes>
+    <includes refid="_email_8h" local="yes">Email.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_email_1a51c860409672625164d836055511fbe7" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="8" column="21" bodyfile="Email.h" bodystart="8" bodyend="-1"/>
+        <location file="Email.h" line="22" column="21" bodyfile="Email.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_email_1adbf96bf6ecf0163270786b511ca9073f" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -23,12 +23,13 @@
         <argsstring></argsstring>
         <name>domaine</name>
         <briefdescription>
+<para>l&apos;dentifiant de l&apos;adresse </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="9" column="21" bodyfile="Email.h" bodystart="9" bodyend="-1"/>
+        <location file="Email.h" line="23" column="21" bodyfile="Email.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_email_1a546db0116c6ef2d38440ecf35fc642f4" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -36,12 +37,13 @@
         <argsstring></argsstring>
         <name>mc</name>
         <briefdescription>
+<para>le domaine de l&apos;adresse </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="10" column="21" bodyfile="Email.h" bodystart="10" bodyend="-1"/>
+        <location file="Email.h" line="24" column="21" bodyfile="Email.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -51,102 +53,162 @@
         <argsstring>()</argsstring>
         <name>Email</name>
         <briefdescription>
+<para>le mc de l&apos;adresse </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur par défaut de la classe <ref refid="class_email" kindref="compound">Email</ref>.</para>
+<para>Ce constructeur initialise une adresse mail vide. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Email.h" line="27" column="9" bodyfile="Email.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_email_1a61920b1f7602e5eb80edf1e4bd96e6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Email::Email</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>Email</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="13" column="9" bodyfile="Email.cpp" bodystart="6" bodyend="9"/>
+        <location file="Email.h" line="28" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="class_email_1a2b6e083c0ad4219ec2e557892f909a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>string Email::getIdentifiant</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>getIdentifiant</name>
         <briefdescription>
+<para>Accesseurs. </para>
         </briefdescription>
         <detaileddescription>
+<para>Pour récuperer la partie identifiant de l&apos;adresse.</para>
+<para>Cette fonction renvoie la partie qui se trouve avant le &apos;@&apos; dans l&apos;adresse mail. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="15" column="21" bodyfile="Email.cpp" bodystart="12" bodyend="15"/>
+        <location file="Email.h" line="30" column="21" bodyfile="Email.cpp" bodystart="30" bodyend="33"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="30">main</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_email_1af2f194db726282fb4111b2553e9ba4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Email::setIdentifiant</definition>
-        <argsstring>(std::string id)</argsstring>
-        <name>setIdentifiant</name>
-        <param>
-          <type>std::string</type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Email.h" line="16" column="14" bodyfile="Email.cpp" bodystart="16" bodyend="19"/>
-      </memberdef>
-      <memberdef kind="function" id="class_email_1a40d306de92616d49b86776ba3d55aa8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_email_1a6025851513c653ec0a0a3c98624f6ec5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>string Email::getDomaine</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>getDomaine</name>
         <briefdescription>
+<para>Pour récuperer la partie domaine de l&apos;adresse. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction renvoie la partie qui se trouve entre le &apos;@&apos; et le dernier &apos;.&apos; dans l&apos;adresse mail. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="18" column="21" bodyfile="Email.cpp" bodystart="22" bodyend="25"/>
+        <location file="Email.h" line="31" column="21" bodyfile="Email.cpp" bodystart="48" bodyend="51"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="30">main</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_email_1a231811fbacf19c0c92701cd02e1af2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Email::setDomaine</definition>
-        <argsstring>(std::string domaine)</argsstring>
-        <name>setDomaine</name>
-        <param>
-          <type>std::string</type>
-          <declname>domaine</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Email.h" line="19" column="14" bodyfile="Email.cpp" bodystart="28" bodyend="31"/>
-      </memberdef>
-      <memberdef kind="function" id="class_email_1ac2775cb07db659b85fcbebb76ea58e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>string Email::getMc</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() const</argsstring>
         <name>getMc</name>
         <briefdescription>
+<para>Pour récuperer la partie mc de l&apos;adresse. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction renvoie la partie qui se trouve après le dernier &apos;.&apos; dans l&apos;adresse mail. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="21" column="21" bodyfile="Email.cpp" bodystart="34" bodyend="37"/>
+        <location file="Email.h" line="32" column="21" bodyfile="Email.cpp" bodystart="66" bodyend="69"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="30">main</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_email_1ae96ece68648719caa85f9db3a70ab42f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_email_1a55e706122fc07c360e8d000a32ec2a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void Email::setMc</definition>
-        <argsstring>(std::string mc)</argsstring>
-        <name>setMc</name>
+        <definition>void Email::setDomaine</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setDomaine</name>
         <param>
-          <type>std::string</type>
-          <declname>mc</declname>
+          <type>const std::string &amp;</type>
         </param>
         <briefdescription>
+<para>Mutateurs. </para>
         </briefdescription>
         <detaileddescription>
+<para>Pour definir la partie domaine de l&apos;adresse.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>domaine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le domaine de l&apos;adresse </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="22" column="14" bodyfile="Email.cpp" bodystart="40" bodyend="43"/>
+        <location file="Email.h" line="34" column="14" bodyfile="Email.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_email_1aeada00eb01f8ec7252099b7421fe6ab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Email::setIdentifiant</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setIdentifiant</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Pour definir la partie Identifiant de l&apos;adresse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;identifiant de l&apos;adresse </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Email.h" line="35" column="14" bodyfile="Email.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_email_1a69a9d94cb62cfe37069f9046adb254a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Email::setMc</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setMc</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Pour definir la partie mc de l&apos;adresse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le mc de l&apos;adresse </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Email.h" line="36" column="14" bodyfile="Email.cpp" bodystart="75" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -157,12 +219,26 @@
           <type>const std::string &amp;</type>
         </param>
         <briefdescription>
+<para>Pour décomposer une adresse mail et récupérer les différentes parties. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction recupère une adresse mail complète (string) et récupére les différentes parties. <simplesect kind="warning"><para>Si l&apos;adresse mail a une syntaxe incorrecte, aucune partie n&apos;est enregistrée. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: de type String, elle représente l&apos;adresse mail complète; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="24" column="14" bodyfile="Email.cpp" bodystart="46" bodyend="49"/>
+        <location file="Email.h" line="38" column="14" bodyfile="Email.cpp" bodystart="86" bodyend="111"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="30">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_email_1acfd186a5418525a835fbcf2030620a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -175,12 +251,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Email.h" line="25" column="22" bodyfile="Email.cpp" bodystart="52" bodyend="56"/>
+        <location file="Email.h" line="39" column="22" bodyfile="Email.cpp" bodystart="114" bodyend="118"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="30">main</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>La classe <ref refid="class_email" kindref="compound">Email</ref> permet de stocker l&apos;adresse mail d&apos;un contact. </para>
     </briefdescription>
     <detaileddescription>
+<para>Dans la classe email, nous pouvons manipuler séparement toutes les parties de l&apos;adresse. </para>
     </detaileddescription>
     <collaborationgraph>
       <node id="2">
@@ -196,19 +275,20 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Email.h" line="5" column="1" bodyfile="Email.h" bodystart="6" bodyend="26"/>
+    <location file="Email.h" line="19" column="1" bodyfile="Email.h" bodystart="20" bodyend="40"/>
     <listofallmembers>
       <member refid="class_email_1adbf96bf6ecf0163270786b511ca9073f" prot="private" virt="non-virtual"><scope>Email</scope><name>domaine</name></member>
       <member refid="class_email_1a2cfcfea1e55511208e7858c33f48ad9d" prot="public" virt="non-virtual"><scope>Email</scope><name>Email</name></member>
+      <member refid="class_email_1a61920b1f7602e5eb80edf1e4bd96e6c7" prot="public" virt="non-virtual"><scope>Email</scope><name>Email</name></member>
       <member refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" prot="public" virt="non-virtual"><scope>Email</scope><name>fromString</name></member>
-      <member refid="class_email_1a40d306de92616d49b86776ba3d55aa8f" prot="public" virt="non-virtual"><scope>Email</scope><name>getDomaine</name></member>
-      <member refid="class_email_1a2b6e083c0ad4219ec2e557892f909a3a" prot="public" virt="non-virtual"><scope>Email</scope><name>getIdentifiant</name></member>
-      <member refid="class_email_1ac2775cb07db659b85fcbebb76ea58e84" prot="public" virt="non-virtual"><scope>Email</scope><name>getMc</name></member>
+      <member refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" prot="public" virt="non-virtual"><scope>Email</scope><name>getDomaine</name></member>
+      <member refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" prot="public" virt="non-virtual"><scope>Email</scope><name>getIdentifiant</name></member>
+      <member refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" prot="public" virt="non-virtual"><scope>Email</scope><name>getMc</name></member>
       <member refid="class_email_1a51c860409672625164d836055511fbe7" prot="private" virt="non-virtual"><scope>Email</scope><name>identifiant</name></member>
       <member refid="class_email_1a546db0116c6ef2d38440ecf35fc642f4" prot="private" virt="non-virtual"><scope>Email</scope><name>mc</name></member>
-      <member refid="class_email_1a231811fbacf19c0c92701cd02e1af2ee" prot="public" virt="non-virtual"><scope>Email</scope><name>setDomaine</name></member>
-      <member refid="class_email_1af2f194db726282fb4111b2553e9ba4a2" prot="public" virt="non-virtual"><scope>Email</scope><name>setIdentifiant</name></member>
-      <member refid="class_email_1ae96ece68648719caa85f9db3a70ab42f" prot="public" virt="non-virtual"><scope>Email</scope><name>setMc</name></member>
+      <member refid="class_email_1a55e706122fc07c360e8d000a32ec2a7a" prot="public" virt="non-virtual"><scope>Email</scope><name>setDomaine</name></member>
+      <member refid="class_email_1aeada00eb01f8ec7252099b7421fe6ab1" prot="public" virt="non-virtual"><scope>Email</scope><name>setIdentifiant</name></member>
+      <member refid="class_email_1a69a9d94cb62cfe37069f9046adb254a3" prot="public" virt="non-virtual"><scope>Email</scope><name>setMc</name></member>
       <member refid="class_email_1acfd186a5418525a835fbcf2030620a9a" prot="public" virt="non-virtual"><scope>Email</scope><name>toString</name></member>
     </listofallmembers>
   </compounddef>

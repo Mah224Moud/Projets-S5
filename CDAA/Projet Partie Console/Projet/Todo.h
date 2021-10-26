@@ -1,7 +1,8 @@
 /**
     *@file Todo.h
     *@brief Fichier en-tête de la classe Todo
-    *@author
+    *@author BAH Saikou Oumar
+    *@author DIALLO Mamoudou
 */
 
 #ifndef TODO_H_INCLUDED
@@ -11,7 +12,7 @@
 #include <ctime>
 #include <ostream>
 /**
-    *@class Todo
+    *@class Todo Todo.h "Todo.h"
     *@brief Cette classe ...
     *@details ...
 */
@@ -24,8 +25,8 @@ class Todo
 
 
     public:
-        Todo(); // Constructeur par défaut
-        Todo(const Interaction&, const std::string&, const tm&);// Constructeur avec paramètres
+        Todo(); /// Constructeur par défaut
+        Todo(const Interaction&, const std::string&, const tm&);/// Constructeur avec paramètres
 
         /// Accesseurs
         Interaction getInteraction() const;

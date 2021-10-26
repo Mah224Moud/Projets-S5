@@ -168,7 +168,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Date.h" line="41" column="14" bodyfile="Date.cpp" bodystart="73" bodyend="76"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="31">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_date_1a21c46ba7a74d45d1299f92330a43533a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -238,7 +237,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Date.h" line="44" column="21" bodyfile="Date.cpp" bodystart="101" bodyend="104"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="8" endline="31">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_date_1ab6e18eb4e080c723df03af0be4f0487e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>

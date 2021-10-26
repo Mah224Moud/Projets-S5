@@ -2,7 +2,7 @@
     *@file Date.h
     *@brief Fichier d'entête de la classe Date
     *@author DIALLO Mamoudou
-    BAH Saikou Oumar
+    *@author BAH Saikou Oumar
 */
 
 #ifndef DATE_H_INCLUDED

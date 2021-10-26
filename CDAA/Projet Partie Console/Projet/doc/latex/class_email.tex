@@ -2,11 +2,17 @@
 \label{class_email}\index{Email@{Email}}
 
 
-{\ttfamily \#include $<$Email.\+h$>$}
+La classe \mbox{\hyperlink{class_email}{Email}} permet de stocker l\textquotesingle{}adresse mail d\textquotesingle{}un contact.  
 
 
 
-Graphe de collaboration de Email\+:\nopagebreak
+
+{\ttfamily \#include \char`\"{}Email.\+h\char`\"{}}
+
+
+
+Graphe de collaboration de Email\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,21 +23,23 @@ Graphe de collaboration de Email\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_email_a2cfcfea1e55511208e7858c33f48ad9d}{Email}} ()
+\begin{DoxyCompactList}\small\item\em le mc de l\textquotesingle{}adresse \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_email_a61920b1f7602e5eb80edf1e4bd96e6c7}{Email}} (const std\+::string \&)
 \item 
-std\+::string \mbox{\hyperlink{class_email_a2b6e083c0ad4219ec2e557892f909a3a}{get\+Identifiant}} ()
-\item 
-void \mbox{\hyperlink{class_email_af2f194db726282fb4111b2553e9ba4a2}{set\+Identifiant}} (std\+::string id)
-\item 
-std\+::string \mbox{\hyperlink{class_email_a40d306de92616d49b86776ba3d55aa8f}{get\+Domaine}} ()
-\item 
-void \mbox{\hyperlink{class_email_a231811fbacf19c0c92701cd02e1af2ee}{set\+Domaine}} (std\+::string \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}})
-\item 
-std\+::string \mbox{\hyperlink{class_email_ac2775cb07db659b85fcbebb76ea58e84}{get\+Mc}} ()
-\item 
-void \mbox{\hyperlink{class_email_ae96ece68648719caa85f9db3a70ab42f}{set\+Mc}} (std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}})
-\item 
+std\+::string \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{get\+Identifiant}} () const
+\begin{DoxyCompactList}\small\item\em Accesseurs. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{get\+Domaine}} () const
+\begin{DoxyCompactList}\small\item\em Pour récuperer la partie domaine de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{get\+Mc}} () const
+\begin{DoxyCompactList}\small\item\em Pour récuperer la partie mc de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_email_a55e706122fc07c360e8d000a32ec2a7a}{set\+Domaine}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Mutateurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_email_aeada00eb01f8ec7252099b7421fe6ab1}{set\+Identifiant}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Pour definir la partie Identifiant de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_email_a69a9d94cb62cfe37069f9046adb254a3}{set\+Mc}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Pour definir la partie mc de l\textquotesingle{}adresse. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_email_ad008c905fb780e47c5fd5d5a1ba6eef6}{from\+String}} (const std\+::string \&)
-\item 
+\begin{DoxyCompactList}\small\item\em Pour décomposer une adresse mail et récupérer les différentes parties. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{to\+String}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
@@ -40,25 +48,44 @@ std\+::string \mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{to
 std\+::string \mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}}
 \item 
 std\+::string \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}}
-\item 
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}dentifiant de l\textquotesingle{}adresse \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em le domaine de l\textquotesingle{}adresse \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{class_email}{Email}} permet de stocker l\textquotesingle{}adresse mail d\textquotesingle{}un contact. 
+
+Dans la classe email, nous pouvons manipuler séparement toutes les parties de l\textquotesingle{}adresse. 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{class_email_a2cfcfea1e55511208e7858c33f48ad9d}\label{class_email_a2cfcfea1e55511208e7858c33f48ad9d}} 
 \index{Email@{Email}!Email@{Email}}
 \index{Email@{Email}!Email@{Email}}
-\doxysubsubsection{\texorpdfstring{Email()}{Email()}}
+\doxysubsubsection{\texorpdfstring{Email()}{Email()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Email\+::\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+le mc de l\textquotesingle{}adresse 
+
+Constructeur par défaut de la classe \mbox{\hyperlink{class_email}{Email}}.
+
+Ce constructeur initialise une adresse mail vide. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{7 \{}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{14 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{class_email_a61920b1f7602e5eb80edf1e4bd96e6c7}\label{class_email_a61920b1f7602e5eb80edf1e4bd96e6c7}} 
+\index{Email@{Email}!Email@{Email}}
+\index{Email@{Email}!Email@{Email}}
+\doxysubsubsection{\texorpdfstring{Email()}{Email()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Email\+::\+Email (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Documentation des fonctions membres}
@@ -69,88 +96,181 @@ std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc
 {\footnotesize\ttfamily void Email\+::from\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
 
 
+
+Pour décomposer une adresse mail et récupérer les différentes parties. 
+
+Cette fonction recupère une adresse mail complète (string) et récupére les différentes parties. \begin{DoxyWarning}{Avertissement}
+Si l\textquotesingle{}adresse mail a une syntaxe incorrecte, aucune partie n\textquotesingle{}est enregistrée. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em adr} & \+: de type String, elle représente l\textquotesingle{}adresse mail complète; \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47 \{}
-\DoxyCodeLine{48 }
-\DoxyCodeLine{49 \}}
+\DoxyCodeLine{87 \{}
+\DoxyCodeLine{88     \textcolor{keywordtype}{size\_t} foundAt, foundPoint, foundLastPoint;}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     foundAt = adr.find(\textcolor{charliteral}{'@'});}
+\DoxyCodeLine{91     foundLastPoint = adr.find(\textcolor{charliteral}{'.'}, foundAt);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \textcolor{keywordflow}{if}(foundAt == string::npos || foundLastPoint == string::npos)}
+\DoxyCodeLine{94     \{}
+\DoxyCodeLine{95         cout << \textcolor{stringliteral}{"{}Adresse Mail incorrecte"{}} << endl;}
+\DoxyCodeLine{96         \mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{97         \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{98         \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{99     \}}
+\DoxyCodeLine{100     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{101     \{}
+\DoxyCodeLine{102         \textcolor{keywordflow}{while}((foundPoint = adr.find(\textcolor{charliteral}{'.'}, foundLastPoint + 1)) != string::npos)}
+\DoxyCodeLine{103         \{}
+\DoxyCodeLine{104             foundLastPoint = foundPoint;}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107         \mbox{\hyperlink{class_email_aeada00eb01f8ec7252099b7421fe6ab1}{setIdentifiant}}(adr.substr(0,foundAt));}
+\DoxyCodeLine{108         \mbox{\hyperlink{class_email_a55e706122fc07c360e8d000a32ec2a7a}{setDomaine}}(adr.substr(foundAt+1, foundLastPoint-\/(foundAt+1)));}
+\DoxyCodeLine{109         \mbox{\hyperlink{class_email_a69a9d94cb62cfe37069f9046adb254a3}{setMc}}(adr.substr(foundLastPoint+1));}
+\DoxyCodeLine{110     \}}
+\DoxyCodeLine{111 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{class_email_a40d306de92616d49b86776ba3d55aa8f}\label{class_email_a40d306de92616d49b86776ba3d55aa8f}} 
+
+
+Référencé par main().
+
+\mbox{\Hypertarget{class_email_a6025851513c653ec0a0a3c98624f6ec5}\label{class_email_a6025851513c653ec0a0a3c98624f6ec5}} 
 \index{Email@{Email}!getDomaine@{getDomaine}}
 \index{getDomaine@{getDomaine}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{getDomaine()}{getDomaine()}}
-{\footnotesize\ttfamily string Email\+::get\+Domaine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily string Email\+::get\+Domaine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
+
+Pour récuperer la partie domaine de l\textquotesingle{}adresse. 
+
+Cette fonction renvoie la partie qui se trouve entre le \textquotesingle{}@\textquotesingle{} et le dernier \textquotesingle{}.\textquotesingle{} dans l\textquotesingle{}adresse mail. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{23 \{}
-\DoxyCodeLine{24     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
-\DoxyCodeLine{25 \}}
+\DoxyCodeLine{49 \{}
+\DoxyCodeLine{50     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
+\DoxyCodeLine{51 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{class_email_a2b6e083c0ad4219ec2e557892f909a3a}\label{class_email_a2b6e083c0ad4219ec2e557892f909a3a}} 
+
+
+Référencé par main().
+
+\mbox{\Hypertarget{class_email_abdf70d7f147a59a96685cd4ad3947c2c}\label{class_email_abdf70d7f147a59a96685cd4ad3947c2c}} 
 \index{Email@{Email}!getIdentifiant@{getIdentifiant}}
 \index{getIdentifiant@{getIdentifiant}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{getIdentifiant()}{getIdentifiant()}}
-{\footnotesize\ttfamily string Email\+::get\+Identifiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily string Email\+::get\+Identifiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
+
+Accesseurs. 
+
+Pour récuperer la partie identifiant de l\textquotesingle{}adresse.
+
+Cette fonction renvoie la partie qui se trouve avant le \textquotesingle{}@\textquotesingle{} dans l\textquotesingle{}adresse mail. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13 \{}
-\DoxyCodeLine{14     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}};}
-\DoxyCodeLine{15 \}}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}};}
+\DoxyCodeLine{33 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{class_email_ac2775cb07db659b85fcbebb76ea58e84}\label{class_email_ac2775cb07db659b85fcbebb76ea58e84}} 
+
+
+Référencé par main().
+
+\mbox{\Hypertarget{class_email_a4fb56b50d5636ea445a204d2a0a19a04}\label{class_email_a4fb56b50d5636ea445a204d2a0a19a04}} 
 \index{Email@{Email}!getMc@{getMc}}
 \index{getMc@{getMc}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{getMc()}{getMc()}}
-{\footnotesize\ttfamily string Email\+::get\+Mc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily string Email\+::get\+Mc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
+
+Pour récuperer la partie mc de l\textquotesingle{}adresse. 
+
+Cette fonction renvoie la partie qui se trouve après le dernier \textquotesingle{}.\textquotesingle{} dans l\textquotesingle{}adresse mail. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{35 \{}
-\DoxyCodeLine{36     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
-\DoxyCodeLine{37 \}}
+\DoxyCodeLine{67 \{}
+\DoxyCodeLine{68     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
+\DoxyCodeLine{69 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{class_email_a231811fbacf19c0c92701cd02e1af2ee}\label{class_email_a231811fbacf19c0c92701cd02e1af2ee}} 
+
+
+Référencé par main().
+
+\mbox{\Hypertarget{class_email_a55e706122fc07c360e8d000a32ec2a7a}\label{class_email_a55e706122fc07c360e8d000a32ec2a7a}} 
 \index{Email@{Email}!setDomaine@{setDomaine}}
 \index{setDomaine@{setDomaine}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{setDomaine()}{setDomaine()}}
-{\footnotesize\ttfamily void Email\+::set\+Domaine (\begin{DoxyParamCaption}\item[{std\+::string}]{domaine }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Email\+::set\+Domaine (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
 
+
+
+Mutateurs. 
+
+Pour definir la partie domaine de l\textquotesingle{}adresse.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em domaine} & \+: le domaine de l\textquotesingle{}adresse \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{29 \{}
-\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}}= \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
-\DoxyCodeLine{31 \}}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59     this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}}= \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
+\DoxyCodeLine{60 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{class_email_af2f194db726282fb4111b2553e9ba4a2}\label{class_email_af2f194db726282fb4111b2553e9ba4a2}} 
+\mbox{\Hypertarget{class_email_aeada00eb01f8ec7252099b7421fe6ab1}\label{class_email_aeada00eb01f8ec7252099b7421fe6ab1}} 
 \index{Email@{Email}!setIdentifiant@{setIdentifiant}}
 \index{setIdentifiant@{setIdentifiant}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{setIdentifiant()}{setIdentifiant()}}
-{\footnotesize\ttfamily void Email\+::set\+Identifiant (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Email\+::set\+Identifiant (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
 
+
+
+Pour definir la partie Identifiant de l\textquotesingle{}adresse. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & \+: l\textquotesingle{}identifiant de l\textquotesingle{}adresse \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{17 \{}
-\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}}= id;}
-\DoxyCodeLine{19 \}}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = id;}
+\DoxyCodeLine{42 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{class_email_ae96ece68648719caa85f9db3a70ab42f}\label{class_email_ae96ece68648719caa85f9db3a70ab42f}} 
+\mbox{\Hypertarget{class_email_a69a9d94cb62cfe37069f9046adb254a3}\label{class_email_a69a9d94cb62cfe37069f9046adb254a3}} 
 \index{Email@{Email}!setMc@{setMc}}
 \index{setMc@{setMc}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{setMc()}{setMc()}}
-{\footnotesize\ttfamily void Email\+::set\+Mc (\begin{DoxyParamCaption}\item[{std\+::string}]{mc }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Email\+::set\+Mc (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
 
+
+
+Pour definir la partie mc de l\textquotesingle{}adresse. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mc} & \+: le mc de l\textquotesingle{}adresse \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{41 \{}
-\DoxyCodeLine{42     this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}}= \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
-\DoxyCodeLine{43 \}}
+\DoxyCodeLine{76 \{}
+\DoxyCodeLine{77     this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}}= \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
+\DoxyCodeLine{78 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_email_acfd186a5418525a835fbcf2030620a9a}\label{class_email_acfd186a5418525a835fbcf2030620a9a}} 
@@ -161,12 +281,16 @@ std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{53 \{}
-\DoxyCodeLine{54 }
-\DoxyCodeLine{55     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_email_a2b6e083c0ad4219ec2e557892f909a3a}{getIdentifiant}}()+\textcolor{stringliteral}{"{}@"{}}+\mbox{\hyperlink{class_email_a40d306de92616d49b86776ba3d55aa8f}{getDomaine}}()+\textcolor{stringliteral}{"{}."{}}+\mbox{\hyperlink{class_email_ac2775cb07db659b85fcbebb76ea58e84}{getMc}}();}
-\DoxyCodeLine{56 \}}
+\DoxyCodeLine{115 \{}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}()+\textcolor{stringliteral}{"{}@"{}}+\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}()+\textcolor{stringliteral}{"{}."{}}+\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}();}
+\DoxyCodeLine{118 \}}
 
 \end{DoxyCode}
+
+
+Référencé par main().
+
 
 
 \doxysubsection{Documentation des données membres}
@@ -175,6 +299,10 @@ std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc
 \index{domaine@{domaine}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{domaine}{domaine}}
 {\footnotesize\ttfamily std\+::string Email\+::domaine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+l\textquotesingle{}dentifiant de l\textquotesingle{}adresse 
 
 \mbox{\Hypertarget{class_email_a51c860409672625164d836055511fbe7}\label{class_email_a51c860409672625164d836055511fbe7}} 
 \index{Email@{Email}!identifiant@{identifiant}}
@@ -187,6 +315,10 @@ std\+::string \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc
 \index{mc@{mc}!Email@{Email}}
 \doxysubsubsection{\texorpdfstring{mc}{mc}}
 {\footnotesize\ttfamily std\+::string Email\+::mc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+le domaine de l\textquotesingle{}adresse 
 
 
 

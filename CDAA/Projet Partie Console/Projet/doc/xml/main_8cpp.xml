@@ -6,6 +6,8 @@
     <includes refid="_date_8h" local="yes">Date.h</includes>
     <includes refid="_interaction_8h" local="yes">Interaction.h</includes>
     <includes refid="_todo_8h" local="yes">Todo.h</includes>
+    <includes refid="_email_8h" local="yes">Email.h</includes>
+    <includes local="no">string</includes>
     <incdepgraph>
       <node id="1">
         <label>main.cpp</label>
@@ -17,6 +19,10 @@
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -34,6 +40,14 @@
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Email.h</label>
+        <link refid="_email_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="8">
@@ -74,12 +88,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="main.cpp" line="8" column="5" bodyfile="main.cpp" bodystart="8" bodyend="31"/>
-        <references refid="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" compoundref="_todo_8cpp" startline="48" endline="51">Todo::getDate</references>
-        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="83" endline="86">Interaction::setContenu</references>
-        <references refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="87" endline="90">Todo::setContenu</references>
-        <references refid="class_date_1af7f644265141e1b856af83715177a7e7" compoundref="_date_8cpp" startline="73" endline="76">Date::setDate</references>
-        <references refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" compoundref="_date_8cpp" startline="101" endline="104">Date::toString</references>
+        <location file="main.cpp" line="11" column="5" bodyfile="main.cpp" bodystart="11" bodyend="30"/>
+        <references refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" compoundref="_email_8cpp" startline="86" endline="111">Email::fromString</references>
+        <references refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" compoundref="_email_8cpp" startline="48" endline="51">Email::getDomaine</references>
+        <references refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" compoundref="_email_8cpp" startline="30" endline="33">Email::getIdentifiant</references>
+        <references refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" compoundref="_email_8cpp" startline="66" endline="69">Email::getMc</references>
+        <references refid="class_email_1acfd186a5418525a835fbcf2030620a9a" compoundref="_email_8cpp" startline="114" endline="118">Email::toString</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -91,33 +105,32 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_date_8h" kindref="compound">Date.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interaction_8h" kindref="compound">Interaction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_todo_8h" kindref="compound">Todo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
-<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>i;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>i.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>Quelconque&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//d.fromDate(14,07,2001);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//i.setDate(d.getDate());</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>t;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>t.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>Quelconque&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//d.fromDate(1,1,2001);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//t.setDate(d.getDate());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_email_8h" kindref="compound">Email.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>e(</highlight><highlight class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>f;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>f.<ref refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" kindref="member">fromString</ref>(</highlight><highlight class="stringliteral">&quot;Saikou_Bah@etu.u-bourgogne.fr&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1af7f644265141e1b856af83715177a7e7" kindref="member">setDate</ref>(i.<ref refid="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;d<sp/>=<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;d.<ref refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" kindref="member">toString</ref>()&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;i&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;t&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="main.cpp"/>
   </compounddef>

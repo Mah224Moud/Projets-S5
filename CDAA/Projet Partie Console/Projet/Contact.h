@@ -1,9 +1,3 @@
-#ifndef CONTACT_H_INCLUDED
-#define CONTACT_H_INCLUDED
-#include <string>
-#include "Email.h"
-#include "Date.h"
-
 /**
     *@file Contact.h
     *@brief Fichier d'entête de la classe Contact
@@ -11,9 +5,14 @@
     *@author BAH Saikou Oumar
 */
 
+#ifndef CONTACT_H_INCLUDED
+#define CONTACT_H_INCLUDED
+#include <string>
+#include "Email.h"
+#include "Date.h"
 
 /**
-    *@class Contact
+    *@class Contact Contact.h "Contact.h"
     *@brief La classe Contact permet de représenter un contact.
     *@details Un contact est représenté par avec un nom, un prénom,
     une entreprise, un ou plusieurs numéros de téléphone, une photo

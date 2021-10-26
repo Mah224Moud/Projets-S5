@@ -91,19 +91,22 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="_date_8h_source.html">Date.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_interaction_8h_source.html">Interaction.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_todo_8h_source.html">Todo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_email_8h_source.html">Email.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
 <map name="amain_8cpp" id="amain_8cpp">
-<area shape="rect" title=" " alt="" coords="125,5,208,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,85,107"/>
-<area shape="rect" href="_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="71,229,137,256"/>
-<area shape="rect" href="_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="160,155,264,181"/>
-<area shape="rect" href="_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="240,80,304,107"/>
-<area shape="rect" title=" " alt="" coords="95,304,153,331"/>
-<area shape="rect" title=" " alt="" coords="196,304,255,331"/>
-<area shape="rect" title=" " alt="" coords="263,229,339,256"/>
+<area shape="rect" title=" " alt="" coords="179,5,261,32"/>
+<area shape="rect" title=" " alt="" coords="5,155,85,181"/>
+<area shape="rect" href="_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="223,229,289,256"/>
+<area shape="rect" title=" " alt="" coords="192,304,251,331"/>
+<area shape="rect" href="_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="295,155,399,181"/>
+<area shape="rect" href="_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="395,80,459,107"/>
+<area shape="rect" href="_email_8h.html" title="Fichier d&#39;entête de la classe Email." alt="" coords="79,80,150,107"/>
+<area shape="rect" title=" " alt="" coords="348,304,407,331"/>
+<area shape="rect" title=" " alt="" coords="415,229,491,256"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -127,39 +130,33 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_todo.html">Todo</a> i;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    i.<a class="code" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu</a>(<span class="stringliteral">&quot;Todo Quelconque&quot;</span>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//d.fromDate(14,07,2001);</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//i.setDate(d.getDate());</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_interaction.html">Interaction</a> t;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    t.<a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(<span class="stringliteral">&quot;Interaction Quelconque&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//d.fromDate(1,1,2001);</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//t.setDate(d.getDate());</span></div>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_email.html">Email</a> e(<span class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Identifiant : &quot;</span> &lt;&lt; e.getIdentifiant() &lt;&lt; endl;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Domaine : &quot;</span> &lt;&lt; e.getDomaine() &lt;&lt; endl;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;mc : &quot;</span> &lt;&lt; e.getMc() &lt;&lt; endl;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    cout &lt;&lt; e.toString() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>&lt;&lt; endl;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_email.html">Email</a> f;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    f.<a class="code" href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">fromString</a>(<span class="stringliteral">&quot;Saikou_Bah@etu.u-bourgogne.fr&quot;</span>);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(i.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    cout&lt;&lt;<span class="stringliteral">&quot;d = &quot;</span>&lt;&lt;d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>()&lt;&lt;endl;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    cout&lt;&lt;i&lt;&lt;endl;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    cout&lt;&lt;t&lt;&lt;endl;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
-<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:101</div></div>
-<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:73</div></div>
-<div class="ttc" id="aclass_interaction_html"><div class="ttname"><a href="class_interaction.html">Interaction</a></div><div class="ttdoc">Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;.</div><div class="ttdef"><b>Definition:</b> Interaction.h:21</div></div>
-<div class="ttc" id="aclass_interaction_html_a5ca60953b855d3e31f27a05e118f81d3"><div class="ttname"><a href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:83</div></div>
-<div class="ttc" id="aclass_todo_html"><div class="ttname"><a href="class_todo.html">Todo</a></div><div class="ttdoc">Cette classe ...</div><div class="ttdef"><b>Definition:</b> Todo.h:19</div></div>
-<div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:48</div></div>
-<div class="ttc" id="aclass_todo_html_ad880a5598520b267d883ec6ce22f7f45"><div class="ttname"><a href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:87</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Identifiant : &quot;</span> &lt;&lt; f.<a class="code" href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">getIdentifiant</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Domaine : &quot;</span> &lt;&lt; f.<a class="code" href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">getDomaine</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;mc : &quot;</span> &lt;&lt; f.<a class="code" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">getMc</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    cout &lt;&lt; f.<a class="code" href="class_email.html#acfd186a5418525a835fbcf2030620a9a">toString</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">La classe Email permet de stocker l'adresse mail d'un contact.</div><div class="ttdef"><b>Definition:</b> Email.h:20</div></div>
+<div class="ttc" id="aclass_email_html_a4fb56b50d5636ea445a204d2a0a19a04"><div class="ttname"><a href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">Email::getMc</a></div><div class="ttdeci">std::string getMc() const</div><div class="ttdoc">Pour récuperer la partie mc de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:66</div></div>
+<div class="ttc" id="aclass_email_html_a6025851513c653ec0a0a3c98624f6ec5"><div class="ttname"><a href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">Email::getDomaine</a></div><div class="ttdeci">std::string getDomaine() const</div><div class="ttdoc">Pour récuperer la partie domaine de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:48</div></div>
+<div class="ttc" id="aclass_email_html_abdf70d7f147a59a96685cd4ad3947c2c"><div class="ttname"><a href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">Email::getIdentifiant</a></div><div class="ttdeci">std::string getIdentifiant() const</div><div class="ttdoc">Accesseurs.</div><div class="ttdef"><b>Definition:</b> Email.cpp:30</div></div>
+<div class="ttc" id="aclass_email_html_acfd186a5418525a835fbcf2030620a9a"><div class="ttname"><a href="class_email.html#acfd186a5418525a835fbcf2030620a9a">Email::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdef"><b>Definition:</b> Email.cpp:114</div></div>
+<div class="ttc" id="aclass_email_html_ad008c905fb780e47c5fd5d5a1ba6eef6"><div class="ttname"><a href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">Email::fromString</a></div><div class="ttdeci">void fromString(const std::string &amp;)</div><div class="ttdoc">Pour décomposer une adresse mail et récupérer les différentes parties.</div><div class="ttdef"><b>Definition:</b> Email.cpp:86</div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate()</a>, <a class="el" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu()</a>, <a class="el" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu()</a>, <a class="el" href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate()</a>, et <a class="el" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString()</a>.</p>
+<p class="reference">Références <a class="el" href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">Email::fromString()</a>, <a class="el" href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">Email::getDomaine()</a>, <a class="el" href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">Email::getIdentifiant()</a>, <a class="el" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">Email::getMc()</a>, et <a class="el" href="class_email.html#acfd186a5418525a835fbcf2030620a9a">Email::toString()</a>.</p>
 
 </div>
 </div>

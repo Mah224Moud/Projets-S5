@@ -7,7 +7,7 @@ Cette classe ...
 
 
 
-{\ttfamily \#include $<$Todo.\+h$>$}
+{\ttfamily \#include \char`\"{}Todo.\+h\char`\"{}}
 
 
 
@@ -24,9 +24,9 @@ Graphe de collaboration de Todo\+:\nopagebreak
 \mbox{\hyperlink{class_todo_a5fbb1de89a8e2e99941f6a175cc6da91}{Todo}} ()
 \begin{DoxyCompactList}\small\item\em La date. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_todo_a813a202cf72925aee8c44e9a3ca183b9}{Todo}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&, const std\+::string \&, const \mbox{\hyperlink{structtm}{tm}} \&)
-\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_interaction}{Interaction}} \mbox{\hyperlink{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}{get\+Interaction}} () const
-\begin{DoxyCompactList}\small\item\em Accesseurs. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{get\+Contenu}} () const
 \begin{DoxyCompactList}\small\item\em Pour recupérer le contenu de l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtm}{tm}} \mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{get\+Date}} () const
@@ -93,7 +93,9 @@ Références contenu, date, et set\+Date().
 
 
 
-Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}. 
+Constructeur par défaut. 
+
+Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}.
 
 Ce constructeur initialise à une date donnée un \mbox{\hyperlink{class_todo}{Todo}} avec un contenu vide n\textquotesingle{}étainteraction; 
 \begin{DoxyCode}{0}
@@ -155,10 +157,6 @@ Cette fonction renvoie l\textquotesingle{}instance pointée par date.
 
 Références date.
 
-
-
-Référencé par main().
-
 \mbox{\Hypertarget{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}\label{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}} 
 \index{Todo@{Todo}!getInteraction@{getInteraction}}
 \index{getInteraction@{getInteraction}!Todo@{Todo}}
@@ -167,7 +165,11 @@ Référencé par main().
 
 
 
-Accesseurs. 
+Constructeur avec paramètres. 
+
+Accesseurs.
+
+Accesseurs
 
 Pour récuperer l\textquotesingle{}intéraction à laquelle apppartient le \mbox{\hyperlink{class_todo}{Todo}}.
 
@@ -210,7 +212,7 @@ Références contenu.
 
 
 
-Référencé par main(), et Todo().
+Référencé par Todo().
 
 \mbox{\Hypertarget{class_todo_a7585477bfb8bff408e5d5736a326ef7e}\label{class_todo_a7585477bfb8bff408e5d5736a326ef7e}} 
 \index{Todo@{Todo}!setDate@{setDate}}

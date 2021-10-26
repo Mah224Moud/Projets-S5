@@ -1,6 +1,6 @@
 <map id="Contact" name="Contact">
 <area shape="rect" id="node1" title="La classe Contact permet de représenter un contact." alt="" coords="108,447,243,671"/>
-<area shape="rect" id="node2" href="$class_email.html" title=" " alt="" coords="108,182,243,377"/>
+<area shape="rect" id="node2" href="$class_email.html" title="La classe Email permet de stocker l&#39;adresse mail d&#39;un contact." alt="" coords="108,175,243,384"/>
 <area shape="rect" id="node3" title=" " alt="" coords="23,5,82,83"/>
 <area shape="rect" id="node4" href="$class_date.html" title="La classe Date permet de stocker des dates dans des structures tm." alt="" coords="267,175,391,384"/>
 <area shape="rect" id="node5" href="$structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="309,5,349,83"/>

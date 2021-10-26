@@ -38,12 +38,13 @@
     <member refid="class_email_1adbf96bf6ecf0163270786b511ca9073f" kind="variable"><name>domaine</name></member>
     <member refid="class_email_1a546db0116c6ef2d38440ecf35fc642f4" kind="variable"><name>mc</name></member>
     <member refid="class_email_1a2cfcfea1e55511208e7858c33f48ad9d" kind="function"><name>Email</name></member>
-    <member refid="class_email_1a2b6e083c0ad4219ec2e557892f909a3a" kind="function"><name>getIdentifiant</name></member>
-    <member refid="class_email_1af2f194db726282fb4111b2553e9ba4a2" kind="function"><name>setIdentifiant</name></member>
-    <member refid="class_email_1a40d306de92616d49b86776ba3d55aa8f" kind="function"><name>getDomaine</name></member>
-    <member refid="class_email_1a231811fbacf19c0c92701cd02e1af2ee" kind="function"><name>setDomaine</name></member>
-    <member refid="class_email_1ac2775cb07db659b85fcbebb76ea58e84" kind="function"><name>getMc</name></member>
-    <member refid="class_email_1ae96ece68648719caa85f9db3a70ab42f" kind="function"><name>setMc</name></member>
+    <member refid="class_email_1a61920b1f7602e5eb80edf1e4bd96e6c7" kind="function"><name>Email</name></member>
+    <member refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kind="function"><name>getIdentifiant</name></member>
+    <member refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kind="function"><name>getDomaine</name></member>
+    <member refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kind="function"><name>getMc</name></member>
+    <member refid="class_email_1a55e706122fc07c360e8d000a32ec2a7a" kind="function"><name>setDomaine</name></member>
+    <member refid="class_email_1aeada00eb01f8ec7252099b7421fe6ab1" kind="function"><name>setIdentifiant</name></member>
+    <member refid="class_email_1a69a9d94cb62cfe37069f9046adb254a3" kind="function"><name>setMc</name></member>
     <member refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" kind="function"><name>fromString</name></member>
     <member refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kind="function"><name>toString</name></member>
   </compound>
