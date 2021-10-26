@@ -30,7 +30,7 @@ public:
     /// Constructeur par défaut de la classe Interaction
     Interaction();
     /// Constructeur avec paramètres date et contenu de la classe Interaction
-    Interaction(const tm&, const std::string &);
+    Interaction(const std::string &);
     /// Destructeur de la classe Interaction
     ~Interaction();
 
@@ -43,7 +43,9 @@ public:
     void setDate(const tm&);
     void setContenu(const std::string&);
 
-    friend std::ostream& operator<<(std::ostream&, const Interaction &);
+    friend std::ostream& operator<<(std::ostream&, const Interaction&);
+    bool operator==(const Interaction&);
+    void operator= (const Interaction&);
 };
 
 #endif // INTERACTION_H

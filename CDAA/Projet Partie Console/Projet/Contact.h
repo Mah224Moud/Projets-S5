@@ -7,18 +7,21 @@
 
 #ifndef CONTACT_H_INCLUDED
 #define CONTACT_H_INCLUDED
+
 #include <string>
 #include <list>
 #include <ctime>
+#include <ostream>
 #include "Email.h"
 #include "Date.h"
 #include "Interaction.h"
+
 
 /**
     *@class Contact Contact.h "Contact.h"
     *@brief La classe Contact permet de représenter un contact.
     *@details Un contact est représenté par avec un nom, un prénom,
-    une entreprise, un ou plusieurs numéros de téléphone, une photo
+    une entreprise, un numéro de téléphone, une photo
     et une liste d'intéraction
 */
 class Contact
@@ -27,13 +30,14 @@ class Contact
         std::string nom; /// Le nom du contact
         std::string prenom; /// Le prénom du contact
         std::string entreprise; /// Le nom de l'entreprise
-        std::list<unsigned> telephone; /// Les numéros du contact
+        std::string telephone; /// Le numéro du contact
         std::string URIphoto; /// La photo du contact
         tm* dateCreation; /// La date de création du contact
         tm* dateLastModif; /// La date de dernière modification
         Email* mail; /// Adresse Mail du contact
         std::list<Interaction> listInteractions;/// La liste des intéractions du contact
 
+        void modification();
 
     public:
     /// Constructeur par défaut de la classe Contact.
@@ -46,30 +50,27 @@ class Contact
     std::string getNom() const;
     std::string getPrenom() const;
     std::string getEntreprise() const;
-    std::list<unsigned> getLesTelephones() const;
-    std::string getTelephone(int);
+    std::string getTelephone() const;
     std::string getPhoto() const;
     tm getDateCreation() const;
     tm getDateLastModif() const;
     Email getEmail() const;
-    std::list<Interaction> getListInteractions();
+    std::list<Interaction> getListInteractions() const;
 
 
     void setNom(const std::string&);
     void setPrenom(const std::string&);
     void setEntreprise(const std::string&);
-    void setTelephone(const std::list<unsigned>);
+    void setTelephone(const std::string&);
     void setPhoto(const std::string&);
     void setDateCreation(const tm&);
     void setDateLastModif(const tm&);
     void setEmail(const std::string&);
 
-
-    void addTelephone(const unsigned tel);
-    unsigned removeTelephone(const unsigned tel) const;
     void addInteraction(const Interaction&);
     void removeInteraction(const Interaction&);
 
+    friend std::ostream& operator<<(std::ostream&, const Contact&);
 };
 
 #endif // CONTACT_H_INCLUDED

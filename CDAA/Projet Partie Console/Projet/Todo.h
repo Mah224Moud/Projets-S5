@@ -30,7 +30,7 @@ class Todo
         /// Constructeur par défaut
         Todo();
         /// Constructeur avec paramètres
-        Todo(const Interaction&, const std::string&, const tm&);
+        Todo(const Interaction&, const std::string&);
 
         Interaction getInteraction() const;
         std::string getContenu() const;

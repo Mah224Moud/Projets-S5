@@ -20,16 +20,14 @@ Interaction::Interaction()
 
 /**
     *@brief Constructeur avec paramètre
-    *@details Ce constructeur initialise une interaction avec un contenu et une date connus et passés en paramètre.
-    *@param date : la date de l'interaction
+    *@details Ce constructeur initialise une interaction avec un contenu et la date courante.
     *@param c : le contenu de l'interaction
 */
-Interaction::Interaction(const tm & date, const std::string& contenu)
+Interaction::Interaction(const std::string& contenu)
 {
-    if(this->date != nullptr)
-        this->date = new tm();
-
-    this -> setDate(date);
+    time_t n = time(0);
+    date = new tm();
+    this->setDate(*localtime(&n));
     this -> setContenu(contenu);
 }
 
@@ -39,7 +37,7 @@ Interaction::Interaction(const tm & date, const std::string& contenu)
 */
 Interaction::~Interaction()
 {
-    delete date;
+    //delete date;
 }
 
 /// Accesseurs
@@ -102,4 +100,19 @@ std::ostream& operator<<(std::ostream& os, const Interaction& i)
     }
     os << i.getContenu();
     return os;
+}
+
+
+/**
+
+*/
+bool Interaction::operator==(const Interaction& autre)
+{
+    return getContenu() == autre.getContenu();
+}
+
+void Interaction::operator=(const Interaction& autre)
+{
+    setDate(autre.getDate());
+    setContenu(autre.getContenu());
 }

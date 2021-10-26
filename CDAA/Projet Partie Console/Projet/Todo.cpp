@@ -14,6 +14,7 @@ Todo::Todo()
     time_t n = time(0);
     date = new tm();
     this->setDate(*localtime(&n));
+    lienInteraction = new Interaction();
     this->contenu = "";
 }
 
@@ -21,11 +22,12 @@ Todo::Todo()
     *@brief Constructeur avec paramètres de la classe Todo
     *@details Ce constructeur initialise à une date donnée un Todo avec un contenu vide n'étainteraction;
 */
-Todo::Todo(const Interaction& i, const std::string& c, const tm& t)
+Todo::Todo(const Interaction& i, const std::string& c)
 {
-    if(date != nullptr)
-        date = new tm();
-    this->setDate(t);
+    time_t n = time(0);
+    date = new tm();
+    this->setDate(*localtime(&n));
+    lienInteraction = new Interaction();
     this->setInteraction(i);
     this->setContenu(c);
 }
