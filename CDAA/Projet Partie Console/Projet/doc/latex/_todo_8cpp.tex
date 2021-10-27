@@ -48,15 +48,15 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 \end{DoxyParams}
 Pour afficher un \mbox{\hyperlink{class_todo}{Todo}}, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd\textquotesingle{}hui). 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{99 \{}
-\DoxyCodeLine{100     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{101     os << \textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << \textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{102     \textcolor{keywordflow}{if}(!(d == td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}()))}
-\DoxyCodeLine{103     \{}
-\DoxyCodeLine{104         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
-\DoxyCodeLine{105         os << \textcolor{stringliteral}{"{}@date "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}();}
-\DoxyCodeLine{106     \}}
-\DoxyCodeLine{107     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{108 \}}
+\DoxyCodeLine{101 \{}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{103     os << \textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{104     \textcolor{keywordflow}{if}(!(d == td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}()))}
+\DoxyCodeLine{105     \{}
+\DoxyCodeLine{106         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
+\DoxyCodeLine{107         os << \textcolor{stringliteral}{"{}@date "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}();}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{110 \}}
 
 \end{DoxyCode}

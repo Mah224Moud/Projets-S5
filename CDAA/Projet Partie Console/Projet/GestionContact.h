@@ -22,11 +22,12 @@ class GestionContact
         GestionContact();
         ~GestionContact();
 
-        std::list<Contact> GetlistContact() const{ return listContact;}
+        std::list<Contact> getlistContact() const{ return listContact;}
         inline unsigned getSize(){return listContact.size();}
 
         void addContact(const Contact&);
         void removeContact(const std::string&);
+        Contact* getContactByName(const std::string&);
 
         friend std::ostream& operator<<(std::ostream&, const GestionContact&);
 };

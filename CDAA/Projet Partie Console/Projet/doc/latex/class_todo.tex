@@ -11,11 +11,12 @@ Cette classe ...
 
 
 
-Graphe de collaboration de Todo\+:\nopagebreak
+Graphe de collaboration de Todo\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=312pt]{class_todo__coll__graph}
+\includegraphics[width=317pt]{class_todo__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
@@ -23,7 +24,7 @@ Graphe de collaboration de Todo\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_todo_a5fbb1de89a8e2e99941f6a175cc6da91}{Todo}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_todo_a813a202cf72925aee8c44e9a3ca183b9}{Todo}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&, const std\+::string \&, const \mbox{\hyperlink{structtm}{tm}} \&)
+\mbox{\hyperlink{class_todo_a7d3c064efd1e62f3f1348aedebbf64eb}{Todo}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&, const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_interaction}{Interaction}} \mbox{\hyperlink{class_todo_a3ee7c0d0dfb18d895758a2bb1862a5a8}{get\+Interaction}} () const
 \begin{DoxyCompactList}\small\item\em Accesseurs. \end{DoxyCompactList}\item 
@@ -77,19 +78,20 @@ Ce constructeur initialise à la date courante un \mbox{\hyperlink{class_todo}{T
 \DoxyCodeLine{14     time\_t n = time(0);}
 \DoxyCodeLine{15     \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
 \DoxyCodeLine{16     this-\/>\mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{setDate}}(*localtime(\&n));}
-\DoxyCodeLine{17     this-\/>\mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{18 \}}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_interaction}{Interaction}}();}
+\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{19 \}}
 
 \end{DoxyCode}
 
 
-Références contenu, date, et set\+Date().
+Références contenu, date, lien\+Interaction, et set\+Date().
 
-\mbox{\Hypertarget{class_todo_a813a202cf72925aee8c44e9a3ca183b9}\label{class_todo_a813a202cf72925aee8c44e9a3ca183b9}} 
+\mbox{\Hypertarget{class_todo_a7d3c064efd1e62f3f1348aedebbf64eb}\label{class_todo_a7d3c064efd1e62f3f1348aedebbf64eb}} 
 \index{Todo@{Todo}!Todo@{Todo}}
 \index{Todo@{Todo}!Todo@{Todo}}
 \doxysubsubsection{\texorpdfstring{Todo()}{Todo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Todo\+::\+Todo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{i,  }\item[{const std\+::string \&}]{c,  }\item[{const \mbox{\hyperlink{structtm}{tm}} \&}]{t }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Todo\+::\+Todo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{i,  }\item[{const std\+::string \&}]{c }\end{DoxyParamCaption})}
 
 
 
@@ -99,18 +101,19 @@ Constructeur avec paramètres de la classe \mbox{\hyperlink{class_todo}{Todo}}.
 
 Ce constructeur initialise à une date donnée un \mbox{\hyperlink{class_todo}{Todo}} avec un contenu vide n\textquotesingle{}étainteraction; 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{25 \{}
-\DoxyCodeLine{26     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} != \textcolor{keyword}{nullptr})}
-\DoxyCodeLine{27         \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{28     this-\/>\mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{setDate}}(t);}
-\DoxyCodeLine{29     this-\/>\mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{setInteraction}}(i);}
-\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(c);}
-\DoxyCodeLine{31 \}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     time\_t n = time(0);}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{29     this-\/>\mbox{\hyperlink{class_todo_a7585477bfb8bff408e5d5736a326ef7e}{setDate}}(*localtime(\&n));}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_interaction}{Interaction}}();}
+\DoxyCodeLine{31     this-\/>\mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{setInteraction}}(i);}
+\DoxyCodeLine{32     this-\/>\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(c);}
+\DoxyCodeLine{33 \}}
 
 \end{DoxyCode}
 
 
-Références date, set\+Contenu(), set\+Date(), et set\+Interaction().
+Références date, lien\+Interaction, set\+Contenu(), set\+Date(), et set\+Interaction().
 
 
 
@@ -127,9 +130,9 @@ Pour recupérer le contenu de l\textquotesingle{}interaction.
 
 Cette fonction renvoie la chaine contenu de l\textquotesingle{}interaction. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{58 \{}
-\DoxyCodeLine{59     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}};}
-\DoxyCodeLine{60 \}}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}};}
+\DoxyCodeLine{62 \}}
 
 \end{DoxyCode}
 
@@ -148,9 +151,9 @@ Pour récupérer la date.
 
 Cette fonction renvoie l\textquotesingle{}instance pointée par date. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{49 \{}
-\DoxyCodeLine{50     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}};}
-\DoxyCodeLine{51 \}}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}};}
+\DoxyCodeLine{53 \}}
 
 \end{DoxyCode}
 
@@ -171,9 +174,9 @@ Pour récuperer l\textquotesingle{}intéraction à laquelle apppartient le \mbox
 
 Ce fontion renvoie l\textquotesingle{}instance Intéraction à laquelle appartient le \mbox{\hyperlink{class_todo}{Todo}}. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{40 \{}
-\DoxyCodeLine{41     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}};}
-\DoxyCodeLine{42 \}}
+\DoxyCodeLine{42 \{}
+\DoxyCodeLine{43     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}};}
+\DoxyCodeLine{44 \}}
 
 \end{DoxyCode}
 
@@ -197,9 +200,9 @@ Pour affecter un contenu à l\textquotesingle{}interaction.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{88 \{}
-\DoxyCodeLine{89     \mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}}= c;}
-\DoxyCodeLine{90 \}}
+\DoxyCodeLine{90 \{}
+\DoxyCodeLine{91     \mbox{\hyperlink{class_todo_ae00f4ec991a678ebd1af1fe4a7940256}{contenu}}= c;}
+\DoxyCodeLine{92 \}}
 
 \end{DoxyCode}
 
@@ -208,7 +211,7 @@ Références contenu.
 
 
 
-Référencé par Todo().
+Référencé par test\+Gestion\+Todo(), et Todo().
 
 \mbox{\Hypertarget{class_todo_a7585477bfb8bff408e5d5736a326ef7e}\label{class_todo_a7585477bfb8bff408e5d5736a326ef7e}} 
 \index{Todo@{Todo}!setDate@{setDate}}
@@ -227,9 +230,9 @@ Pour affecter une date à l\textquotesingle{}interaction.
 \end{DoxyParams}
 La structure tm t passée en paramètre est copié dans l\textquotesingle{}instance pointée par date. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{79 \{}
-\DoxyCodeLine{80     *\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}}= t;}
-\DoxyCodeLine{81 \}}
+\DoxyCodeLine{81 \{}
+\DoxyCodeLine{82     *\mbox{\hyperlink{class_todo_aff30bd207a1423697cca38322d42557f}{date}}= t;}
+\DoxyCodeLine{83 \}}
 
 \end{DoxyCode}
 
@@ -238,7 +241,7 @@ Références date.
 
 
 
-Référencé par Todo().
+Référencé par test\+Gestion\+Todo(), et Todo().
 
 \mbox{\Hypertarget{class_todo_a4bc4c583115b304d665a3169e168105e}\label{class_todo_a4bc4c583115b304d665a3169e168105e}} 
 \index{Todo@{Todo}!setInteraction@{setInteraction}}
@@ -257,9 +260,9 @@ Pour lier une intéraction à la classe \mbox{\hyperlink{class_todo}{Todo}}.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{69 \{}
-\DoxyCodeLine{70     *\mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}} = inter;}
-\DoxyCodeLine{71 \}}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72     *\mbox{\hyperlink{class_todo_aaad913ece0b9171e24118ffc9ab0a3e6}{lienInteraction}} = inter;}
+\DoxyCodeLine{73 \}}
 
 \end{DoxyCode}
 
@@ -268,7 +271,7 @@ Références lien\+Interaction.
 
 
 
-Référencé par Todo().
+Référencé par test\+Gestion\+Todo(), et Todo().
 
 
 
@@ -292,16 +295,16 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 \end{DoxyParams}
 Pour afficher un \mbox{\hyperlink{class_todo}{Todo}}, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd\textquotesingle{}hui). 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{99 \{}
-\DoxyCodeLine{100     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{101     os << \textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << \textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{102     \textcolor{keywordflow}{if}(!(d == td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}()))}
-\DoxyCodeLine{103     \{}
-\DoxyCodeLine{104         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
-\DoxyCodeLine{105         os << \textcolor{stringliteral}{"{}@date "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}();}
-\DoxyCodeLine{106     \}}
-\DoxyCodeLine{107     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{108 \}}
+\DoxyCodeLine{101 \{}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{103     os << \textcolor{stringliteral}{"{}@todo "{}} << td.\mbox{\hyperlink{class_todo_a336fa1a249ac6acd320058902c8f40e2}{getContenu}}() << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{104     \textcolor{keywordflow}{if}(!(d == td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}()))}
+\DoxyCodeLine{105     \{}
+\DoxyCodeLine{106         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(td.\mbox{\hyperlink{class_todo_a8d260ac9059c249a9393d8d54067bbd3}{getDate}}());}
+\DoxyCodeLine{107         os << \textcolor{stringliteral}{"{}@date "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}();}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{110 \}}
 
 \end{DoxyCode}
 
@@ -347,7 +350,7 @@ Lien vers l\textquotesingle{}interaction.
 
 
 
-Référencé par get\+Interaction(), et set\+Interaction().
+Référencé par get\+Interaction(), set\+Interaction(), et Todo().
 
 
 

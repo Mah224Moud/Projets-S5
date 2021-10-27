@@ -94,7 +94,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Email.h" line="35" column="21" bodyfile="Email.cpp" bodystart="30" bodyend="33"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="37">main</referencedby>
+        <referencedby refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" compoundref="main_8cpp" startline="58" endline="83">testEmail</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_email_1a6025851513c653ec0a0a3c98624f6ec5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -110,7 +110,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Email.h" line="36" column="21" bodyfile="Email.cpp" bodystart="48" bodyend="51"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="37">main</referencedby>
+        <referencedby refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" compoundref="main_8cpp" startline="58" endline="83">testEmail</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -126,7 +126,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Email.h" line="37" column="21" bodyfile="Email.cpp" bodystart="66" bodyend="69"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="37">main</referencedby>
+        <referencedby refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" compoundref="main_8cpp" startline="58" endline="83">testEmail</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_email_1a55e706122fc07c360e8d000a32ec2a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -237,7 +237,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Email.h" line="43" column="14" bodyfile="Email.cpp" bodystart="86" bodyend="111"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="37">main</referencedby>
+        <referencedby refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="214" endline="218">Contact::setEmail</referencedby>
+        <referencedby refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" compoundref="main_8cpp" startline="58" endline="83">testEmail</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_email_1acfd186a5418525a835fbcf2030620a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -251,7 +252,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Email.h" line="44" column="22" bodyfile="Email.cpp" bodystart="114" bodyend="120"/>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="11" endline="37">main</referencedby>
+        <referencedby refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" compoundref="main_8cpp" startline="58" endline="83">testEmail</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

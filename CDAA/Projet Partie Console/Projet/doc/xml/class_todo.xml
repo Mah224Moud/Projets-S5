@@ -17,8 +17,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Todo.h" line="23" column="21" bodyfile="Todo.h" bodystart="23" bodyend="-1"/>
-        <referencedby refid="class_todo_1a3ee7c0d0dfb18d895758a2bb1862a5a8" compoundref="_todo_8cpp" startline="39" endline="42">getInteraction</referencedby>
-        <referencedby refid="class_todo_1a4bc4c583115b304d665a3169e168105e" compoundref="_todo_8cpp" startline="68" endline="71">setInteraction</referencedby>
+        <referencedby refid="class_todo_1a3ee7c0d0dfb18d895758a2bb1862a5a8" compoundref="_todo_8cpp" startline="41" endline="44">getInteraction</referencedby>
+        <referencedby refid="class_todo_1a4bc4c583115b304d665a3169e168105e" compoundref="_todo_8cpp" startline="70" endline="73">setInteraction</referencedby>
+        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="19">Todo</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_todo_1ae00f4ec991a678ebd1af1fe4a7940256" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -33,9 +34,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Todo.h" line="25" column="21" bodyfile="Todo.h" bodystart="25" bodyend="-1"/>
-        <referencedby refid="class_todo_1a336fa1a249ac6acd320058902c8f40e2" compoundref="_todo_8cpp" startline="57" endline="60">getContenu</referencedby>
-        <referencedby refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="87" endline="90">setContenu</referencedby>
-        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="18">Todo</referencedby>
+        <referencedby refid="class_todo_1a336fa1a249ac6acd320058902c8f40e2" compoundref="_todo_8cpp" startline="59" endline="62">getContenu</referencedby>
+        <referencedby refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="89" endline="92">setContenu</referencedby>
+        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="19">Todo</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_todo_1aff30bd207a1423697cca38322d42557f" prot="private" static="no" mutable="no">
         <type>struct <ref refid="structtm" kindref="compound">tm</ref> *</type>
@@ -50,9 +51,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Todo.h" line="27" column="18" bodyfile="Todo.h" bodystart="27" bodyend="-1"/>
-        <referencedby refid="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" compoundref="_todo_8cpp" startline="48" endline="51">getDate</referencedby>
-        <referencedby refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="78" endline="81">setDate</referencedby>
-        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="18">Todo</referencedby>
+        <referencedby refid="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" compoundref="_todo_8cpp" startline="50" endline="53">getDate</referencedby>
+        <referencedby refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="80" endline="83">setDate</referencedby>
+        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="19">Todo</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -70,15 +71,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="31" column="9" bodyfile="Todo.cpp" bodystart="12" bodyend="18"/>
+        <location file="Todo.h" line="31" column="9" bodyfile="Todo.cpp" bodystart="12" bodyend="19"/>
         <references refid="class_todo_1ae00f4ec991a678ebd1af1fe4a7940256" compoundref="_todo_8h" startline="25">contenu</references>
         <references refid="class_todo_1aff30bd207a1423697cca38322d42557f" compoundref="_todo_8h" startline="27">date</references>
-        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="78" endline="81">setDate</references>
+        <references refid="class_todo_1aaad913ece0b9171e24118ffc9ab0a3e6" compoundref="_todo_8h" startline="23">lienInteraction</references>
+        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="80" endline="83">setDate</references>
       </memberdef>
-      <memberdef kind="function" id="class_todo_1a813a202cf72925aee8c44e9a3ca183b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_todo_1a7d3c064efd1e62f3f1348aedebbf64eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Todo::Todo</definition>
-        <argsstring>(const Interaction &amp;, const std::string &amp;, const tm &amp;)</argsstring>
+        <argsstring>(const Interaction &amp;, const std::string &amp;)</argsstring>
         <name>Todo</name>
         <param>
           <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
@@ -87,10 +89,6 @@
         <param>
           <type>const std::string &amp;</type>
           <defname>c</defname>
-        </param>
-        <param>
-          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
-          <defname>t</defname>
         </param>
         <briefdescription>
 <para>Constructeur avec paramètres. </para>
@@ -101,11 +99,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="33" column="9" bodyfile="Todo.cpp" bodystart="24" bodyend="31"/>
+        <location file="Todo.h" line="33" column="9" bodyfile="Todo.cpp" bodystart="25" bodyend="33"/>
         <references refid="class_todo_1aff30bd207a1423697cca38322d42557f" compoundref="_todo_8h" startline="27">date</references>
-        <references refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="87" endline="90">setContenu</references>
-        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="78" endline="81">setDate</references>
-        <references refid="class_todo_1a4bc4c583115b304d665a3169e168105e" compoundref="_todo_8cpp" startline="68" endline="71">setInteraction</references>
+        <references refid="class_todo_1aaad913ece0b9171e24118ffc9ab0a3e6" compoundref="_todo_8h" startline="23">lienInteraction</references>
+        <references refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="89" endline="92">setContenu</references>
+        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="80" endline="83">setDate</references>
+        <references refid="class_todo_1a4bc4c583115b304d665a3169e168105e" compoundref="_todo_8cpp" startline="70" endline="73">setInteraction</references>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a3ee7c0d0dfb18d895758a2bb1862a5a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_interaction" kindref="compound">Interaction</ref></type>
@@ -121,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="35" column="21" bodyfile="Todo.cpp" bodystart="39" bodyend="42"/>
+        <location file="Todo.h" line="35" column="21" bodyfile="Todo.cpp" bodystart="41" bodyend="44"/>
         <references refid="class_todo_1aaad913ece0b9171e24118ffc9ab0a3e6" compoundref="_todo_8h" startline="23">lienInteraction</references>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a336fa1a249ac6acd320058902c8f40e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
@@ -137,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="36" column="21" bodyfile="Todo.cpp" bodystart="57" bodyend="60"/>
+        <location file="Todo.h" line="36" column="21" bodyfile="Todo.cpp" bodystart="59" bodyend="62"/>
         <references refid="class_todo_1ae00f4ec991a678ebd1af1fe4a7940256" compoundref="_todo_8h" startline="25">contenu</references>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
@@ -153,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="37" column="12" bodyfile="Todo.cpp" bodystart="48" bodyend="51"/>
+        <location file="Todo.h" line="37" column="12" bodyfile="Todo.cpp" bodystart="50" bodyend="53"/>
         <references refid="class_todo_1aff30bd207a1423697cca38322d42557f" compoundref="_todo_8h" startline="27">date</references>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a4bc4c583115b304d665a3169e168105e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -182,9 +181,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="39" column="14" bodyfile="Todo.cpp" bodystart="68" bodyend="71"/>
+        <location file="Todo.h" line="39" column="14" bodyfile="Todo.cpp" bodystart="70" bodyend="73"/>
         <references refid="class_todo_1aaad913ece0b9171e24118ffc9ab0a3e6" compoundref="_todo_8h" startline="23">lienInteraction</references>
-        <referencedby refid="class_todo_1a813a202cf72925aee8c44e9a3ca183b9" compoundref="_todo_8cpp" startline="24" endline="31">Todo</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <referencedby refid="class_todo_1a7d3c064efd1e62f3f1348aedebbf64eb" compoundref="_todo_8cpp" startline="25" endline="33">Todo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_todo_1ad880a5598520b267d883ec6ce22f7f45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -212,9 +212,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="40" column="14" bodyfile="Todo.cpp" bodystart="87" bodyend="90"/>
+        <location file="Todo.h" line="40" column="14" bodyfile="Todo.cpp" bodystart="89" bodyend="92"/>
         <references refid="class_todo_1ae00f4ec991a678ebd1af1fe4a7940256" compoundref="_todo_8h" startline="25">contenu</references>
-        <referencedby refid="class_todo_1a813a202cf72925aee8c44e9a3ca183b9" compoundref="_todo_8cpp" startline="24" endline="31">Todo</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <referencedby refid="class_todo_1a7d3c064efd1e62f3f1348aedebbf64eb" compoundref="_todo_8cpp" startline="25" endline="33">Todo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -242,9 +243,10 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="41" column="14" bodyfile="Todo.cpp" bodystart="78" bodyend="81"/>
+        <location file="Todo.h" line="41" column="14" bodyfile="Todo.cpp" bodystart="80" bodyend="83"/>
         <references refid="class_todo_1aff30bd207a1423697cca38322d42557f" compoundref="_todo_8h" startline="27">date</references>
-        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="18">Todo</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <referencedby refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" compoundref="_todo_8cpp" startline="12" endline="19">Todo</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -286,7 +288,7 @@ Pour afficher un <ref refid="class_todo" kindref="compound">Todo</ref>, on affic
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Todo.h" line="43" column="16" bodyfile="Todo.cpp" bodystart="98" bodyend="108"/>
+        <location file="Todo.h" line="43" column="16" bodyfile="Todo.cpp" bodystart="100" bodyend="110"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -340,7 +342,7 @@ Pour afficher un <ref refid="class_todo" kindref="compound">Todo</ref>, on affic
       <member refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" prot="public" virt="non-virtual"><scope>Todo</scope><name>setDate</name></member>
       <member refid="class_todo_1a4bc4c583115b304d665a3169e168105e" prot="public" virt="non-virtual"><scope>Todo</scope><name>setInteraction</name></member>
       <member refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" prot="public" virt="non-virtual"><scope>Todo</scope><name>Todo</name></member>
-      <member refid="class_todo_1a813a202cf72925aee8c44e9a3ca183b9" prot="public" virt="non-virtual"><scope>Todo</scope><name>Todo</name></member>
+      <member refid="class_todo_1a7d3c064efd1e62f3f1348aedebbf64eb" prot="public" virt="non-virtual"><scope>Todo</scope><name>Todo</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

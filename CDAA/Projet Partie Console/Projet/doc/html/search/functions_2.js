@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['email_93',['Email',['../class_email.html#a2cfcfea1e55511208e7858c33f48ad9d',1,'Email::Email()'],['../class_email.html#a61920b1f7602e5eb80edf1e4bd96e6c7',1,'Email::Email(const std::string &amp;)']]]
+  ['date_129',['Date',['../class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd',1,'Date::Date()'],['../class_date.html#af3efa227a00ac2ae993c424ca62c340c',1,'Date::Date(const int, const int, const int)']]]
 ];

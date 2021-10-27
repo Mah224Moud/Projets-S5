@@ -79,7 +79,7 @@ Pour afficher une <ref refid="class_interaction" kindref="compound">Interaction<
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.cpp" line="94" column="1" bodyfile="Interaction.cpp" bodystart="94" bodyend="105"/>
+        <location file="Interaction.cpp" line="92" column="1" bodyfile="Interaction.cpp" bodystart="92" bodyend="103"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -102,56 +102,67 @@ Pour afficher une <ref refid="class_interaction" kindref="compound">Interaction<
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" refkind="member"><highlight class="normal"><ref refid="class_interaction_1aadfd0e254296043c26508d47090ace76" kindref="member">Interaction::Interaction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref><sp/>&amp;<sp/>date,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>contenu)</highlight></codeline>
-<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;date<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;date<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>();</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>-&gt;<sp/><ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(<ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref>);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>-&gt;<sp/><ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref>);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" refkind="member"><highlight class="normal"><ref refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" kindref="member">Interaction::~Interaction</ref>()</highlight></codeline>
-<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref>;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26" refid="class_interaction_1a73b7a7b384ba6436d3c73c3435517e5f" refkind="member"><highlight class="normal"><ref refid="class_interaction_1aadfd0e254296043c26508d47090ace76" kindref="member">Interaction::Interaction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>contenu)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>n<sp/>=<sp/>time(0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(*localtime(&amp;n));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>-&gt;<sp/><ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" refkind="member"><highlight class="normal"><ref refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" kindref="member">Interaction::~Interaction</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//delete<sp/>date;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51" refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" refkind="member"><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref><sp/><ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">Interaction::getDate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="52"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref>;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="class_interaction_1a0e194616267d53075169f189f6d71c60" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">Interaction::getContenu</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="62"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref>;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" refkind="member"><highlight class="normal"><ref refid="structtm" kindref="compound">tm</ref><sp/><ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">Interaction::getDate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="50"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_interaction_1a0e194616267d53075169f189f6d71c60" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">Interaction::getContenu</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74" refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">Interaction::setDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref><sp/>&amp;<sp/>t)</highlight></codeline>
-<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref>=<sp/>t;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83" refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">Interaction::setContenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::<sp/>string<sp/>&amp;<sp/>c)</highlight></codeline>
-<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref>=<sp/>c;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94" refid="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_interaction_8cpp_1a0474aeea9f966416f60720e9e440bbb3" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;<sp/>i)</highlight></codeline>
-<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(d<sp/>==<sp/>i.<ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">getDate</ref>())<sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Aujourd&apos;hui<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1af7f644265141e1b856af83715177a7e7" kindref="member">setDate</ref>(i.<ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>d.<ref refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" kindref="member">toString</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>i.<ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">getContenu</ref>();</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72" refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">Interaction::setDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref><sp/>&amp;<sp/>t)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kindref="member">date</ref>=<sp/>t;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">Interaction::setContenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::<sp/>string<sp/>&amp;<sp/>c)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kindref="member">contenu</ref>=<sp/>c;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="_interaction_8cpp_1a0474aeea9f966416f60720e9e440bbb3" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;<sp/>i)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(d<sp/>==<sp/>i.<ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">getDate</ref>())<sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Aujourd&apos;hui<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1af7f644265141e1b856af83715177a7e7" kindref="member">setDate</ref>(i.<ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>d.<ref refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" kindref="member">toString</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>i.<ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">getContenu</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" kindref="member">Interaction::operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;<sp/>autre)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">getContenu</ref>()<sp/>==<sp/>autre.<ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">getContenu</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" kindref="member">Interaction::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;<sp/>autre)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(autre.<ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(autre.<ref refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kindref="member">getContenu</ref>());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Interaction.cpp"/>
   </compounddef>

@@ -46,6 +46,10 @@ class Date
         std::string toString();
 
         bool operator==(const tm&);
+        bool operator<(const tm&);
+        bool operator>(const tm&);
+        bool operator<=(const tm&);
+        bool operator>=(const tm&);
 };
 
 

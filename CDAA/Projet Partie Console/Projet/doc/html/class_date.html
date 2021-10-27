@@ -269,19 +269,21 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    time_t nt = time(NULL);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtm.html">tm</a>* nd = localtime(&amp;nt);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    nd -&gt; tm_mday= day;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    nd -&gt; tm_mon= month - 1;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    nd -&gt; tm_year= year - 1900;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    nt = mktime(nd);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = localtime(&amp;nt);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    time_t nt = time(NULL);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">struct </span><a class="code" href="structtm.html">tm</a>* nd = localtime(&amp;nt);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    nd -&gt; tm_mday= day;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    nd -&gt; tm_mon= month - 1;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    nd -&gt; tm_year= year - 1900;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    nt = mktime(nd);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = localtime(&amp;nt);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment -->
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>.</p>
+
 </div>
 </div>
 <a id="a99c5677274bdaffadaedad4c888ccbca"></a>
@@ -301,9 +303,9 @@ Attributs privés</h2></td></tr>
 
 <p>Récupération de l'année de la date. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>un entier qui représente l'année </dd></dl>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_year + 1900;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_year + 1900;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,10 +326,12 @@ Attributs privés</h2></td></tr>
 
 <p>Récupération de la date. </p>
 <p>Cette fonction renvoie l'instance tm pointée par d. </p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment -->
+<p class="reference">Référencé par <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">Contact::modification()</a>, <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>.</p>
+
 </div>
 </div>
 <a id="a961e64bff2fdff7ee95bc335ca400d2f"></a>
@@ -347,9 +351,9 @@ Attributs privés</h2></td></tr>
 
 <p>Récupération du jour de la date. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>un entier qui représente le jour </dd></dl>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mday;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mday;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -370,9 +374,9 @@ Attributs privés</h2></td></tr>
 
 <p>Récupération du mois de la date. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>un entier qui représente le mois </dd></dl>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mon+1;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mon+1;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -399,9 +403,9 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mday == autre.tm_mday &amp;&amp; <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mon == autre.tm_mon &amp;&amp; <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_year == autre.tm_year;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mday == autre.tm_mday &amp;&amp; <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_mon == autre.tm_mon &amp;&amp; <a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a>-&gt;tm_year == autre.tm_year;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,9 +424,9 @@ Attributs privés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = t;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    *<a class="code" href="class_date.html#a51a979c64305d841600f0a25b39d01f8">d</a> = t;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -443,12 +447,12 @@ Attributs privés</h2></td></tr>
 
 <p>Récupération de la date avec le format jj/mm/aaaa. </p>
 <dl class="section return"><dt>Renvoie</dt><dd>Chaine de caractère contenant la date </dd></dl>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> std::to_string( <a class="code" href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">getJour</a>())+<span class="stringliteral">&quot;/&quot;</span>+std::to_string(<a class="code" href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">getMois</a>())+<span class="stringliteral">&quot;/&quot;</span>+to_string(<a class="code" href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">getAnnee</a>());</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="ttc" id="aclass_date_html_a6b16211abaa2c22418e82b8cd9d08bfe"><div class="ttname"><a href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">Date::getMois</a></div><div class="ttdeci">int getMois()</div><div class="ttdoc">Récupération du mois de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:46</div></div>
-<div class="ttc" id="aclass_date_html_a961e64bff2fdff7ee95bc335ca400d2f"><div class="ttname"><a href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">Date::getJour</a></div><div class="ttdeci">int getJour()</div><div class="ttdoc">Récupération du jour de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:37</div></div>
-<div class="ttc" id="aclass_date_html_a99c5677274bdaffadaedad4c888ccbca"><div class="ttname"><a href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">Date::getAnnee</a></div><div class="ttdeci">int getAnnee()</div><div class="ttdoc">Récupération de l'année de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:55</div></div>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> std::to_string( <a class="code" href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">getJour</a>())+<span class="stringliteral">&quot;/&quot;</span>+std::to_string(<a class="code" href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">getMois</a>())+<span class="stringliteral">&quot;/&quot;</span>+to_string(<a class="code" href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">getAnnee</a>());</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="ttc" id="aclass_date_html_a6b16211abaa2c22418e82b8cd9d08bfe"><div class="ttname"><a href="class_date.html#a6b16211abaa2c22418e82b8cd9d08bfe">Date::getMois</a></div><div class="ttdeci">int getMois()</div><div class="ttdoc">Récupération du mois de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:51</div></div>
+<div class="ttc" id="aclass_date_html_a961e64bff2fdff7ee95bc335ca400d2f"><div class="ttname"><a href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">Date::getJour</a></div><div class="ttdeci">int getJour()</div><div class="ttdoc">Récupération du jour de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:42</div></div>
+<div class="ttc" id="aclass_date_html_a99c5677274bdaffadaedad4c888ccbca"><div class="ttname"><a href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">Date::getAnnee</a></div><div class="ttdeci">int getAnnee()</div><div class="ttdoc">Récupération de l'année de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:60</div></div>
 </div><!-- fragment -->
 </div>
 </div>

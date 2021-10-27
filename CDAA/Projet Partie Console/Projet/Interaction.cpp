@@ -111,6 +111,9 @@ bool Interaction::operator==(const Interaction& autre)
     return getContenu() == autre.getContenu();
 }
 
+/**
+
+*/
 void Interaction::operator=(const Interaction& autre)
 {
     setDate(autre.getDate());

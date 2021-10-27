@@ -4,30 +4,36 @@
     <member refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" kind="variable"><name>nom</name></member>
     <member refid="class_contact_1a6d85467851d61def44445912b58d52a4" kind="variable"><name>prenom</name></member>
     <member refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" kind="variable"><name>entreprise</name></member>
-    <member refid="class_contact_1a6d2c1a0e98e352b06782465adee0d965" kind="variable"><name>telephone</name></member>
+    <member refid="class_contact_1a045666ea797063981360d3c926c4d58f" kind="variable"><name>telephone</name></member>
     <member refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" kind="variable"><name>URIphoto</name></member>
     <member refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" kind="variable"><name>dateCreation</name></member>
     <member refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" kind="variable"><name>dateLastModif</name></member>
     <member refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" kind="variable"><name>mail</name></member>
     <member refid="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" kind="variable"><name>listInteractions</name></member>
+    <member refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" kind="function"><name>modification</name></member>
     <member refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" kind="function"><name>Contact</name></member>
     <member refid="class_contact_1a442a15aeaf696631b86a2298fd436f5c" kind="function"><name>Contact</name></member>
     <member refid="class_contact_1ab68013cc59e3d640735c573e52c35219" kind="function"><name>~Contact</name></member>
     <member refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" kind="function"><name>getNom</name></member>
     <member refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" kind="function"><name>getPrenom</name></member>
     <member refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" kind="function"><name>getEntreprise</name></member>
-    <member refid="class_contact_1a3abe8055e117e6d8a69b95f88ab03f33" kind="function"><name>getLesTelephones</name></member>
-    <member refid="class_contact_1aea5e3bb308317bafb43f2554f1c52e51" kind="function"><name>getTelephone</name></member>
+    <member refid="class_contact_1a53ebe193a5284e27b468ababdf7577e3" kind="function"><name>getTelephone</name></member>
     <member refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" kind="function"><name>getPhoto</name></member>
     <member refid="class_contact_1af1b8218175c3c88bc10375fe098e851a" kind="function"><name>getDateCreation</name></member>
     <member refid="class_contact_1a977dfc1a358b7a34774621041837512e" kind="function"><name>getDateLastModif</name></member>
-    <member refid="class_contact_1aad1c8863604ad42aca8601aea644bf89" kind="function"><name>getEmail</name></member>
-    <member refid="class_contact_1a786829ed6ac446dfbb0cd004972636b7" kind="function"><name>getListInteractions</name></member>
-    <member refid="class_contact_1a1bb48dc09983e6c3b42dc1fc2fd06ea1" kind="function"><name>setNom</name></member>
-    <member refid="class_contact_1a543b1fc15222db095ec2aff7bd4b840c" kind="function"><name>setPrenom</name></member>
-    <member refid="class_contact_1aa729bc315274b5951849452e5e94231c" kind="function"><name>setEntreprise</name></member>
-    <member refid="class_contact_1aae2a746f91cd8c9ae78945c61adc5c50" kind="function"><name>setTelephone</name></member>
-    <member refid="class_contact_1a11eac4b0dab5605623eca9a130f5b762" kind="function"><name>setPhoto</name></member>
+    <member refid="class_contact_1a8d89efed9b157ef61804cd1d1ce31ad0" kind="function"><name>getEmail</name></member>
+    <member refid="class_contact_1ae640d361eb3e8659648bbdf2c0fb6bb4" kind="function"><name>getListInteractions</name></member>
+    <member refid="class_contact_1a0837af372d75a5d85ab296c6104a3232" kind="function"><name>setNom</name></member>
+    <member refid="class_contact_1ac31195d758df58ee327cc05b6276aace" kind="function"><name>setPrenom</name></member>
+    <member refid="class_contact_1a1237b826b80e3ead402d0c26cc3c2ace" kind="function"><name>setEntreprise</name></member>
+    <member refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" kind="function"><name>setTelephone</name></member>
+    <member refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" kind="function"><name>setPhoto</name></member>
+    <member refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" kind="function"><name>setDateCreation</name></member>
+    <member refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" kind="function"><name>setDateLastModif</name></member>
+    <member refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" kind="function"><name>setEmail</name></member>
+    <member refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kind="function"><name>addInteraction</name></member>
+    <member refid="class_contact_1ad69ca2095921e570fdf0734ededa36f5" kind="function"><name>removeInteraction</name></member>
+    <member refid="class_contact_1a24f9fcd32bd68e5d5af1a6f2a61a1948" kind="friend"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="class_date" kind="class"><name>Date</name>
     <member refid="class_date_1a51a979c64305d841600f0a25b39d01f8" kind="variable"><name>d</name></member>
@@ -57,16 +63,40 @@
     <member refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" kind="function"><name>fromString</name></member>
     <member refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kind="function"><name>toString</name></member>
   </compound>
+  <compound refid="class_gestion_contact" kind="class"><name>GestionContact</name>
+    <member refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" kind="variable"><name>listContact</name></member>
+    <member refid="class_gestion_contact_1a0d42db3777c1e15d557979c897acf344" kind="function"><name>GestionContact</name></member>
+    <member refid="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" kind="function"><name>~GestionContact</name></member>
+    <member refid="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" kind="function"><name>GetlistContact</name></member>
+    <member refid="class_gestion_contact_1aef55482330b41395718625f78f19844d" kind="function"><name>getSize</name></member>
+    <member refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" kind="function"><name>addContact</name></member>
+    <member refid="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" kind="function"><name>removeContact</name></member>
+    <member refid="class_gestion_contact_1ae5ddb4f9bafabea0a77f5338ce4d4501" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_gestion_todo" kind="class"><name>GestionTodo</name>
+    <member refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" kind="variable"><name>listTodo</name></member>
+    <member refid="class_gestion_todo_1ac0940481a804915d34ef24312cde733e" kind="function"><name>GestionTodo</name></member>
+    <member refid="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" kind="function"><name>~GestionTodo</name></member>
+    <member refid="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" kind="function"><name>getlistTodo</name></member>
+    <member refid="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" kind="function"><name>getSize</name></member>
+    <member refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kind="function"><name>addTodo</name></member>
+    <member refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" kind="function"><name>removeTodo</name></member>
+    <member refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" kind="function"><name>removeAllInteractionTodo</name></member>
+    <member refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" kind="function"><name>getAllInteractionTodo</name></member>
+    <member refid="class_gestion_todo_1a537e6a1fc2191331a73b6076d5327fd1" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
   <compound refid="class_interaction" kind="class"><name>Interaction</name>
     <member refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" kind="variable"><name>date</name></member>
     <member refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" kind="variable"><name>contenu</name></member>
     <member refid="class_interaction_1aadfd0e254296043c26508d47090ace76" kind="function"><name>Interaction</name></member>
-    <member refid="class_interaction_1a407c1b9c8190af0ec9e0285c9273e226" kind="function"><name>Interaction</name></member>
+    <member refid="class_interaction_1a73b7a7b384ba6436d3c73c3435517e5f" kind="function"><name>Interaction</name></member>
     <member refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" kind="function"><name>~Interaction</name></member>
     <member refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kind="function"><name>getDate</name></member>
     <member refid="class_interaction_1a0e194616267d53075169f189f6d71c60" kind="function"><name>getContenu</name></member>
     <member refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kind="function"><name>setDate</name></member>
     <member refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kind="function"><name>setContenu</name></member>
+    <member refid="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" kind="function"><name>operator==</name></member>
+    <member refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" kind="function"><name>operator=</name></member>
     <member refid="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" kind="friend"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="structtm" kind="struct"><name>tm</name>
@@ -76,7 +106,7 @@
     <member refid="class_todo_1ae00f4ec991a678ebd1af1fe4a7940256" kind="variable"><name>contenu</name></member>
     <member refid="class_todo_1aff30bd207a1423697cca38322d42557f" kind="variable"><name>date</name></member>
     <member refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" kind="function"><name>Todo</name></member>
-    <member refid="class_todo_1a813a202cf72925aee8c44e9a3ca183b9" kind="function"><name>Todo</name></member>
+    <member refid="class_todo_1a7d3c064efd1e62f3f1348aedebbf64eb" kind="function"><name>Todo</name></member>
     <member refid="class_todo_1a3ee7c0d0dfb18d895758a2bb1862a5a8" kind="function"><name>getInteraction</name></member>
     <member refid="class_todo_1a336fa1a249ac6acd320058902c8f40e2" kind="function"><name>getContenu</name></member>
     <member refid="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" kind="function"><name>getDate</name></member>
@@ -88,6 +118,7 @@
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
   <compound refid="_contact_8cpp" kind="file"><name>Contact.cpp</name>
+    <member refid="_contact_8cpp_1af87e832bd0c9667d25df0dfec1c17c1b" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="_contact_8h" kind="file"><name>Contact.h</name>
   </compound>
@@ -99,12 +130,24 @@
   </compound>
   <compound refid="_email_8h" kind="file"><name>Email.h</name>
   </compound>
+  <compound refid="_gestion_contact_8cpp" kind="file"><name>GestionContact.cpp</name>
+  </compound>
+  <compound refid="_gestion_contact_8h" kind="file"><name>GestionContact.h</name>
+  </compound>
+  <compound refid="_gestion_todo_8cpp" kind="file"><name>GestionTodo.cpp</name>
+    <member refid="_gestion_todo_8cpp_1a4d1ddac09317548a32d4d2f7d3790a9d" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="_gestion_todo_8h" kind="file"><name>GestionTodo.h</name>
+  </compound>
   <compound refid="_interaction_8cpp" kind="file"><name>Interaction.cpp</name>
     <member refid="_interaction_8cpp_1a0474aeea9f966416f60720e9e440bbb3" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="_interaction_8h" kind="file"><name>Interaction.h</name>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" kind="function"><name>testContact</name></member>
+    <member refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" kind="function"><name>testEmail</name></member>
+    <member refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" kind="function"><name>testGestionTodo</name></member>
     <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
   </compound>
   <compound refid="_todo_8cpp" kind="file"><name>Todo.cpp</name>

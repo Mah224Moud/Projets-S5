@@ -100,10 +100,10 @@ Graphe de collaboration de Todo:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_todo__coll__graph.png" border="0" usemap="#a_todo_coll__map" alt="Collaboration graph"/></div>
 <map name="a_todo_coll__map" id="a_todo_coll__map">
-<area shape="rect" title="Cette classe ..." alt="" coords="53,373,191,553"/>
-<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="43,5,83,83"/>
-<area shape="rect" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;." alt="" coords="70,145,198,311"/>
-<area shape="rect" title=" " alt="" coords="134,5,193,83"/>
+<area shape="rect" title="Cette classe ..." alt="" coords="55,403,194,583"/>
+<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="46,5,86,83"/>
+<area shape="rect" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;." alt="" coords="73,145,201,340"/>
+<area shape="rect" title=" " alt="" coords="137,5,195,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -112,9 +112,9 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a5fbb1de89a8e2e99941f6a175cc6da91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo</a> ()</td></tr>
 <tr class="memdesc:a5fbb1de89a8e2e99941f6a175cc6da91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut.  <a href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a5fbb1de89a8e2e99941f6a175cc6da91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813a202cf72925aee8c44e9a3ca183b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo.html#a813a202cf72925aee8c44e9a3ca183b9">Todo</a> (const <a class="el" href="class_interaction.html">Interaction</a> &amp;, const std::string &amp;, const <a class="el" href="structtm.html">tm</a> &amp;)</td></tr>
-<tr class="memdesc:a813a202cf72925aee8c44e9a3ca183b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur avec paramètres.  <a href="class_todo.html#a813a202cf72925aee8c44e9a3ca183b9">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a813a202cf72925aee8c44e9a3ca183b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3c064efd1e62f3f1348aedebbf64eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo.html#a7d3c064efd1e62f3f1348aedebbf64eb">Todo</a> (const <a class="el" href="class_interaction.html">Interaction</a> &amp;, const std::string &amp;)</td></tr>
+<tr class="memdesc:a7d3c064efd1e62f3f1348aedebbf64eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur avec paramètres.  <a href="class_todo.html#a7d3c064efd1e62f3f1348aedebbf64eb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7d3c064efd1e62f3f1348aedebbf64eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee7c0d0dfb18d895758a2bb1862a5a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_interaction.html">Interaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">getInteraction</a> () const</td></tr>
 <tr class="memdesc:a3ee7c0d0dfb18d895758a2bb1862a5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseurs.  <a href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a3ee7c0d0dfb18d895758a2bb1862a5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,19 +178,22 @@ Amis</h2></td></tr>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    time_t n = time(0);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;<a class="code" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="aclass_todo_html_a7585477bfb8bff408e5d5736a326ef7e"><div class="ttname"><a href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">Todo::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Pour affecter une date à l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:78</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a> = <span class="keyword">new</span> <a class="code" href="class_interaction.html">Interaction</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    this-&gt;<a class="code" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="aclass_interaction_html"><div class="ttname"><a href="class_interaction.html">Interaction</a></div><div class="ttdoc">Cette classe décrit des intéractions dans l'application, le contenu et la date de l'interaction;.</div><div class="ttdef"><b>Definition:</b> Interaction.h:22</div></div>
+<div class="ttc" id="aclass_todo_html_a7585477bfb8bff408e5d5736a326ef7e"><div class="ttname"><a href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">Todo::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Pour affecter une date à l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:80</div></div>
+<div class="ttc" id="aclass_todo_html_aaad913ece0b9171e24118ffc9ab0a3e6"><div class="ttname"><a href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">Todo::lienInteraction</a></div><div class="ttdeci">Interaction * lienInteraction</div><div class="ttdoc">Lien vers l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.h:23</div></div>
 <div class="ttc" id="aclass_todo_html_ae00f4ec991a678ebd1af1fe4a7940256"><div class="ttname"><a href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">Todo::contenu</a></div><div class="ttdeci">std::string contenu</div><div class="ttdoc">Le contenu.</div><div class="ttdef"><b>Definition:</b> Todo.h:25</div></div>
 <div class="ttc" id="aclass_todo_html_aff30bd207a1423697cca38322d42557f"><div class="ttname"><a href="class_todo.html#aff30bd207a1423697cca38322d42557f">Todo::date</a></div><div class="ttdeci">struct tm * date</div><div class="ttdoc">La date.</div><div class="ttdef"><b>Definition:</b> Todo.h:27</div></div>
 <div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>, <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>, et <a class="el" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate()</a>.</p>
+<p class="reference">Références <a class="el" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>, <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>, <a class="el" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a>, et <a class="el" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate()</a>.</p>
 
 </div>
 </div>
-<a id="a813a202cf72925aee8c44e9a3ca183b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a813a202cf72925aee8c44e9a3ca183b9">&#9670;&nbsp;</a></span>Todo() <span class="overload">[2/2]</span></h2>
+<a id="a7d3c064efd1e62f3f1348aedebbf64eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d3c064efd1e62f3f1348aedebbf64eb">&#9670;&nbsp;</a></span>Todo() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,13 +208,7 @@ Amis</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structtm.html">tm</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -224,17 +221,18 @@ Amis</h2></td></tr>
 <p>Constructeur avec paramètres. </p>
 <p>Constructeur avec paramètres de la classe <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>.</p>
 <p>Ce constructeur initialise à une date donnée un <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a> avec un contenu vide n'étainteraction; </p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate</a>(t);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction</a>(i);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<a class="code" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu</a>(c);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="ttc" id="aclass_todo_html_a4bc4c583115b304d665a3169e168105e"><div class="ttname"><a href="class_todo.html#a4bc4c583115b304d665a3169e168105e">Todo::setInteraction</a></div><div class="ttdeci">void setInteraction(const Interaction &amp;)</div><div class="ttdoc">Mutateurs.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:68</div></div>
-<div class="ttc" id="aclass_todo_html_ad880a5598520b267d883ec6ce22f7f45"><div class="ttname"><a href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:87</div></div>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    time_t n = time(0);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a> = <span class="keyword">new</span> <a class="code" href="class_interaction.html">Interaction</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction</a>(i);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    this-&gt;<a class="code" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu</a>(c);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="aclass_todo_html_a4bc4c583115b304d665a3169e168105e"><div class="ttname"><a href="class_todo.html#a4bc4c583115b304d665a3169e168105e">Todo::setInteraction</a></div><div class="ttdeci">void setInteraction(const Interaction &amp;)</div><div class="ttdoc">Mutateurs.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:70</div></div>
+<div class="ttc" id="aclass_todo_html_ad880a5598520b267d883ec6ce22f7f45"><div class="ttname"><a href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">Todo::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:89</div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>, <a class="el" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu()</a>, <a class="el" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate()</a>, et <a class="el" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction()</a>.</p>
+<p class="reference">Références <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>, <a class="el" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a>, <a class="el" href="class_todo.html#ad880a5598520b267d883ec6ce22f7f45">setContenu()</a>, <a class="el" href="class_todo.html#a7585477bfb8bff408e5d5736a326ef7e">setDate()</a>, et <a class="el" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +254,9 @@ Amis</h2></td></tr>
 
 <p>Pour recupérer le contenu de l'interaction. </p>
 <p>Cette fonction renvoie la chaine contenu de l'interaction. </p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>.</p>
 
@@ -281,9 +279,9 @@ Amis</h2></td></tr>
 
 <p>Pour récupérer la date. </p>
 <p>Cette fonction renvoie l'instance pointée par date. </p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>.</p>
 
@@ -307,10 +305,9 @@ Amis</h2></td></tr>
 <p>Accesseurs. </p>
 <p>Pour récuperer l'intéraction à laquelle apppartient le <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>.</p>
 <p>Ce fontion renvoie l'instance Intéraction à laquelle appartient le <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>. </p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="aclass_todo_html_aaad913ece0b9171e24118ffc9ab0a3e6"><div class="ttname"><a href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">Todo::lienInteraction</a></div><div class="ttdeci">Interaction * lienInteraction</div><div class="ttdoc">Lien vers l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.h:23</div></div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a>.</p>
 
@@ -339,13 +336,13 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>= c;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>= c;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256">contenu</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_todo.html#a813a202cf72925aee8c44e9a3ca183b9">Todo()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>, et <a class="el" href="class_todo.html#a7d3c064efd1e62f3f1348aedebbf64eb">Todo()</a>.</p>
 
 </div>
 </div>
@@ -373,13 +370,13 @@ Amis</h2></td></tr>
   </dd>
 </dl>
 <p>La structure tm t passée en paramètre est copié dans l'instance pointée par date. </p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    *<a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>= t;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    *<a class="code" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>= t;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#aff30bd207a1423697cca38322d42557f">date</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>, et <a class="el" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo()</a>.</p>
 
 </div>
 </div>
@@ -406,13 +403,13 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    *<a class="code" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a> = inter;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    *<a class="code" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a> = inter;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_todo.html#aaad913ece0b9171e24118ffc9ab0a3e6">lienInteraction</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_todo.html#a813a202cf72925aee8c44e9a3ca183b9">Todo()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>, et <a class="el" href="class_todo.html#a7d3c064efd1e62f3f1348aedebbf64eb">Todo()</a>.</p>
 
 </div>
 </div>
@@ -460,21 +457,21 @@ Amis</h2></td></tr>
   </dd>
 </dl>
 <p>Pour afficher un <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui). </p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span>(!(d == td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>()))</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;@date &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span>(!(d == td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>()))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;@date &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
-<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:101</div></div>
-<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:73</div></div>
-<div class="ttc" id="aclass_todo_html_a336fa1a249ac6acd320058902c8f40e2"><div class="ttname"><a href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">Todo::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:57</div></div>
-<div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:48</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:106</div></div>
+<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:78</div></div>
+<div class="ttc" id="aclass_todo_html_a336fa1a249ac6acd320058902c8f40e2"><div class="ttname"><a href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">Todo::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:59</div></div>
+<div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:50</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -553,7 +550,7 @@ Amis</h2></td></tr>
 
 <p>Lien vers l'interaction. </p>
 
-<p class="reference">Référencé par <a class="el" href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">getInteraction()</a>, et <a class="el" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_todo.html#a3ee7c0d0dfb18d895758a2bb1862a5a8">getInteraction()</a>, <a class="el" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">setInteraction()</a>, et <a class="el" href="class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91">Todo()</a>.</p>
 
 </div>
 </div>

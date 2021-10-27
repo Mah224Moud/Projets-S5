@@ -23,14 +23,14 @@ class GestionTodo
         GestionTodo();
         ~GestionTodo();
 
-        std::list<Todo> getlistTodo() const{ return listTodo;}
+        const std::list<Todo> getlistTodo() const{ return listTodo;}
         inline unsigned getSize(){return listTodo.size();}
 
         void addTodo(const Todo&);
         void removeTodo(const std::string&);
         void removeAllInteractionTodo(const Interaction&);
 
-        GestionTodo getAllInteractionTodo(const Interaction&);
+        GestionTodo getAllInteractionTodo(const Interaction&) const;
 
         friend std::ostream& operator<<(std::ostream&, const GestionTodo&);
 };

@@ -118,3 +118,21 @@ bool Date::operator==(const tm& autre)
 {
     return d->tm_mday == autre.tm_mday && d->tm_mon == autre.tm_mon && d->tm_year == autre.tm_year;
 }
+
+/**
+    *
+*/
+bool Date::operator<(const tm& autre)
+{
+    if(d->tm_year < autre.tm_year)
+        return true;
+    else if(d->tm_year == autre.tm_year)
+
+            if(d->tm_mon < autre.tm_mon)
+                return true;
+            else if(d->tm_mon == autre.tm_mon)
+
+                    if(d->tm_mday < autre.tm_mday)
+                        return true;
+    return false;
+}

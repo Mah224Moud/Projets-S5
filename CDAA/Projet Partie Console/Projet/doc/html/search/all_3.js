@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['fromdate_17',['fromDate',['../class_date.html#a21c46ba7a74d45d1299f92330a43533a',1,'Date']]],
-  ['fromstring_18',['fromString',['../class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6',1,'Email']]]
+  ['email_16',['Email',['../class_email.html',1,'Email'],['../class_email.html#a2cfcfea1e55511208e7858c33f48ad9d',1,'Email::Email()'],['../class_email.html#a61920b1f7602e5eb80edf1e4bd96e6c7',1,'Email::Email(const std::string &amp;)']]],
+  ['email_2ecpp_17',['Email.cpp',['../_email_8cpp.html',1,'']]],
+  ['email_2eh_18',['Email.h',['../_email_8h.html',1,'']]],
+  ['entreprise_19',['entreprise',['../class_contact.html#a786cf3e7f36e558af773e64a3302fbf8',1,'Contact']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['contact_0',['Contact',['../class_contact.html',1,'Contact'],['../class_contact.html#ae39444f378e6de7fd6c3e60981949af5',1,'Contact::Contact()'],['../class_contact.html#a442a15aeaf696631b86a2298fd436f5c',1,'Contact::Contact(const std::string &amp;, const std::string &amp;, const std::string &amp;)']]],
-  ['contact_2ecpp_1',['Contact.cpp',['../_contact_8cpp.html',1,'']]],
-  ['contact_2eh_2',['Contact.h',['../_contact_8h.html',1,'']]],
-  ['contenu_3',['contenu',['../class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1',1,'Interaction::contenu()'],['../class_todo.html#ae00f4ec991a678ebd1af1fe4a7940256',1,'Todo::contenu()']]]
+  ['addcontact_0',['addContact',['../class_gestion_contact.html#ab5106c180d9d24ba15cc3ddfa8d224fb',1,'GestionContact']]],
+  ['addinteraction_1',['addInteraction',['../class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193',1,'Contact']]],
+  ['addtodo_2',['addTodo',['../class_gestion_todo.html#aa96385819780cf4cfed3f4af21bd1e55',1,'GestionTodo']]]
 ];

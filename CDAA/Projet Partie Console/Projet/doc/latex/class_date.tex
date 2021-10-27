@@ -132,19 +132,23 @@ Récupération en fonction des paramètres day, month et year d\textquotesingle{
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{85 \{}
-\DoxyCodeLine{86     time\_t nt = time(NULL);}
-\DoxyCodeLine{87     \textcolor{keyword}{struct }\mbox{\hyperlink{structtm}{tm}}* nd = localtime(\&nt);}
-\DoxyCodeLine{88 }
-\DoxyCodeLine{89     nd -\/> tm\_mday= day;}
-\DoxyCodeLine{90     nd -\/> tm\_mon= month -\/ 1;}
-\DoxyCodeLine{91     nd -\/> tm\_year= year -\/ 1900;}
-\DoxyCodeLine{92 }
-\DoxyCodeLine{93     nt = mktime(nd);}
-\DoxyCodeLine{94     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} = localtime(\&nt);}
-\DoxyCodeLine{95 \}}
+\DoxyCodeLine{90 \{}
+\DoxyCodeLine{91     time\_t nt = time(NULL);}
+\DoxyCodeLine{92     \textcolor{keyword}{struct }\mbox{\hyperlink{structtm}{tm}}* nd = localtime(\&nt);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     nd -\/> tm\_mday= day;}
+\DoxyCodeLine{95     nd -\/> tm\_mon= month -\/ 1;}
+\DoxyCodeLine{96     nd -\/> tm\_year= year -\/ 1900;}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     nt = mktime(nd);}
+\DoxyCodeLine{99     \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} = localtime(\&nt);}
+\DoxyCodeLine{100 \}}
 
 \end{DoxyCode}
+
+
+Référencé par test\+Contact(), et test\+Gestion\+Todo().
+
 \mbox{\Hypertarget{class_date_a99c5677274bdaffadaedad4c888ccbca}\label{class_date_a99c5677274bdaffadaedad4c888ccbca}} 
 \index{Date@{Date}!getAnnee@{getAnnee}}
 \index{getAnnee@{getAnnee}!Date@{Date}}
@@ -160,9 +164,9 @@ un entier qui représente l\textquotesingle{}année
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{56 \{}
-\DoxyCodeLine{57     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_year + 1900;}
-\DoxyCodeLine{58 \}}
+\DoxyCodeLine{61 \{}
+\DoxyCodeLine{62     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_year + 1900;}
+\DoxyCodeLine{63 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_a53dcab03c7834448fd67ef453ff34195}\label{class_date_a53dcab03c7834448fd67ef453ff34195}} 
@@ -177,11 +181,15 @@ Récupération de la date.
 
 Cette fonction renvoie l\textquotesingle{}instance tm pointée par d. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{65 \{}
-\DoxyCodeLine{66     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}};}
-\DoxyCodeLine{67 \}}
+\DoxyCodeLine{70 \{}
+\DoxyCodeLine{71     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}};}
+\DoxyCodeLine{72 \}}
 
 \end{DoxyCode}
+
+
+Référencé par Contact\+::modification(), test\+Contact(), et test\+Gestion\+Todo().
+
 \mbox{\Hypertarget{class_date_a961e64bff2fdff7ee95bc335ca400d2f}\label{class_date_a961e64bff2fdff7ee95bc335ca400d2f}} 
 \index{Date@{Date}!getJour@{getJour}}
 \index{getJour@{getJour}!Date@{Date}}
@@ -197,9 +205,9 @@ un entier qui représente le jour
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{38 \{}
-\DoxyCodeLine{39     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mday;}
-\DoxyCodeLine{40 \}}
+\DoxyCodeLine{43 \{}
+\DoxyCodeLine{44     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mday;}
+\DoxyCodeLine{45 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}\label{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}} 
@@ -217,9 +225,9 @@ un entier qui représente le mois
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{47 \{}
-\DoxyCodeLine{48     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mon+1;}
-\DoxyCodeLine{49 \}}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mon+1;}
+\DoxyCodeLine{54 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_ab6e18eb4e080c723df03af0be4f0487e}\label{class_date_ab6e18eb4e080c723df03af0be4f0487e}} 
@@ -239,9 +247,9 @@ Cette fonction compare deux dates. Elle renvoie true si les jours, mois et anné
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{113 \{}
-\DoxyCodeLine{114     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mday == autre.tm\_mday \&\& \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mon == autre.tm\_mon \&\& \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_year == autre.tm\_year;}
-\DoxyCodeLine{115 \}}
+\DoxyCodeLine{118 \{}
+\DoxyCodeLine{119     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mday == autre.tm\_mday \&\& \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_mon == autre.tm\_mon \&\& \mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}}-\/>tm\_year == autre.tm\_year;}
+\DoxyCodeLine{120 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_af7f644265141e1b856af83715177a7e7}\label{class_date_af7f644265141e1b856af83715177a7e7}} 
@@ -252,9 +260,9 @@ Cette fonction compare deux dates. Elle renvoie true si les jours, mois et anné
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{74 \{}
-\DoxyCodeLine{75     *\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} = t;}
-\DoxyCodeLine{76 \}}
+\DoxyCodeLine{79 \{}
+\DoxyCodeLine{80     *\mbox{\hyperlink{class_date_a51a979c64305d841600f0a25b39d01f8}{d}} = t;}
+\DoxyCodeLine{81 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_date_adebdb45904dc2fbfacc66aa7528e0c04}\label{class_date_adebdb45904dc2fbfacc66aa7528e0c04}} 
@@ -272,9 +280,9 @@ Chaine de caractère contenant la date
 \end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{102 \{}
-\DoxyCodeLine{103     \textcolor{keywordflow}{return} std::to\_string( \mbox{\hyperlink{class_date_a961e64bff2fdff7ee95bc335ca400d2f}{getJour}}())+\textcolor{stringliteral}{"{}/"{}}+std::to\_string(\mbox{\hyperlink{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}{getMois}}())+\textcolor{stringliteral}{"{}/"{}}+to\_string(\mbox{\hyperlink{class_date_a99c5677274bdaffadaedad4c888ccbca}{getAnnee}}());}
-\DoxyCodeLine{104 \}}
+\DoxyCodeLine{107 \{}
+\DoxyCodeLine{108     \textcolor{keywordflow}{return} std::to\_string( \mbox{\hyperlink{class_date_a961e64bff2fdff7ee95bc335ca400d2f}{getJour}}())+\textcolor{stringliteral}{"{}/"{}}+std::to\_string(\mbox{\hyperlink{class_date_a6b16211abaa2c22418e82b8cd9d08bfe}{getMois}}())+\textcolor{stringliteral}{"{}/"{}}+to\_string(\mbox{\hyperlink{class_date_a99c5677274bdaffadaedad4c888ccbca}{getAnnee}}());}
+\DoxyCodeLine{109 \}}
 
 \end{DoxyCode}
 

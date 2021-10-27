@@ -1,0 +1,37 @@
+\hypertarget{_gestion_todo_8cpp}{}\doxysection{Référence du fichier Gestion\+Todo.\+cpp}
+\label{_gestion_todo_8cpp}\index{GestionTodo.cpp@{GestionTodo.cpp}}
+{\ttfamily \#include \char`\"{}Gestion\+Todo.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de Gestion\+Todo.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_gestion_todo_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_gestion_todo_8cpp_a4d1ddac09317548a32d4d2f7d3790a9d}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} \&gest)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_gestion_todo_8cpp_a4d1ddac09317548a32d4d2f7d3790a9d}\label{_gestion_todo_8cpp_a4d1ddac09317548a32d4d2f7d3790a9d}} 
+\index{GestionTodo.cpp@{GestionTodo.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!GestionTodo.cpp@{GestionTodo.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} \&}]{gest }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89 \{}
+\DoxyCodeLine{90     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_todo_acc224a199d23b29ecfdf8dd9367b0eec}{getlistTodo}}())}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}

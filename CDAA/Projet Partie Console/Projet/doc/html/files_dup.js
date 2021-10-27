@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "Contact.cpp", "_contact_8cpp.html", null ],
+    [ "Contact.cpp", "_contact_8cpp.html", "_contact_8cpp" ],
     [ "Contact.h", "_contact_8h.html", [
       [ "Contact", "class_contact.html", "class_contact" ]
     ] ],
@@ -11,6 +11,14 @@ var files_dup =
     [ "Email.cpp", "_email_8cpp.html", null ],
     [ "Email.h", "_email_8h.html", [
       [ "Email", "class_email.html", "class_email" ]
+    ] ],
+    [ "GestionContact.cpp", "_gestion_contact_8cpp.html", null ],
+    [ "GestionContact.h", "_gestion_contact_8h.html", [
+      [ "GestionContact", "class_gestion_contact.html", "class_gestion_contact" ]
+    ] ],
+    [ "GestionTodo.cpp", "_gestion_todo_8cpp.html", "_gestion_todo_8cpp" ],
+    [ "GestionTodo.h", "_gestion_todo_8h.html", [
+      [ "GestionTodo", "class_gestion_todo.html", "class_gestion_todo" ]
     ] ],
     [ "Interaction.cpp", "_interaction_8cpp.html", "_interaction_8cpp" ],
     [ "Interaction.h", "_interaction_8h.html", [

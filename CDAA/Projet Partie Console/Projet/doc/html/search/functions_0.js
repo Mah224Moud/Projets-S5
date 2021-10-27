@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['contact_91',['Contact',['../class_contact.html#ae39444f378e6de7fd6c3e60981949af5',1,'Contact::Contact()'],['../class_contact.html#a442a15aeaf696631b86a2298fd436f5c',1,'Contact::Contact(const std::string &amp;, const std::string &amp;, const std::string &amp;)']]]
+  ['addcontact_125',['addContact',['../class_gestion_contact.html#ab5106c180d9d24ba15cc3ddfa8d224fb',1,'GestionContact']]],
+  ['addinteraction_126',['addInteraction',['../class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193',1,'Contact']]],
+  ['addtodo_127',['addTodo',['../class_gestion_todo.html#aa96385819780cf4cfed3f4af21bd1e55',1,'GestionTodo']]]
 ];

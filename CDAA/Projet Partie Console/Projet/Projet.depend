@@ -26,41 +26,43 @@
 1634145190 source:/home/mamoudou/L3/S5/CDAA/Projet/Projet/Date.cpp
 	"Date.h"
 
-1635280079 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Contact.cpp
+1635333097 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Contact.cpp
 	"Contact.h"
 
-1635276330 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Contact.h
+1635332746 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Contact.h
 	<string>
 	<list>
 	<ctime>
 	<ostream>
 	"Email.h"
 	"Date.h"
-	"Interaction.h"
+	"GestionInteraction.h"
 
 1635251265 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Email.h
 	<string>
 	<iostream>
 
-1635278968 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Date.h
+1635323816 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Date.h
 	<string>
 	<ctime>
 
-1635277863 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Date.cpp
+1635325446 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Date.cpp
 	"Date.h"
 
 1635208946 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Email.cpp
 	"Email.h"
 
-1635288558 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/main.cpp
+1635332972 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/main.cpp
 	<iostream>
 	<string>
 	"Date.h"
 	"Contact.h"
 	"GestionTodo.h"
 	"Email.h"
+	"GestionContact.h"
+	"GestionInteraction.h"
 
-1635287970 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Interaction.cpp
+1635329084 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Interaction.cpp
 	"Interaction.h"
 
 1635287812 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Interaction.h
@@ -69,28 +71,38 @@
 	<ctime>
 	"Date.h"
 
-1635287760 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Todo.cpp
+1635329797 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Todo.cpp
 	"Todo.h"
 
-1635287416 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Todo.h
+1635329807 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/Todo.h
 	"Interaction.h"
 	<ctime>
 	<ostream>
 
-1635283214 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionContact.cpp
+1635321955 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionContact.cpp
 	"GestionContact.h"
 
-1635283368 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionContact.h
+1635321728 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionContact.h
 	<list>
 	<ostream>
 	"Contact.h"
 
-1635285830 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionTodo.cpp
+1635331914 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionTodo.cpp
 	"GestionTodo.h"
 
-1635285104 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionTodo.h
+1635331970 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionTodo.h
 	<list>
 	<ostream>
 	"Todo.h"
 	"Interaction.h"
+
+1635331790 source:/home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionInteraction.cpp
+	"GestionInteraction.h"
+
+1635332000 /home/bah/Bureau/L3/Projets-S5/CDAA/Projet Partie Console/Projet/GestionInteraction.h
+	<list>
+	<iostream>
+	<ostream>
+	"Interaction.h"
+	"GestionTodo.h"
 

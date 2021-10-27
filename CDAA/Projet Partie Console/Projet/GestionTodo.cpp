@@ -68,7 +68,7 @@ void GestionTodo::removeAllInteractionTodo(const Interaction& interact)
 /**
     *
 */
-GestionTodo GestionTodo::getAllInteractionTodo(const Interaction& interact)
+GestionTodo GestionTodo::getAllInteractionTodo(const Interaction& interact) const
 {
     GestionTodo gest;
     auto it = listTodo.begin();

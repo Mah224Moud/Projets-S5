@@ -1,0 +1,147 @@
+\hypertarget{class_gestion_contact}{}\doxysection{Référence de la classe Gestion\+Contact}
+\label{class_gestion_contact}\index{GestionContact@{GestionContact}}
+
+
+{\ttfamily \#include $<$Gestion\+Contact.\+h$>$}
+
+
+
+Graphe de collaboration de Gestion\+Contact\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_gestion_contact__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gestion_contact_a0d42db3777c1e15d557979c897acf344}{Gestion\+Contact}} ()
+\item 
+\mbox{\hyperlink{class_gestion_contact_a9c0d781c68963dcdc05b6d52019538f9}{$\sim$\+Gestion\+Contact}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_contact}{Contact}} $>$ \mbox{\hyperlink{class_gestion_contact_a902954b29f8b86b7be326f365f8c25a3}{Getlist\+Contact}} () const
+\item 
+unsigned \mbox{\hyperlink{class_gestion_contact_aef55482330b41395718625f78f19844d}{get\+Size}} ()
+\item 
+void \mbox{\hyperlink{class_gestion_contact_ab5106c180d9d24ba15cc3ddfa8d224fb}{add\+Contact}} (const \mbox{\hyperlink{class_contact}{Contact}} \&)
+\item 
+void \mbox{\hyperlink{class_gestion_contact_aed9c969df00ec0ac22d8bf9513e0e8ed}{remove\+Contact}} (const std\+::string \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_contact}{Contact}} $>$ \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{list\+Contact}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_gestion_contact_ae5ddb4f9bafabea0a77f5338ce4d4501}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_gestion_contact_a0d42db3777c1e15d557979c897acf344}\label{class_gestion_contact_a0d42db3777c1e15d557979c897acf344}} 
+\index{GestionContact@{GestionContact}!GestionContact@{GestionContact}}
+\index{GestionContact@{GestionContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{GestionContact()}{GestionContact()}}
+{\footnotesize\ttfamily Gestion\+Contact\+::\+Gestion\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_contact_a9c0d781c68963dcdc05b6d52019538f9}\label{class_gestion_contact_a9c0d781c68963dcdc05b6d52019538f9}} 
+\index{GestionContact@{GestionContact}!````~GestionContact@{$\sim$GestionContact}}
+\index{````~GestionContact@{$\sim$GestionContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{$\sim$GestionContact()}{~GestionContact()}}
+{\footnotesize\ttfamily Gestion\+Contact\+::$\sim$\+Gestion\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.clear();}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+Références list\+Contact.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_gestion_contact_ab5106c180d9d24ba15cc3ddfa8d224fb}\label{class_gestion_contact_ab5106c180d9d24ba15cc3ddfa8d224fb}} 
+\index{GestionContact@{GestionContact}!addContact@{addContact}}
+\index{addContact@{addContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{addContact()}{addContact()}}
+{\footnotesize\ttfamily void Gestion\+Contact\+::add\+Contact (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_contact}{Contact}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gestion_contact_a902954b29f8b86b7be326f365f8c25a3}\label{class_gestion_contact_a902954b29f8b86b7be326f365f8c25a3}} 
+\index{GestionContact@{GestionContact}!GetlistContact@{GetlistContact}}
+\index{GetlistContact@{GetlistContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{GetlistContact()}{GetlistContact()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_contact}{Contact}}$>$ Gestion\+Contact\+::\+Getlist\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}};\}}
+
+\end{DoxyCode}
+
+
+Références list\+Contact.
+
+\mbox{\Hypertarget{class_gestion_contact_aef55482330b41395718625f78f19844d}\label{class_gestion_contact_aef55482330b41395718625f78f19844d}} 
+\index{GestionContact@{GestionContact}!getSize@{getSize}}
+\index{getSize@{getSize}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily unsigned Gestion\+Contact\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.size();\}}
+
+\end{DoxyCode}
+
+
+Références list\+Contact.
+
+\mbox{\Hypertarget{class_gestion_contact_aed9c969df00ec0ac22d8bf9513e0e8ed}\label{class_gestion_contact_aed9c969df00ec0ac22d8bf9513e0e8ed}} 
+\index{GestionContact@{GestionContact}!removeContact@{removeContact}}
+\index{removeContact@{removeContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{removeContact()}{removeContact()}}
+{\footnotesize\ttfamily void Gestion\+Contact\+::remove\+Contact (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_gestion_contact_ae5ddb4f9bafabea0a77f5338ce4d4501}\label{class_gestion_contact_ae5ddb4f9bafabea0a77f5338ce4d4501}} 
+\index{GestionContact@{GestionContact}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}\label{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}} 
+\index{GestionContact@{GestionContact}!listContact@{listContact}}
+\index{listContact@{listContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{listContact}{listContact}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_contact}{Contact}}$>$ Gestion\+Contact\+::list\+Contact\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par Getlist\+Contact(), get\+Size(), et $\sim$\+Gestion\+Contact().
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gestion_contact_8h}{Gestion\+Contact.\+h}}\item 
+\mbox{\hyperlink{_gestion_contact_8cpp}{Gestion\+Contact.\+cpp}}\end{DoxyCompactItemize}

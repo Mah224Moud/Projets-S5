@@ -1,0 +1,12 @@
+<map id="GestionContact.h" name="GestionContact.h">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="51,155,94,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="68,229,144,256"/>
+<area shape="rect" id="node4" href="$_contact_8h.html" title="Fichier d&#39;entête de la classe Contact." alt="" coords="184,80,268,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="370,304,429,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="203,304,262,331"/>
+<area shape="rect" id="node7" href="$_email_8h.html" title="Fichier d&#39;entête de la classe Email." alt="" coords="467,155,537,181"/>
+<area shape="rect" id="node9" href="$_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="271,229,336,256"/>
+<area shape="rect" id="node10" href="$_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="219,155,323,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="462,229,542,256"/>
+</map>

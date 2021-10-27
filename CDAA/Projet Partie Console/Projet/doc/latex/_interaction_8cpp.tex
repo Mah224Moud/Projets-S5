@@ -48,16 +48,16 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 \end{DoxyParams}
 Pour afficher une \mbox{\hyperlink{class_interaction}{Interaction}}, on affiche la date de l\textquotesingle{}interaction, ou Aujourd\textquotesingle{}hui s\textquotesingle{}il s\textquotesingle{}agit de la date courante, suivie son contenu. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{95 \{}
-\DoxyCodeLine{96     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{97     \textcolor{keywordflow}{if}(d == i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}())    os << \textcolor{stringliteral}{"{}Aujourd'hui "{}};}
-\DoxyCodeLine{98     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{99     \{}
-\DoxyCodeLine{100         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
-\DoxyCodeLine{101         os << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<\textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{102     \}}
-\DoxyCodeLine{103     os << i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
-\DoxyCodeLine{104     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{105 \}}
+\DoxyCodeLine{93 \{}
+\DoxyCodeLine{94     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{95     \textcolor{keywordflow}{if}(d == i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}())    os << \textcolor{stringliteral}{"{}Aujourd'hui "{}};}
+\DoxyCodeLine{96     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{97     \{}
+\DoxyCodeLine{98         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
+\DoxyCodeLine{99         os << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{100     \}}
+\DoxyCodeLine{101     os << i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
+\DoxyCodeLine{102     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{103 \}}
 
 \end{DoxyCode}

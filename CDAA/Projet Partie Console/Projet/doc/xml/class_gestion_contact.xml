@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="class_gestion_contact" kind="class" language="C++" prot="public">
+    <compoundname>GestionContact</compoundname>
+    <includes refid="_gestion_contact_8h" local="no">GestionContact.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_contact" kindref="compound">Contact</ref> &gt;</type>
+        <definition>std::list&lt;Contact&gt; GestionContact::listContact</definition>
+        <argsstring></argsstring>
+        <name>listContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="19" column="19" bodyfile="GestionContact.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" compoundref="_gestion_contact_8h" startline="25" endline="25">GetlistContact</referencedby>
+        <referencedby refid="class_gestion_contact_1aef55482330b41395718625f78f19844d" compoundref="_gestion_contact_8h" startline="26" endline="26">getSize</referencedby>
+        <referencedby refid="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" compoundref="_gestion_contact_8cpp" startline="18" endline="21">~GestionContact</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gestion_contact_1a0d42db3777c1e15d557979c897acf344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GestionContact::GestionContact</definition>
+        <argsstring>()</argsstring>
+        <name>GestionContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="22" column="9" bodyfile="GestionContact.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GestionContact::~GestionContact</definition>
+        <argsstring>()</argsstring>
+        <name>~GestionContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="23" column="9" bodyfile="GestionContact.cpp" bodystart="18" bodyend="21"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="19">listContact</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_contact" kindref="compound">Contact</ref> &gt;</type>
+        <definition>std::list&lt;Contact&gt; GestionContact::GetlistContact</definition>
+        <argsstring>() const</argsstring>
+        <name>GetlistContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="25" column="19" bodyfile="GestionContact.h" bodystart="25" bodyend="25"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="19">listContact</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_contact_1aef55482330b41395718625f78f19844d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned GestionContact::getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="26" column="25" bodyfile="GestionContact.h" bodystart="26" bodyend="26"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="19">listContact</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionContact::addContact</definition>
+        <argsstring>(const Contact &amp;)</argsstring>
+        <name>addContact</name>
+        <param>
+          <type>const <ref refid="class_contact" kindref="compound">Contact</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionContact::removeContact</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>removeContact</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="29" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gestion_contact_1ae5ddb4f9bafabea0a77f5338ce4d4501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const GestionContact &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_gestion_contact" kindref="compound">GestionContact</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="31" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GestionContact</label>
+        <link refid="class_gestion_contact"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-listContact</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>list&lt; Contact &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="GestionContact.h" line="16" column="1" bodyfile="GestionContact.h" bodystart="17" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>addContact</name></member>
+      <member refid="class_gestion_contact_1a0d42db3777c1e15d557979c897acf344" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>GestionContact</name></member>
+      <member refid="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>GetlistContact</name></member>
+      <member refid="class_gestion_contact_1aef55482330b41395718625f78f19844d" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>getSize</name></member>
+      <member refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" prot="private" virt="non-virtual"><scope>GestionContact</scope><name>listContact</name></member>
+      <member refid="class_gestion_contact_1ae5ddb4f9bafabea0a77f5338ce4d4501" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>removeContact</name></member>
+      <member refid="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>~GestionContact</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

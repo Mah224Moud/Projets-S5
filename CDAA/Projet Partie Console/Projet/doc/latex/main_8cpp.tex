@@ -1,12 +1,13 @@
 \hypertarget{main_8cpp}{}\doxysection{Référence du fichier main.\+cpp}
 \label{main_8cpp}\index{main.cpp@{main.cpp}}
 {\ttfamily \#include $<$iostream$>$}\newline
-{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Interaction.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Todo.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Email.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$string$>$}\newline
-Graphe des dépendances par inclusion de main.\+cpp\+:\nopagebreak
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contact.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Gestion\+Todo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Email.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de main.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,6 +16,12 @@ Graphe des dépendances par inclusion de main.\+cpp\+:\nopagebreak
 \end{figure}
 \doxysubsection*{Fonctions}
 \begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_afc5a38f6d3b4f52e00189d54a2989b39}{test\+Contact}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_ac3ec4ab20ccbf8c63921f67912a6bad4}{test\+Email}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a0633cf092e43a8515e33ffc610ed3a3f}{test\+Gestion\+Todo}} ()
 \item 
 int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \end{DoxyCompactItemize}
@@ -29,35 +36,180 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{12 \{}
-\DoxyCodeLine{13     \mbox{\hyperlink{class_email}{Email}} e(\textcolor{stringliteral}{"{}saikououmarbah21gmail.com"{}});}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15     cout << \textcolor{stringliteral}{"{}Identifiant : "{}} << e.getIdentifiant() << endl;}
-\DoxyCodeLine{16     cout << \textcolor{stringliteral}{"{}Domaine : "{}} << e.getDomaine() << endl;}
-\DoxyCodeLine{17     cout << \textcolor{stringliteral}{"{}mc : "{}} << e.getMc() << endl;}
-\DoxyCodeLine{18     cout << e.toString() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}<< endl;}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     \mbox{\hyperlink{main_8cpp_a0633cf092e43a8515e33ffc610ed3a3f}{testGestionTodo}}();}
 \DoxyCodeLine{19 }
-\DoxyCodeLine{20     \mbox{\hyperlink{class_email}{Email}} f;}
-\DoxyCodeLine{21     f.\mbox{\hyperlink{class_email_ad008c905fb780e47c5fd5d5a1ba6eef6}{fromString}}(\textcolor{stringliteral}{"{}Saikou\_Bah@etu.u-\/bourgogne.fr"{}});}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23     cout << \textcolor{stringliteral}{"{}Identifiant : "{}} << f.\mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}() << endl;}
-\DoxyCodeLine{24     cout << \textcolor{stringliteral}{"{}Domaine : "{}} << f.\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}() << endl;}
-\DoxyCodeLine{25     cout << \textcolor{stringliteral}{"{}mc : "{}} << f.\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}() << endl;}
-\DoxyCodeLine{26     cout << f.\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
-\DoxyCodeLine{27 }
-\DoxyCodeLine{28 }
-\DoxyCodeLine{29     \mbox{\hyperlink{class_email}{Email}} g(\textcolor{stringliteral}{"{}saikououmarbah21@gmail.com"{}});}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{31     cout << \textcolor{stringliteral}{"{}Identifiant : "{}} << g.getIdentifiant() << endl;}
-\DoxyCodeLine{32     cout << \textcolor{stringliteral}{"{}Domaine : "{}} << g.getDomaine() << endl;}
-\DoxyCodeLine{33     cout << \textcolor{stringliteral}{"{}mc : "{}} << g.getMc() << endl;}
-\DoxyCodeLine{34     cout << g.toString() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}<< endl;}
+\DoxyCodeLine{20     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+Références test\+Gestion\+Todo().
+
+\mbox{\Hypertarget{main_8cpp_afc5a38f6d3b4f52e00189d54a2989b39}\label{main_8cpp_afc5a38f6d3b4f52e00189d54a2989b39}} 
+\index{main.cpp@{main.cpp}!testContact@{testContact}}
+\index{testContact@{testContact}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{testContact()}{testContact()}}
+{\footnotesize\ttfamily void test\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{comment}{//Contact contact;}}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_contact}{Contact}} contact(\textcolor{stringliteral}{"{}BAH"{}}, \textcolor{stringliteral}{"{}Saikou Oumar"{}}, \textcolor{stringliteral}{"{}Ramuo's"{}});}
+\DoxyCodeLine{29     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(14, 07, 2001);}
+\DoxyCodeLine{30     contact.setDateCreation(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{31     contact.setDateLastModif(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{32     contact.setEmail(\textcolor{stringliteral}{"{}saikououmarbah21@gmail.com"{}});}
+\DoxyCodeLine{33     contact.setTelephone(\textcolor{stringliteral}{"{}0666693425"{}});}
+\DoxyCodeLine{34     \textcolor{comment}{//contact.setPhoto("{}photo.png"{});}}
 \DoxyCodeLine{35 }
-\DoxyCodeLine{36     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{37 \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \mbox{\hyperlink{class_interaction}{Interaction}} i(\textcolor{stringliteral}{"{}Test 1 Interaction"{}});}
+\DoxyCodeLine{38     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(1, 1, 2021);}
+\DoxyCodeLine{39     i.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{40     contact.addInteraction(i);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \mbox{\hyperlink{class_interaction}{Interaction}} j;}
+\DoxyCodeLine{43     j.\mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(\textcolor{stringliteral}{"{}Test 2 Interaction"{}});}
+\DoxyCodeLine{44     contact.addInteraction(j);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \mbox{\hyperlink{class_interaction}{Interaction}} k;}
+\DoxyCodeLine{47     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(13,03,2020);}
+\DoxyCodeLine{48     k.\mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{49     k.\mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(\textcolor{stringliteral}{"{}Test 2 Interaction"{}});}
+\DoxyCodeLine{50     contact.addInteraction(k);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     cout << contact << endl;}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+
+
+Références Contact\+::add\+Interaction(), Date\+::from\+Date(), Date\+::get\+Date(), Interaction\+::set\+Contenu(), Interaction\+::set\+Date(), Contact\+::set\+Date\+Creation(), Contact\+::set\+Date\+Last\+Modif(), Contact\+::set\+Email(), et Contact\+::set\+Telephone().
+
+\mbox{\Hypertarget{main_8cpp_ac3ec4ab20ccbf8c63921f67912a6bad4}\label{main_8cpp_ac3ec4ab20ccbf8c63921f67912a6bad4}} 
+\index{main.cpp@{main.cpp}!testEmail@{testEmail}}
+\index{testEmail@{testEmail}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{testEmail()}{testEmail()}}
+{\footnotesize\ttfamily void test\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{}
+\DoxyCodeLine{60     \mbox{\hyperlink{class_email}{Email}} e(\textcolor{stringliteral}{"{}saikououmarbah21gmail.com"{}});}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     cout << \textcolor{stringliteral}{"{}Identifiant : "{}} << e.getIdentifiant() << endl;}
+\DoxyCodeLine{63     cout << \textcolor{stringliteral}{"{}Domaine : "{}} << e.getDomaine() << endl;}
+\DoxyCodeLine{64     cout << \textcolor{stringliteral}{"{}mc : "{}} << e.getMc() << endl;}
+\DoxyCodeLine{65     cout << e.toString() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}<< endl;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \mbox{\hyperlink{class_email}{Email}} f;}
+\DoxyCodeLine{68     f.\mbox{\hyperlink{class_email_ad008c905fb780e47c5fd5d5a1ba6eef6}{fromString}}(\textcolor{stringliteral}{"{}Saikou\_Bah@etu.u-\/bourgogne.fr"{}});}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     cout << \textcolor{stringliteral}{"{}Identifiant : "{}} << f.\mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}() << endl;}
+\DoxyCodeLine{71     cout << \textcolor{stringliteral}{"{}Domaine : "{}} << f.\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}() << endl;}
+\DoxyCodeLine{72     cout << \textcolor{stringliteral}{"{}mc : "{}} << f.\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}() << endl;}
+\DoxyCodeLine{73     cout << f.\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \mbox{\hyperlink{class_email}{Email}} g(\textcolor{stringliteral}{"{}saikououmarbah21@gmail.com"{}});}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     cout << \textcolor{stringliteral}{"{}Identifiant : "{}} << g.getIdentifiant() << endl;}
+\DoxyCodeLine{79     cout << \textcolor{stringliteral}{"{}Domaine : "{}} << g.getDomaine() << endl;}
+\DoxyCodeLine{80     cout << \textcolor{stringliteral}{"{}mc : "{}} << g.getMc() << endl;}
+\DoxyCodeLine{81     cout << g.toString() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}<< endl;}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \}}
 
 \end{DoxyCode}
 
 
 Références Email\+::from\+String(), Email\+::get\+Domaine(), Email\+::get\+Identifiant(), Email\+::get\+Mc(), et Email\+::to\+String().
+
+\mbox{\Hypertarget{main_8cpp_a0633cf092e43a8515e33ffc610ed3a3f}\label{main_8cpp_a0633cf092e43a8515e33ffc610ed3a3f}} 
+\index{main.cpp@{main.cpp}!testGestionTodo@{testGestionTodo}}
+\index{testGestionTodo@{testGestionTodo}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{testGestionTodo()}{testGestionTodo()}}
+{\footnotesize\ttfamily void test\+Gestion\+Todo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86 \{}
+\DoxyCodeLine{87     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     \mbox{\hyperlink{class_interaction}{Interaction}} i1(\textcolor{stringliteral}{"{}Interaction 1"{}});}
+\DoxyCodeLine{90     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(1,2,2000);}
+\DoxyCodeLine{91     i1.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \mbox{\hyperlink{class_interaction}{Interaction}} i2(\textcolor{stringliteral}{"{}Interaction 2"{}});}
+\DoxyCodeLine{94     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(2, 12, 2020);}
+\DoxyCodeLine{95     i2.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \mbox{\hyperlink{class_interaction}{Interaction}} i3(\textcolor{stringliteral}{"{}Interaction 3"{}});}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \mbox{\hyperlink{class_todo}{Todo}} t1;}
+\DoxyCodeLine{100     t1.\mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{setInteraction}}(i1);}
+\DoxyCodeLine{101     t1.\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(\textcolor{stringliteral}{"{}Todo 1"{}});}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     \mbox{\hyperlink{class_todo}{Todo}} t2(i1, \textcolor{stringliteral}{"{}Todo 2"{}});}
+\DoxyCodeLine{105     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(13,10,2022);}
+\DoxyCodeLine{106     t2.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108     \mbox{\hyperlink{class_todo}{Todo}} t3;}
+\DoxyCodeLine{109     t3.\mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{setInteraction}}(i3);}
+\DoxyCodeLine{110     t3.\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(\textcolor{stringliteral}{"{}Todo 3"{}});}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     \mbox{\hyperlink{class_todo}{Todo}} t4(i2, \textcolor{stringliteral}{"{}Todo 4"{}});}
+\DoxyCodeLine{114     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(13,10,2022);}
+\DoxyCodeLine{115     t4.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \mbox{\hyperlink{class_todo}{Todo}} t5;}
+\DoxyCodeLine{118     t5.\mbox{\hyperlink{class_todo_a4bc4c583115b304d665a3169e168105e}{setInteraction}}(i3);}
+\DoxyCodeLine{119     t5.\mbox{\hyperlink{class_todo_ad880a5598520b267d883ec6ce22f7f45}{setContenu}}(\textcolor{stringliteral}{"{}Todo 5"{}});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     \mbox{\hyperlink{class_todo}{Todo}} t6(i3, \textcolor{stringliteral}{"{}Todo 6"{}});}
+\DoxyCodeLine{123     d.\mbox{\hyperlink{class_date_a21c46ba7a74d45d1299f92330a43533a}{fromDate}}(13,10,2023);}
+\DoxyCodeLine{124     t6.setDate(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     \mbox{\hyperlink{class_gestion_todo}{GestionTodo}} gest;}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     gest.\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(t1);}
+\DoxyCodeLine{129     gest.\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(t2);}
+\DoxyCodeLine{130     gest.\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(t3);}
+\DoxyCodeLine{131     gest.\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(t4);}
+\DoxyCodeLine{132     gest.\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(t5);}
+\DoxyCodeLine{133     gest.\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(t6);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136     cout << gest << endl;}
+\DoxyCodeLine{137     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139     gest.\mbox{\hyperlink{class_gestion_todo_afc077f9c7063d22e1e180e10f9682b34}{removeTodo}}(\textcolor{stringliteral}{"{}Todo 3"{}});}
+\DoxyCodeLine{140     cout << gest << endl;}
+\DoxyCodeLine{141     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143     gest.\mbox{\hyperlink{class_gestion_todo_a84b7c92cc9affa0360ca01fae7c8b91d}{removeAllInteractionTodo}}(i3);}
+\DoxyCodeLine{144     cout << gest << endl;}
+\DoxyCodeLine{145     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147     cout << gest.\mbox{\hyperlink{class_gestion_todo_a83969a350fd0fd9a6eeed2ba25c32aee}{getAllInteractionTodo}}(i1) << endl;}
+\DoxyCodeLine{148 \}}
+
+\end{DoxyCode}
+
+
+Références Gestion\+Todo\+::add\+Todo(), Date\+::from\+Date(), Gestion\+Todo\+::get\+All\+Interaction\+Todo(), Date\+::get\+Date(), Gestion\+Todo\+::remove\+All\+Interaction\+Todo(), Gestion\+Todo\+::remove\+Todo(), Todo\+::set\+Contenu(), Interaction\+::set\+Date(), Todo\+::set\+Date(), et Todo\+::set\+Interaction().
+
+
+
+Référencé par main().
 

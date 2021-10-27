@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="class_gestion_todo" kind="class" language="C++" prot="public">
+    <compoundname>GestionTodo</compoundname>
+    <includes refid="_gestion_todo_8h" local="no">GestionTodo.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_todo" kindref="compound">Todo</ref> &gt;</type>
+        <definition>std::list&lt;Todo&gt; GestionTodo::listTodo</definition>
+        <argsstring></argsstring>
+        <name>listTodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="20" column="19" bodyfile="GestionTodo.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="26" endline="29">addTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" compoundref="_gestion_todo_8cpp" startline="71" endline="83">getAllInteractionTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" compoundref="_gestion_todo_8h" startline="26" endline="26">getlistTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" compoundref="_gestion_todo_8h" startline="27" endline="27">getSize</referencedby>
+        <referencedby refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" compoundref="_gestion_todo_8cpp" startline="54" endline="66">removeAllInteractionTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" compoundref="_gestion_todo_8cpp" startline="34" endline="49">removeTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" compoundref="_gestion_todo_8cpp" startline="18" endline="21">~GestionTodo</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gestion_todo_1ac0940481a804915d34ef24312cde733e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GestionTodo::GestionTodo</definition>
+        <argsstring>()</argsstring>
+        <name>GestionTodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="23" column="9" bodyfile="GestionTodo.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GestionTodo::~GestionTodo</definition>
+        <argsstring>()</argsstring>
+        <name>~GestionTodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="24" column="9" bodyfile="GestionTodo.cpp" bodystart="18" bodyend="21"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_todo" kindref="compound">Todo</ref> &gt;</type>
+        <definition>std::list&lt;Todo&gt; GestionTodo::getlistTodo</definition>
+        <argsstring>() const</argsstring>
+        <name>getlistTodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="26" column="19" bodyfile="GestionTodo.h" bodystart="26" bodyend="26"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned GestionTodo::getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="27" column="25" bodyfile="GestionTodo.h" bodystart="27" bodyend="27"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionTodo::addTodo</definition>
+        <argsstring>(const Todo &amp;)</argsstring>
+        <name>addTodo</name>
+        <param>
+          <type>const <ref refid="class_todo" kindref="compound">Todo</ref> &amp;</type>
+          <defname>todo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="29" column="14" bodyfile="GestionTodo.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <referencedby refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" compoundref="_gestion_todo_8cpp" startline="71" endline="83">getAllInteractionTodo</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionTodo::removeTodo</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>removeTodo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>contenu</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="30" column="14" bodyfile="GestionTodo.cpp" bodystart="34" bodyend="49"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionTodo::removeAllInteractionTodo</definition>
+        <argsstring>(const Interaction &amp;)</argsstring>
+        <name>removeAllInteractionTodo</name>
+        <param>
+          <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
+          <defname>interact</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="31" column="14" bodyfile="GestionTodo.cpp" bodystart="54" bodyend="66"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref></type>
+        <definition>GestionTodo GestionTodo::getAllInteractionTodo</definition>
+        <argsstring>(const Interaction &amp;)</argsstring>
+        <name>getAllInteractionTodo</name>
+        <param>
+          <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
+          <defname>interact</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="33" column="21" bodyfile="GestionTodo.cpp" bodystart="71" bodyend="83"/>
+        <references refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="26" endline="29">addTodo</references>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gestion_todo_1a537e6a1fc2191331a73b6076d5327fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const GestionTodo &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref> &amp;</type>
+          <defname>gest</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionTodo.h" line="35" column="16" bodyfile="GestionTodo.cpp" bodystart="88" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GestionTodo</label>
+        <link refid="class_gestion_todo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-listTodo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>list&lt; Todo &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="GestionTodo.h" line="17" column="1" bodyfile="GestionTodo.h" bodystart="18" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>addTodo</name></member>
+      <member refid="class_gestion_todo_1ac0940481a804915d34ef24312cde733e" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>GestionTodo</name></member>
+      <member refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getAllInteractionTodo</name></member>
+      <member refid="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getlistTodo</name></member>
+      <member refid="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getSize</name></member>
+      <member refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" prot="private" virt="non-virtual"><scope>GestionTodo</scope><name>listTodo</name></member>
+      <member refid="class_gestion_todo_1a537e6a1fc2191331a73b6076d5327fd1" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>removeAllInteractionTodo</name></member>
+      <member refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>removeTodo</name></member>
+      <member refid="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>~GestionTodo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

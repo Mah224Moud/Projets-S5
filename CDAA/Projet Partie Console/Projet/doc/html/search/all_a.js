@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['prenom_51',['prenom',['../class_contact.html#a6d85467851d61def44445912b58d52a4',1,'Contact']]]
+  ['operator_3c_3c_64',['operator&lt;&lt;',['../class_contact.html#a24f9fcd32bd68e5d5af1a6f2a61a1948',1,'Contact::operator&lt;&lt;()'],['../class_gestion_contact.html#ae5ddb4f9bafabea0a77f5338ce4d4501',1,'GestionContact::operator&lt;&lt;()'],['../class_gestion_todo.html#a537e6a1fc2191331a73b6076d5327fd1',1,'GestionTodo::operator&lt;&lt;()'],['../class_interaction.html#a60099cfbe5db8c8d2d10fb60e100e4bf',1,'Interaction::operator&lt;&lt;()'],['../class_todo.html#adbad530f8aaeb15de3c96ab898a08efb',1,'Todo::operator&lt;&lt;()'],['../_contact_8cpp.html#af87e832bd0c9667d25df0dfec1c17c1b',1,'operator&lt;&lt;(std::ostream &amp;os, const Contact &amp;c):&#160;Contact.cpp'],['../_gestion_todo_8cpp.html#a4d1ddac09317548a32d4d2f7d3790a9d',1,'operator&lt;&lt;(std::ostream &amp;os, const GestionTodo &amp;gest):&#160;GestionTodo.cpp'],['../_interaction_8cpp.html#a0474aeea9f966416f60720e9e440bbb3',1,'operator&lt;&lt;(std::ostream &amp;os, const Interaction &amp;i):&#160;Interaction.cpp'],['../_todo_8cpp.html#ac66d2ad0470f4bc4f7f356a11b6d0117',1,'operator&lt;&lt;(std::ostream &amp;os, const Todo &amp;td):&#160;Todo.cpp']]],
+  ['operator_3d_65',['operator=',['../class_interaction.html#a6a440384be939e46cff9d90f1182ec3c',1,'Interaction']]],
+  ['operator_3d_3d_66',['operator==',['../class_date.html#ab6e18eb4e080c723df03af0be4f0487e',1,'Date::operator==()'],['../class_interaction.html#a34da4c3bd01038118c4fde34e1c677f8',1,'Interaction::operator==()']]]
 ];

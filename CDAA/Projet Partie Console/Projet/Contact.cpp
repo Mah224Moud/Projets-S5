@@ -21,6 +21,8 @@ Contact::Contact()
     telephone = "";
     URIphoto = "";
 
+    listInteractions = new GestionInteraction();
+
     time_t n = time(0);
     dateCreation = new tm();
     this->setDateCreation(*localtime(&n));
@@ -45,6 +47,8 @@ Contact::Contact(const std::string& name, const std::string& lastname, const std
     telephone = "";
     URIphoto = "";
 
+    listInteractions = new GestionInteraction();
+
     time_t n = time(0);
     dateCreation = new tm();
     this->setDateCreation(*localtime(&n));
@@ -58,9 +62,9 @@ Contact::Contact(const std::string& name, const std::string& lastname, const std
 */
 Contact::~Contact()
 {
-    listInteractions.clear();
-    delete dateCreation;
-    delete dateLastModif;
+    //delete listInteractions;
+    //delete dateCreation;
+    //delete dateLastModif;
 }
 
 /**
@@ -142,9 +146,9 @@ Email Contact::getEmail() const
 /**
     *@brief Pour récuperer la liste des intéractions
 */
-std::list<Interaction> Contact::getListInteractions() const
+GestionInteraction* Contact::getListInteractions() const
 {
-    return this->listInteractions;
+    return listInteractions;
 }
 
 /**
@@ -222,17 +226,18 @@ void Contact::setEmail(const std::string &email)
 */
 void Contact::addInteraction(const Interaction& add_interact)
 {
-    listInteractions.push_back(add_interact);
+    listInteractions->addInteraction(add_interact);
     modification();
 }
 
 /**
     *@brief Supprimer une intéraction au contact
 */
-void Contact::removeInteraction(const Interaction& rm_interact)
+void Contact::removeInteraction(const std::string& interact)
 {
-
+    listInteractions->removeInteraction(interact);
 }
+
 /**
     *@brief Surcharge de l'opérateur << pour l'affichage.
     *@param os : de type ostream.
@@ -257,9 +262,6 @@ std::ostream& operator<<(std::ostream& os, const Contact& c)
     if(c.getPhoto() == "")  os << "Aucune Photo \n";
     else os << c.getPhoto() << "\n";
     os << "=================> Interactions \n";
-    for(auto interact : c.getListInteractions())
-    {
-        os << interact << "\n";
-    }
+    os << *(c.getListInteractions());
     return os;
 }

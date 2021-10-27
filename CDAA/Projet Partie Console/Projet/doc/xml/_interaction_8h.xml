@@ -7,8 +7,8 @@
     <includes local="no">ctime</includes>
     <includes refid="_date_8h" local="yes">Date.h</includes>
     <includedby refid="_contact_8h" local="yes">Contact.h</includedby>
+    <includedby refid="_gestion_todo_8h" local="yes">GestionTodo.h</includedby>
     <includedby refid="_interaction_8cpp" local="yes">Interaction.cpp</includedby>
-    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
     <includedby refid="_todo_8h" local="yes">Todo.h</includedby>
     <incdepgraph>
       <node id="3">
@@ -42,46 +42,72 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="7">
+        <label>GestionTodo.h</label>
+        <link refid="_gestion_todo_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>Contact.h</label>
         <link refid="_contact_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
-      <node id="5">
+      <node id="8">
+        <label>GestionTodo.cpp</label>
+        <link refid="_gestion_todo_8cpp"/>
+      </node>
+      <node id="6">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
-      <node id="4">
+      <node id="9">
         <label>Interaction.cpp</label>
         <link refid="_interaction_8cpp"/>
+      </node>
+      <node id="5">
+        <label>GestionContact.cpp</label>
+        <link refid="_gestion_contact_8cpp"/>
       </node>
       <node id="3">
         <label>Contact.cpp</label>
         <link refid="_contact_8cpp"/>
       </node>
-      <node id="6">
+      <node id="10">
         <label>Todo.h</label>
         <link refid="_todo_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="7">
+      <node id="11">
         <label>Todo.cpp</label>
         <link refid="_todo_8cpp"/>
+      </node>
+      <node id="4">
+        <label>GestionContact.h</label>
+        <link refid="_gestion_contact_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>Interaction.h</label>
         <link refid="_interaction_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -114,7 +140,7 @@
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1aadfd0e254296043c26508d47090ace76" kindref="member">Interaction</ref>();</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1aadfd0e254296043c26508d47090ace76" kindref="member">Interaction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1aadfd0e254296043c26508d47090ace76" kindref="member">Interaction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction_1a6610199fedc7fae617003cb2f397c825" kindref="member">~Interaction</ref>();</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtm" kindref="compound">tm</ref><sp/><ref refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" kindref="member">getDate</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
@@ -124,10 +150,12 @@
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>&amp;);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>&amp;);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>INTERACTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="class_interaction_1a60099cfbe5db8c8d2d10fb60e100e4bf" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" kindref="member">operator= </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>INTERACTION_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Interaction.h"/>
   </compounddef>

@@ -1,10 +1,78 @@
 \hypertarget{_contact_8cpp}{}\doxysection{Référence du fichier Contact.\+cpp}
 \label{_contact_8cpp}\index{Contact.cpp@{Contact.cpp}}
+
+
+Fichier CPP de la classe \mbox{\hyperlink{class_contact}{Contact}}.  
+
+
 {\ttfamily \#include \char`\"{}Contact.\+h\char`\"{}}\newline
-Graphe des dépendances par inclusion de Contact.\+cpp\+:\nopagebreak
+Graphe des dépendances par inclusion de Contact.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{_contact_8cpp__incl}
 \end{center}
 \end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_contact_8cpp_af87e832bd0c9667d25df0dfec1c17c1b}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_contact}{Contact}} \&c)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier CPP de la classe \mbox{\hyperlink{class_contact}{Contact}}. 
+
+\begin{DoxyAuthor}{Auteur}
+BAH Saikou Oumar 
+
+DIALLO Mamoudou 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_contact_8cpp_af87e832bd0c9667d25df0dfec1c17c1b}\label{_contact_8cpp_af87e832bd0c9667d25df0dfec1c17c1b}} 
+\index{Contact.cpp@{Contact.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Contact.cpp@{Contact.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_contact}{Contact}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em c} & de type contact qui represente le contact à afficher.\\
+\hline
+\end{DoxyParams}
+Pour afficher la fiche d\textquotesingle{}un contact. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{243 \{}
+\DoxyCodeLine{244     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246     os << \textcolor{stringliteral}{"{}=================> Fiche Contact <=================\(\backslash\)n"{}};}
+\DoxyCodeLine{247     os << \textcolor{stringliteral}{"{}Nom : "{}} << c.\mbox{\hyperlink{class_contact_ac4ca062bf61f7adbbddc7878c0957e82}{getNom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{248     os << \textcolor{stringliteral}{"{}Prenom : "{}} << c.\mbox{\hyperlink{class_contact_a1825fa5b28052b477fb16176bb4df21e}{getPrenom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{249     os << \textcolor{stringliteral}{"{}Entreprise : "{}} << c.\mbox{\hyperlink{class_contact_a0126ff51496fe7f69db34de82ce28398}{getEntreprise}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{250     os << \textcolor{stringliteral}{"{}Mail : "{}} << c.\mbox{\hyperlink{class_contact_a8d89efed9b157ef61804cd1d1ce31ad0}{getEmail}}().\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}()<< \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{251     os << \textcolor{stringliteral}{"{}Telephone : "{}} << c.\mbox{\hyperlink{class_contact_a53ebe193a5284e27b468ababdf7577e3}{getTelephone}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{252     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_af1b8218175c3c88bc10375fe098e851a}{getDateCreation}}());}
+\DoxyCodeLine{253     os << \textcolor{stringliteral}{"{}Date de création : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{254     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_a977dfc1a358b7a34774621041837512e}{getDateLastModif}}());}
+\DoxyCodeLine{255     os << \textcolor{stringliteral}{"{}Date de derniere modification : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{256     os << \textcolor{stringliteral}{"{}Photo : "{}};}
+\DoxyCodeLine{257     \textcolor{keywordflow}{if}(c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() == \textcolor{stringliteral}{"{}"{}})  os << \textcolor{stringliteral}{"{}Aucune Photo \(\backslash\)n"{}};}
+\DoxyCodeLine{258     \textcolor{keywordflow}{else} os << c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{259     os << \textcolor{stringliteral}{"{}=================> Interactions \(\backslash\)n"{}};}
+\DoxyCodeLine{260     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} interact : c.\mbox{\hyperlink{class_contact_ae640d361eb3e8659648bbdf2c0fb6bb4}{getListInteractions}}())}
+\DoxyCodeLine{261     \{}
+\DoxyCodeLine{262         os << interact << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{263     \}}
+\DoxyCodeLine{264     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{265 \}}
+
+\end{DoxyCode}

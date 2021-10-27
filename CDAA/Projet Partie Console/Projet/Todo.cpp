@@ -22,7 +22,7 @@ Todo::Todo()
     *@brief Constructeur avec paramètres de la classe Todo
     *@details Ce constructeur initialise à une date donnée un Todo avec un contenu vide n'étainteraction;
 */
-Todo::Todo(const Interaction& i, const std::string& c)
+Todo::Todo(Interaction& i, const std::string& c)
 {
     time_t n = time(0);
     date = new tm();
@@ -67,7 +67,7 @@ std::string Todo::getContenu() const
     *@brief Pour lier une intéraction à la classe Todo.
     *@param inter : l'intéraction à lier au Todo.
 */
-void Todo::setInteraction(const Interaction& inter)
+void Todo::setInteraction(Interaction& inter)
 {
     *lienInteraction = inter;
 }

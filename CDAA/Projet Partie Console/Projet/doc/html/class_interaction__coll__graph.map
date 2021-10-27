@@ -1,5 +1,5 @@
 <map id="Interaction" name="Interaction">
-<area shape="rect" id="node1" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;." alt="" coords="16,145,144,311"/>
+<area shape="rect" id="node1" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;." alt="" coords="16,145,144,340"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,64,83"/>
 <area shape="rect" id="node3" href="$structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="107,5,147,83"/>
 </map>

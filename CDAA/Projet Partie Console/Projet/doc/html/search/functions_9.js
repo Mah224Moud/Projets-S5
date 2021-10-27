@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['todo_130',['Todo',['../class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91',1,'Todo::Todo()'],['../class_todo.html#a813a202cf72925aee8c44e9a3ca183b9',1,'Todo::Todo(const Interaction &amp;, const std::string &amp;, const tm &amp;)']]],
-  ['tostring_131',['toString',['../class_date.html#adebdb45904dc2fbfacc66aa7528e0c04',1,'Date::toString()'],['../class_email.html#acfd186a5418525a835fbcf2030620a9a',1,'Email::toString()']]]
+  ['removeallinteractiontodo_163',['removeAllInteractionTodo',['../class_gestion_todo.html#a84b7c92cc9affa0360ca01fae7c8b91d',1,'GestionTodo']]],
+  ['removecontact_164',['removeContact',['../class_gestion_contact.html#aed9c969df00ec0ac22d8bf9513e0e8ed',1,'GestionContact']]],
+  ['removeinteraction_165',['removeInteraction',['../class_contact.html#ad69ca2095921e570fdf0734ededa36f5',1,'Contact']]],
+  ['removetodo_166',['removeTodo',['../class_gestion_todo.html#afc077f9c7063d22e1e180e10f9682b34',1,'GestionTodo']]]
 ];

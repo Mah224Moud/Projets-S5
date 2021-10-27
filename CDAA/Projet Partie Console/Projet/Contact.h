@@ -14,7 +14,7 @@
 #include <ostream>
 #include "Email.h"
 #include "Date.h"
-#include "Interaction.h"
+#include "GestionInteraction.h"
 
 
 /**
@@ -35,7 +35,7 @@ class Contact
         tm* dateCreation; /// La date de création du contact
         tm* dateLastModif; /// La date de dernière modification
         Email* mail; /// Adresse Mail du contact
-        std::list<Interaction> listInteractions;/// La liste des intéractions du contact
+        GestionInteraction* listInteractions;/// La liste des intéractions du contact
 
         void modification();
 
@@ -55,7 +55,7 @@ class Contact
     tm getDateCreation() const;
     tm getDateLastModif() const;
     Email getEmail() const;
-    std::list<Interaction> getListInteractions() const;
+    GestionInteraction* getListInteractions() const;
 
 
     void setNom(const std::string&);
@@ -68,7 +68,7 @@ class Contact
     void setEmail(const std::string&);
 
     void addInteraction(const Interaction&);
-    void removeInteraction(const Interaction&);
+    void removeInteraction(const std::string&);
 
     friend std::ostream& operator<<(std::ostream&, const Contact&);
 };

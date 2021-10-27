@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['telephone_64',['telephone',['../class_contact.html#a6d2c1a0e98e352b06782465adee0d965',1,'Contact']]],
-  ['tm_65',['tm',['../structtm.html',1,'']]],
-  ['todo_66',['Todo',['../class_todo.html',1,'Todo'],['../class_todo.html#a5fbb1de89a8e2e99941f6a175cc6da91',1,'Todo::Todo()'],['../class_todo.html#a813a202cf72925aee8c44e9a3ca183b9',1,'Todo::Todo(const Interaction &amp;, const std::string &amp;, const tm &amp;)']]],
-  ['todo_2ecpp_67',['Todo.cpp',['../_todo_8cpp.html',1,'']]],
-  ['todo_2eh_68',['Todo.h',['../_todo_8h.html',1,'']]],
-  ['tostring_69',['toString',['../class_date.html#adebdb45904dc2fbfacc66aa7528e0c04',1,'Date::toString()'],['../class_email.html#acfd186a5418525a835fbcf2030620a9a',1,'Email::toString()']]]
+  ['removeallinteractiontodo_68',['removeAllInteractionTodo',['../class_gestion_todo.html#a84b7c92cc9affa0360ca01fae7c8b91d',1,'GestionTodo']]],
+  ['removecontact_69',['removeContact',['../class_gestion_contact.html#aed9c969df00ec0ac22d8bf9513e0e8ed',1,'GestionContact']]],
+  ['removeinteraction_70',['removeInteraction',['../class_contact.html#ad69ca2095921e570fdf0734ededa36f5',1,'Contact']]],
+  ['removetodo_71',['removeTodo',['../class_gestion_todo.html#afc077f9c7063d22e1e180e10f9682b34',1,'GestionTodo']]]
 ];

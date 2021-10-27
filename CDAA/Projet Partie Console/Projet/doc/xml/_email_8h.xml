@@ -29,10 +29,18 @@
         <link refid="_contact_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>GestionContact.cpp</label>
+        <link refid="_gestion_contact_8cpp"/>
       </node>
       <node id="3">
         <label>Contact.cpp</label>
@@ -43,14 +51,20 @@
         <link refid="_email_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="7">
         <label>Email.cpp</label>
         <link refid="_email_8cpp"/>
+      </node>
+      <node id="4">
+        <label>GestionContact.h</label>
+        <link refid="_gestion_contact_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_email" prot="public">Email</innerclass>
