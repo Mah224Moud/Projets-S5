@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('_todo_8cpp.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
-<p>Fichier CPP de la classe <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>.  
+<p>Fichier CPP de la classe <a class="el" href="class_todo.html" title="Cette classe permet de créer des taches dans l&#39;application avec une description et une date.">Todo</a>.  
 <a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_todo_8h_source.html">Todo.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -113,7 +113,7 @@ Fonctions</h2></td></tr>
 <tr class="separator:ac66d2ad0470f4bc4f7f356a11b6d0117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Fichier CPP de la classe <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>. </p>
+<div class="textblock"><p>Fichier CPP de la classe <a class="el" href="class_todo.html" title="Cette classe permet de créer des taches dans l&#39;application avec une description et une date.">Todo</a>. </p>
 <dl class="section author"><dt>Auteur</dt><dd></dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
 <a id="ac66d2ad0470f4bc4f7f356a11b6d0117"></a>
@@ -146,26 +146,26 @@ Fonctions</h2></td></tr>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>: de type ostream. </td></tr>
-    <tr><td class="paramname">td</td><td>de type <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a> qui represente le <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a> à afficher.</td></tr>
+    <tr><td class="paramname">td</td><td>de type <a class="el" href="class_todo.html" title="Cette classe permet de créer des taches dans l&#39;application avec une description et une date.">Todo</a> qui represente le <a class="el" href="class_todo.html" title="Cette classe permet de créer des taches dans l&#39;application avec une description et une date.">Todo</a> à afficher.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Pour afficher un <a class="el" href="class_todo.html" title="Cette classe ...">Todo</a>, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui). </p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span>(!(d == td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>()))</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;@date &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<p>Pour afficher un <a class="el" href="class_todo.html" title="Cette classe permet de créer des taches dans l&#39;application avec une description et une date.">Todo</a>, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui). </p><dl class="section return"><dt>Renvoie</dt><dd>os; </dd></dl>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;@todo &quot;</span> &lt;&lt; td.<a class="code" href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">getContenu</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span>(!(d == td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>()))</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(td.<a class="code" href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">getDate</a>());</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        os &lt;&lt; <span class="stringliteral">&quot;@date &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
-<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:106</div></div>
-<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:78</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:102</div></div>
+<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:74</div></div>
 <div class="ttc" id="aclass_todo_html_a336fa1a249ac6acd320058902c8f40e2"><div class="ttname"><a href="class_todo.html#a336fa1a249ac6acd320058902c8f40e2">Todo::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Pour recupérer le contenu de l'interaction.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:59</div></div>
-<div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:50</div></div>
+<div class="ttc" id="aclass_todo_html_a8d260ac9059c249a9393d8d54067bbd3"><div class="ttname"><a href="class_todo.html#a8d260ac9059c249a9393d8d54067bbd3">Todo::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Pour récupérer la date.</div><div class="ttdef"><b>Definition:</b> Todo.cpp:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -10,22 +10,6 @@
         <argsstring></argsstring>
         <name>nom</name>
         <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Contact.h" line="30" column="21" bodyfile="Contact.h" bodystart="30" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" compoundref="_contact_8cpp" startline="79" endline="82">getNom</referencedby>
-        <referencedby refid="class_contact_1a0837af372d75a5d85ab296c6104a3232" compoundref="_contact_8cpp" startline="153" endline="157">setNom</referencedby>
-      </memberdef>
-      <memberdef kind="variable" id="class_contact_1a6d85467851d61def44445912b58d52a4" prot="private" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string Contact::prenom</definition>
-        <argsstring></argsstring>
-        <name>prenom</name>
-        <briefdescription>
 <para>Le nom du contact. </para>
         </briefdescription>
         <detaileddescription>
@@ -33,15 +17,15 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Contact.h" line="31" column="21" bodyfile="Contact.h" bodystart="31" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" compoundref="_contact_8cpp" startline="88" endline="91">getPrenom</referencedby>
-        <referencedby refid="class_contact_1ac31195d758df58ee327cc05b6276aace" compoundref="_contact_8cpp" startline="162" endline="166">setPrenom</referencedby>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" compoundref="_contact_8cpp" startline="88" endline="91">getNom</referencedby>
+        <referencedby refid="class_contact_1a0837af372d75a5d85ab296c6104a3232" compoundref="_contact_8cpp" startline="175" endline="179">setNom</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="class_contact_1a6d85467851d61def44445912b58d52a4" prot="private" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string Contact::entreprise</definition>
+        <definition>std::string Contact::prenom</definition>
         <argsstring></argsstring>
-        <name>entreprise</name>
+        <name>prenom</name>
         <briefdescription>
 <para>Le prénom du contact. </para>
         </briefdescription>
@@ -49,16 +33,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="32" column="21" bodyfile="Contact.h" bodystart="32" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" compoundref="_contact_8cpp" startline="97" endline="100">getEntreprise</referencedby>
-        <referencedby refid="class_contact_1a1237b826b80e3ead402d0c26cc3c2ace" compoundref="_contact_8cpp" startline="171" endline="175">setEntreprise</referencedby>
+        <location file="Contact.h" line="33" column="21" bodyfile="Contact.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" compoundref="_contact_8cpp" startline="98" endline="101">getPrenom</referencedby>
+        <referencedby refid="class_contact_1ac31195d758df58ee327cc05b6276aace" compoundref="_contact_8cpp" startline="187" endline="191">setPrenom</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1a045666ea797063981360d3c926c4d58f" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" prot="private" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string Contact::telephone</definition>
+        <definition>std::string Contact::entreprise</definition>
         <argsstring></argsstring>
-        <name>telephone</name>
+        <name>entreprise</name>
         <briefdescription>
 <para>Le nom de l&apos;entreprise. </para>
         </briefdescription>
@@ -66,16 +50,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="33" column="21" bodyfile="Contact.h" bodystart="33" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a53ebe193a5284e27b468ababdf7577e3" compoundref="_contact_8cpp" startline="105" endline="108">getTelephone</referencedby>
-        <referencedby refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="180" endline="184">setTelephone</referencedby>
+        <location file="Contact.h" line="35" column="21" bodyfile="Contact.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" compoundref="_contact_8cpp" startline="108" endline="111">getEntreprise</referencedby>
+        <referencedby refid="class_contact_1a1237b826b80e3ead402d0c26cc3c2ace" compoundref="_contact_8cpp" startline="199" endline="203">setEntreprise</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="class_contact_1a045666ea797063981360d3c926c4d58f" prot="private" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string Contact::URIphoto</definition>
+        <definition>std::string Contact::telephone</definition>
         <argsstring></argsstring>
-        <name>URIphoto</name>
+        <name>telephone</name>
         <briefdescription>
 <para>Le numéro du contact. </para>
         </briefdescription>
@@ -83,16 +67,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="34" column="21" bodyfile="Contact.h" bodystart="34" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" compoundref="_contact_8cpp" startline="113" endline="116">getPhoto</referencedby>
-        <referencedby refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" compoundref="_contact_8cpp" startline="189" endline="193">setPhoto</referencedby>
+        <location file="Contact.h" line="37" column="21" bodyfile="Contact.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a53ebe193a5284e27b468ababdf7577e3" compoundref="_contact_8cpp" startline="118" endline="121">getTelephone</referencedby>
+        <referencedby refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="211" endline="215">setTelephone</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" prot="private" static="no" mutable="no">
-        <type><ref refid="structtm" kindref="compound">tm</ref> *</type>
-        <definition>tm* Contact::dateCreation</definition>
+      <memberdef kind="variable" id="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Contact::URIphoto</definition>
         <argsstring></argsstring>
-        <name>dateCreation</name>
+        <name>URIphoto</name>
         <briefdescription>
 <para>La photo du contact. </para>
         </briefdescription>
@@ -100,17 +84,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="35" column="12" bodyfile="Contact.h" bodystart="35" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1af1b8218175c3c88bc10375fe098e851a" compoundref="_contact_8cpp" startline="121" endline="124">getDateCreation</referencedby>
-        <referencedby refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="198" endline="201">setDateCreation</referencedby>
-        <referencedby refid="class_contact_1ab68013cc59e3d640735c573e52c35219" compoundref="_contact_8cpp" startline="59" endline="64">~Contact</referencedby>
+        <location file="Contact.h" line="39" column="21" bodyfile="Contact.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" compoundref="_contact_8cpp" startline="127" endline="130">getPhoto</referencedby>
+        <referencedby refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" compoundref="_contact_8cpp" startline="222" endline="226">setPhoto</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" prot="private" static="no" mutable="no">
         <type><ref refid="structtm" kindref="compound">tm</ref> *</type>
-        <definition>tm* Contact::dateLastModif</definition>
+        <definition>tm* Contact::dateCreation</definition>
         <argsstring></argsstring>
-        <name>dateLastModif</name>
+        <name>dateCreation</name>
         <briefdescription>
 <para>La date de création du contact. </para>
         </briefdescription>
@@ -118,17 +101,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="36" column="12" bodyfile="Contact.h" bodystart="36" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a977dfc1a358b7a34774621041837512e" compoundref="_contact_8cpp" startline="129" endline="132">getDateLastModif</referencedby>
-        <referencedby refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="206" endline="209">setDateLastModif</referencedby>
-        <referencedby refid="class_contact_1ab68013cc59e3d640735c573e52c35219" compoundref="_contact_8cpp" startline="59" endline="64">~Contact</referencedby>
+        <location file="Contact.h" line="41" column="12" bodyfile="Contact.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1af1b8218175c3c88bc10375fe098e851a" compoundref="_contact_8cpp" startline="136" endline="139">getDateCreation</referencedby>
+        <referencedby refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="232" endline="235">setDateCreation</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" prot="private" static="no" mutable="no">
-        <type><ref refid="class_email" kindref="compound">Email</ref> *</type>
-        <definition>Email* Contact::mail</definition>
+      <memberdef kind="variable" id="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" prot="private" static="no" mutable="no">
+        <type><ref refid="structtm" kindref="compound">tm</ref> *</type>
+        <definition>tm* Contact::dateLastModif</definition>
         <argsstring></argsstring>
-        <name>mail</name>
+        <name>dateLastModif</name>
         <briefdescription>
 <para>La date de dernière modification. </para>
         </briefdescription>
@@ -136,16 +118,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="37" column="15" bodyfile="Contact.h" bodystart="37" bodyend="-1"/>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a8d89efed9b157ef61804cd1d1ce31ad0" compoundref="_contact_8cpp" startline="137" endline="140">getEmail</referencedby>
-        <referencedby refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="214" endline="218">setEmail</referencedby>
+        <location file="Contact.h" line="43" column="12" bodyfile="Contact.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a977dfc1a358b7a34774621041837512e" compoundref="_contact_8cpp" startline="145" endline="148">getDateLastModif</referencedby>
+        <referencedby refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="240" endline="243">setDateLastModif</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" prot="private" static="no" mutable="no">
-        <type>std::list&lt; <ref refid="class_interaction" kindref="compound">Interaction</ref> &gt;</type>
-        <definition>std::list&lt;Interaction&gt; Contact::listInteractions</definition>
+      <memberdef kind="variable" id="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_email" kindref="compound">Email</ref> *</type>
+        <definition>Email* Contact::mail</definition>
         <argsstring></argsstring>
-        <name>listInteractions</name>
+        <name>mail</name>
         <briefdescription>
 <para>Adresse Mail du contact. </para>
         </briefdescription>
@@ -153,10 +135,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="38" column="19" bodyfile="Contact.h" bodystart="38" bodyend="-1"/>
-        <referencedby refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="223" endline="227">addInteraction</referencedby>
-        <referencedby refid="class_contact_1ae640d361eb3e8659648bbdf2c0fb6bb4" compoundref="_contact_8cpp" startline="145" endline="148">getListInteractions</referencedby>
-        <referencedby refid="class_contact_1ab68013cc59e3d640735c573e52c35219" compoundref="_contact_8cpp" startline="59" endline="64">~Contact</referencedby>
+        <location file="Contact.h" line="45" column="15" bodyfile="Contact.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a8d89efed9b157ef61804cd1d1ce31ad0" compoundref="_contact_8cpp" startline="154" endline="157">getEmail</referencedby>
+        <referencedby refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="251" endline="255">setEmail</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref> *</type>
+        <definition>GestionInteraction* Contact::listInteractions</definition>
+        <argsstring></argsstring>
+        <name>listInteractions</name>
+        <briefdescription>
+<para>Le gestionnaire des intéractions du contact. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Contact.h" line="47" column="28" bodyfile="Contact.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="263" endline="267">addInteraction</referencedby>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1ae6f3b5d25bef8de2d09bae162b4d64f7" compoundref="_contact_8cpp" startline="164" endline="167">getListInteractions</referencedby>
+        <referencedby refid="class_contact_1a6690bdcb21a0bf720268f0add8944b9a" compoundref="_contact_8cpp" startline="274" endline="277">removeInteraction</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -166,23 +166,24 @@
         <argsstring>()</argsstring>
         <name>modification</name>
         <briefdescription>
-<para>La liste des intéractions du contact. </para>
+<para>Mise à jour de la date de modification. </para>
         </briefdescription>
         <detaileddescription>
-<para>Mise à jour de la date de dernière mise à jour. </para>
+<para>Mise à jour de la date de dernière mise à jour.</para>
+<para>Cette méthode permet notamment d&apos;actualiser la date de mise à jour du contact lorsque l&apos;un de ses attributs subi une modification. Elle devient la date courante. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="40" column="14" bodyfile="Contact.cpp" bodystart="69" bodyend="73"/>
-        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="69" endline="72">Date::getDate</references>
-        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="206" endline="209">setDateLastModif</references>
-        <referencedby refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="223" endline="227">addInteraction</referencedby>
-        <referencedby refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="214" endline="218">setEmail</referencedby>
-        <referencedby refid="class_contact_1a1237b826b80e3ead402d0c26cc3c2ace" compoundref="_contact_8cpp" startline="171" endline="175">setEntreprise</referencedby>
-        <referencedby refid="class_contact_1a0837af372d75a5d85ab296c6104a3232" compoundref="_contact_8cpp" startline="153" endline="157">setNom</referencedby>
-        <referencedby refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" compoundref="_contact_8cpp" startline="189" endline="193">setPhoto</referencedby>
-        <referencedby refid="class_contact_1ac31195d758df58ee327cc05b6276aace" compoundref="_contact_8cpp" startline="162" endline="166">setPrenom</referencedby>
-        <referencedby refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="180" endline="184">setTelephone</referencedby>
+        <location file="Contact.h" line="50" column="14" bodyfile="Contact.cpp" bodystart="77" bodyend="81"/>
+        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="65" endline="68">Date::getDate</references>
+        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="240" endline="243">setDateLastModif</references>
+        <referencedby refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="263" endline="267">addInteraction</referencedby>
+        <referencedby refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="251" endline="255">setEmail</referencedby>
+        <referencedby refid="class_contact_1a1237b826b80e3ead402d0c26cc3c2ace" compoundref="_contact_8cpp" startline="199" endline="203">setEntreprise</referencedby>
+        <referencedby refid="class_contact_1a0837af372d75a5d85ab296c6104a3232" compoundref="_contact_8cpp" startline="175" endline="179">setNom</referencedby>
+        <referencedby refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" compoundref="_contact_8cpp" startline="222" endline="226">setPhoto</referencedby>
+        <referencedby refid="class_contact_1ac31195d758df58ee327cc05b6276aace" compoundref="_contact_8cpp" startline="187" endline="191">setPrenom</referencedby>
+        <referencedby refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="211" endline="215">setTelephone</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -195,21 +196,22 @@
 <para>Constructeur par défaut de la classe <ref refid="class_contact" kindref="compound">Contact</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Ce constructeur initialise un contact avec des attributs vides. Les dates de création et de modification sont initialisées à la date courante. </para>
+<para>Ce constructeur initialise un contact avec des attributs et un gestionnaire d&apos;intéractions vides. Les dates de création et de modification sont initialisées à la date courante. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="44" column="5" bodyfile="Contact.cpp" bodystart="15" bodyend="29"/>
-        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="35">dateCreation</references>
-        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="36">dateLastModif</references>
-        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="32">entreprise</references>
-        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="37">mail</references>
-        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="30">nom</references>
-        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="31">prenom</references>
-        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="198" endline="201">setDateCreation</references>
-        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="206" endline="209">setDateLastModif</references>
-        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="33">telephone</references>
-        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="34">URIphoto</references>
+        <location file="Contact.h" line="54" column="5" bodyfile="Contact.cpp" bodystart="15" bodyend="31"/>
+        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="41">dateCreation</references>
+        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="43">dateLastModif</references>
+        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="35">entreprise</references>
+        <references refid="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" compoundref="_contact_8h" startline="47">listInteractions</references>
+        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="45">mail</references>
+        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="31">nom</references>
+        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="33">prenom</references>
+        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="232" endline="235">setDateCreation</references>
+        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="240" endline="243">setDateLastModif</references>
+        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="37">telephone</references>
+        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="39">URIphoto</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a442a15aeaf696631b86a2298fd436f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -233,7 +235,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Constructeur de la classe <ref refid="class_contact" kindref="compound">Contact</ref>.</para>
-<para>Ce constructeur initialise un contact avec les attributs nom, prénom et entreprise. Les dates de création et de modification sont initialisées à la date courante. <parameterlist kind="param"><parameteritem>
+<para>Ce constructeur initialise un contact avec les attributs nom, prénom et entreprise. Les dates de création et de modification sont initialisées à la date courante, le gestionnaire d&apos;intéraction est vide. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
@@ -262,17 +264,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="46" column="5" bodyfile="Contact.cpp" bodystart="39" bodyend="53"/>
-        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="35">dateCreation</references>
-        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="36">dateLastModif</references>
-        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="32">entreprise</references>
-        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="37">mail</references>
-        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="30">nom</references>
-        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="31">prenom</references>
-        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="198" endline="201">setDateCreation</references>
-        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="206" endline="209">setDateLastModif</references>
-        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="33">telephone</references>
-        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="34">URIphoto</references>
+        <location file="Contact.h" line="56" column="5" bodyfile="Contact.cpp" bodystart="41" bodyend="57"/>
+        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="41">dateCreation</references>
+        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="43">dateLastModif</references>
+        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="35">entreprise</references>
+        <references refid="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" compoundref="_contact_8h" startline="47">listInteractions</references>
+        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="45">mail</references>
+        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="31">nom</references>
+        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="33">prenom</references>
+        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="232" endline="235">setDateCreation</references>
+        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="240" endline="243">setDateLastModif</references>
+        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="37">telephone</references>
+        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="39">URIphoto</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1ab68013cc59e3d640735c573e52c35219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -283,14 +286,13 @@
 <para>Destructeur de la classe <ref refid="class_contact" kindref="compound">Contact</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Effacement de l&apos;espace alloué par la liste d&apos;interaction, les dates de création et de modification. </para>
+<para>Rien de particulier, les espaces alloués sont effacés en même tant que le gestionnaire de contact. <simplesect kind="warning"><para>On obtient une erreur de segmentation (Segmentation fault) si on essaie de libérer l&apos;espace alloué par le gestionnaire d&apos;intéraction et une erreur de libération double (double free()) pour celui des dates. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="48" column="5" bodyfile="Contact.cpp" bodystart="59" bodyend="64"/>
-        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="35">dateCreation</references>
-        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="36">dateLastModif</references>
-        <references refid="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" compoundref="_contact_8h" startline="38">listInteractions</references>
+        <location file="Contact.h" line="58" column="5" bodyfile="Contact.cpp" bodystart="65" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -301,12 +303,14 @@
 <para>Pour récuperer le nom du contact. </para>
         </briefdescription>
         <detaileddescription>
-<para>Cette fonction renvoie le nom du contact. </para>
+<para>Cette fonction renvoie le nom du contact. <simplesect kind="return"><para>Le nom du contact en String </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="50" column="17" bodyfile="Contact.cpp" bodystart="79" bodyend="82"/>
-        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="30">nom</references>
+        <location file="Contact.h" line="60" column="17" bodyfile="Contact.cpp" bodystart="88" bodyend="91"/>
+        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="31">nom</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a1825fa5b28052b477fb16176bb4df21e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -317,12 +321,14 @@
 <para>Pour récuperer le prenom du contact. </para>
         </briefdescription>
         <detaileddescription>
-<para>Cette fonction renvoie le prenom du contact. </para>
+<para>Cette fonction renvoie le prenom du contact. <simplesect kind="return"><para>Le prenom du contact en String </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="51" column="17" bodyfile="Contact.cpp" bodystart="88" bodyend="91"/>
-        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="31">prenom</references>
+        <location file="Contact.h" line="61" column="17" bodyfile="Contact.cpp" bodystart="98" bodyend="101"/>
+        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="33">prenom</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a0126ff51496fe7f69db34de82ce28398" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -333,12 +339,14 @@
 <para>Pour récuperer le nom de l&apos;entreprise. </para>
         </briefdescription>
         <detaileddescription>
-<para>Cette fonction renvoie le nom de l&apos;entreprise. </para>
+<para>Cette fonction renvoie le nom de l&apos;entreprise. <simplesect kind="return"><para>Le nom de l&apos;entreprise en String </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="52" column="17" bodyfile="Contact.cpp" bodystart="97" bodyend="100"/>
-        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="32">entreprise</references>
+        <location file="Contact.h" line="62" column="17" bodyfile="Contact.cpp" bodystart="108" bodyend="111"/>
+        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="35">entreprise</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a53ebe193a5284e27b468ababdf7577e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -346,14 +354,17 @@
         <argsstring>() const</argsstring>
         <name>getTelephone</name>
         <briefdescription>
-<para>Pour récuperer la photo ou le chemin vers la photo. </para>
+<para>Pour récuperer la photo. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction ne renvoie pas réellement une photo mais le chemin pour y accéder. <simplesect kind="return"><para>Le numéro du contact en String </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="53" column="17" bodyfile="Contact.cpp" bodystart="105" bodyend="108"/>
-        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="33">telephone</references>
+        <location file="Contact.h" line="63" column="17" bodyfile="Contact.cpp" bodystart="118" bodyend="121"/>
+        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="37">telephone</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a0c9099d80538c241c852d68f2630fc54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -364,11 +375,14 @@
 <para>Pour récuperer la photo ou le chemin vers la photo. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Le lien vers kla photo du contact en String </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="54" column="17" bodyfile="Contact.cpp" bodystart="113" bodyend="116"/>
-        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="34">URIphoto</references>
+        <location file="Contact.h" line="64" column="17" bodyfile="Contact.cpp" bodystart="127" bodyend="130"/>
+        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="39">URIphoto</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1af1b8218175c3c88bc10375fe098e851a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structtm" kindref="compound">tm</ref></type>
@@ -379,11 +393,14 @@
 <para>Pour récuperer la date de création du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Une tm contenant la date de création du contact </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="55" column="8" bodyfile="Contact.cpp" bodystart="121" bodyend="124"/>
-        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="35">dateCreation</references>
+        <location file="Contact.h" line="65" column="8" bodyfile="Contact.cpp" bodystart="136" bodyend="139"/>
+        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="41">dateCreation</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a977dfc1a358b7a34774621041837512e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structtm" kindref="compound">tm</ref></type>
@@ -394,11 +411,14 @@
 <para>Pour récuperer la date de dernière modification du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Une tm contenant la date de dernière modification du contact </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="56" column="8" bodyfile="Contact.cpp" bodystart="129" bodyend="132"/>
-        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="36">dateLastModif</references>
+        <location file="Contact.h" line="66" column="8" bodyfile="Contact.cpp" bodystart="145" bodyend="148"/>
+        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="43">dateLastModif</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a8d89efed9b157ef61804cd1d1ce31ad0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_email" kindref="compound">Email</ref></type>
@@ -409,26 +429,32 @@
 <para>Pour récupérer l&apos;adresse mail du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Une variable <ref refid="class_email" kindref="compound">Email</ref> contenant l&apos;adresse mail du contact. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="57" column="11" bodyfile="Contact.cpp" bodystart="137" bodyend="140"/>
-        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="37">mail</references>
+        <location file="Contact.h" line="67" column="11" bodyfile="Contact.cpp" bodystart="154" bodyend="157"/>
+        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="45">mail</references>
       </memberdef>
-      <memberdef kind="function" id="class_contact_1ae640d361eb3e8659648bbdf2c0fb6bb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::list&lt; <ref refid="class_interaction" kindref="compound">Interaction</ref> &gt;</type>
-        <definition>std::list&lt; Interaction &gt; Contact::getListInteractions</definition>
+      <memberdef kind="function" id="class_contact_1ae6f3b5d25bef8de2d09bae162b4d64f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref> *</type>
+        <definition>GestionInteraction * Contact::getListInteractions</definition>
         <argsstring>() const</argsstring>
         <name>getListInteractions</name>
         <briefdescription>
 <para>Pour récuperer la liste des intéractions. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction renvoie le pointeur vers le gestionnaire d&apos;interaction. <simplesect kind="return"><para>Un pointeur sur le gestionnaire d&apos;intéraction. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="58" column="15" bodyfile="Contact.cpp" bodystart="145" bodyend="148"/>
-        <references refid="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" compoundref="_contact_8h" startline="38">listInteractions</references>
+        <location file="Contact.h" line="68" column="24" bodyfile="Contact.cpp" bodystart="164" bodyend="167"/>
+        <references refid="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" compoundref="_contact_8h" startline="47">listInteractions</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a0837af372d75a5d85ab296c6104a3232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -443,12 +469,24 @@
 <para>Pour modifier le nom du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction permet de modifier le nom du contact. <simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Le nouveau nom du contact. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="61" column="10" bodyfile="Contact.cpp" bodystart="153" bodyend="157"/>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
-        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="30">nom</references>
+        <location file="Contact.h" line="71" column="10" bodyfile="Contact.cpp" bodystart="175" bodyend="179"/>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
+        <references refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" compoundref="_contact_8h" startline="31">nom</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1ac31195d758df58ee327cc05b6276aace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -463,12 +501,24 @@
 <para>Pour modifier le prenom du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction permet de modifier le prenom du contact. <simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lastname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Le nouveau prénom du contact. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="62" column="10" bodyfile="Contact.cpp" bodystart="162" bodyend="166"/>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
-        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="31">prenom</references>
+        <location file="Contact.h" line="72" column="10" bodyfile="Contact.cpp" bodystart="187" bodyend="191"/>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
+        <references refid="class_contact_1a6d85467851d61def44445912b58d52a4" compoundref="_contact_8h" startline="33">prenom</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a1237b826b80e3ead402d0c26cc3c2ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -483,12 +533,24 @@
 <para>Pour modifier le nom de l&apos;entreprise. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction permet de modifier le nom de l&apos;entreprise. <simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>company</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Le nouveau nom de l&apos;entreprise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="63" column="10" bodyfile="Contact.cpp" bodystart="171" bodyend="175"/>
-        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="32">entreprise</references>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
+        <location file="Contact.h" line="73" column="10" bodyfile="Contact.cpp" bodystart="199" bodyend="203"/>
+        <references refid="class_contact_1a786cf3e7f36e558af773e64a3302fbf8" compoundref="_contact_8h" startline="35">entreprise</references>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -503,13 +565,26 @@
 <para>Pour modifier le numéro du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction permet de modifier le numéro du contact. <simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Le nouveau numéro du contact. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="64" column="10" bodyfile="Contact.cpp" bodystart="180" bodyend="184"/>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
-        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="33">telephone</references>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
+        <location file="Contact.h" line="74" column="10" bodyfile="Contact.cpp" bodystart="211" bodyend="215"/>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
+        <references refid="class_contact_1a045666ea797063981360d3c926c4d58f" compoundref="_contact_8h" startline="37">telephone</references>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -524,12 +599,25 @@
 <para>Pour modifier la photo. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>le</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lien vers la nouvelle photo. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="65" column="10" bodyfile="Contact.cpp" bodystart="189" bodyend="193"/>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
-        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="34">URIphoto</references>
+        <location file="Contact.h" line="75" column="10" bodyfile="Contact.cpp" bodystart="222" bodyend="226"/>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
+        <references refid="class_contact_1aff78eb5c73608f1bc7b300b9427a878e" compoundref="_contact_8h" startline="39">URIphoto</references>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -544,13 +632,24 @@
 <para>Pour modifier la date de création du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>date_of_creation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la date de création du contact. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="66" column="10" bodyfile="Contact.cpp" bodystart="198" bodyend="201"/>
-        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="35">dateCreation</references>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
+        <location file="Contact.h" line="76" column="10" bodyfile="Contact.cpp" bodystart="232" bodyend="235"/>
+        <references refid="class_contact_1ac0cf732d68c5c3a8e513ce891d719aa4" compoundref="_contact_8h" startline="41">dateCreation</references>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -568,11 +667,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="67" column="10" bodyfile="Contact.cpp" bodystart="206" bodyend="209"/>
-        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="36">dateLastModif</references>
-        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="29">Contact</referencedby>
-        <referencedby refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</referencedby>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
+        <location file="Contact.h" line="77" column="10" bodyfile="Contact.cpp" bodystart="240" bodyend="243"/>
+        <references refid="class_contact_1a147a152073d3f091c40a3d5a77d6a27f" compoundref="_contact_8h" startline="43">dateLastModif</references>
+        <referencedby refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" compoundref="_contact_8cpp" startline="15" endline="31">Contact</referencedby>
+        <referencedby refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</referencedby>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -587,14 +687,29 @@
 <para>Pour modifier l&apos;adresse mail du contact. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;adresse mail sous forme de String. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Si l&apos;adresse est incorrecte un message d&apos;erreur s&apos;affiche. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="68" column="10" bodyfile="Contact.cpp" bodystart="214" bodyend="218"/>
-        <references refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" compoundref="_email_8cpp" startline="86" endline="111">Email::fromString</references>
-        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="37">mail</references>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
+        <location file="Contact.h" line="78" column="10" bodyfile="Contact.cpp" bodystart="251" bodyend="255"/>
+        <references refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" compoundref="_email_8cpp" startline="89" endline="114">Email::fromString</references>
+        <references refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" compoundref="_contact_8h" startline="45">mail</references>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -606,34 +721,62 @@
           <defname>add_interact</defname>
         </param>
         <briefdescription>
-<para>Ajouter une intéraction au contact. </para>
+<para>Ajouter une interaction. </para>
         </briefdescription>
         <detaileddescription>
+<para>Ajouter une intéraction au contact.</para>
+<para>Cette fonction permet d&apos;ajouter une intéraction dans le gestionnaire. <simplesect kind="warning"><para>Cette opération entraine une mise à jour de la date de modification. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>add_interact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;intéraction à ajouter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="70" column="10" bodyfile="Contact.cpp" bodystart="223" bodyend="227"/>
-        <references refid="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" compoundref="_contact_8h" startline="38">listInteractions</references>
-        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">modification</references>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
+        <location file="Contact.h" line="81" column="10" bodyfile="Contact.cpp" bodystart="263" bodyend="267"/>
+        <references refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" compoundref="_gestion_interaction_8cpp" startline="36" endline="57">GestionInteraction::addInteraction</references>
+        <references refid="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" compoundref="_contact_8h" startline="47">listInteractions</references>
+        <references refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">modification</references>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_contact_1ad69ca2095921e570fdf0734ededa36f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_contact_1a6690bdcb21a0bf720268f0add8944b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Contact::removeInteraction</definition>
-        <argsstring>(const Interaction &amp;)</argsstring>
+        <argsstring>(const std::string &amp;)</argsstring>
         <name>removeInteraction</name>
         <param>
-          <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
-          <defname>rm_interact</defname>
+          <type>const std::string &amp;</type>
+          <defname>contenu_interact</defname>
         </param>
         <briefdescription>
-<para>Supprimer une intéraction au contact. </para>
+<para>Supprimer une interaction. </para>
         </briefdescription>
         <detaileddescription>
+<para>Supprimer une intéraction au contact.</para>
+<para>Cette fonction permet de supprimer une intéraction du gestionnaire en connaissant son contenu. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contenu_interact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu (String) de l&apos;intéraction à supprimer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="71" column="10" bodyfile="Contact.cpp" bodystart="232" bodyend="235"/>
+        <location file="Contact.h" line="83" column="10" bodyfile="Contact.cpp" bodystart="274" bodyend="277"/>
+        <references refid="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" compoundref="_contact_8h" startline="47">listInteractions</references>
+        <references refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">GestionInteraction::removeInteraction</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -671,11 +814,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-Pour afficher la fiche d&apos;un contact. </para>
+Pour afficher la fiche d&apos;un contact. <simplesect kind="return"><para>os </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Contact.h" line="73" column="12" bodyfile="Contact.cpp" bodystart="242" bodyend="265"/>
+        <location file="Contact.h" line="85" column="12" bodyfile="Contact.cpp" bodystart="286" bodyend="306"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -685,7 +830,24 @@ Pour afficher la fiche d&apos;un contact. </para>
 <para>Un contact est représenté par avec un nom, un prénom, une entreprise, un numéro de téléphone, une photo et une liste d&apos;intéraction </para>
     </detaileddescription>
     <collaborationgraph>
+      <node id="6">
+        <label>GestionTodo</label>
+        <link refid="class_gestion_todo"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-listTodo</edgelabel>
+        </childnode>
+      </node>
       <node id="5">
+        <label>GestionInteraction</label>
+        <link refid="class_gestion_interaction"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-listTodo</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-listInteraction</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
         <label>list&lt; Interaction &gt;</label>
       </node>
       <node id="3">
@@ -721,12 +883,15 @@ Pour afficher la fiche d&apos;un contact. </para>
           <edgelabel>-mc</edgelabel>
         </childnode>
       </node>
+      <node id="7">
+        <label>list&lt; Todo &gt;</label>
+      </node>
       <node id="4">
         <label>tm</label>
         <link refid="structtm"/>
       </node>
     </collaborationgraph>
-    <location file="Contact.h" line="27" column="1" bodyfile="Contact.h" bodystart="28" bodyend="74"/>
+    <location file="Contact.h" line="27" column="1" bodyfile="Contact.h" bodystart="28" bodyend="86"/>
     <listofallmembers>
       <member refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" prot="public" virt="non-virtual"><scope>Contact</scope><name>addInteraction</name></member>
       <member refid="class_contact_1ae39444f378e6de7fd6c3e60981949af5" prot="public" virt="non-virtual"><scope>Contact</scope><name>Contact</name></member>
@@ -738,18 +903,18 @@ Pour afficher la fiche d&apos;un contact. </para>
       <member refid="class_contact_1a977dfc1a358b7a34774621041837512e" prot="public" virt="non-virtual"><scope>Contact</scope><name>getDateLastModif</name></member>
       <member refid="class_contact_1a8d89efed9b157ef61804cd1d1ce31ad0" prot="public" virt="non-virtual"><scope>Contact</scope><name>getEmail</name></member>
       <member refid="class_contact_1a0126ff51496fe7f69db34de82ce28398" prot="public" virt="non-virtual"><scope>Contact</scope><name>getEntreprise</name></member>
-      <member refid="class_contact_1ae640d361eb3e8659648bbdf2c0fb6bb4" prot="public" virt="non-virtual"><scope>Contact</scope><name>getListInteractions</name></member>
+      <member refid="class_contact_1ae6f3b5d25bef8de2d09bae162b4d64f7" prot="public" virt="non-virtual"><scope>Contact</scope><name>getListInteractions</name></member>
       <member refid="class_contact_1ac4ca062bf61f7adbbddc7878c0957e82" prot="public" virt="non-virtual"><scope>Contact</scope><name>getNom</name></member>
       <member refid="class_contact_1a0c9099d80538c241c852d68f2630fc54" prot="public" virt="non-virtual"><scope>Contact</scope><name>getPhoto</name></member>
       <member refid="class_contact_1a1825fa5b28052b477fb16176bb4df21e" prot="public" virt="non-virtual"><scope>Contact</scope><name>getPrenom</name></member>
       <member refid="class_contact_1a53ebe193a5284e27b468ababdf7577e3" prot="public" virt="non-virtual"><scope>Contact</scope><name>getTelephone</name></member>
-      <member refid="class_contact_1acab6983d1f1f3e8b65fd805c75c464e1" prot="private" virt="non-virtual"><scope>Contact</scope><name>listInteractions</name></member>
+      <member refid="class_contact_1add01d7b1c4c13a4625af6af7d432cbac" prot="private" virt="non-virtual"><scope>Contact</scope><name>listInteractions</name></member>
       <member refid="class_contact_1a68f15283a4fe4188a7b0cb53bddb7a1a" prot="private" virt="non-virtual"><scope>Contact</scope><name>mail</name></member>
       <member refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" prot="private" virt="non-virtual"><scope>Contact</scope><name>modification</name></member>
       <member refid="class_contact_1a837ec32c95f8815511ba1fb88d6e6870" prot="private" virt="non-virtual"><scope>Contact</scope><name>nom</name></member>
       <member refid="class_contact_1a24f9fcd32bd68e5d5af1a6f2a61a1948" prot="public" virt="non-virtual"><scope>Contact</scope><name>operator&lt;&lt;</name></member>
       <member refid="class_contact_1a6d85467851d61def44445912b58d52a4" prot="private" virt="non-virtual"><scope>Contact</scope><name>prenom</name></member>
-      <member refid="class_contact_1ad69ca2095921e570fdf0734ededa36f5" prot="public" virt="non-virtual"><scope>Contact</scope><name>removeInteraction</name></member>
+      <member refid="class_contact_1a6690bdcb21a0bf720268f0add8944b9a" prot="public" virt="non-virtual"><scope>Contact</scope><name>removeInteraction</name></member>
       <member refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" prot="public" virt="non-virtual"><scope>Contact</scope><name>setDateCreation</name></member>
       <member refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" prot="public" virt="non-virtual"><scope>Contact</scope><name>setDateLastModif</name></member>
       <member refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" prot="public" virt="non-virtual"><scope>Contact</scope><name>setEmail</name></member>

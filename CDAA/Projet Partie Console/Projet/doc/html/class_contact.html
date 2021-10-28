@@ -101,11 +101,14 @@ Graphe de collaboration de Contact:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_contact__coll__graph.png" border="0" usemap="#a_contact_coll__map" alt="Collaboration graph"/></div>
 <map name="a_contact_coll__map" id="a_contact_coll__map">
-<area shape="rect" title="La classe Contact permet de représenter un contact." alt="" coords="168,461,331,700"/>
-<area shape="rect" href="class_email.html" title="La classe Email permet de stocker l&#39;adresse mail d&#39;un contact." alt="" coords="115,175,250,384"/>
-<area shape="rect" title=" " alt="" coords="11,5,69,83"/>
-<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="275,241,315,318"/>
-<area shape="rect" title=" " alt="" coords="346,241,489,318"/>
+<area shape="rect" title="La classe Contact permet de représenter un contact." alt="" coords="179,704,342,943"/>
+<area shape="rect" href="class_email.html" title="La classe Email permet de stocker l&#39;adresse mail d&#39;un contact." alt="" coords="116,417,251,627"/>
+<area shape="rect" title=" " alt="" coords="35,197,94,274"/>
+<area shape="rect" href="structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="275,483,315,561"/>
+<area shape="rect" href="class_gestion_interaction.html" title="Cette classe permet de gérer une liste d&#39;interaction ainsi que les taches (todo) liées à chaque intér..." alt="" coords="339,425,518,619"/>
+<area shape="rect" href="class_gestion_todo.html" title="Cette classe permet de gérer une liste de tâches." alt="" coords="141,145,356,325"/>
+<area shape="rect" title=" " alt="" coords="197,5,300,83"/>
+<area shape="rect" title=" " alt="" coords="380,197,523,274"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -130,7 +133,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a0126ff51496fe7f69db34de82ce28398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récuperer le nom de l'entreprise.  <a href="class_contact.html#a0126ff51496fe7f69db34de82ce28398">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0126ff51496fe7f69db34de82ce28398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ebe193a5284e27b468ababdf7577e3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">getTelephone</a> () const</td></tr>
-<tr class="memdesc:a53ebe193a5284e27b468ababdf7577e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récuperer la photo ou le chemin vers la photo.  <a href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a53ebe193a5284e27b468ababdf7577e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récuperer la photo.  <a href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a53ebe193a5284e27b468ababdf7577e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c9099d80538c241c852d68f2630fc54"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">getPhoto</a> () const</td></tr>
 <tr class="memdesc:a0c9099d80538c241c852d68f2630fc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récuperer la photo ou le chemin vers la photo.  <a href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">Plus de détails...</a><br /></td></tr>
@@ -144,9 +147,9 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a8d89efed9b157ef61804cd1d1ce31ad0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_email.html">Email</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">getEmail</a> () const</td></tr>
 <tr class="memdesc:a8d89efed9b157ef61804cd1d1ce31ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récupérer l'adresse mail du contact.  <a href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a8d89efed9b157ef61804cd1d1ce31ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae640d361eb3e8659648bbdf2c0fb6bb4"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_interaction.html">Interaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ae640d361eb3e8659648bbdf2c0fb6bb4">getListInteractions</a> () const</td></tr>
-<tr class="memdesc:ae640d361eb3e8659648bbdf2c0fb6bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récuperer la liste des intéractions.  <a href="class_contact.html#ae640d361eb3e8659648bbdf2c0fb6bb4">Plus de détails...</a><br /></td></tr>
-<tr class="separator:ae640d361eb3e8659648bbdf2c0fb6bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f3b5d25bef8de2d09bae162b4d64f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gestion_interaction.html">GestionInteraction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ae6f3b5d25bef8de2d09bae162b4d64f7">getListInteractions</a> () const</td></tr>
+<tr class="memdesc:ae6f3b5d25bef8de2d09bae162b4d64f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour récuperer la liste des intéractions.  <a href="class_contact.html#ae6f3b5d25bef8de2d09bae162b4d64f7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae6f3b5d25bef8de2d09bae162b4d64f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0837af372d75a5d85ab296c6104a3232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a0837af372d75a5d85ab296c6104a3232">setNom</a> (const std::string &amp;)</td></tr>
 <tr class="memdesc:a0837af372d75a5d85ab296c6104a3232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour modifier le nom du contact.  <a href="class_contact.html#a0837af372d75a5d85ab296c6104a3232">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0837af372d75a5d85ab296c6104a3232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,46 +175,47 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a7fc8c816308412a4cf013f39c3e461d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour modifier l'adresse mail du contact.  <a href="class_contact.html#a7fc8c816308412a4cf013f39c3e461d8">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a7fc8c816308412a4cf013f39c3e461d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff5749b76c97dcd0f9eeb15999d1c193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193">addInteraction</a> (const <a class="el" href="class_interaction.html">Interaction</a> &amp;)</td></tr>
-<tr class="memdesc:aff5749b76c97dcd0f9eeb15999d1c193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajouter une intéraction au contact.  <a href="class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:aff5749b76c97dcd0f9eeb15999d1c193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajouter une interaction.  <a href="class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aff5749b76c97dcd0f9eeb15999d1c193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69ca2095921e570fdf0734ededa36f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ad69ca2095921e570fdf0734ededa36f5">removeInteraction</a> (const <a class="el" href="class_interaction.html">Interaction</a> &amp;)</td></tr>
-<tr class="memdesc:ad69ca2095921e570fdf0734ededa36f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprimer une intéraction au contact.  <a href="class_contact.html#ad69ca2095921e570fdf0734ededa36f5">Plus de détails...</a><br /></td></tr>
-<tr class="separator:ad69ca2095921e570fdf0734ededa36f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6690bdcb21a0bf720268f0add8944b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a6690bdcb21a0bf720268f0add8944b9a">removeInteraction</a> (const std::string &amp;)</td></tr>
+<tr class="memdesc:a6690bdcb21a0bf720268f0add8944b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprimer une interaction.  <a href="class_contact.html#a6690bdcb21a0bf720268f0add8944b9a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6690bdcb21a0bf720268f0add8944b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Fonctions membres privées</h2></td></tr>
 <tr class="memitem:a48b48fa54c3da3e928b3315735cf3b74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a> ()</td></tr>
-<tr class="memdesc:a48b48fa54c3da3e928b3315735cf3b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">La liste des intéractions du contact.  <a href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a48b48fa54c3da3e928b3315735cf3b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mise à jour de la date de modification.  <a href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a48b48fa54c3da3e928b3315735cf3b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Attributs privés</h2></td></tr>
 <tr class="memitem:a837ec32c95f8815511ba1fb88d6e6870"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a></td></tr>
+<tr class="memdesc:a837ec32c95f8815511ba1fb88d6e6870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nom du contact.  <a href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a837ec32c95f8815511ba1fb88d6e6870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d85467851d61def44445912b58d52a4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a></td></tr>
-<tr class="memdesc:a6d85467851d61def44445912b58d52a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nom du contact.  <a href="class_contact.html#a6d85467851d61def44445912b58d52a4">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a6d85467851d61def44445912b58d52a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le prénom du contact.  <a href="class_contact.html#a6d85467851d61def44445912b58d52a4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a6d85467851d61def44445912b58d52a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a786cf3e7f36e558af773e64a3302fbf8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a></td></tr>
-<tr class="memdesc:a786cf3e7f36e558af773e64a3302fbf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le prénom du contact.  <a href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a786cf3e7f36e558af773e64a3302fbf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nom de l'entreprise.  <a href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a786cf3e7f36e558af773e64a3302fbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a045666ea797063981360d3c926c4d58f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a></td></tr>
-<tr class="memdesc:a045666ea797063981360d3c926c4d58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nom de l'entreprise.  <a href="class_contact.html#a045666ea797063981360d3c926c4d58f">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a045666ea797063981360d3c926c4d58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le numéro du contact.  <a href="class_contact.html#a045666ea797063981360d3c926c4d58f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a045666ea797063981360d3c926c4d58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff78eb5c73608f1bc7b300b9427a878e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a></td></tr>
-<tr class="memdesc:aff78eb5c73608f1bc7b300b9427a878e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le numéro du contact.  <a href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:aff78eb5c73608f1bc7b300b9427a878e"><td class="mdescLeft">&#160;</td><td class="mdescRight">La photo du contact.  <a href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aff78eb5c73608f1bc7b300b9427a878e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cf732d68c5c3a8e513ce891d719aa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtm.html">tm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a></td></tr>
-<tr class="memdesc:ac0cf732d68c5c3a8e513ce891d719aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">La photo du contact.  <a href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ac0cf732d68c5c3a8e513ce891d719aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">La date de création du contact.  <a href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ac0cf732d68c5c3a8e513ce891d719aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a147a152073d3f091c40a3d5a77d6a27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtm.html">tm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a></td></tr>
-<tr class="memdesc:a147a152073d3f091c40a3d5a77d6a27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">La date de création du contact.  <a href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a147a152073d3f091c40a3d5a77d6a27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">La date de dernière modification.  <a href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a147a152073d3f091c40a3d5a77d6a27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68f15283a4fe4188a7b0cb53bddb7a1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_email.html">Email</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a></td></tr>
-<tr class="memdesc:a68f15283a4fe4188a7b0cb53bddb7a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">La date de dernière modification.  <a href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a68f15283a4fe4188a7b0cb53bddb7a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adresse Mail du contact.  <a href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a68f15283a4fe4188a7b0cb53bddb7a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab6983d1f1f3e8b65fd805c75c464e1"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_interaction.html">Interaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a></td></tr>
-<tr class="memdesc:acab6983d1f1f3e8b65fd805c75c464e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adresse Mail du contact.  <a href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">Plus de détails...</a><br /></td></tr>
-<tr class="separator:acab6983d1f1f3e8b65fd805c75c464e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add01d7b1c4c13a4625af6af7d432cbac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gestion_interaction.html">GestionInteraction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a></td></tr>
+<tr class="memdesc:add01d7b1c4c13a4625af6af7d432cbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le gestionnaire des intéractions du contact.  <a href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">Plus de détails...</a><br /></td></tr>
+<tr class="separator:add01d7b1c4c13a4625af6af7d432cbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Amis</h2></td></tr>
@@ -239,7 +243,7 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructeur par défaut de la classe <a class="el" href="class_contact.html" title="La classe Contact permet de représenter un contact.">Contact</a>. </p>
-<p>Ce constructeur initialise un contact avec des attributs vides. Les dates de création et de modification sont initialisées à la date courante. </p>
+<p>Ce constructeur initialise un contact avec des attributs et un gestionnaire d'intéractions vides. Les dates de création et de modification sont initialisées à la date courante. </p>
 <div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
@@ -248,26 +252,30 @@ Amis</h2></td></tr>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    time_t n = time(0);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a045666ea797063981360d3c926c4d58f"><div class="ttname"><a href="class_contact.html#a045666ea797063981360d3c926c4d58f">Contact::telephone</a></div><div class="ttdeci">std::string telephone</div><div class="ttdoc">Le nom de l'entreprise.</div><div class="ttdef"><b>Definition:</b> Contact.h:33</div></div>
-<div class="ttc" id="aclass_contact_html_a147a152073d3f091c40a3d5a77d6a27f"><div class="ttname"><a href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">Contact::dateLastModif</a></div><div class="ttdeci">tm * dateLastModif</div><div class="ttdoc">La date de création du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:36</div></div>
-<div class="ttc" id="aclass_contact_html_a1d69cefb80e2fdb0c0c8be60c7788a2a"><div class="ttname"><a href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">Contact::setDateCreation</a></div><div class="ttdeci">void setDateCreation(const tm &amp;)</div><div class="ttdoc">Pour modifier la date de création du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:198</div></div>
-<div class="ttc" id="aclass_contact_html_a4a7abe3ded9465e7e76ed1b5138a662c"><div class="ttname"><a href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">Contact::setDateLastModif</a></div><div class="ttdeci">void setDateLastModif(const tm &amp;)</div><div class="ttdoc">Pour modifier la date de dernière modification.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:206</div></div>
-<div class="ttc" id="aclass_contact_html_a68f15283a4fe4188a7b0cb53bddb7a1a"><div class="ttname"><a href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">Contact::mail</a></div><div class="ttdeci">Email * mail</div><div class="ttdoc">La date de dernière modification.</div><div class="ttdef"><b>Definition:</b> Contact.h:37</div></div>
-<div class="ttc" id="aclass_contact_html_a6d85467851d61def44445912b58d52a4"><div class="ttname"><a href="class_contact.html#a6d85467851d61def44445912b58d52a4">Contact::prenom</a></div><div class="ttdeci">std::string prenom</div><div class="ttdoc">Le nom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:31</div></div>
-<div class="ttc" id="aclass_contact_html_a786cf3e7f36e558af773e64a3302fbf8"><div class="ttname"><a href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">Contact::entreprise</a></div><div class="ttdeci">std::string entreprise</div><div class="ttdoc">Le prénom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:32</div></div>
-<div class="ttc" id="aclass_contact_html_a837ec32c95f8815511ba1fb88d6e6870"><div class="ttname"><a href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">Contact::nom</a></div><div class="ttdeci">std::string nom</div><div class="ttdef"><b>Definition:</b> Contact.h:30</div></div>
-<div class="ttc" id="aclass_contact_html_ac0cf732d68c5c3a8e513ce891d719aa4"><div class="ttname"><a href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">Contact::dateCreation</a></div><div class="ttdeci">tm * dateCreation</div><div class="ttdoc">La photo du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:35</div></div>
-<div class="ttc" id="aclass_contact_html_aff78eb5c73608f1bc7b300b9427a878e"><div class="ttname"><a href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">Contact::URIphoto</a></div><div class="ttdeci">std::string URIphoto</div><div class="ttdoc">Le numéro du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:34</div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a> = <span class="keyword">new</span> <a class="code" href="class_gestion_interaction.html">GestionInteraction</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    time_t n = time(0);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="ttc" id="aclass_contact_html_a045666ea797063981360d3c926c4d58f"><div class="ttname"><a href="class_contact.html#a045666ea797063981360d3c926c4d58f">Contact::telephone</a></div><div class="ttdeci">std::string telephone</div><div class="ttdoc">Le numéro du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:37</div></div>
+<div class="ttc" id="aclass_contact_html_a147a152073d3f091c40a3d5a77d6a27f"><div class="ttname"><a href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">Contact::dateLastModif</a></div><div class="ttdeci">tm * dateLastModif</div><div class="ttdoc">La date de dernière modification.</div><div class="ttdef"><b>Definition:</b> Contact.h:43</div></div>
+<div class="ttc" id="aclass_contact_html_a1d69cefb80e2fdb0c0c8be60c7788a2a"><div class="ttname"><a href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">Contact::setDateCreation</a></div><div class="ttdeci">void setDateCreation(const tm &amp;)</div><div class="ttdoc">Pour modifier la date de création du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:232</div></div>
+<div class="ttc" id="aclass_contact_html_a4a7abe3ded9465e7e76ed1b5138a662c"><div class="ttname"><a href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">Contact::setDateLastModif</a></div><div class="ttdeci">void setDateLastModif(const tm &amp;)</div><div class="ttdoc">Pour modifier la date de dernière modification.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:240</div></div>
+<div class="ttc" id="aclass_contact_html_a68f15283a4fe4188a7b0cb53bddb7a1a"><div class="ttname"><a href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">Contact::mail</a></div><div class="ttdeci">Email * mail</div><div class="ttdoc">Adresse Mail du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:45</div></div>
+<div class="ttc" id="aclass_contact_html_a6d85467851d61def44445912b58d52a4"><div class="ttname"><a href="class_contact.html#a6d85467851d61def44445912b58d52a4">Contact::prenom</a></div><div class="ttdeci">std::string prenom</div><div class="ttdoc">Le prénom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:33</div></div>
+<div class="ttc" id="aclass_contact_html_a786cf3e7f36e558af773e64a3302fbf8"><div class="ttname"><a href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">Contact::entreprise</a></div><div class="ttdeci">std::string entreprise</div><div class="ttdoc">Le nom de l'entreprise.</div><div class="ttdef"><b>Definition:</b> Contact.h:35</div></div>
+<div class="ttc" id="aclass_contact_html_a837ec32c95f8815511ba1fb88d6e6870"><div class="ttname"><a href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">Contact::nom</a></div><div class="ttdeci">std::string nom</div><div class="ttdoc">Le nom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:31</div></div>
+<div class="ttc" id="aclass_contact_html_ac0cf732d68c5c3a8e513ce891d719aa4"><div class="ttname"><a href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">Contact::dateCreation</a></div><div class="ttdeci">tm * dateCreation</div><div class="ttdoc">La date de création du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:41</div></div>
+<div class="ttc" id="aclass_contact_html_add01d7b1c4c13a4625af6af7d432cbac"><div class="ttname"><a href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">Contact::listInteractions</a></div><div class="ttdeci">GestionInteraction * listInteractions</div><div class="ttdoc">Le gestionnaire des intéractions du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:47</div></div>
+<div class="ttc" id="aclass_contact_html_aff78eb5c73608f1bc7b300b9427a878e"><div class="ttname"><a href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">Contact::URIphoto</a></div><div class="ttdeci">std::string URIphoto</div><div class="ttdoc">La photo du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:39</div></div>
 <div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">La classe Email permet de stocker l'adresse mail d'un contact.</div><div class="ttdef"><b>Definition:</b> Email.h:20</div></div>
+<div class="ttc" id="aclass_gestion_interaction_html"><div class="ttname"><a href="class_gestion_interaction.html">GestionInteraction</a></div><div class="ttdoc">Cette classe permet de gérer une liste d'interaction ainsi que les taches (todo) liées à chaque intér...</div><div class="ttdef"><b>Definition:</b> GestionInteraction.h:24</div></div>
 <div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>, <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>, <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>, <a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>, <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>, <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>, <a class="el" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation()</a>, <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>, <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>, et <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
+<p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>, <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>, <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>, <a class="el" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>, <a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>, <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>, <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>, <a class="el" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation()</a>, <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>, <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>, et <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
 
 </div>
 </div>
@@ -305,7 +313,7 @@ Amis</h2></td></tr>
 
 <p>Constructeur avec paramètre nom, prénom, entreprise. </p>
 <p>Constructeur de la classe <a class="el" href="class_contact.html" title="La classe Contact permet de représenter un contact.">Contact</a>.</p>
-<p>Ce constructeur initialise un contact avec les attributs nom, prénom et entreprise. Les dates de création et de modification sont initialisées à la date courante. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Ce constructeur initialise un contact avec les attributs nom, prénom et entreprise. Les dates de création et de modification sont initialisées à la date courante, le gestionnaire d'intéraction est vide. </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>: le nom du contact </td></tr>
     <tr><td class="paramname">lastname</td><td>: le prénom du contact </td></tr>
@@ -313,22 +321,24 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a> = name;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a> = lastname;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a> = entr;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a> =  <span class="keyword">new</span> <a class="code" href="class_email.html">Email</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    time_t n = time(0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a> = name;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a> = lastname;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a> = entr;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a> =  <span class="keyword">new</span> <a class="code" href="class_email.html">Email</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a> = <span class="keyword">new</span> <a class="code" href="class_gestion_interaction.html">GestionInteraction</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    time_t n = time(0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>, <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>, <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>, <a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>, <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>, <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>, <a class="el" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation()</a>, <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>, <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>, et <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
+<p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>, <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>, <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>, <a class="el" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>, <a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>, <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>, <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>, <a class="el" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation()</a>, <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>, <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>, et <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
 
 </div>
 </div>
@@ -348,16 +358,13 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructeur de la classe <a class="el" href="class_contact.html" title="La classe Contact permet de représenter un contact.">Contact</a>. </p>
-<p>Effacement de l'espace alloué par la liste d'interaction, les dates de création et de modification. </p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a>.clear();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_acab6983d1f1f3e8b65fd805c75c464e1"><div class="ttname"><a href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">Contact::listInteractions</a></div><div class="ttdeci">std::list&lt; Interaction &gt; listInteractions</div><div class="ttdoc">Adresse Mail du contact.</div><div class="ttdef"><b>Definition:</b> Contact.h:38</div></div>
+<p>Rien de particulier, les espaces alloués sont effacés en même tant que le gestionnaire de contact. </p><dl class="section warning"><dt>Avertissement</dt><dd>On obtient une erreur de segmentation (Segmentation fault) si on essaie de libérer l'espace alloué par le gestionnaire d'intéraction et une erreur de libération double (double free()) pour celui des dates. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//delete listInteractions;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//delete dateCreation;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//delete dateLastModif;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>, <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>, et <a class="el" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
@@ -377,16 +384,25 @@ Amis</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ajouter une intéraction au contact. </p>
-<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a>.push_back(add_interact);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a48b48fa54c3da3e928b3315735cf3b74"><div class="ttname"><a href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">Contact::modification</a></div><div class="ttdeci">void modification()</div><div class="ttdoc">La liste des intéractions du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:69</div></div>
+<p>Ajouter une interaction. </p>
+<p>Ajouter une intéraction au contact.</p>
+<p>Cette fonction permet d'ajouter une intéraction dans le gestionnaire. </p><dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">add_interact</td><td>: l'intéraction à ajouter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>-&gt;<a class="code" href="class_gestion_interaction.html#aa74a8ff644a48518c10b4b8d7932e6ae">addInteraction</a>(add_interact);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="ttc" id="aclass_contact_html_a48b48fa54c3da3e928b3315735cf3b74"><div class="ttname"><a href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">Contact::modification</a></div><div class="ttdeci">void modification()</div><div class="ttdoc">Mise à jour de la date de modification.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:77</div></div>
+<div class="ttc" id="aclass_gestion_interaction_html_aa74a8ff644a48518c10b4b8d7932e6ae"><div class="ttname"><a href="class_gestion_interaction.html#aa74a8ff644a48518c10b4b8d7932e6ae">GestionInteraction::addInteraction</a></div><div class="ttdeci">void addInteraction(const Interaction &amp;)</div><div class="ttdoc">Ajouter une interaction.</div><div class="ttdef"><b>Definition:</b> GestionInteraction.cpp:36</div></div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a>, et <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>.</p>
+<p class="reference">Références <a class="el" href="class_gestion_interaction.html#aa74a8ff644a48518c10b4b8d7932e6ae">GestionInteraction::addInteraction()</a>, <a class="el" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>, et <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -406,9 +422,10 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la date de création du contact. </p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<dl class="section return"><dt>Renvoie</dt><dd>Une tm contenant la date de création du contact </dd></dl>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>.</p>
 
@@ -430,9 +447,10 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la date de dernière modification du contact. </p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<dl class="section return"><dt>Renvoie</dt><dd>Une tm contenant la date de dernière modification du contact </dd></dl>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>.</p>
 
@@ -454,9 +472,10 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récupérer l'adresse mail du contact. </p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<dl class="section return"><dt>Renvoie</dt><dd>Une variable <a class="el" href="class_email.html" title="La classe Email permet de stocker l&#39;adresse mail d&#39;un contact.">Email</a> contenant l'adresse mail du contact. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>.</p>
 
@@ -478,23 +497,23 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer le nom de l'entreprise. </p>
-<p>Cette fonction renvoie le nom de l'entreprise. </p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<p>Cette fonction renvoie le nom de l'entreprise. </p><dl class="section return"><dt>Renvoie</dt><dd>Le nom de l'entreprise en String </dd></dl>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>.</p>
 
 </div>
 </div>
-<a id="ae640d361eb3e8659648bbdf2c0fb6bb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae640d361eb3e8659648bbdf2c0fb6bb4">&#9670;&nbsp;</a></span>getListInteractions()</h2>
+<a id="ae6f3b5d25bef8de2d09bae162b4d64f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f3b5d25bef8de2d09bae162b4d64f7">&#9670;&nbsp;</a></span>getListInteractions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; <a class="el" href="class_interaction.html">Interaction</a> &gt; Contact::getListInteractions </td>
+          <td class="memname"><a class="el" href="class_gestion_interaction.html">GestionInteraction</a> * Contact::getListInteractions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -503,11 +522,12 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la liste des intéractions. </p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<p>Cette fonction renvoie le pointeur vers le gestionnaire d'interaction. </p><dl class="section return"><dt>Renvoie</dt><dd>Un pointeur sur le gestionnaire d'intéraction. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Références <a class="el" href="class_contact.html#acab6983d1f1f3e8b65fd805c75c464e1">listInteractions</a>.</p>
+<p class="reference">Références <a class="el" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>.</p>
 
 </div>
 </div>
@@ -527,10 +547,10 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer le nom du contact. </p>
-<p>Cette fonction renvoie le nom du contact. </p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<p>Cette fonction renvoie le nom du contact. </p><dl class="section return"><dt>Renvoie</dt><dd>Le nom du contact en String </dd></dl>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>.</p>
 
@@ -552,9 +572,10 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la photo ou le chemin vers la photo. </p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<dl class="section return"><dt>Renvoie</dt><dd>Le lien vers kla photo du contact en String </dd></dl>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
 
@@ -576,10 +597,10 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer le prenom du contact. </p>
-<p>Cette fonction renvoie le prenom du contact. </p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<p>Cette fonction renvoie le prenom du contact. </p><dl class="section return"><dt>Renvoie</dt><dd>Le prenom du contact en String </dd></dl>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>.</p>
 
@@ -600,10 +621,11 @@ Amis</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pour récuperer la photo ou le chemin vers la photo. </p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<p>Pour récuperer la photo. </p>
+<p>Cette fonction ne renvoie pas réellement une photo mais le chemin pour y accéder. </p><dl class="section return"><dt>Renvoie</dt><dd>Le numéro du contact en String </dd></dl>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>.</p>
 
@@ -632,14 +654,15 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>La liste des intéractions du contact. </p>
-<p>Mise à jour de la date de dernière mise à jour. </p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif</a>(d.<a class="code" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">getDate</a>());</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<p>Mise à jour de la date de modification. </p>
+<p>Mise à jour de la date de dernière mise à jour.</p>
+<p>Cette méthode permet notamment d'actualiser la date de mise à jour du contact lorsque l'un de ses attributs subi une modification. Elle devient la date courante. </p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif</a>(d.<a class="code" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">getDate</a>());</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
-<div class="ttc" id="aclass_date_html_a53dcab03c7834448fd67ef453ff34195"><div class="ttname"><a href="class_date.html#a53dcab03c7834448fd67ef453ff34195">Date::getDate</a></div><div class="ttdeci">tm getDate()</div><div class="ttdoc">Récupération de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:69</div></div>
+<div class="ttc" id="aclass_date_html_a53dcab03c7834448fd67ef453ff34195"><div class="ttname"><a href="class_date.html#a53dcab03c7834448fd67ef453ff34195">Date::getDate</a></div><div class="ttdeci">tm getDate()</div><div class="ttdoc">Récupération de la date.</div><div class="ttdef"><b>Definition:</b> Date.cpp:65</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_date.html#a53dcab03c7834448fd67ef453ff34195">Date::getDate()</a>, et <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>.</p>
 
@@ -647,8 +670,8 @@ Amis</h2></td></tr>
 
 </div>
 </div>
-<a id="ad69ca2095921e570fdf0734ededa36f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad69ca2095921e570fdf0734ededa36f5">&#9670;&nbsp;</a></span>removeInteraction()</h2>
+<a id="a6690bdcb21a0bf720268f0add8944b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6690bdcb21a0bf720268f0add8944b9a">&#9670;&nbsp;</a></span>removeInteraction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,18 +679,28 @@ Amis</h2></td></tr>
         <tr>
           <td class="memname">void Contact::removeInteraction </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_interaction.html">Interaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>rm_interact</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>contenu_interact</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Supprimer une intéraction au contact. </p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
+<p>Supprimer une interaction. </p>
+<p>Supprimer une intéraction au contact.</p>
+<p>Cette fonction permet de supprimer une intéraction du gestionnaire en connaissant son contenu. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contenu_interact</td><td>: le contenu (String) de l'intéraction à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>-&gt;<a class="code" href="class_gestion_interaction.html#ab8dd72292cecf1a01fe8be2334dda0d3">removeInteraction</a>(contenu_interact);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
+<div class="ttc" id="aclass_gestion_interaction_html_ab8dd72292cecf1a01fe8be2334dda0d3"><div class="ttname"><a href="class_gestion_interaction.html#ab8dd72292cecf1a01fe8be2334dda0d3">GestionInteraction::removeInteraction</a></div><div class="ttdeci">void removeInteraction(const std::string &amp;)</div><div class="ttdoc">Supprimer une intéraction.</div><div class="ttdef"><b>Definition:</b> GestionInteraction.cpp:65</div></div>
 </div><!-- fragment -->
+<p class="reference">Références <a class="el" href="class_contact.html#add01d7b1c4c13a4625af6af7d432cbac">listInteractions</a>, et <a class="el" href="class_gestion_interaction.html#ab8dd72292cecf1a01fe8be2334dda0d3">GestionInteraction::removeInteraction()</a>.</p>
+
 </div>
 </div>
 <a id="a1d69cefb80e2fdb0c0c8be60c7788a2a"></a>
@@ -687,13 +720,19 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier la date de création du contact. </p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    *<a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a> = date_of_creation;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date_of_creation</td><td>: la date de création du contact. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    *<a class="code" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a> = date_of_creation;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#ac0cf732d68c5c3a8e513ce891d719aa4">dateCreation</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, et <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -714,13 +753,13 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier la date de dernière modification. </p>
-<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    *<a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a> = last_modif;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    *<a class="code" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a> = last_modif;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a147a152073d3f091c40a3d5a77d6a27f">dateLastModif</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>, et <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>, <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -741,15 +780,23 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier l'adresse mail du contact. </p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>-&gt;<a class="code" href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">fromString</a>(email);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
-<div class="ttc" id="aclass_email_html_ad008c905fb780e47c5fd5d5a1ba6eef6"><div class="ttname"><a href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">Email::fromString</a></div><div class="ttdeci">void fromString(const std::string &amp;)</div><div class="ttdoc">Pour décomposer une adresse mail et récupérer les différentes parties.</div><div class="ttdef"><b>Definition:</b> Email.cpp:86</div></div>
+<dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>: l'adresse mail sous forme de String. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Avertissement</dt><dd>Si l'adresse est incorrecte un message d'erreur s'affiche. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>-&gt;<a class="code" href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">fromString</a>(email);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
+<div class="ttc" id="aclass_email_html_ad008c905fb780e47c5fd5d5a1ba6eef6"><div class="ttname"><a href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">Email::fromString</a></div><div class="ttdeci">void fromString(const std::string &amp;)</div><div class="ttdoc">Pour décomposer une adresse mail et récupérer les différentes parties.</div><div class="ttdef"><b>Definition:</b> Email.cpp:89</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">Email::fromString()</a>, <a class="el" href="class_contact.html#a68f15283a4fe4188a7b0cb53bddb7a1a">mail</a>, et <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -770,10 +817,17 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier le nom de l'entreprise. </p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>= company;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<p>Cette fonction permet de modifier le nom de l'entreprise. </p><dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">company</td><td>: Le nouveau nom de l'entreprise. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>= company;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a786cf3e7f36e558af773e64a3302fbf8">entreprise</a>, et <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>.</p>
 
@@ -796,10 +850,17 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier le nom du contact. </p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a> = name;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+<p>Cette fonction permet de modifier le nom du contact. </p><dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>: Le nouveau nom du contact. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a> = name;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>, et <a class="el" href="class_contact.html#a837ec32c95f8815511ba1fb88d6e6870">nom</a>.</p>
 
@@ -822,12 +883,21 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier la photo. </p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    this-&gt;<a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>= pic;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>lien vers la nouvelle photo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    this-&gt;<a class="code" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>= pic;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>, et <a class="el" href="class_contact.html#aff78eb5c73608f1bc7b300b9427a878e">URIphoto</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -848,10 +918,17 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier le prenom du contact. </p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a> = lastname;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<p>Cette fonction permet de modifier le prenom du contact. </p><dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lastname</td><td>: Le nouveau prénom du contact. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a> = lastname;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>, et <a class="el" href="class_contact.html#a6d85467851d61def44445912b58d52a4">prenom</a>.</p>
 
@@ -874,14 +951,21 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour modifier le numéro du contact. </p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a> = phone;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+<p>Cette fonction permet de modifier le numéro du contact. </p><dl class="section warning"><dt>Avertissement</dt><dd>Cette opération entraine une mise à jour de la date de modification. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phone</td><td>: Le nouveau numéro du contact. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;{</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    this-&gt;<a class="code" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a> = phone;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification</a>();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_contact.html#a48b48fa54c3da3e928b3315735cf3b74">modification()</a>, et <a class="el" href="class_contact.html#a045666ea797063981360d3c926c4d58f">telephone</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -928,42 +1012,39 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Pour afficher la fiche d'un contact. </p>
-<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;=================&gt; Fiche Contact &lt;=================\n&quot;</span>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Nom : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#ac4ca062bf61f7adbbddc7878c0957e82">getNom</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Prenom : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a1825fa5b28052b477fb16176bb4df21e">getPrenom</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Entreprise : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a0126ff51496fe7f69db34de82ce28398">getEntreprise</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Mail : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">getEmail</a>().<a class="code" href="class_email.html#acfd186a5418525a835fbcf2030620a9a">toString</a>()&lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Telephone : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">getTelephone</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(c.<a class="code" href="class_contact.html#af1b8218175c3c88bc10375fe098e851a">getDateCreation</a>());</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Date de création : &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(c.<a class="code" href="class_contact.html#a977dfc1a358b7a34774621041837512e">getDateLastModif</a>());</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Date de derniere modification : &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Photo : &quot;</span>;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">if</span>(c.<a class="code" href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">getPhoto</a>() == <span class="stringliteral">&quot;&quot;</span>)  os &lt;&lt; <span class="stringliteral">&quot;Aucune Photo \n&quot;</span>;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">else</span> os &lt;&lt; c.<a class="code" href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">getPhoto</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;=================&gt; Interactions \n&quot;</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> interact : c.<a class="code" href="class_contact.html#ae640d361eb3e8659648bbdf2c0fb6bb4">getListInteractions</a>())</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        os &lt;&lt; interact &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
-<div class="ttc" id="aclass_contact_html_a0126ff51496fe7f69db34de82ce28398"><div class="ttname"><a href="class_contact.html#a0126ff51496fe7f69db34de82ce28398">Contact::getEntreprise</a></div><div class="ttdeci">std::string getEntreprise() const</div><div class="ttdoc">Pour récuperer le nom de l'entreprise.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:97</div></div>
-<div class="ttc" id="aclass_contact_html_a0c9099d80538c241c852d68f2630fc54"><div class="ttname"><a href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">Contact::getPhoto</a></div><div class="ttdeci">std::string getPhoto() const</div><div class="ttdoc">Pour récuperer la photo ou le chemin vers la photo.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:113</div></div>
-<div class="ttc" id="aclass_contact_html_a1825fa5b28052b477fb16176bb4df21e"><div class="ttname"><a href="class_contact.html#a1825fa5b28052b477fb16176bb4df21e">Contact::getPrenom</a></div><div class="ttdeci">std::string getPrenom() const</div><div class="ttdoc">Pour récuperer le prenom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:88</div></div>
-<div class="ttc" id="aclass_contact_html_a53ebe193a5284e27b468ababdf7577e3"><div class="ttname"><a href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">Contact::getTelephone</a></div><div class="ttdeci">std::string getTelephone() const</div><div class="ttdoc">Pour récuperer la photo ou le chemin vers la photo.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:105</div></div>
-<div class="ttc" id="aclass_contact_html_a8d89efed9b157ef61804cd1d1ce31ad0"><div class="ttname"><a href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">Contact::getEmail</a></div><div class="ttdeci">Email getEmail() const</div><div class="ttdoc">Pour récupérer l'adresse mail du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:137</div></div>
-<div class="ttc" id="aclass_contact_html_a977dfc1a358b7a34774621041837512e"><div class="ttname"><a href="class_contact.html#a977dfc1a358b7a34774621041837512e">Contact::getDateLastModif</a></div><div class="ttdeci">tm getDateLastModif() const</div><div class="ttdoc">Pour récuperer la date de dernière modification du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:129</div></div>
-<div class="ttc" id="aclass_contact_html_ac4ca062bf61f7adbbddc7878c0957e82"><div class="ttname"><a href="class_contact.html#ac4ca062bf61f7adbbddc7878c0957e82">Contact::getNom</a></div><div class="ttdeci">std::string getNom() const</div><div class="ttdoc">Pour récuperer le nom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:79</div></div>
-<div class="ttc" id="aclass_contact_html_ae640d361eb3e8659648bbdf2c0fb6bb4"><div class="ttname"><a href="class_contact.html#ae640d361eb3e8659648bbdf2c0fb6bb4">Contact::getListInteractions</a></div><div class="ttdeci">std::list&lt; Interaction &gt; getListInteractions() const</div><div class="ttdoc">Pour récuperer la liste des intéractions.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:145</div></div>
-<div class="ttc" id="aclass_contact_html_af1b8218175c3c88bc10375fe098e851a"><div class="ttname"><a href="class_contact.html#af1b8218175c3c88bc10375fe098e851a">Contact::getDateCreation</a></div><div class="ttdeci">tm getDateCreation() const</div><div class="ttdoc">Pour récuperer la date de création du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:121</div></div>
-<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:106</div></div>
-<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:78</div></div>
-<div class="ttc" id="aclass_email_html_acfd186a5418525a835fbcf2030620a9a"><div class="ttname"><a href="class_email.html#acfd186a5418525a835fbcf2030620a9a">Email::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdef"><b>Definition:</b> Email.cpp:114</div></div>
+<p>Pour afficher la fiche d'un contact. </p><dl class="section return"><dt>Renvoie</dt><dd>os </dd></dl>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;=================&gt; Fiche Contact &lt;=================\n&quot;</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Nom : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#ac4ca062bf61f7adbbddc7878c0957e82">getNom</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Prenom : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a1825fa5b28052b477fb16176bb4df21e">getPrenom</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Entreprise : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a0126ff51496fe7f69db34de82ce28398">getEntreprise</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Mail : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">getEmail</a>().<a class="code" href="class_email.html#acfd186a5418525a835fbcf2030620a9a">toString</a>()&lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Telephone : &quot;</span> &lt;&lt; c.<a class="code" href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">getTelephone</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(c.<a class="code" href="class_contact.html#af1b8218175c3c88bc10375fe098e851a">getDateCreation</a>());</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Date de création : &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(c.<a class="code" href="class_contact.html#a977dfc1a358b7a34774621041837512e">getDateLastModif</a>());</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Date de derniere modification : &quot;</span> &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Photo : &quot;</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">if</span>(c.<a class="code" href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">getPhoto</a>() == <span class="stringliteral">&quot;&quot;</span>)  os &lt;&lt; <span class="stringliteral">&quot;Aucune Photo \n&quot;</span>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">else</span> os &lt;&lt; c.<a class="code" href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">getPhoto</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;=================&gt; Interactions \n&quot;</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    os &lt;&lt; *(c.<a class="code" href="class_contact.html#ae6f3b5d25bef8de2d09bae162b4d64f7">getListInteractions</a>());</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+<div class="ttc" id="aclass_contact_html_a0126ff51496fe7f69db34de82ce28398"><div class="ttname"><a href="class_contact.html#a0126ff51496fe7f69db34de82ce28398">Contact::getEntreprise</a></div><div class="ttdeci">std::string getEntreprise() const</div><div class="ttdoc">Pour récuperer le nom de l'entreprise.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:108</div></div>
+<div class="ttc" id="aclass_contact_html_a0c9099d80538c241c852d68f2630fc54"><div class="ttname"><a href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">Contact::getPhoto</a></div><div class="ttdeci">std::string getPhoto() const</div><div class="ttdoc">Pour récuperer la photo ou le chemin vers la photo.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:127</div></div>
+<div class="ttc" id="aclass_contact_html_a1825fa5b28052b477fb16176bb4df21e"><div class="ttname"><a href="class_contact.html#a1825fa5b28052b477fb16176bb4df21e">Contact::getPrenom</a></div><div class="ttdeci">std::string getPrenom() const</div><div class="ttdoc">Pour récuperer le prenom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:98</div></div>
+<div class="ttc" id="aclass_contact_html_a53ebe193a5284e27b468ababdf7577e3"><div class="ttname"><a href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">Contact::getTelephone</a></div><div class="ttdeci">std::string getTelephone() const</div><div class="ttdoc">Pour récuperer la photo.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:118</div></div>
+<div class="ttc" id="aclass_contact_html_a8d89efed9b157ef61804cd1d1ce31ad0"><div class="ttname"><a href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">Contact::getEmail</a></div><div class="ttdeci">Email getEmail() const</div><div class="ttdoc">Pour récupérer l'adresse mail du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:154</div></div>
+<div class="ttc" id="aclass_contact_html_a977dfc1a358b7a34774621041837512e"><div class="ttname"><a href="class_contact.html#a977dfc1a358b7a34774621041837512e">Contact::getDateLastModif</a></div><div class="ttdeci">tm getDateLastModif() const</div><div class="ttdoc">Pour récuperer la date de dernière modification du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:145</div></div>
+<div class="ttc" id="aclass_contact_html_ac4ca062bf61f7adbbddc7878c0957e82"><div class="ttname"><a href="class_contact.html#ac4ca062bf61f7adbbddc7878c0957e82">Contact::getNom</a></div><div class="ttdeci">std::string getNom() const</div><div class="ttdoc">Pour récuperer le nom du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:88</div></div>
+<div class="ttc" id="aclass_contact_html_ae6f3b5d25bef8de2d09bae162b4d64f7"><div class="ttname"><a href="class_contact.html#ae6f3b5d25bef8de2d09bae162b4d64f7">Contact::getListInteractions</a></div><div class="ttdeci">GestionInteraction * getListInteractions() const</div><div class="ttdoc">Pour récuperer la liste des intéractions.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:164</div></div>
+<div class="ttc" id="aclass_contact_html_af1b8218175c3c88bc10375fe098e851a"><div class="ttname"><a href="class_contact.html#af1b8218175c3c88bc10375fe098e851a">Contact::getDateCreation</a></div><div class="ttdeci">tm getDateCreation() const</div><div class="ttdoc">Pour récuperer la date de création du contact.</div><div class="ttdef"><b>Definition:</b> Contact.cpp:136</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:102</div></div>
+<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:74</div></div>
+<div class="ttc" id="aclass_email_html_acfd186a5418525a835fbcf2030620a9a"><div class="ttname"><a href="class_email.html#acfd186a5418525a835fbcf2030620a9a">Email::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Pour reconstituer l'adresse mail en une String.</div><div class="ttdef"><b>Definition:</b> Email.cpp:122</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -988,9 +1069,9 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>La photo du contact. </p>
+<p>La date de création du contact. </p>
 
-<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#af1b8218175c3c88bc10375fe098e851a">getDateCreation()</a>, <a class="el" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation()</a>, et <a class="el" href="class_contact.html#ab68013cc59e3d640735c573e52c35219">~Contact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#af1b8218175c3c88bc10375fe098e851a">getDateCreation()</a>, et <a class="el" href="class_contact.html#a1d69cefb80e2fdb0c0c8be60c7788a2a">setDateCreation()</a>.</p>
 
 </div>
 </div>
@@ -1014,9 +1095,9 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>La date de création du contact. </p>
+<p>La date de dernière modification. </p>
 
-<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a977dfc1a358b7a34774621041837512e">getDateLastModif()</a>, <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>, et <a class="el" href="class_contact.html#ab68013cc59e3d640735c573e52c35219">~Contact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a977dfc1a358b7a34774621041837512e">getDateLastModif()</a>, et <a class="el" href="class_contact.html#a4a7abe3ded9465e7e76ed1b5138a662c">setDateLastModif()</a>.</p>
 
 </div>
 </div>
@@ -1040,14 +1121,14 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Le prénom du contact. </p>
+<p>Le nom de l'entreprise. </p>
 
 <p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a0126ff51496fe7f69db34de82ce28398">getEntreprise()</a>, et <a class="el" href="class_contact.html#a1237b826b80e3ead402d0c26cc3c2ace">setEntreprise()</a>.</p>
 
 </div>
 </div>
-<a id="acab6983d1f1f3e8b65fd805c75c464e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab6983d1f1f3e8b65fd805c75c464e1">&#9670;&nbsp;</a></span>listInteractions</h2>
+<a id="add01d7b1c4c13a4625af6af7d432cbac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add01d7b1c4c13a4625af6af7d432cbac">&#9670;&nbsp;</a></span>listInteractions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1056,7 +1137,7 @@ Amis</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="class_interaction.html">Interaction</a>&gt; Contact::listInteractions</td>
+          <td class="memname"><a class="el" href="class_gestion_interaction.html">GestionInteraction</a>* Contact::listInteractions</td>
         </tr>
       </table>
   </td>
@@ -1066,9 +1147,9 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adresse Mail du contact. </p>
+<p>Le gestionnaire des intéractions du contact. </p>
 
-<p class="reference">Référencé par <a class="el" href="class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193">addInteraction()</a>, <a class="el" href="class_contact.html#ae640d361eb3e8659648bbdf2c0fb6bb4">getListInteractions()</a>, et <a class="el" href="class_contact.html#ab68013cc59e3d640735c573e52c35219">~Contact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193">addInteraction()</a>, <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#ae6f3b5d25bef8de2d09bae162b4d64f7">getListInteractions()</a>, et <a class="el" href="class_contact.html#a6690bdcb21a0bf720268f0add8944b9a">removeInteraction()</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1173,7 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>La date de dernière modification. </p>
+<p>Adresse Mail du contact. </p>
 
 <p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a8d89efed9b157ef61804cd1d1ce31ad0">getEmail()</a>, et <a class="el" href="class_contact.html#a7fc8c816308412a4cf013f39c3e461d8">setEmail()</a>.</p>
 
@@ -1118,6 +1199,8 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Le nom du contact. </p>
+
 <p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#ac4ca062bf61f7adbbddc7878c0957e82">getNom()</a>, et <a class="el" href="class_contact.html#a0837af372d75a5d85ab296c6104a3232">setNom()</a>.</p>
 
 </div>
@@ -1142,7 +1225,7 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Le nom du contact. </p>
+<p>Le prénom du contact. </p>
 
 <p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a1825fa5b28052b477fb16176bb4df21e">getPrenom()</a>, et <a class="el" href="class_contact.html#ac31195d758df58ee327cc05b6276aace">setPrenom()</a>.</p>
 
@@ -1168,7 +1251,7 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Le nom de l'entreprise. </p>
+<p>Le numéro du contact. </p>
 
 <p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a53ebe193a5284e27b468ababdf7577e3">getTelephone()</a>, et <a class="el" href="class_contact.html#a54c863b3045a9255d75f1ad876ecb7de">setTelephone()</a>.</p>
 
@@ -1194,7 +1277,7 @@ Amis</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Le numéro du contact. </p>
+<p>La photo du contact. </p>
 
 <p class="reference">Référencé par <a class="el" href="class_contact.html#ae39444f378e6de7fd6c3e60981949af5">Contact()</a>, <a class="el" href="class_contact.html#a0c9099d80538c241c852d68f2630fc54">getPhoto()</a>, et <a class="el" href="class_contact.html#a294330fb17e2a3d581fe0adc5fa2e997">setPhoto()</a>.</p>
 

@@ -26,6 +26,7 @@ Email::Email(const string& adr)
 /**
     *@brief Pour récuperer la partie identifiant de l'adresse.
     *@details Cette fonction renvoie la partie qui se trouve avant le '@' dans l'adresse mail.
+    *@return L'identifiant dans un type String.
 */
 string Email::getIdentifiant() const
 {
@@ -44,6 +45,7 @@ void Email::setIdentifiant(const string& id)
 /**
     *@brief Pour récuperer la partie domaine de l'adresse.
     *@details Cette fonction renvoie la partie qui se trouve entre le '@' et le dernier '.' dans l'adresse mail.
+    *@return Le domaine de l'adresse mail dans un type String.
 */
 string Email::getDomaine() const
 {
@@ -62,6 +64,7 @@ void Email::setDomaine(const string& domaine)
 /**
     *@brief Pour récuperer la partie mc de l'adresse.
     *@details Cette fonction renvoie la partie qui se trouve après le dernier '.' dans l'adresse mail.
+    *@return Le mc dans un type String.
 */
 string Email::getMc() const
 {
@@ -110,7 +113,12 @@ void Email::fromString(const string& adr)
     }
 }
 
-
+/**
+    *@brief Pour reconstituer l'adresse mail en une String
+    *@brief Cette fonction retourne, si aucun champ (identifiant, domaine et mc) n'est vide, l'adresse mail recontituée.
+    *@return l'adresse mail dans une String.
+    *@warning Si l'identifiant, le domaine ou le mc est vide elle renvoie une String vide.
+*/
 string Email:: toString()
 {
     if(getIdentifiant() !=  "" && getDomaine() != "" && getMc() != "")

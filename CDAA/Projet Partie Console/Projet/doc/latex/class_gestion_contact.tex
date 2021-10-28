@@ -2,7 +2,12 @@
 \label{class_gestion_contact}\index{GestionContact@{GestionContact}}
 
 
-{\ttfamily \#include $<$Gestion\+Contact.\+h$>$}
+Cette classe permet de gérer une liste de contact.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Gestion\+Contact.\+h\char`\"{}}
 
 
 
@@ -11,35 +16,42 @@ Graphe de collaboration de Gestion\+Contact\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=200pt]{class_gestion_contact__coll__graph}
+\includegraphics[width=211pt]{class_gestion_contact__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_gestion_contact_a0d42db3777c1e15d557979c897acf344}{Gestion\+Contact}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur du gestionnaire de contact. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_gestion_contact_a9c0d781c68963dcdc05b6d52019538f9}{$\sim$\+Gestion\+Contact}} ()
-\item 
-std\+::list$<$ \mbox{\hyperlink{class_contact}{Contact}} $>$ \mbox{\hyperlink{class_gestion_contact_a902954b29f8b86b7be326f365f8c25a3}{Getlist\+Contact}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Destructeur du gestionnaire de contact. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{class_contact}{Contact}} $>$ \mbox{\hyperlink{class_gestion_contact_aa9aadd7924eeddb7a0fb202afd782916}{getlist\+Contact}} () const
+\begin{DoxyCompactList}\small\item\em Accès à la liste des contacts. \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_gestion_contact_aef55482330b41395718625f78f19844d}{get\+Size}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Taille de la liste. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gestion_contact_ab5106c180d9d24ba15cc3ddfa8d224fb}{add\+Contact}} (const \mbox{\hyperlink{class_contact}{Contact}} \&)
-\item 
+\begin{DoxyCompactList}\small\item\em Ajouter un contact au gestionnaire. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gestion_contact_aed9c969df00ec0ac22d8bf9513e0e8ed}{remove\+Contact}} (const std\+::string \&)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Supprimer un contact. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_contact}{Contact}} $\ast$ \mbox{\hyperlink{class_gestion_contact_a302ccf41069ad043a674359e7ac372f4}{get\+Contact\+By\+Name}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Récuperer un contact en connaissant son nom. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 std\+::list$<$ \mbox{\hyperlink{class_contact}{Contact}} $>$ \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{list\+Contact}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em La liste des contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Amis}
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \mbox{\hyperlink{class_gestion_contact_ae5ddb4f9bafabea0a77f5338ce4d4501}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Description détaillée}
+Cette classe permet de gérer une liste de contact. 
+
+Elle permet notamment d\textquotesingle{}ajouter, de supprimer des contacts. Elle permet aussi l\textquotesingle{}affichage de toutes les fiches contacts. 
 
 \doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{class_gestion_contact_a0d42db3777c1e15d557979c897acf344}\label{class_gestion_contact_a0d42db3777c1e15d557979c897acf344}} 
@@ -49,10 +61,16 @@ std\+::ostream \& \mbox{\hyperlink{class_gestion_contact_ae5ddb4f9bafabea0a77f53
 {\footnotesize\ttfamily Gestion\+Contact\+::\+Gestion\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Constructeur du gestionnaire de contact. 
+
+Constructueur par défaut de la classe \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}}.
+
+Rien de particulier. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{11 \{}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 \}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_gestion_contact_a9c0d781c68963dcdc05b6d52019538f9}\label{class_gestion_contact_a9c0d781c68963dcdc05b6d52019538f9}} 
@@ -62,10 +80,16 @@ std\+::ostream \& \mbox{\hyperlink{class_gestion_contact_ae5ddb4f9bafabea0a77f53
 {\footnotesize\ttfamily Gestion\+Contact\+::$\sim$\+Gestion\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Destructeur du gestionnaire de contact. 
+
+Destructeur de la classe \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}}.
+
+On libère la mémoire alloué par la liste de contact. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{19 \{}
-\DoxyCodeLine{20     \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.clear();}
-\DoxyCodeLine{21 \}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.clear();}
+\DoxyCodeLine{24 \}}
 
 \end{DoxyCode}
 
@@ -79,17 +103,57 @@ Références list\+Contact.
 \index{GestionContact@{GestionContact}!addContact@{addContact}}
 \index{addContact@{addContact}!GestionContact@{GestionContact}}
 \doxysubsubsection{\texorpdfstring{addContact()}{addContact()}}
-{\footnotesize\ttfamily void Gestion\+Contact\+::add\+Contact (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_contact}{Contact}} \&}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gestion\+Contact\+::add\+Contact (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_contact}{Contact}} \&}]{c }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_gestion_contact_a902954b29f8b86b7be326f365f8c25a3}\label{class_gestion_contact_a902954b29f8b86b7be326f365f8c25a3}} 
-\index{GestionContact@{GestionContact}!GetlistContact@{GetlistContact}}
-\index{GetlistContact@{GetlistContact}!GestionContact@{GestionContact}}
-\doxysubsubsection{\texorpdfstring{GetlistContact()}{GetlistContact()}}
-{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_contact}{Contact}}$>$ Gestion\+Contact\+::\+Getlist\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+Ajouter un contact au gestionnaire. 
+
+Pour ajouter un nouveau contact dans la liste.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em c} & \+: le contact à ajouter \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.push\_back(c);}
+\DoxyCodeLine{34 \}}
+
+\end{DoxyCode}
+
+
+Références list\+Contact.
+
+
+
+Référencé par test\+Gestion\+Contact().
+
+\mbox{\Hypertarget{class_gestion_contact_a302ccf41069ad043a674359e7ac372f4}\label{class_gestion_contact_a302ccf41069ad043a674359e7ac372f4}} 
+\index{GestionContact@{GestionContact}!getContactByName@{getContactByName}}
+\index{getContactByName@{getContactByName}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{getContactByName()}{getContactByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_contact}{Contact}}$\ast$ Gestion\+Contact\+::get\+Contact\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
+
+
+
+Récuperer un contact en connaissant son nom. 
+
+\mbox{\Hypertarget{class_gestion_contact_aa9aadd7924eeddb7a0fb202afd782916}\label{class_gestion_contact_aa9aadd7924eeddb7a0fb202afd782916}} 
+\index{GestionContact@{GestionContact}!getlistContact@{getlistContact}}
+\index{getlistContact@{getlistContact}!GestionContact@{GestionContact}}
+\doxysubsubsection{\texorpdfstring{getlistContact()}{getlistContact()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_contact}{Contact}}$>$ Gestion\+Contact\+::getlist\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accès à la liste des contacts. 
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{25 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}};\}}
+\DoxyCodeLine{36 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}};\}}
 
 \end{DoxyCode}
 
@@ -103,8 +167,12 @@ Références list\+Contact.
 {\footnotesize\ttfamily unsigned Gestion\+Contact\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Taille de la liste. 
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{26 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.size();\}}
+\DoxyCodeLine{38 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.size();\}}
 
 \end{DoxyCode}
 
@@ -115,7 +183,51 @@ Références list\+Contact.
 \index{GestionContact@{GestionContact}!removeContact@{removeContact}}
 \index{removeContact@{removeContact}!GestionContact@{GestionContact}}
 \doxysubsubsection{\texorpdfstring{removeContact()}{removeContact()}}
-{\footnotesize\ttfamily void Gestion\+Contact\+::remove\+Contact (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Gestion\+Contact\+::remove\+Contact (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nom }\end{DoxyParamCaption})}
+
+
+
+Supprimer un contact. 
+
+Pour supprimer un contact en connaissant son nom.
+
+\begin{DoxyRefDesc}{A faire}
+\item[\mbox{\hyperlink{todo__todo000001}{A faire}}]Demander au prof comment retourner un null lorsque aucun contat trouvé \end{DoxyRefDesc}
+
+
+Cette fonction permet la suppression d\textquotesingle{}un contact grâce à son nom. On suppose que le nom peut-\/être qualifié d\textquotesingle{}identifiant dans un premier temps. \begin{DoxyRefDesc}{A faire}
+\item[\mbox{\hyperlink{todo__todo000002}{A faire}}]Créer la notion d\textquotesingle{}identifiant, renvoyer le contact supprimé ou un booléen pour signaler la suppression. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & \+: le nom du contact à supprimer. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{}
+\DoxyCodeLine{70     \textcolor{keyword}{auto} it = \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.begin();}
+\DoxyCodeLine{71     \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keywordflow}{while}((it != \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.end()) \&\& (found == \textcolor{keyword}{false}))}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         \textcolor{keywordflow}{if}(it-\/>getNom() == nom)}
+\DoxyCodeLine{76         \{}
+\DoxyCodeLine{77             found = \textcolor{keyword}{true};}
+\DoxyCodeLine{78             it = \mbox{\hyperlink{class_gestion_contact_a59117aff14fcf0c1c2e644b17062d668}{listContact}}.erase(it);}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{81             it++;}
+\DoxyCodeLine{82     \}}
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}
+
+
+Références list\+Contact.
+
+
+
+Référencé par test\+Gestion\+Contact().
 
 
 
@@ -124,8 +236,33 @@ Références list\+Contact.
 \index{GestionContact@{GestionContact}!operator$<$$<$@{operator$<$$<$}}
 \index{operator$<$$<$@{operator$<$$<$}!GestionContact@{GestionContact}}
 \doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&}]{gest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
 
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em gest} & de type \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} qui represente le gestionnaire à afficher.\\
+\hline
+\end{DoxyParams}
+Afficher un gestionnaire de contact revient à afficher toutes les fiches de contact à l\textquotesingle{}intérieur. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93 \{}
+\DoxyCodeLine{94     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_contact_aa9aadd7924eeddb7a0fb202afd782916}{getlistContact}}())}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{98     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Documentation des données membres}
@@ -137,7 +274,11 @@ Références list\+Contact.
 
 
 
-Référencé par Getlist\+Contact(), get\+Size(), et $\sim$\+Gestion\+Contact().
+La liste des contacts. 
+
+
+
+Référencé par add\+Contact(), getlist\+Contact(), get\+Size(), remove\+Contact(), et $\sim$\+Gestion\+Contact().
 
 
 

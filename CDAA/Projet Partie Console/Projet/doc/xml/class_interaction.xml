@@ -17,9 +17,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Interaction.h" line="25" column="9" bodyfile="Interaction.h" bodystart="25" bodyend="-1"/>
-        <referencedby refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="49" endline="52">getDate</referencedby>
-        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
-        <referencedby refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="72" endline="75">setDate</referencedby>
+        <referencedby refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="47" endline="50">getDate</referencedby>
+        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="14" endline="20">Interaction</referencedby>
+        <referencedby refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">setDate</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -34,9 +34,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Interaction.h" line="27" column="17" bodyfile="Interaction.h" bodystart="27" bodyend="-1"/>
-        <referencedby refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="59" endline="62">getContenu</referencedby>
-        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
-        <referencedby refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="81" endline="84">setContenu</referencedby>
+        <referencedby refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="56" endline="59">getContenu</referencedby>
+        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="14" endline="20">Interaction</referencedby>
+        <referencedby refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="75" endline="78">setContenu</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -54,10 +54,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="31" column="5" bodyfile="Interaction.cpp" bodystart="13" bodyend="19"/>
+        <location file="Interaction.h" line="31" column="5" bodyfile="Interaction.cpp" bodystart="14" bodyend="20"/>
         <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
         <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
-        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="72" endline="75">setDate</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">setDate</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a73b7a7b384ba6436d3c73c3435517e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -86,11 +86,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="33" column="5" bodyfile="Interaction.cpp" bodystart="26" bodyend="32"/>
+        <location file="Interaction.h" line="33" column="5" bodyfile="Interaction.cpp" bodystart="27" bodyend="33"/>
         <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
         <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
-        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="81" endline="84">setContenu</references>
-        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="72" endline="75">setDate</references>
+        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="75" endline="78">setContenu</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">setDate</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a6610199fedc7fae617003cb2f397c825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -101,7 +101,6 @@
 <para>Destructeur de la classe <ref refid="class_interaction" kindref="compound">Interaction</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>Libération de l&apos;espace mémoire alloué par date. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -116,15 +115,15 @@
 <para>Accéder à la date. </para>
         </briefdescription>
         <detaileddescription>
-<para>Accesseurs.</para>
 <para>Pour récupérer la date.</para>
 <para>Cette fonction renvoie l&apos;instance pointée par date. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="38" column="8" bodyfile="Interaction.cpp" bodystart="49" bodyend="52"/>
+        <location file="Interaction.h" line="38" column="8" bodyfile="Interaction.cpp" bodystart="47" bodyend="50"/>
         <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
-        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="114" endline="118">operator=</referencedby>
+        <referencedby refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" compoundref="_gestion_interaction_8cpp" startline="36" endline="57">GestionInteraction::addInteraction</referencedby>
+        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="116" endline="120">operator=</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a0e194616267d53075169f189f6d71c60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -140,10 +139,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="40" column="17" bodyfile="Interaction.cpp" bodystart="59" bodyend="62"/>
+        <location file="Interaction.h" line="40" column="17" bodyfile="Interaction.cpp" bodystart="56" bodyend="59"/>
         <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
-        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="114" endline="118">operator=</referencedby>
-        <referencedby refid="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" compoundref="_interaction_8cpp" startline="109" endline="112">operator==</referencedby>
+        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="116" endline="120">operator=</referencedby>
+        <referencedby refid="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" compoundref="_interaction_8cpp" startline="106" endline="109">operator==</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -155,10 +154,10 @@
           <defname>t</defname>
         </param>
         <briefdescription>
-<para>Mutateurs. </para>
+<para>Pour affecter une date à l&apos;interaction. </para>
         </briefdescription>
         <detaileddescription>
-<para>Pour affecter une date à l&apos;interaction. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>t</parametername>
 </parameternamelist>
@@ -171,12 +170,14 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="43" column="10" bodyfile="Interaction.cpp" bodystart="72" bodyend="75"/>
+        <location file="Interaction.h" line="43" column="10" bodyfile="Interaction.cpp" bodystart="66" bodyend="69"/>
         <references refid="class_interaction_1ac665f161e276527cfd1767abe47936b5" compoundref="_interaction_8h" startline="25">date</references>
-        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="13" endline="19">Interaction</referencedby>
-        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="114" endline="118">operator=</referencedby>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <referencedby refid="class_interaction_1aadfd0e254296043c26508d47090ace76" compoundref="_interaction_8cpp" startline="14" endline="20">Interaction</referencedby>
+        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="116" endline="120">operator=</referencedby>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
+        <referencedby refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" compoundref="main_8cpp" startline="248" endline="298">testGestionInteraction</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -204,11 +205,12 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="44" column="10" bodyfile="Interaction.cpp" bodystart="81" bodyend="84"/>
+        <location file="Interaction.h" line="44" column="10" bodyfile="Interaction.cpp" bodystart="75" bodyend="78"/>
         <references refid="class_interaction_1a7e16a252239dbdf2a67a6cfedfe642a1" compoundref="_interaction_8h" startline="27">contenu</references>
-        <referencedby refid="class_interaction_1a73b7a7b384ba6436d3c73c3435517e5f" compoundref="_interaction_8cpp" startline="26" endline="32">Interaction</referencedby>
-        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="114" endline="118">operator=</referencedby>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
+        <referencedby refid="class_interaction_1a73b7a7b384ba6436d3c73c3435517e5f" compoundref="_interaction_8cpp" startline="27" endline="33">Interaction</referencedby>
+        <referencedby refid="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" compoundref="_interaction_8cpp" startline="116" endline="120">operator=</referencedby>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a34da4c3bd01038118c4fde34e1c677f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -220,13 +222,26 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
           <defname>autre</defname>
         </param>
         <briefdescription>
+<para>Surchage de l&apos;opérateur de comparaison (==) </para>
         </briefdescription>
         <detaileddescription>
+<para>On considère que deux intéractions sont identiques si elles ont même contenu. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;intéraction à comparer avec l&apos;intéraction courante. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un booléen : true si elles ont le même contenu, false sinon. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="47" column="10" bodyfile="Interaction.cpp" bodystart="109" bodyend="112"/>
-        <references refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="59" endline="62">getContenu</references>
+        <location file="Interaction.h" line="47" column="10" bodyfile="Interaction.cpp" bodystart="106" bodyend="109"/>
+        <references refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="56" endline="59">getContenu</references>
       </memberdef>
       <memberdef kind="function" id="class_interaction_1a6a440384be939e46cff9d90f1182ec3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -238,16 +253,27 @@ La structure tm t passée en paramètre est copié dans l&apos;instance pointée
           <defname>autre</defname>
         </param>
         <briefdescription>
+<para>Surchage de l&apos;opérateur d&apos;affection (=) </para>
         </briefdescription>
         <detaileddescription>
+<para>L&apos;intéraction actuelle reçoit le contenu et la date de l&apos;autre intéraction. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;intéraction à affecter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="48" column="10" bodyfile="Interaction.cpp" bodystart="114" bodyend="118"/>
-        <references refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="59" endline="62">getContenu</references>
-        <references refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="49" endline="52">getDate</references>
-        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="81" endline="84">setContenu</references>
-        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="72" endline="75">setDate</references>
+        <location file="Interaction.h" line="48" column="10" bodyfile="Interaction.cpp" bodystart="116" bodyend="120"/>
+        <references refid="class_interaction_1a0e194616267d53075169f189f6d71c60" compoundref="_interaction_8cpp" startline="56" endline="59">getContenu</references>
+        <references refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="47" endline="50">getDate</references>
+        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="75" endline="78">setContenu</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">setDate</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -289,7 +315,7 @@ Pour afficher une <ref refid="class_interaction" kindref="compound">Interaction<
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Interaction.h" line="46" column="12" bodyfile="Interaction.cpp" bodystart="92" bodyend="103"/>
+        <location file="Interaction.h" line="46" column="12" bodyfile="Interaction.cpp" bodystart="86" bodyend="97"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

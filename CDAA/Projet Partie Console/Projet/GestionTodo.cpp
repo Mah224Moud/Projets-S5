@@ -1,11 +1,15 @@
 /**
-    *
+    *@file GestionTodo.cpp
+    *@brief Fichier CPP de la classe GestionTodo.
+    *@author BAH Saikou Oumar
+    *@author DIALLO Mamoudou
 */
 
 #include "GestionTodo.h"
 
 /**
-    *
+    *@brief Constructeur par défaut de la classe GestionTodo.
+    *@details Rien de particulier dans ce constructeur.
 */
 GestionTodo::GestionTodo()
 {
@@ -13,7 +17,8 @@ GestionTodo::GestionTodo()
 }
 
 /**
-    *
+    *@brief Destructeur de la classe GestionTodo.
+    *@details Libération de la mémoire alloué à la liste de tâches.
 */
 GestionTodo::~GestionTodo()
 {
@@ -21,7 +26,9 @@ GestionTodo::~GestionTodo()
 }
 
 /**
-    *
+    *@brief Pour ajouter une tâche à la liste.
+    *@details Cette fonction permet d'ajouter une tâche à la liste.
+    *@param todo : la tâche (todo) à ajouter.
 */
 void GestionTodo::addTodo(const Todo& todo)
 {
@@ -29,7 +36,9 @@ void GestionTodo::addTodo(const Todo& todo)
 }
 
 /**
-    *
+    *@brief Pour supprimer une tâche de la liste.
+    *@details Cette méthode permet supprimer une tâche en fonction de son contenu.
+    *@param contenu :  le contenu de la tâche à supprimer.
 */
 void GestionTodo::removeTodo(const std::string& contenu)
 {
@@ -49,7 +58,9 @@ void GestionTodo::removeTodo(const std::string& contenu)
 }
 
 /**
-    *
+    *@brief Pour supprimer toutes les tâches liées à une intéraction donné.
+    *@details Cette méthode parcourt toute la liste des tâches et supprime toutes celles qui correspondent à l'intéraction.
+    *@param interact : l'intéraction dont les tâches sont à supprimer.
 */
 void GestionTodo::removeAllInteractionTodo(const Interaction& interact)
 {
@@ -66,7 +77,10 @@ void GestionTodo::removeAllInteractionTodo(const Interaction& interact)
 }
 
 /**
-    *
+    *@brief Pour récuperer toutes les tâches d'une intéraction.
+    *@details Cette fonction récupère une intéraction et renvoie un gestionnaire de tâches ne contenant que celles qui lui sont liées.
+    *@param interact : l'intéraction dont on retournera les tâches;
+    *@return un gestionnaire de tâches appartenant toutes à une même intéraction.
 */
 GestionTodo GestionTodo::getAllInteractionTodo(const Interaction& interact) const
 {
@@ -83,7 +97,11 @@ GestionTodo GestionTodo::getAllInteractionTodo(const Interaction& interact) cons
 }
 
 /**
-    *
+    *@brief Surcharge de l'opérateur << pour l'affichage.
+    *@param os : de type ostream.
+    *@param gest: de type GestionTodo qui represente le gestionnaire à afficher.
+    *@details Afficher un gestionnaire de tâches revient à afficher toutes les tâches qu'elle contient.
+    *@return os
 */
 std::ostream& operator<<(std::ostream& os, const GestionTodo& gest)
 {

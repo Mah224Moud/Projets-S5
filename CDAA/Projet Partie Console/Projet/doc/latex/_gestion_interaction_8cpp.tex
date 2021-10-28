@@ -1,0 +1,70 @@
+\hypertarget{_gestion_interaction_8cpp}{}\doxysection{Référence du fichier Gestion\+Interaction.\+cpp}
+\label{_gestion_interaction_8cpp}\index{GestionInteraction.cpp@{GestionInteraction.cpp}}
+
+
+Fichier CPP de la classe \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}}.  
+
+
+{\ttfamily \#include \char`\"{}Gestion\+Interaction.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de Gestion\+Interaction.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_gestion_interaction_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_gestion_interaction_8cpp_a8e845ad33399ff3ea2ab1f8f7393477d}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} \&gest)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier CPP de la classe \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}}. 
+
+\begin{DoxyAuthor}{Auteur}
+BAH Saikou Oumar 
+
+DIALLO Mamoudou 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_gestion_interaction_8cpp_a8e845ad33399ff3ea2ab1f8f7393477d}\label{_gestion_interaction_8cpp_a8e845ad33399ff3ea2ab1f8f7393477d}} 
+\index{GestionInteraction.cpp@{GestionInteraction.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!GestionInteraction.cpp@{GestionInteraction.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} \&}]{gest }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em gest} & de type \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} qui represente le gestionnaire à afficher.\\
+\hline
+\end{DoxyParams}
+Afficher un gestionnaire d\textquotesingle{}intéraction revient à afficher toutes les intéractions chacune suivie de l\textquotesingle{}affichage de toutes ses tâches. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151 \{}
+\DoxyCodeLine{152     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_interaction_afc224d368b88c8178856fd94ea4da13f}{getListInteraction}}())}
+\DoxyCodeLine{153     \{}
+\DoxyCodeLine{154         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{155         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} td : gest.\mbox{\hyperlink{class_gestion_interaction_a12e2a4c7e3b4ad7171f80fb5481d2e72}{getListTodo}}()-\/>\mbox{\hyperlink{class_gestion_todo_a3bb3a23c299e5bd266d15d18fd0e1371}{getAllInteractionTodo}}(it).\mbox{\hyperlink{class_gestion_todo_a2b9096fe15ad96c286cb548a4b08e215}{getlistTodo}}())}
+\DoxyCodeLine{156         \{}
+\DoxyCodeLine{157             os << td << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{158         \}}
+\DoxyCodeLine{159     \}}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{162 \}}
+
+\end{DoxyCode}

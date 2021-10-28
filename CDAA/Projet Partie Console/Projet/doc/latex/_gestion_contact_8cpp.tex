@@ -1,5 +1,10 @@
 \hypertarget{_gestion_contact_8cpp}{}\doxysection{Référence du fichier Gestion\+Contact.\+cpp}
 \label{_gestion_contact_8cpp}\index{GestionContact.cpp@{GestionContact.cpp}}
+
+
+Le fichier CPP de la classe \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}}.  
+
+
 {\ttfamily \#include \char`\"{}Gestion\+Contact.\+h\char`\"{}}\newline
 Graphe des dépendances par inclusion de Gestion\+Contact.\+cpp\+:
 \nopagebreak
@@ -9,3 +14,47 @@ Graphe des dépendances par inclusion de Gestion\+Contact.\+cpp\+:
 \includegraphics[width=350pt]{_gestion_contact_8cpp__incl}
 \end{center}
 \end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_gestion_contact_8cpp_afe46cba2d6a0434334ab681f4ab39410}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&gest)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Le fichier CPP de la classe \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}}. 
+
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_gestion_contact_8cpp_afe46cba2d6a0434334ab681f4ab39410}\label{_gestion_contact_8cpp_afe46cba2d6a0434334ab681f4ab39410}} 
+\index{GestionContact.cpp@{GestionContact.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!GestionContact.cpp@{GestionContact.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} \&}]{gest }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em gest} & de type \mbox{\hyperlink{class_gestion_contact}{Gestion\+Contact}} qui represente le gestionnaire à afficher.\\
+\hline
+\end{DoxyParams}
+Afficher un gestionnaire de contact revient à afficher toutes les fiches de contact à l\textquotesingle{}intérieur. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93 \{}
+\DoxyCodeLine{94     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_contact_aa9aadd7924eeddb7a0fb202afd782916}{getlistContact}}())}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{97     \}}
+\DoxyCodeLine{98     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}

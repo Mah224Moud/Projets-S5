@@ -16,7 +16,7 @@ Graphe de collaboration de Contact\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_contact__coll__graph}
+\includegraphics[height=550pt]{class_contact__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Fonctions membres publiques}
@@ -35,7 +35,7 @@ std\+::string \mbox{\hyperlink{class_contact_a1825fa5b28052b477fb16176bb4df21e}{
 std\+::string \mbox{\hyperlink{class_contact_a0126ff51496fe7f69db34de82ce28398}{get\+Entreprise}} () const
 \begin{DoxyCompactList}\small\item\em Pour récuperer le nom de l\textquotesingle{}entreprise. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_contact_a53ebe193a5284e27b468ababdf7577e3}{get\+Telephone}} () const
-\begin{DoxyCompactList}\small\item\em Pour récuperer la photo ou le chemin vers la photo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pour récuperer la photo. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{get\+Photo}} () const
 \begin{DoxyCompactList}\small\item\em Pour récuperer la photo ou le chemin vers la photo. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structtm}{tm}} \mbox{\hyperlink{class_contact_af1b8218175c3c88bc10375fe098e851a}{get\+Date\+Creation}} () const
@@ -44,7 +44,7 @@ std\+::string \mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{
 \begin{DoxyCompactList}\small\item\em Pour récuperer la date de dernière modification du contact. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_email}{Email}} \mbox{\hyperlink{class_contact_a8d89efed9b157ef61804cd1d1ce31ad0}{get\+Email}} () const
 \begin{DoxyCompactList}\small\item\em Pour récupérer l\textquotesingle{}adresse mail du contact. \end{DoxyCompactList}\item 
-std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$ \mbox{\hyperlink{class_contact_ae640d361eb3e8659648bbdf2c0fb6bb4}{get\+List\+Interactions}} () const
+\mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} $\ast$ \mbox{\hyperlink{class_contact_ae6f3b5d25bef8de2d09bae162b4d64f7}{get\+List\+Interactions}} () const
 \begin{DoxyCompactList}\small\item\em Pour récuperer la liste des intéractions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_contact_a0837af372d75a5d85ab296c6104a3232}{set\+Nom}} (const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Pour modifier le nom du contact. \end{DoxyCompactList}\item 
@@ -63,35 +63,35 @@ void \mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{set\+Date
 void \mbox{\hyperlink{class_contact_a7fc8c816308412a4cf013f39c3e461d8}{set\+Email}} (const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Pour modifier l\textquotesingle{}adresse mail du contact. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_contact_aff5749b76c97dcd0f9eeb15999d1c193}{add\+Interaction}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
-\begin{DoxyCompactList}\small\item\em Ajouter une intéraction au contact. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_contact_ad69ca2095921e570fdf0734ededa36f5}{remove\+Interaction}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
-\begin{DoxyCompactList}\small\item\em Supprimer une intéraction au contact. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ajouter une interaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_contact_a6690bdcb21a0bf720268f0add8944b9a}{remove\+Interaction}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Supprimer une interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Fonctions membres privées}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}} ()
-\begin{DoxyCompactList}\small\item\em La liste des intéractions du contact. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Mise à jour de la date de modification. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
 std\+::string \mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}}
-\item 
-std\+::string \mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}}
 \begin{DoxyCompactList}\small\item\em Le nom du contact. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}}
+std\+::string \mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}}
 \begin{DoxyCompactList}\small\item\em Le prénom du contact. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}}
+std\+::string \mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}}
 \begin{DoxyCompactList}\small\item\em Le nom de l\textquotesingle{}entreprise. \end{DoxyCompactList}\item 
-std\+::string \mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}}
+std\+::string \mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}}
 \begin{DoxyCompactList}\small\item\em Le numéro du contact. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{date\+Creation}}
+std\+::string \mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}}
 \begin{DoxyCompactList}\small\item\em La photo du contact. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{date\+Last\+Modif}}
+\mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{date\+Creation}}
 \begin{DoxyCompactList}\small\item\em La date de création du contact. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_email}{Email}} $\ast$ \mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}}
+\mbox{\hyperlink{structtm}{tm}} $\ast$ \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{date\+Last\+Modif}}
 \begin{DoxyCompactList}\small\item\em La date de dernière modification. \end{DoxyCompactList}\item 
-std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$ \mbox{\hyperlink{class_contact_acab6983d1f1f3e8b65fd805c75c464e1}{list\+Interactions}}
-\begin{DoxyCompactList}\small\item\em Adresse Mail du contact. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_email}{Email}} $\ast$ \mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}}
+\begin{DoxyCompactList}\small\item\em Adresse Mail du contact. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} $\ast$ \mbox{\hyperlink{class_contact_add01d7b1c4c13a4625af6af7d432cbac}{list\+Interactions}}
+\begin{DoxyCompactList}\small\item\em Le gestionnaire des intéractions du contact. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Amis}
 \begin{DoxyCompactItemize}
 \item 
@@ -115,7 +115,7 @@ Un contact est représenté par avec un nom, un prénom, une entreprise, un num�
 
 Constructeur par défaut de la classe \mbox{\hyperlink{class_contact}{Contact}}. 
 
-Ce constructeur initialise un contact avec des attributs vides. Les dates de création et de modification sont initialisées à la date courante. 
+Ce constructeur initialise un contact avec des attributs et un gestionnaire d\textquotesingle{}intéractions vides. Les dates de création et de modification sont initialisées à la date courante. 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{16 \{}
 \DoxyCodeLine{17     \mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}} = \textcolor{stringliteral}{"{}"{}};}
@@ -125,17 +125,19 @@ Ce constructeur initialise un contact avec des attributs vides. Les dates de cr�
 \DoxyCodeLine{21     \mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}} = \textcolor{stringliteral}{"{}"{}};}
 \DoxyCodeLine{22     \mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}} = \textcolor{stringliteral}{"{}"{}};}
 \DoxyCodeLine{23 }
-\DoxyCodeLine{24     time\_t n = time(0);}
-\DoxyCodeLine{25     \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{26     this-\/>\mbox{\hyperlink{class_contact_a1d69cefb80e2fdb0c0c8be60c7788a2a}{setDateCreation}}(*localtime(\&n));}
-\DoxyCodeLine{27     \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{28     this-\/>\mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{setDateLastModif}}(*localtime(\&n));}
-\DoxyCodeLine{29 \}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_contact_add01d7b1c4c13a4625af6af7d432cbac}{listInteractions}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_gestion_interaction}{GestionInteraction}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     time\_t n = time(0);}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{28     this-\/>\mbox{\hyperlink{class_contact_a1d69cefb80e2fdb0c0c8be60c7788a2a}{setDateCreation}}(*localtime(\&n));}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{setDateLastModif}}(*localtime(\&n));}
+\DoxyCodeLine{31 \}}
 
 \end{DoxyCode}
 
 
-Références date\+Creation, date\+Last\+Modif, entreprise, mail, nom, prenom, set\+Date\+Creation(), set\+Date\+Last\+Modif(), telephone, et URIphoto.
+Références date\+Creation, date\+Last\+Modif, entreprise, list\+Interactions, mail, nom, prenom, set\+Date\+Creation(), set\+Date\+Last\+Modif(), telephone, et URIphoto.
 
 \mbox{\Hypertarget{class_contact_a442a15aeaf696631b86a2298fd436f5c}\label{class_contact_a442a15aeaf696631b86a2298fd436f5c}} 
 \index{Contact@{Contact}!Contact@{Contact}}
@@ -149,7 +151,7 @@ Constructeur avec paramètre nom, prénom, entreprise.
 
 Constructeur de la classe \mbox{\hyperlink{class_contact}{Contact}}.
 
-Ce constructeur initialise un contact avec les attributs nom, prénom et entreprise. Les dates de création et de modification sont initialisées à la date courante. 
+Ce constructeur initialise un contact avec les attributs nom, prénom et entreprise. Les dates de création et de modification sont initialisées à la date courante, le gestionnaire d\textquotesingle{}intéraction est vide. 
 \begin{DoxyParams}{Paramètres}
 {\em name} & \+: le nom du contact \\
 \hline
@@ -160,25 +162,27 @@ Ce constructeur initialise un contact avec les attributs nom, prénom et entrepr
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{40 \{}
-\DoxyCodeLine{41     \mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}} = name;}
-\DoxyCodeLine{42     \mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}} = lastname;}
-\DoxyCodeLine{43     \mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}} = entr;}
-\DoxyCodeLine{44     \mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}} =  \textcolor{keyword}{new} \mbox{\hyperlink{class_email}{Email}}();}
-\DoxyCodeLine{45     \mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{46     \mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{47 }
-\DoxyCodeLine{48     time\_t n = time(0);}
-\DoxyCodeLine{49     \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{50     this-\/>\mbox{\hyperlink{class_contact_a1d69cefb80e2fdb0c0c8be60c7788a2a}{setDateCreation}}(*localtime(\&n));}
-\DoxyCodeLine{51     \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{52     this-\/>\mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{setDateLastModif}}(*localtime(\&n));}
-\DoxyCodeLine{53 \}}
+\DoxyCodeLine{42 \{}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}} = name;}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}} = lastname;}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}} = entr;}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}} =  \textcolor{keyword}{new} \mbox{\hyperlink{class_email}{Email}}();}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \mbox{\hyperlink{class_contact_add01d7b1c4c13a4625af6af7d432cbac}{listInteractions}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_gestion_interaction}{GestionInteraction}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     time\_t n = time(0);}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{54     this-\/>\mbox{\hyperlink{class_contact_a1d69cefb80e2fdb0c0c8be60c7788a2a}{setDateCreation}}(*localtime(\&n));}
+\DoxyCodeLine{55     \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{56     this-\/>\mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{setDateLastModif}}(*localtime(\&n));}
+\DoxyCodeLine{57 \}}
 
 \end{DoxyCode}
 
 
-Références date\+Creation, date\+Last\+Modif, entreprise, mail, nom, prenom, set\+Date\+Creation(), set\+Date\+Last\+Modif(), telephone, et URIphoto.
+Références date\+Creation, date\+Last\+Modif, entreprise, list\+Interactions, mail, nom, prenom, set\+Date\+Creation(), set\+Date\+Last\+Modif(), telephone, et URIphoto.
 
 \mbox{\Hypertarget{class_contact_ab68013cc59e3d640735c573e52c35219}\label{class_contact_ab68013cc59e3d640735c573e52c35219}} 
 \index{Contact@{Contact}!````~Contact@{$\sim$Contact}}
@@ -190,19 +194,18 @@ Références date\+Creation, date\+Last\+Modif, entreprise, mail, nom, prenom, s
 
 Destructeur de la classe \mbox{\hyperlink{class_contact}{Contact}}. 
 
-Effacement de l\textquotesingle{}espace alloué par la liste d\textquotesingle{}interaction, les dates de création et de modification. 
+Rien de particulier, les espaces alloués sont effacés en même tant que le gestionnaire de contact. \begin{DoxyWarning}{Avertissement}
+On obtient une erreur de segmentation (Segmentation fault) si on essaie de libérer l\textquotesingle{}espace alloué par le gestionnaire d\textquotesingle{}intéraction et une erreur de libération double (double free()) pour celui des dates. 
+\end{DoxyWarning}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{60 \{}
-\DoxyCodeLine{61     \mbox{\hyperlink{class_contact_acab6983d1f1f3e8b65fd805c75c464e1}{listInteractions}}.clear();}
-\DoxyCodeLine{62     \textcolor{keyword}{delete} \mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}};}
-\DoxyCodeLine{63     \textcolor{keyword}{delete} \mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}};}
-\DoxyCodeLine{64 \}}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \textcolor{comment}{//delete listInteractions;}}
+\DoxyCodeLine{68     \textcolor{comment}{//delete dateCreation;}}
+\DoxyCodeLine{69     \textcolor{comment}{//delete dateLastModif;}}
+\DoxyCodeLine{70 \}}
 
 \end{DoxyCode}
-
-
-Références date\+Creation, date\+Last\+Modif, et list\+Interactions.
-
 
 
 \doxysubsection{Documentation des fonctions membres}
@@ -214,23 +217,33 @@ Références date\+Creation, date\+Last\+Modif, et list\+Interactions.
 
 
 
-Ajouter une intéraction au contact. 
+Ajouter une interaction. 
 
+Ajouter une intéraction au contact.
+
+Cette fonction permet d\textquotesingle{}ajouter une intéraction dans le gestionnaire. \begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em add\+\_\+interact} & \+: l\textquotesingle{}intéraction à ajouter. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{224 \{}
-\DoxyCodeLine{225     \mbox{\hyperlink{class_contact_acab6983d1f1f3e8b65fd805c75c464e1}{listInteractions}}.push\_back(add\_interact);}
-\DoxyCodeLine{226     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{227 \}}
+\DoxyCodeLine{264 \{}
+\DoxyCodeLine{265     \mbox{\hyperlink{class_contact_add01d7b1c4c13a4625af6af7d432cbac}{listInteractions}}-\/>\mbox{\hyperlink{class_gestion_interaction_aa74a8ff644a48518c10b4b8d7932e6ae}{addInteraction}}(add\_interact);}
+\DoxyCodeLine{266     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{267 \}}
 
 \end{DoxyCode}
 
 
-Références list\+Interactions, et modification().
+Références Gestion\+Interaction\+::add\+Interaction(), list\+Interactions, et modification().
 
 
 
-Référencé par test\+Contact().
+Référencé par test\+Contact(), et test\+Gestion\+Contact().
 
 \mbox{\Hypertarget{class_contact_af1b8218175c3c88bc10375fe098e851a}\label{class_contact_af1b8218175c3c88bc10375fe098e851a}} 
 \index{Contact@{Contact}!getDateCreation@{getDateCreation}}
@@ -242,11 +255,14 @@ Référencé par test\+Contact().
 
 Pour récuperer la date de création du contact. 
 
+\begin{DoxyReturn}{Renvoie}
+Une tm contenant la date de création du contact 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{122 \{}
-\DoxyCodeLine{123     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}};}
-\DoxyCodeLine{124 \}}
+\DoxyCodeLine{137 \{}
+\DoxyCodeLine{138     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}};}
+\DoxyCodeLine{139 \}}
 
 \end{DoxyCode}
 
@@ -263,11 +279,14 @@ Références date\+Creation.
 
 Pour récuperer la date de dernière modification du contact. 
 
+\begin{DoxyReturn}{Renvoie}
+Une tm contenant la date de dernière modification du contact 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{130 \{}
-\DoxyCodeLine{131     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}};}
-\DoxyCodeLine{132 \}}
+\DoxyCodeLine{146 \{}
+\DoxyCodeLine{147     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}};}
+\DoxyCodeLine{148 \}}
 
 \end{DoxyCode}
 
@@ -284,11 +303,14 @@ Références date\+Last\+Modif.
 
 Pour récupérer l\textquotesingle{}adresse mail du contact. 
 
+\begin{DoxyReturn}{Renvoie}
+Une variable \mbox{\hyperlink{class_email}{Email}} contenant l\textquotesingle{}adresse mail du contact. 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{138 \{}
-\DoxyCodeLine{139     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}};}
-\DoxyCodeLine{140 \}}
+\DoxyCodeLine{155 \{}
+\DoxyCodeLine{156     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}};}
+\DoxyCodeLine{157 \}}
 
 \end{DoxyCode}
 
@@ -305,32 +327,38 @@ Références mail.
 
 Pour récuperer le nom de l\textquotesingle{}entreprise. 
 
-Cette fonction renvoie le nom de l\textquotesingle{}entreprise. 
+Cette fonction renvoie le nom de l\textquotesingle{}entreprise. \begin{DoxyReturn}{Renvoie}
+Le nom de l\textquotesingle{}entreprise en String 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{98 \{}
-\DoxyCodeLine{99     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}};}
-\DoxyCodeLine{100 \}}
+\DoxyCodeLine{109 \{}
+\DoxyCodeLine{110     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}};}
+\DoxyCodeLine{111 \}}
 
 \end{DoxyCode}
 
 
 Références entreprise.
 
-\mbox{\Hypertarget{class_contact_ae640d361eb3e8659648bbdf2c0fb6bb4}\label{class_contact_ae640d361eb3e8659648bbdf2c0fb6bb4}} 
+\mbox{\Hypertarget{class_contact_ae6f3b5d25bef8de2d09bae162b4d64f7}\label{class_contact_ae6f3b5d25bef8de2d09bae162b4d64f7}} 
 \index{Contact@{Contact}!getListInteractions@{getListInteractions}}
 \index{getListInteractions@{getListInteractions}!Contact@{Contact}}
 \doxysubsubsection{\texorpdfstring{getListInteractions()}{getListInteractions()}}
-{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$ Contact\+::get\+List\+Interactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} $\ast$ Contact\+::get\+List\+Interactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 Pour récuperer la liste des intéractions. 
 
+Cette fonction renvoie le pointeur vers le gestionnaire d\textquotesingle{}interaction. \begin{DoxyReturn}{Renvoie}
+Un pointeur sur le gestionnaire d\textquotesingle{}intéraction. 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{146 \{}
-\DoxyCodeLine{147     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_acab6983d1f1f3e8b65fd805c75c464e1}{listInteractions}};}
-\DoxyCodeLine{148 \}}
+\DoxyCodeLine{165 \{}
+\DoxyCodeLine{166     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_contact_add01d7b1c4c13a4625af6af7d432cbac}{listInteractions}};}
+\DoxyCodeLine{167 \}}
 
 \end{DoxyCode}
 
@@ -347,11 +375,14 @@ Références list\+Interactions.
 
 Pour récuperer le nom du contact. 
 
-Cette fonction renvoie le nom du contact. 
+Cette fonction renvoie le nom du contact. \begin{DoxyReturn}{Renvoie}
+Le nom du contact en String 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{80 \{}
-\DoxyCodeLine{81     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}};}
-\DoxyCodeLine{82 \}}
+\DoxyCodeLine{89 \{}
+\DoxyCodeLine{90     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}};}
+\DoxyCodeLine{91 \}}
 
 \end{DoxyCode}
 
@@ -368,11 +399,14 @@ Références nom.
 
 Pour récuperer la photo ou le chemin vers la photo. 
 
+\begin{DoxyReturn}{Renvoie}
+Le lien vers kla photo du contact en String 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{114 \{}
-\DoxyCodeLine{115     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}};}
-\DoxyCodeLine{116 \}}
+\DoxyCodeLine{128 \{}
+\DoxyCodeLine{129     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}};}
+\DoxyCodeLine{130 \}}
 
 \end{DoxyCode}
 
@@ -389,11 +423,14 @@ Références URIphoto.
 
 Pour récuperer le prenom du contact. 
 
-Cette fonction renvoie le prenom du contact. 
+Cette fonction renvoie le prenom du contact. \begin{DoxyReturn}{Renvoie}
+Le prenom du contact en String 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{89 \{}
-\DoxyCodeLine{90     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}};}
-\DoxyCodeLine{91 \}}
+\DoxyCodeLine{99 \{}
+\DoxyCodeLine{100     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}};}
+\DoxyCodeLine{101 \}}
 
 \end{DoxyCode}
 
@@ -408,13 +445,16 @@ Références prenom.
 
 
 
-Pour récuperer la photo ou le chemin vers la photo. 
+Pour récuperer la photo. 
 
+Cette fonction ne renvoie pas réellement une photo mais le chemin pour y accéder. \begin{DoxyReturn}{Renvoie}
+Le numéro du contact en String 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{106 \{}
-\DoxyCodeLine{107     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}};}
-\DoxyCodeLine{108 \}}
+\DoxyCodeLine{119 \{}
+\DoxyCodeLine{120     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}};}
+\DoxyCodeLine{121 \}}
 
 \end{DoxyCode}
 
@@ -429,14 +469,16 @@ Références telephone.
 
 
 
-La liste des intéractions du contact. 
+Mise à jour de la date de modification. 
 
-Mise à jour de la date de dernière mise à jour. 
+Mise à jour de la date de dernière mise à jour.
+
+Cette méthode permet notamment d\textquotesingle{}actualiser la date de mise à jour du contact lorsque l\textquotesingle{}un de ses attributs subi une modification. Elle devient la date courante. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{70 \{}
-\DoxyCodeLine{71     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{72     \mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{setDateLastModif}}(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
-\DoxyCodeLine{73 \}}
+\DoxyCodeLine{78 \{}
+\DoxyCodeLine{79     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{80     \mbox{\hyperlink{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}{setDateLastModif}}(d.\mbox{\hyperlink{class_date_a53dcab03c7834448fd67ef453ff34195}{getDate}}());}
+\DoxyCodeLine{81 \}}
 
 \end{DoxyCode}
 
@@ -447,23 +489,34 @@ Références Date\+::get\+Date(), et set\+Date\+Last\+Modif().
 
 Référencé par add\+Interaction(), set\+Email(), set\+Entreprise(), set\+Nom(), set\+Photo(), set\+Prenom(), et set\+Telephone().
 
-\mbox{\Hypertarget{class_contact_ad69ca2095921e570fdf0734ededa36f5}\label{class_contact_ad69ca2095921e570fdf0734ededa36f5}} 
+\mbox{\Hypertarget{class_contact_a6690bdcb21a0bf720268f0add8944b9a}\label{class_contact_a6690bdcb21a0bf720268f0add8944b9a}} 
 \index{Contact@{Contact}!removeInteraction@{removeInteraction}}
 \index{removeInteraction@{removeInteraction}!Contact@{Contact}}
 \doxysubsubsection{\texorpdfstring{removeInteraction()}{removeInteraction()}}
-{\footnotesize\ttfamily void Contact\+::remove\+Interaction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{rm\+\_\+interact }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Contact\+::remove\+Interaction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{contenu\+\_\+interact }\end{DoxyParamCaption})}
 
 
 
-Supprimer une intéraction au contact. 
+Supprimer une interaction. 
 
+Supprimer une intéraction au contact.
+
+Cette fonction permet de supprimer une intéraction du gestionnaire en connaissant son contenu. 
+\begin{DoxyParams}{Paramètres}
+{\em contenu\+\_\+interact} & \+: le contenu (String) de l\textquotesingle{}intéraction à supprimer. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{233 \{}
-\DoxyCodeLine{234 }
-\DoxyCodeLine{235 \}}
+\DoxyCodeLine{275 \{}
+\DoxyCodeLine{276     \mbox{\hyperlink{class_contact_add01d7b1c4c13a4625af6af7d432cbac}{listInteractions}}-\/>\mbox{\hyperlink{class_gestion_interaction_ab8dd72292cecf1a01fe8be2334dda0d3}{removeInteraction}}(contenu\_interact);}
+\DoxyCodeLine{277 \}}
 
 \end{DoxyCode}
+
+
+Références list\+Interactions, et Gestion\+Interaction\+::remove\+Interaction().
+
 \mbox{\Hypertarget{class_contact_a1d69cefb80e2fdb0c0c8be60c7788a2a}\label{class_contact_a1d69cefb80e2fdb0c0c8be60c7788a2a}} 
 \index{Contact@{Contact}!setDateCreation@{setDateCreation}}
 \index{setDateCreation@{setDateCreation}!Contact@{Contact}}
@@ -475,10 +528,15 @@ Supprimer une intéraction au contact.
 Pour modifier la date de création du contact. 
 
 
+\begin{DoxyParams}{Paramètres}
+{\em date\+\_\+of\+\_\+creation} & \+: la date de création du contact. \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{199 \{}
-\DoxyCodeLine{200     *\mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}} = date\_of\_creation;}
-\DoxyCodeLine{201 \}}
+\DoxyCodeLine{233 \{}
+\DoxyCodeLine{234     *\mbox{\hyperlink{class_contact_ac0cf732d68c5c3a8e513ce891d719aa4}{dateCreation}} = date\_of\_creation;}
+\DoxyCodeLine{235 \}}
 
 \end{DoxyCode}
 
@@ -487,7 +545,7 @@ Références date\+Creation.
 
 
 
-Référencé par Contact(), et test\+Contact().
+Référencé par Contact(), test\+Contact(), et test\+Gestion\+Contact().
 
 \mbox{\Hypertarget{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}\label{class_contact_a4a7abe3ded9465e7e76ed1b5138a662c}} 
 \index{Contact@{Contact}!setDateLastModif@{setDateLastModif}}
@@ -501,9 +559,9 @@ Pour modifier la date de dernière modification.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{207 \{}
-\DoxyCodeLine{208     *\mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}} = last\_modif;}
-\DoxyCodeLine{209 \}}
+\DoxyCodeLine{241 \{}
+\DoxyCodeLine{242     *\mbox{\hyperlink{class_contact_a147a152073d3f091c40a3d5a77d6a27f}{dateLastModif}} = last\_modif;}
+\DoxyCodeLine{243 \}}
 
 \end{DoxyCode}
 
@@ -512,7 +570,7 @@ Références date\+Last\+Modif.
 
 
 
-Référencé par Contact(), modification(), et test\+Contact().
+Référencé par Contact(), modification(), test\+Contact(), et test\+Gestion\+Contact().
 
 \mbox{\Hypertarget{class_contact_a7fc8c816308412a4cf013f39c3e461d8}\label{class_contact_a7fc8c816308412a4cf013f39c3e461d8}} 
 \index{Contact@{Contact}!setEmail@{setEmail}}
@@ -524,12 +582,23 @@ Référencé par Contact(), modification(), et test\+Contact().
 
 Pour modifier l\textquotesingle{}adresse mail du contact. 
 
+\begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em email} & \+: l\textquotesingle{}adresse mail sous forme de String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Avertissement}
+Si l\textquotesingle{}adresse est incorrecte un message d\textquotesingle{}erreur s\textquotesingle{}affiche. 
+\end{DoxyWarning}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{215 \{}
-\DoxyCodeLine{216     \mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}}-\/>\mbox{\hyperlink{class_email_ad008c905fb780e47c5fd5d5a1ba6eef6}{fromString}}(email);}
-\DoxyCodeLine{217     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{218 \}}
+\DoxyCodeLine{252 \{}
+\DoxyCodeLine{253     \mbox{\hyperlink{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}{mail}}-\/>\mbox{\hyperlink{class_email_ad008c905fb780e47c5fd5d5a1ba6eef6}{fromString}}(email);}
+\DoxyCodeLine{254     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{255 \}}
 
 \end{DoxyCode}
 
@@ -538,7 +607,7 @@ Références Email\+::from\+String(), mail, et modification().
 
 
 
-Référencé par test\+Contact().
+Référencé par test\+Contact(), et test\+Gestion\+Contact().
 
 \mbox{\Hypertarget{class_contact_a1237b826b80e3ead402d0c26cc3c2ace}\label{class_contact_a1237b826b80e3ead402d0c26cc3c2ace}} 
 \index{Contact@{Contact}!setEntreprise@{setEntreprise}}
@@ -550,12 +619,20 @@ Référencé par test\+Contact().
 
 Pour modifier le nom de l\textquotesingle{}entreprise. 
 
+Cette fonction permet de modifier le nom de l\textquotesingle{}entreprise. \begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em company} & \+: Le nouveau nom de l\textquotesingle{}entreprise. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{172 \{}
-\DoxyCodeLine{173     this-\/>\mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}}= company;}
-\DoxyCodeLine{174     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{175 \}}
+\DoxyCodeLine{200 \{}
+\DoxyCodeLine{201     this-\/>\mbox{\hyperlink{class_contact_a786cf3e7f36e558af773e64a3302fbf8}{entreprise}}= company;}
+\DoxyCodeLine{202     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{203 \}}
 
 \end{DoxyCode}
 
@@ -572,12 +649,20 @@ Références entreprise, et modification().
 
 Pour modifier le nom du contact. 
 
+Cette fonction permet de modifier le nom du contact. \begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em name} & \+: Le nouveau nom du contact. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{154 \{}
-\DoxyCodeLine{155     this-\/>\mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}} = name;}
-\DoxyCodeLine{156     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{157 \}}
+\DoxyCodeLine{176 \{}
+\DoxyCodeLine{177     this-\/>\mbox{\hyperlink{class_contact_a837ec32c95f8815511ba1fb88d6e6870}{nom}} = name;}
+\DoxyCodeLine{178     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{179 \}}
 
 \end{DoxyCode}
 
@@ -594,17 +679,29 @@ Références modification(), et nom.
 
 Pour modifier la photo. 
 
+\begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em le} & lien vers la nouvelle photo. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{190 \{}
-\DoxyCodeLine{191     this-\/>\mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}}= pic;}
-\DoxyCodeLine{192     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{193 \}}
+\DoxyCodeLine{223 \{}
+\DoxyCodeLine{224     this-\/>\mbox{\hyperlink{class_contact_aff78eb5c73608f1bc7b300b9427a878e}{URIphoto}}= pic;}
+\DoxyCodeLine{225     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{226 \}}
 
 \end{DoxyCode}
 
 
 Références modification(), et URIphoto.
+
+
+
+Référencé par test\+Gestion\+Contact().
 
 \mbox{\Hypertarget{class_contact_ac31195d758df58ee327cc05b6276aace}\label{class_contact_ac31195d758df58ee327cc05b6276aace}} 
 \index{Contact@{Contact}!setPrenom@{setPrenom}}
@@ -616,12 +713,20 @@ Références modification(), et URIphoto.
 
 Pour modifier le prenom du contact. 
 
+Cette fonction permet de modifier le prenom du contact. \begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em lastname} & \+: Le nouveau prénom du contact. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{163 \{}
-\DoxyCodeLine{164     this-\/>\mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}} = lastname;}
-\DoxyCodeLine{165     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{166 \}}
+\DoxyCodeLine{188 \{}
+\DoxyCodeLine{189     this-\/>\mbox{\hyperlink{class_contact_a6d85467851d61def44445912b58d52a4}{prenom}} = lastname;}
+\DoxyCodeLine{190     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{191 \}}
 
 \end{DoxyCode}
 
@@ -638,12 +743,20 @@ Références modification(), et prenom.
 
 Pour modifier le numéro du contact. 
 
+Cette fonction permet de modifier le numéro du contact. \begin{DoxyWarning}{Avertissement}
+Cette opération entraine une mise à jour de la date de modification. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em phone} & \+: Le nouveau numéro du contact. \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{181 \{}
-\DoxyCodeLine{182     this-\/>\mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}} = phone;}
-\DoxyCodeLine{183     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
-\DoxyCodeLine{184 \}}
+\DoxyCodeLine{212 \{}
+\DoxyCodeLine{213     this-\/>\mbox{\hyperlink{class_contact_a045666ea797063981360d3c926c4d58f}{telephone}} = phone;}
+\DoxyCodeLine{214     \mbox{\hyperlink{class_contact_a48b48fa54c3da3e928b3315735cf3b74}{modification}}();}
+\DoxyCodeLine{215 \}}
 
 \end{DoxyCode}
 
@@ -652,7 +765,7 @@ Références modification(), et telephone.
 
 
 
-Référencé par test\+Contact().
+Référencé par test\+Contact(), et test\+Gestion\+Contact().
 
 
 
@@ -674,31 +787,31 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 {\em c} & de type contact qui represente le contact à afficher.\\
 \hline
 \end{DoxyParams}
-Pour afficher la fiche d\textquotesingle{}un contact. 
+Pour afficher la fiche d\textquotesingle{}un contact. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{243 \{}
-\DoxyCodeLine{244     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{245 }
-\DoxyCodeLine{246     os << \textcolor{stringliteral}{"{}=================> Fiche Contact <=================\(\backslash\)n"{}};}
-\DoxyCodeLine{247     os << \textcolor{stringliteral}{"{}Nom : "{}} << c.\mbox{\hyperlink{class_contact_ac4ca062bf61f7adbbddc7878c0957e82}{getNom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{248     os << \textcolor{stringliteral}{"{}Prenom : "{}} << c.\mbox{\hyperlink{class_contact_a1825fa5b28052b477fb16176bb4df21e}{getPrenom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{249     os << \textcolor{stringliteral}{"{}Entreprise : "{}} << c.\mbox{\hyperlink{class_contact_a0126ff51496fe7f69db34de82ce28398}{getEntreprise}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{250     os << \textcolor{stringliteral}{"{}Mail : "{}} << c.\mbox{\hyperlink{class_contact_a8d89efed9b157ef61804cd1d1ce31ad0}{getEmail}}().\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}()<< \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{251     os << \textcolor{stringliteral}{"{}Telephone : "{}} << c.\mbox{\hyperlink{class_contact_a53ebe193a5284e27b468ababdf7577e3}{getTelephone}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{252     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_af1b8218175c3c88bc10375fe098e851a}{getDateCreation}}());}
-\DoxyCodeLine{253     os << \textcolor{stringliteral}{"{}Date de création : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{254     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_a977dfc1a358b7a34774621041837512e}{getDateLastModif}}());}
-\DoxyCodeLine{255     os << \textcolor{stringliteral}{"{}Date de derniere modification : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{256     os << \textcolor{stringliteral}{"{}Photo : "{}};}
-\DoxyCodeLine{257     \textcolor{keywordflow}{if}(c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() == \textcolor{stringliteral}{"{}"{}})  os << \textcolor{stringliteral}{"{}Aucune Photo \(\backslash\)n"{}};}
-\DoxyCodeLine{258     \textcolor{keywordflow}{else} os << c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{259     os << \textcolor{stringliteral}{"{}=================> Interactions \(\backslash\)n"{}};}
-\DoxyCodeLine{260     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} interact : c.\mbox{\hyperlink{class_contact_ae640d361eb3e8659648bbdf2c0fb6bb4}{getListInteractions}}())}
-\DoxyCodeLine{261     \{}
-\DoxyCodeLine{262         os << interact << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{263     \}}
-\DoxyCodeLine{264     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{265 \}}
+\DoxyCodeLine{287 \{}
+\DoxyCodeLine{288     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290     os << \textcolor{stringliteral}{"{}=================> Fiche Contact <=================\(\backslash\)n"{}};}
+\DoxyCodeLine{291     os << \textcolor{stringliteral}{"{}Nom : "{}} << c.\mbox{\hyperlink{class_contact_ac4ca062bf61f7adbbddc7878c0957e82}{getNom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{292     os << \textcolor{stringliteral}{"{}Prenom : "{}} << c.\mbox{\hyperlink{class_contact_a1825fa5b28052b477fb16176bb4df21e}{getPrenom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{293     os << \textcolor{stringliteral}{"{}Entreprise : "{}} << c.\mbox{\hyperlink{class_contact_a0126ff51496fe7f69db34de82ce28398}{getEntreprise}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{294     os << \textcolor{stringliteral}{"{}Mail : "{}} << c.\mbox{\hyperlink{class_contact_a8d89efed9b157ef61804cd1d1ce31ad0}{getEmail}}().\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}()<< \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{295     os << \textcolor{stringliteral}{"{}Telephone : "{}} << c.\mbox{\hyperlink{class_contact_a53ebe193a5284e27b468ababdf7577e3}{getTelephone}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{296     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_af1b8218175c3c88bc10375fe098e851a}{getDateCreation}}());}
+\DoxyCodeLine{297     os << \textcolor{stringliteral}{"{}Date de création : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{298     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_a977dfc1a358b7a34774621041837512e}{getDateLastModif}}());}
+\DoxyCodeLine{299     os << \textcolor{stringliteral}{"{}Date de derniere modification : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{300     os << \textcolor{stringliteral}{"{}Photo : "{}};}
+\DoxyCodeLine{301     \textcolor{keywordflow}{if}(c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() == \textcolor{stringliteral}{"{}"{}})  os << \textcolor{stringliteral}{"{}Aucune Photo \(\backslash\)n"{}};}
+\DoxyCodeLine{302     \textcolor{keywordflow}{else} os << c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{303     os << \textcolor{stringliteral}{"{}=================> Interactions \(\backslash\)n"{}};}
+\DoxyCodeLine{304     os << *(c.\mbox{\hyperlink{class_contact_ae6f3b5d25bef8de2d09bae162b4d64f7}{getListInteractions}}());}
+\DoxyCodeLine{305     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{306 \}}
 
 \end{DoxyCode}
 
@@ -712,11 +825,11 @@ Pour afficher la fiche d\textquotesingle{}un contact.
 
 
 
-La photo du contact. 
+La date de création du contact. 
 
 
 
-Référencé par Contact(), get\+Date\+Creation(), set\+Date\+Creation(), et $\sim$\+Contact().
+Référencé par Contact(), get\+Date\+Creation(), et set\+Date\+Creation().
 
 \mbox{\Hypertarget{class_contact_a147a152073d3f091c40a3d5a77d6a27f}\label{class_contact_a147a152073d3f091c40a3d5a77d6a27f}} 
 \index{Contact@{Contact}!dateLastModif@{dateLastModif}}
@@ -726,11 +839,11 @@ Référencé par Contact(), get\+Date\+Creation(), set\+Date\+Creation(), et $\s
 
 
 
-La date de création du contact. 
+La date de dernière modification. 
 
 
 
-Référencé par Contact(), get\+Date\+Last\+Modif(), set\+Date\+Last\+Modif(), et $\sim$\+Contact().
+Référencé par Contact(), get\+Date\+Last\+Modif(), et set\+Date\+Last\+Modif().
 
 \mbox{\Hypertarget{class_contact_a786cf3e7f36e558af773e64a3302fbf8}\label{class_contact_a786cf3e7f36e558af773e64a3302fbf8}} 
 \index{Contact@{Contact}!entreprise@{entreprise}}
@@ -740,25 +853,25 @@ Référencé par Contact(), get\+Date\+Last\+Modif(), set\+Date\+Last\+Modif(), 
 
 
 
-Le prénom du contact. 
+Le nom de l\textquotesingle{}entreprise. 
 
 
 
 Référencé par Contact(), get\+Entreprise(), et set\+Entreprise().
 
-\mbox{\Hypertarget{class_contact_acab6983d1f1f3e8b65fd805c75c464e1}\label{class_contact_acab6983d1f1f3e8b65fd805c75c464e1}} 
+\mbox{\Hypertarget{class_contact_add01d7b1c4c13a4625af6af7d432cbac}\label{class_contact_add01d7b1c4c13a4625af6af7d432cbac}} 
 \index{Contact@{Contact}!listInteractions@{listInteractions}}
 \index{listInteractions@{listInteractions}!Contact@{Contact}}
 \doxysubsubsection{\texorpdfstring{listInteractions}{listInteractions}}
-{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_interaction}{Interaction}}$>$ Contact\+::list\+Interactions\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}}$\ast$ Contact\+::list\+Interactions\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Adresse Mail du contact. 
+Le gestionnaire des intéractions du contact. 
 
 
 
-Référencé par add\+Interaction(), get\+List\+Interactions(), et $\sim$\+Contact().
+Référencé par add\+Interaction(), Contact(), get\+List\+Interactions(), et remove\+Interaction().
 
 \mbox{\Hypertarget{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}\label{class_contact_a68f15283a4fe4188a7b0cb53bddb7a1a}} 
 \index{Contact@{Contact}!mail@{mail}}
@@ -768,7 +881,7 @@ Référencé par add\+Interaction(), get\+List\+Interactions(), et $\sim$\+Conta
 
 
 
-La date de dernière modification. 
+Adresse Mail du contact. 
 
 
 
@@ -782,6 +895,10 @@ Référencé par Contact(), get\+Email(), et set\+Email().
 
 
 
+Le nom du contact. 
+
+
+
 Référencé par Contact(), get\+Nom(), et set\+Nom().
 
 \mbox{\Hypertarget{class_contact_a6d85467851d61def44445912b58d52a4}\label{class_contact_a6d85467851d61def44445912b58d52a4}} 
@@ -792,7 +909,7 @@ Référencé par Contact(), get\+Nom(), et set\+Nom().
 
 
 
-Le nom du contact. 
+Le prénom du contact. 
 
 
 
@@ -806,7 +923,7 @@ Référencé par Contact(), get\+Prenom(), et set\+Prenom().
 
 
 
-Le nom de l\textquotesingle{}entreprise. 
+Le numéro du contact. 
 
 
 
@@ -820,7 +937,7 @@ Référencé par Contact(), get\+Telephone(), et set\+Telephone().
 
 
 
-Le numéro du contact. 
+La photo du contact. 
 
 
 

@@ -1,6 +1,8 @@
 /**
     *@file GestionInteraction.h
     *@brief Fichier d'en-tete de la classe GestionInteraction
+    *@author BAH Saikou Oumar
+    *@author DIALLO Mamoudou
 */
 
 #ifndef GESTIONINTERACTION_H

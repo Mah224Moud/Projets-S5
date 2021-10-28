@@ -24,7 +24,9 @@ std\+::ostream \& \mbox{\hyperlink{_interaction_8cpp_a0474aeea9f966416f60720e9e4
 Fichier CPP de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. 
 
 \begin{DoxyAuthor}{Auteur}
+BAH Saikou Oumar 
 
+Diallo Mamoudou 
 \end{DoxyAuthor}
 
 
@@ -48,16 +50,16 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 \end{DoxyParams}
 Pour afficher une \mbox{\hyperlink{class_interaction}{Interaction}}, on affiche la date de l\textquotesingle{}interaction, ou Aujourd\textquotesingle{}hui s\textquotesingle{}il s\textquotesingle{}agit de la date courante, suivie son contenu. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{93 \{}
-\DoxyCodeLine{94     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{95     \textcolor{keywordflow}{if}(d == i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}())    os << \textcolor{stringliteral}{"{}Aujourd'hui "{}};}
-\DoxyCodeLine{96     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{97     \{}
-\DoxyCodeLine{98         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
-\DoxyCodeLine{99         os << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<\textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{100     \}}
-\DoxyCodeLine{101     os << i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
-\DoxyCodeLine{102     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{103 \}}
+\DoxyCodeLine{87 \{}
+\DoxyCodeLine{88     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{89     \textcolor{keywordflow}{if}(d == i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}())    os << \textcolor{stringliteral}{"{}Aujourd'hui "{}};}
+\DoxyCodeLine{90     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
+\DoxyCodeLine{93         os << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95     os << i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
+\DoxyCodeLine{96     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{97 \}}
 
 \end{DoxyCode}

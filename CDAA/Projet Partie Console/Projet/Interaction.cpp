@@ -1,7 +1,8 @@
 /**
     *@file Interaction.cpp
     *@brief Fichier CPP de la classe Interaction
-    *@author
+    *@author BAH Saikou Oumar
+    *@author Diallo Mamoudou
 */
 
 #include "Interaction.h"
@@ -33,14 +34,11 @@ Interaction::Interaction(const std::string& contenu)
 
 /**
     *@brief Destructeur de la classe Interaction.
-    *@details Libération de l'espace mémoire alloué par date.
 */
 Interaction::~Interaction()
 {
     //delete date;
 }
-
-/// Accesseurs
 
 /**
     *@brief Pour récupérer la date.
@@ -51,7 +49,6 @@ tm Interaction::getDate() const
     return *date;
 }
 
-
 /**
     *@brief Pour recupérer le contenu de l'interaction.
     *@details Cette fonction renvoie la chaine contenu de l'interaction.
@@ -60,9 +57,6 @@ std::string Interaction::getContenu() const
 {
     return this->contenu;
 }
-
-
-/// Mutateurs
 
 /**
     *@brief Pour affecter une date à l'interaction.
@@ -104,7 +98,10 @@ std::ostream& operator<<(std::ostream& os, const Interaction& i)
 
 
 /**
-
+    *@brief Surchage de l'opérateur de comparaison (==)
+    *@details On considère que deux intéractions sont identiques si elles ont même contenu.
+    *@param autre : l'intéraction à comparer avec l'intéraction courante.
+    *@return un booléen : true si elles ont le même contenu, false sinon.
 */
 bool Interaction::operator==(const Interaction& autre)
 {
@@ -112,7 +109,9 @@ bool Interaction::operator==(const Interaction& autre)
 }
 
 /**
-
+    *@brief Surchage de l'opérateur d'affection (=)
+    *@details L'intéraction actuelle reçoit le contenu et la date de l'autre intéraction.
+    *@param autre : l'intéraction à affecter.
 */
 void Interaction::operator=(const Interaction& autre)
 {

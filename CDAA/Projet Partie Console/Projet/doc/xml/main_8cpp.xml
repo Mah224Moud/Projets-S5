@@ -8,20 +8,22 @@
     <includes refid="_contact_8h" local="yes">Contact.h</includes>
     <includes refid="_gestion_todo_8h" local="yes">GestionTodo.h</includes>
     <includes refid="_email_8h" local="yes">Email.h</includes>
+    <includes refid="_gestion_contact_8h" local="yes">GestionContact.h</includes>
+    <includes refid="_gestion_interaction_8h" local="yes">GestionInteraction.h</includes>
     <incdepgraph>
       <node id="7">
         <label>list</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>GestionTodo.h</label>
         <link refid="_gestion_todo_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -53,9 +55,27 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GestionInteraction.h</label>
+        <link refid="_gestion_interaction_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -83,10 +103,10 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="13">
         <label>Todo.h</label>
         <link refid="_todo_8h"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -96,7 +116,17 @@
       <node id="2">
         <label>iostream</label>
       </node>
-      <node id="10">
+      <node id="14">
+        <label>GestionContact.h</label>
+        <link refid="_gestion_contact_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
         <label>Interaction.h</label>
         <link refid="_interaction_8h"/>
         <childnode refid="8" relation="include">
@@ -110,6 +140,23 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testDateComparator</definition>
+        <argsstring>()</argsstring>
+        <name>testDateComparator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="223" column="6" bodyfile="main.cpp" bodystart="223" bodyend="246" declfile="main.cpp" declline="14" declcolumn="6"/>
+        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="85" endline="96">Date::fromDate</references>
+        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="65" endline="68">Date::getDate</references>
+        <references refid="class_date_1af7f644265141e1b856af83715177a7e7" compoundref="_date_8cpp" startline="74" endline="77">Date::setDate</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="22" endline="29">main</referencedby>
+      </memberdef>
       <memberdef kind="function" id="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void testContact</definition>
@@ -121,16 +168,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="main.cpp" line="23" column="6" bodyfile="main.cpp" bodystart="23" bodyend="55" declfile="main.cpp" declline="12" declcolumn="6"/>
-        <references refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="223" endline="227">Contact::addInteraction</references>
-        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="89" endline="100">Date::fromDate</references>
-        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="69" endline="72">Date::getDate</references>
-        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="81" endline="84">Interaction::setContenu</references>
-        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="72" endline="75">Interaction::setDate</references>
-        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="198" endline="201">Contact::setDateCreation</references>
-        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="206" endline="209">Contact::setDateLastModif</references>
-        <references refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="214" endline="218">Contact::setEmail</references>
-        <references refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="180" endline="184">Contact::setTelephone</references>
+        <location file="main.cpp" line="31" column="6" bodyfile="main.cpp" bodystart="31" bodyend="63" declfile="main.cpp" declline="15" declcolumn="6"/>
+        <references refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="263" endline="267">Contact::addInteraction</references>
+        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="85" endline="96">Date::fromDate</references>
+        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="65" endline="68">Date::getDate</references>
+        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="75" endline="78">Interaction::setContenu</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">Interaction::setDate</references>
+        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="232" endline="235">Contact::setDateCreation</references>
+        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="240" endline="243">Contact::setDateLastModif</references>
+        <references refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="251" endline="255">Contact::setEmail</references>
+        <references refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="211" endline="215">Contact::setTelephone</references>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -143,12 +190,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="main.cpp" line="58" column="6" bodyfile="main.cpp" bodystart="58" bodyend="83" declfile="main.cpp" declline="13" declcolumn="6"/>
-        <references refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" compoundref="_email_8cpp" startline="86" endline="111">Email::fromString</references>
-        <references refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" compoundref="_email_8cpp" startline="48" endline="51">Email::getDomaine</references>
-        <references refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" compoundref="_email_8cpp" startline="30" endline="33">Email::getIdentifiant</references>
-        <references refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" compoundref="_email_8cpp" startline="66" endline="69">Email::getMc</references>
-        <references refid="class_email_1acfd186a5418525a835fbcf2030620a9a" compoundref="_email_8cpp" startline="114" endline="120">Email::toString</references>
+        <location file="main.cpp" line="66" column="6" bodyfile="main.cpp" bodystart="66" bodyend="91" declfile="main.cpp" declline="16" declcolumn="6"/>
+        <references refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" compoundref="_email_8cpp" startline="89" endline="114">Email::fromString</references>
+        <references refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" compoundref="_email_8cpp" startline="50" endline="53">Email::getDomaine</references>
+        <references refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" compoundref="_email_8cpp" startline="31" endline="34">Email::getIdentifiant</references>
+        <references refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" compoundref="_email_8cpp" startline="69" endline="72">Email::getMc</references>
+        <references refid="class_email_1acfd186a5418525a835fbcf2030620a9a" compoundref="_email_8cpp" startline="122" endline="128">Email::toString</references>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -161,18 +208,62 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="main.cpp" line="85" column="6" bodyfile="main.cpp" bodystart="85" bodyend="148" declfile="main.cpp" declline="14" declcolumn="6"/>
-        <references refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="26" endline="29">GestionTodo::addTodo</references>
-        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="89" endline="100">Date::fromDate</references>
-        <references refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" compoundref="_gestion_todo_8cpp" startline="71" endline="83">GestionTodo::getAllInteractionTodo</references>
-        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="69" endline="72">Date::getDate</references>
-        <references refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" compoundref="_gestion_todo_8cpp" startline="54" endline="66">GestionTodo::removeAllInteractionTodo</references>
-        <references refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" compoundref="_gestion_todo_8cpp" startline="34" endline="49">GestionTodo::removeTodo</references>
-        <references refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="89" endline="92">Todo::setContenu</references>
-        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="72" endline="75">Interaction::setDate</references>
-        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="80" endline="83">Todo::setDate</references>
-        <references refid="class_todo_1a4bc4c583115b304d665a3169e168105e" compoundref="_todo_8cpp" startline="70" endline="73">Todo::setInteraction</references>
-        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="16" endline="21">main</referencedby>
+        <location file="main.cpp" line="93" column="6" bodyfile="main.cpp" bodystart="93" bodyend="156" declfile="main.cpp" declline="17" declcolumn="6"/>
+        <references refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="33" endline="36">GestionTodo::addTodo</references>
+        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="85" endline="96">Date::fromDate</references>
+        <references refid="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" compoundref="_gestion_todo_8cpp" startline="85" endline="97">GestionTodo::getAllInteractionTodo</references>
+        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="65" endline="68">Date::getDate</references>
+        <references refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" compoundref="_gestion_todo_8cpp" startline="65" endline="77">GestionTodo::removeAllInteractionTodo</references>
+        <references refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" compoundref="_gestion_todo_8cpp" startline="43" endline="58">GestionTodo::removeTodo</references>
+        <references refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" compoundref="_todo_8cpp" startline="87" endline="90">Todo::setContenu</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">Interaction::setDate</references>
+        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="78" endline="81">Todo::setDate</references>
+        <references refid="class_todo_1ab2912427ece19b69307d7a2f698b1e83" compoundref="_todo_8cpp" startline="68" endline="71">Todo::setInteraction</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testGestionInteraction</definition>
+        <argsstring>()</argsstring>
+        <name>testGestionInteraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="248" column="6" bodyfile="main.cpp" bodystart="248" bodyend="298" declfile="main.cpp" declline="18" declcolumn="6"/>
+        <references refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" compoundref="_gestion_interaction_8cpp" startline="36" endline="57">GestionInteraction::addInteraction</references>
+        <references refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" compoundref="_gestion_interaction_8cpp" startline="94" endline="119">GestionInteraction::addTodo</references>
+        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="85" endline="96">Date::fromDate</references>
+        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="65" endline="68">Date::getDate</references>
+        <references refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">GestionInteraction::removeInteraction</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">Interaction::setDate</references>
+        <references refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" compoundref="_todo_8cpp" startline="78" endline="81">Todo::setDate</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testGestionContact</definition>
+        <argsstring>()</argsstring>
+        <name>testGestionContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="158" column="6" bodyfile="main.cpp" bodystart="158" bodyend="221" declfile="main.cpp" declline="19" declcolumn="6"/>
+        <references refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" compoundref="_gestion_contact_8cpp" startline="31" endline="34">GestionContact::addContact</references>
+        <references refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="263" endline="267">Contact::addInteraction</references>
+        <references refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" compoundref="_date_8cpp" startline="85" endline="96">Date::fromDate</references>
+        <references refid="class_date_1a53dcab03c7834448fd67ef453ff34195" compoundref="_date_8cpp" startline="65" endline="68">Date::getDate</references>
+        <references refid="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" compoundref="_gestion_contact_8cpp" startline="68" endline="83">GestionContact::removeContact</references>
+        <references refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" compoundref="_interaction_8cpp" startline="75" endline="78">Interaction::setContenu</references>
+        <references refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" compoundref="_interaction_8cpp" startline="66" endline="69">Interaction::setDate</references>
+        <references refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" compoundref="_contact_8cpp" startline="232" endline="235">Contact::setDateCreation</references>
+        <references refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" compoundref="_contact_8cpp" startline="240" endline="243">Contact::setDateLastModif</references>
+        <references refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" compoundref="_contact_8cpp" startline="251" endline="255">Contact::setEmail</references>
+        <references refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" compoundref="_contact_8cpp" startline="222" endline="226">Contact::setPhoto</references>
+        <references refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" compoundref="_contact_8cpp" startline="211" endline="215">Contact::setTelephone</references>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -185,8 +276,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="main.cpp" line="16" column="5" bodyfile="main.cpp" bodystart="16" bodyend="21"/>
-        <references refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</references>
+        <location file="main.cpp" line="22" column="5" bodyfile="main.cpp" bodystart="22" bodyend="29"/>
+        <references refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" compoundref="main_8cpp" startline="223" endline="246">testDateComparator</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -202,146 +293,297 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_contact_8h" kindref="compound">Contact.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gestion_todo_8h" kindref="compound">GestionTodo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_email_8h" kindref="compound">Email.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gestion_contact_8h" kindref="compound">GestionContact.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gestion_interaction_8h" kindref="compound">GestionInteraction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" kindref="member">testContact</ref>();</highlight><highlight class="comment">//<sp/>Test<sp/>Classe<sp/>Contact</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" kindref="member">testEmail</ref>();</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" kindref="member">testGestionTodo</ref>();</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" kindref="member">testGestionTodo</ref>();</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" kindref="member">testContact</ref>()</highlight></codeline>
-<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Contact<sp/>contact;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_contact" kindref="compound">Contact</ref><sp/>contact(</highlight><highlight class="stringliteral">&quot;BAH&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Saikou<sp/>Oumar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ramuo&apos;s&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(14,<sp/>07,<sp/>2001);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" kindref="member">setDateCreation</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" kindref="member">setDateLastModif</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" kindref="member">setEmail</ref>(</highlight><highlight class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" kindref="member">setTelephone</ref>(</highlight><highlight class="stringliteral">&quot;0666693425&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//contact.setPhoto(&quot;photo.png&quot;);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i(</highlight><highlight class="stringliteral">&quot;Test<sp/>1<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2021);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>i.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(i);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>j;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>j.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(j);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>k;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,03,2020);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(k);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" kindref="member">testDateComparator</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" kindref="member">testContact</ref>();</highlight><highlight class="comment">//<sp/>Test<sp/>Classe<sp/>Contact</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" kindref="member">testEmail</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" kindref="member">testGestionTodo</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" kindref="member">testGestionInteraction</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" kindref="member">testGestionContact</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//testGestionTodo();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//testGestionInteraction();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//testContact();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//testGestionContact();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" kindref="member">testDateComparator</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" kindref="member">testContact</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Contact<sp/>contact;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_contact" kindref="compound">Contact</ref><sp/>contact(</highlight><highlight class="stringliteral">&quot;BAH&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Saikou<sp/>Oumar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ramuo&apos;s&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(14,<sp/>07,<sp/>2001);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" kindref="member">setDateCreation</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" kindref="member">setDateLastModif</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" kindref="member">setEmail</ref>(</highlight><highlight class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" kindref="member">setTelephone</ref>(</highlight><highlight class="stringliteral">&quot;0666693425&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//contact.setPhoto(&quot;photo.png&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i(</highlight><highlight class="stringliteral">&quot;Test<sp/>1<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2021);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>i.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(i);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>j;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>j.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(j);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>contact<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" kindref="member">testEmail</ref>()</highlight></codeline>
-<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>e(</highlight><highlight class="stringliteral">&quot;saikououmarbah21gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>k;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,03,2020);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(k);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>f;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>f.<ref refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" kindref="member">fromString</ref>(</highlight><highlight class="stringliteral">&quot;Saikou_Bah@etu.u-bourgogne.fr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>contact<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac3ec4ab20ccbf8c63921f67912a6bad4" kindref="member">testEmail</ref>()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>e(</highlight><highlight class="stringliteral">&quot;saikououmarbah21gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>e.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>g(</highlight><highlight class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>f;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>f.<ref refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" kindref="member">fromString</ref>(</highlight><highlight class="stringliteral">&quot;Saikou_Bah@etu.u-bourgogne.fr&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>f.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" kindref="member">testGestionTodo</ref>()</highlight></codeline>
-<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i1(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,2,2000);</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>i1.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_email" kindref="compound">Email</ref><sp/>g(</highlight><highlight class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Identifiant<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1abdf70d7f147a59a96685cd4ad3947c2c" kindref="member">getIdentifiant</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Domaine<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1a6025851513c653ec0a0a3c98624f6ec5" kindref="member">getDomaine</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;mc<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1a4fb56b50d5636ea445a204d2a0a19a04" kindref="member">getMc</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>g.<ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i2(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(2,<sp/>12,<sp/>2020);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>i2.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="93" refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" kindref="member">testGestionTodo</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i3(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t1;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>t1.<ref refid="class_todo_1a4bc4c583115b304d665a3169e168105e" kindref="member">setInteraction</ref>(i1);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>t1.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t2(i1,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,10,2022);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>t2.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t3;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>t3.<ref refid="class_todo_1a4bc4c583115b304d665a3169e168105e" kindref="member">setInteraction</ref>(i3);</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>t3.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i1(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,2,2000);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>i1.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i2(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(2,<sp/>12,<sp/>2020);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>i2.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i3(</highlight><highlight class="stringliteral">&quot;Interaction<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t1;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>t1.<ref refid="class_todo_1ab2912427ece19b69307d7a2f698b1e83" kindref="member">setInteraction</ref>(i1);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>t1.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t4(i2,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,10,2022);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>t4.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t5;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>t5.<ref refid="class_todo_1a4bc4c583115b304d665a3169e168105e" kindref="member">setInteraction</ref>(i3);</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>t5.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>5&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t2(i1,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,10,2022);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>t2.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t3;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>t3.<ref refid="class_todo_1ab2912427ece19b69307d7a2f698b1e83" kindref="member">setInteraction</ref>(i3);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>t3.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t6(i3,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>6&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,10,2023);</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>t6.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref><sp/>gest;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t1);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t2);</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t3);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t4);</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t5);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t6);</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t4(i2,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,10,2022);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>t4.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t5;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>t5.<ref refid="class_todo_1ab2912427ece19b69307d7a2f698b1e83" kindref="member">setInteraction</ref>(i3);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>t5.<ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>5&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>t6(i3,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>6&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,10,2023);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>t6.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref><sp/>gest;</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" kindref="member">removeTodo</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t1);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t2);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t3);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t4);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t5);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" kindref="member">addTodo</ref>(t6);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" kindref="member">removeAllInteractionTodo</ref>(i3);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest.<ref refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" kindref="member">getAllInteractionTodo</ref>(i1)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" kindref="member">removeTodo</ref>(</highlight><highlight class="stringliteral">&quot;Todo<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" kindref="member">removeAllInteractionTodo</ref>(i3);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest.<ref refid="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" kindref="member">getAllInteractionTodo</ref>(i1)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" kindref="member">testGestionContact</ref>()</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Contact<sp/>contact;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_contact" kindref="compound">Contact</ref><sp/>contact(</highlight><highlight class="stringliteral">&quot;BAH&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Saikou<sp/>Oumar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ramuo&apos;s&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(14,<sp/>07,<sp/>2001);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" kindref="member">setDateCreation</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" kindref="member">setDateLastModif</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" kindref="member">setEmail</ref>(</highlight><highlight class="stringliteral">&quot;saikououmarbah21@gmail.com&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" kindref="member">setTelephone</ref>(</highlight><highlight class="stringliteral">&quot;0666693425&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//contact.setPhoto(&quot;photo.png&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i(</highlight><highlight class="stringliteral">&quot;Test<sp/>1<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2021);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>i.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(i);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>j;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>j.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(j);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>k;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,03,2020);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>contact.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(k);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_contact" kindref="compound">Contact</ref><sp/>contact1(</highlight><highlight class="stringliteral">&quot;DIALLO&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mamoudou&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ramuo&apos;s&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,<sp/>12,<sp/>1995);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1a1d69cefb80e2fdb0c0c8be60c7788a2a" kindref="member">setDateCreation</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1a4a7abe3ded9465e7e76ed1b5138a662c" kindref="member">setDateLastModif</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1a7fc8c816308412a4cf013f39c3e461d8" kindref="member">setEmail</ref>(</highlight><highlight class="stringliteral">&quot;Diallo_Mamoudou@etu.u-bourgogne.fr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1a54c863b3045a9255d75f1ad876ecb7de" kindref="member">setTelephone</ref>(</highlight><highlight class="stringliteral">&quot;0749211152&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1a294330fb17e2a3d581fe0adc5fa2e997" kindref="member">setPhoto</ref>(</highlight><highlight class="stringliteral">&quot;photo.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i1(</highlight><highlight class="stringliteral">&quot;Test<sp/>11<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2021);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>i1.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(i1);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>j1;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>j1.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>12<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(j1);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>k1;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(13,03,2020);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>k1.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>k1.<ref refid="class_interaction_1a5ca60953b855d3e31f27a05e118f81d3" kindref="member">setContenu</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>13<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>contact1.<ref refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" kindref="member">addInteraction</ref>(k1);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gestion_contact" kindref="compound">GestionContact</ref><sp/>gest;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" kindref="member">addContact</ref>(contact);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" kindref="member">addContact</ref>(contact1);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" kindref="member">removeContact</ref>(</highlight><highlight class="stringliteral">&quot;BAH&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" kindref="member">testDateComparator</ref>()</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtm" kindref="compound">tm</ref>*<sp/>date1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtm" kindref="compound">tm</ref>*<sp/>date2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>*date1<sp/>=<sp/>d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(27,<sp/>10,<sp/>2021);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>*date2<sp/>=<sp/>d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1af7f644265141e1b856af83715177a7e7" kindref="member">setDate</ref>(*date2);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(d<sp/>&lt;=<sp/>*date1)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(d<sp/>&gt;=<sp/>*date1)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" kindref="member">testGestionInteraction</ref>()</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date" kindref="compound">Date</ref><sp/>d;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>i(</highlight><highlight class="stringliteral">&quot;Test<sp/>1<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2021);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>i.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>td1(i,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>td2(i,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2022);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>td2.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>j(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>td3(j,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>td4(j,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2022);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>td4.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/>k(</highlight><highlight class="stringliteral">&quot;Test<sp/>3<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2001);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>k.<ref refid="class_interaction_1ac9fc375bb97461c87e140a592f4fa122" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>td5(k,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>5&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_todo" kindref="compound">Todo</ref><sp/>td6(k,<sp/></highlight><highlight class="stringliteral">&quot;Todo<sp/>6&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="class_date_1a21c46ba7a74d45d1299f92330a43533a" kindref="member">fromDate</ref>(1,<sp/>1,<sp/>2022);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>td6.<ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(d.<ref refid="class_date_1a53dcab03c7834448fd67ef453ff34195" kindref="member">getDate</ref>());</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref><sp/>gest;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" kindref="member">addInteraction</ref>(i);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>1<sp/>Interaction&quot;</highlight><highlight class="normal">,<sp/>td1);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>1<sp/>Interaction&quot;</highlight><highlight class="normal">,<sp/>td2);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" kindref="member">addInteraction</ref>(j);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">,<sp/>td3);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">,<sp/>td4);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" kindref="member">addInteraction</ref>(k);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>3<sp/>Interaction&quot;</highlight><highlight class="normal">,<sp/>td5);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>4<sp/>Interaction&quot;</highlight><highlight class="normal">,<sp/>td6);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>gest.<ref refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" kindref="member">removeInteraction</ref>(</highlight><highlight class="stringliteral">&quot;Test<sp/>2<sp/>Interaction&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>gest<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="main.cpp"/>
   </compounddef>

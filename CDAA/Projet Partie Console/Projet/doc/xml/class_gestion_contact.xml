@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
   <compounddef id="class_gestion_contact" kind="class" language="C++" prot="public">
     <compoundname>GestionContact</compoundname>
-    <includes refid="_gestion_contact_8h" local="no">GestionContact.h</includes>
+    <includes refid="_gestion_contact_8h" local="yes">GestionContact.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" prot="private" static="no" mutable="no">
         <type>std::list&lt; <ref refid="class_contact" kindref="compound">Contact</ref> &gt;</type>
@@ -10,15 +10,18 @@
         <argsstring></argsstring>
         <name>listContact</name>
         <briefdescription>
+<para>La liste des contacts. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="19" column="19" bodyfile="GestionContact.h" bodystart="19" bodyend="-1"/>
-        <referencedby refid="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" compoundref="_gestion_contact_8h" startline="25" endline="25">GetlistContact</referencedby>
-        <referencedby refid="class_gestion_contact_1aef55482330b41395718625f78f19844d" compoundref="_gestion_contact_8h" startline="26" endline="26">getSize</referencedby>
-        <referencedby refid="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" compoundref="_gestion_contact_8cpp" startline="18" endline="21">~GestionContact</referencedby>
+        <location file="GestionContact.h" line="27" column="19" bodyfile="GestionContact.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" compoundref="_gestion_contact_8cpp" startline="31" endline="34">addContact</referencedby>
+        <referencedby refid="class_gestion_contact_1aa9aadd7924eeddb7a0fb202afd782916" compoundref="_gestion_contact_8h" startline="36" endline="36">getlistContact</referencedby>
+        <referencedby refid="class_gestion_contact_1aef55482330b41395718625f78f19844d" compoundref="_gestion_contact_8h" startline="38" endline="38">getSize</referencedby>
+        <referencedby refid="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" compoundref="_gestion_contact_8cpp" startline="68" endline="83">removeContact</referencedby>
+        <referencedby refid="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" compoundref="_gestion_contact_8cpp" startline="21" endline="24">~GestionContact</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -28,12 +31,15 @@
         <argsstring>()</argsstring>
         <name>GestionContact</name>
         <briefdescription>
+<para>Constructeur du gestionnaire de contact. </para>
         </briefdescription>
         <detaileddescription>
+<para>Constructueur par défaut de la classe <ref refid="class_gestion_contact" kindref="compound">GestionContact</ref>.</para>
+<para>Rien de particulier. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="22" column="9" bodyfile="GestionContact.cpp" bodystart="10" bodyend="13"/>
+        <location file="GestionContact.h" line="31" column="9" bodyfile="GestionContact.cpp" bodystart="12" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="class_gestion_contact_1a9c0d781c68963dcdc05b6d52019538f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -41,27 +47,31 @@
         <argsstring>()</argsstring>
         <name>~GestionContact</name>
         <briefdescription>
+<para>Destructeur du gestionnaire de contact. </para>
         </briefdescription>
         <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_gestion_contact" kindref="compound">GestionContact</ref>.</para>
+<para>On libère la mémoire alloué par la liste de contact. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="23" column="9" bodyfile="GestionContact.cpp" bodystart="18" bodyend="21"/>
-        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="19">listContact</references>
+        <location file="GestionContact.h" line="33" column="9" bodyfile="GestionContact.cpp" bodystart="21" bodyend="24"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="27">listContact</references>
       </memberdef>
-      <memberdef kind="function" id="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_gestion_contact_1aa9aadd7924eeddb7a0fb202afd782916" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::list&lt; <ref refid="class_contact" kindref="compound">Contact</ref> &gt;</type>
-        <definition>std::list&lt;Contact&gt; GestionContact::GetlistContact</definition>
+        <definition>std::list&lt;Contact&gt; GestionContact::getlistContact</definition>
         <argsstring>() const</argsstring>
-        <name>GetlistContact</name>
+        <name>getlistContact</name>
         <briefdescription>
+<para>Accès à la liste des contacts. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="25" column="19" bodyfile="GestionContact.h" bodystart="25" bodyend="25"/>
-        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="19">listContact</references>
+        <location file="GestionContact.h" line="36" column="19" bodyfile="GestionContact.h" bodystart="36" bodyend="36"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="27">listContact</references>
       </memberdef>
       <memberdef kind="function" id="class_gestion_contact_1aef55482330b41395718625f78f19844d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned</type>
@@ -69,13 +79,14 @@
         <argsstring>()</argsstring>
         <name>getSize</name>
         <briefdescription>
+<para>Taille de la liste. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="26" column="25" bodyfile="GestionContact.h" bodystart="26" bodyend="26"/>
-        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="19">listContact</references>
+        <location file="GestionContact.h" line="38" column="25" bodyfile="GestionContact.h" bodystart="38" bodyend="38"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="27">listContact</references>
       </memberdef>
       <memberdef kind="function" id="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -84,14 +95,29 @@
         <name>addContact</name>
         <param>
           <type>const <ref refid="class_contact" kindref="compound">Contact</ref> &amp;</type>
+          <defname>c</defname>
         </param>
         <briefdescription>
+<para>Ajouter un contact au gestionnaire. </para>
         </briefdescription>
         <detaileddescription>
+<para>Pour ajouter un nouveau contact dans la liste.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contact à ajouter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="28" column="14"/>
+        <location file="GestionContact.h" line="41" column="14" bodyfile="GestionContact.cpp" bodystart="31" bodyend="34"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="27">listContact</references>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -100,14 +126,49 @@
         <name>removeContact</name>
         <param>
           <type>const std::string &amp;</type>
+          <defname>nom</defname>
         </param>
         <briefdescription>
+<para>Supprimer un contact. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pour supprimer un contact en connaissant son nom.</para>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>A faire</xreftitle><xrefdescription><para>Demander au prof comment retourner un null lorsque aucun contat trouvé </para>
+</xrefdescription></xrefsect></para>
+<para>Cette fonction permet la suppression d&apos;un contact grâce à son nom. On suppose que le nom peut-être qualifié d&apos;identifiant dans un premier temps. <xrefsect id="todo_1_todo000002"><xreftitle>A faire</xreftitle><xrefdescription><para>Créer la notion d&apos;identifiant, renvoyer le contact supprimé ou un booléen pour signaler la suppression. </para>
+</xrefdescription></xrefsect><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le nom du contact à supprimer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionContact.h" line="43" column="14" bodyfile="GestionContact.cpp" bodystart="68" bodyend="83"/>
+        <references refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" compoundref="_gestion_contact_8h" startline="27">listContact</references>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_contact_1a302ccf41069ad043a674359e7ac372f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_contact" kindref="compound">Contact</ref> *</type>
+        <definition>Contact* GestionContact::getContactByName</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>getContactByName</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Récuperer un contact en connaissant son nom. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="29" column="14"/>
+        <location file="GestionContact.h" line="45" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -118,22 +179,47 @@
         <name>operator&lt;&lt;</name>
         <param>
           <type>std::ostream &amp;</type>
+          <defname>os</defname>
         </param>
         <param>
           <type>const <ref refid="class_gestion_contact" kindref="compound">GestionContact</ref> &amp;</type>
+          <defname>gest</defname>
         </param>
         <briefdescription>
+<para>Surcharge de l&apos;opérateur &lt;&lt; pour l&apos;affichage. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: de type ostream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de type <ref refid="class_gestion_contact" kindref="compound">GestionContact</ref> qui represente le gestionnaire à afficher.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Afficher un gestionnaire de contact revient à afficher toutes les fiches de contact à l&apos;intérieur. <simplesect kind="return"><para>os </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionContact.h" line="31" column="16"/>
+        <location file="GestionContact.h" line="47" column="16" bodyfile="GestionContact.cpp" bodystart="92" bodyend="99"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Cette classe permet de gérer une liste de contact. </para>
     </briefdescription>
     <detaileddescription>
+<para>Elle permet notamment d&apos;ajouter, de supprimer des contacts. Elle permet aussi l&apos;affichage de toutes les fiches contacts. </para>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
@@ -147,11 +233,12 @@
         <label>list&lt; Contact &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="GestionContact.h" line="16" column="1" bodyfile="GestionContact.h" bodystart="17" bodyend="32"/>
+    <location file="GestionContact.h" line="22" column="1" bodyfile="GestionContact.h" bodystart="23" bodyend="48"/>
     <listofallmembers>
       <member refid="class_gestion_contact_1ab5106c180d9d24ba15cc3ddfa8d224fb" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>addContact</name></member>
       <member refid="class_gestion_contact_1a0d42db3777c1e15d557979c897acf344" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>GestionContact</name></member>
-      <member refid="class_gestion_contact_1a902954b29f8b86b7be326f365f8c25a3" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>GetlistContact</name></member>
+      <member refid="class_gestion_contact_1a302ccf41069ad043a674359e7ac372f4" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>getContactByName</name></member>
+      <member refid="class_gestion_contact_1aa9aadd7924eeddb7a0fb202afd782916" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>getlistContact</name></member>
       <member refid="class_gestion_contact_1aef55482330b41395718625f78f19844d" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>getSize</name></member>
       <member refid="class_gestion_contact_1a59117aff14fcf0c1c2e644b17062d668" prot="private" virt="non-virtual"><scope>GestionContact</scope><name>listContact</name></member>
       <member refid="class_gestion_contact_1ae5ddb4f9bafabea0a77f5338ce4d4501" prot="public" virt="non-virtual"><scope>GestionContact</scope><name>operator&lt;&lt;</name></member>

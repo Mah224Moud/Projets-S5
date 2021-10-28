@@ -12,9 +12,13 @@ var files_dup =
     [ "Email.h", "_email_8h.html", [
       [ "Email", "class_email.html", "class_email" ]
     ] ],
-    [ "GestionContact.cpp", "_gestion_contact_8cpp.html", null ],
+    [ "GestionContact.cpp", "_gestion_contact_8cpp.html", "_gestion_contact_8cpp" ],
     [ "GestionContact.h", "_gestion_contact_8h.html", [
       [ "GestionContact", "class_gestion_contact.html", "class_gestion_contact" ]
+    ] ],
+    [ "GestionInteraction.cpp", "_gestion_interaction_8cpp.html", "_gestion_interaction_8cpp" ],
+    [ "GestionInteraction.h", "_gestion_interaction_8h.html", [
+      [ "GestionInteraction", "class_gestion_interaction.html", "class_gestion_interaction" ]
     ] ],
     [ "GestionTodo.cpp", "_gestion_todo_8cpp.html", "_gestion_todo_8cpp" ],
     [ "GestionTodo.h", "_gestion_todo_8h.html", [

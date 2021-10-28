@@ -1,6 +1,8 @@
 /**
     *@file GestionContact.h
     *@brief Fichier d'en-tete de la classe GestionContact
+    *@author BAH Saikou Oumar
+    *@author DIALLO Mamoudou
 */
 
 #ifndef GESTIONCONTACT_H

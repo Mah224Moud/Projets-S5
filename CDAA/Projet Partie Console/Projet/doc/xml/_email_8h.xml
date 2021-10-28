@@ -65,6 +65,8 @@
         <link refid="_gestion_contact_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_email" prot="public">Email</innerclass>
@@ -105,7 +107,7 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_email_1a69a9d94cb62cfe37069f9046adb254a3" kindref="member">setMc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_email_1ad008c905fb780e47c5fd5d5a1ba6eef6" kindref="member">fromString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::<sp/>string<sp/>&amp;);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::<sp/>string<sp/><ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_email_1acfd186a5418525a835fbcf2030620a9a" kindref="member">toString</ref>();</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EMAIL_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>

@@ -87,14 +87,17 @@ $(document).ready(function(){initNavTree('_gestion_todo_8cpp.html',''); initResi
 <div class="title">Référence du fichier GestionTodo.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Fichier CPP de la classe <a class="el" href="class_gestion_todo.html" title="Cette classe permet de gérer une liste de tâches.">GestionTodo</a>.  
+<a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_gestion_todo_8h_source.html">GestionTodo.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de GestionTodo.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_gestion_todo_8cpp__incl.png" border="0" usemap="#a_gestion_todo_8cpp" alt=""/></div>
 <map name="a_gestion_todo_8cpp" id="a_gestion_todo_8cpp">
-<area shape="rect" title=" " alt="" coords="71,5,201,32"/>
-<area shape="rect" href="_gestion_todo_8h.html" title=" " alt="" coords="79,80,193,107"/>
+<area shape="rect" title="Fichier CPP de la classe GestionTodo." alt="" coords="71,5,201,32"/>
+<area shape="rect" href="_gestion_todo_8h.html" title="Fichier d&#39;en&#45;tête de la classe GestionTodo." alt="" coords="79,80,193,107"/>
 <area shape="rect" title=" " alt="" coords="5,155,48,181"/>
 <area shape="rect" title=" " alt="" coords="73,304,149,331"/>
 <area shape="rect" href="_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="139,155,203,181"/>
@@ -108,9 +111,15 @@ Graphe des dépendances par inclusion de GestionTodo.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
 <tr class="memitem:a4d1ddac09317548a32d4d2f7d3790a9d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gestion_todo_8cpp.html#a4d1ddac09317548a32d4d2f7d3790a9d">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_gestion_todo.html">GestionTodo</a> &amp;gest)</td></tr>
+<tr class="memdesc:a4d1ddac09317548a32d4d2f7d3790a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surcharge de l'opérateur &lt;&lt; pour l'affichage.  <a href="_gestion_todo_8cpp.html#a4d1ddac09317548a32d4d2f7d3790a9d">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a4d1ddac09317548a32d4d2f7d3790a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des fonctions</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier CPP de la classe <a class="el" href="class_gestion_todo.html" title="Cette classe permet de gérer une liste de tâches.">GestionTodo</a>. </p>
+<dl class="section author"><dt>Auteur</dt><dd>BAH Saikou Oumar </dd>
+<dd>
+DIALLO Mamoudou </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
 <a id="a4d1ddac09317548a32d4d2f7d3790a9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d1ddac09317548a32d4d2f7d3790a9d">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
 
@@ -136,15 +145,25 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it : gest.<a class="code" href="class_gestion_todo.html#acc224a199d23b29ecfdf8dd9367b0eec">getlistTodo</a>())</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        os &lt;&lt; it &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="ttc" id="aclass_gestion_todo_html_acc224a199d23b29ecfdf8dd9367b0eec"><div class="ttname"><a href="class_gestion_todo.html#acc224a199d23b29ecfdf8dd9367b0eec">GestionTodo::getlistTodo</a></div><div class="ttdeci">std::list&lt; Todo &gt; getlistTodo() const</div><div class="ttdef"><b>Definition:</b> GestionTodo.h:26</div></div>
+
+<p>Surcharge de l'opérateur &lt;&lt; pour l'affichage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>: de type ostream. </td></tr>
+    <tr><td class="paramname">gest</td><td>de type <a class="el" href="class_gestion_todo.html" title="Cette classe permet de gérer une liste de tâches.">GestionTodo</a> qui represente le gestionnaire à afficher.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Afficher un gestionnaire de tâches revient à afficher toutes les tâches qu'elle contient. </p><dl class="section return"><dt>Renvoie</dt><dd>os </dd></dl>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it : gest.<a class="code" href="class_gestion_todo.html#a2b9096fe15ad96c286cb548a4b08e215">getlistTodo</a>())</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        os &lt;&lt; it &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="ttc" id="aclass_gestion_todo_html_a2b9096fe15ad96c286cb548a4b08e215"><div class="ttname"><a href="class_gestion_todo.html#a2b9096fe15ad96c286cb548a4b08e215">GestionTodo::getlistTodo</a></div><div class="ttdeci">const std::list&lt; Todo &gt; getlistTodo() const</div><div class="ttdoc">Accesseur sur la liste de tâches.</div><div class="ttdef"><b>Definition:</b> GestionTodo.h:39</div></div>
 </div><!-- fragment -->
 </div>
 </div>

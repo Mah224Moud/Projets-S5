@@ -1,4 +1,4 @@
 <map id="GestionContact" name="GestionContact">
-<area shape="rect" id="node1" title=" " alt="" coords="5,145,164,296"/>
-<area shape="rect" id="node2" title=" " alt="" coords="23,5,146,83"/>
+<area shape="rect" id="node1" title="Cette classe permet de gérer une liste de contact." alt="" coords="5,145,180,311"/>
+<area shape="rect" id="node2" title=" " alt="" coords="31,5,154,83"/>
 </map>

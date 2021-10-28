@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
   <compounddef id="class_gestion_todo" kind="class" language="C++" prot="public">
     <compoundname>GestionTodo</compoundname>
-    <includes refid="_gestion_todo_8h" local="no">GestionTodo.h</includes>
+    <includes refid="_gestion_todo_8h" local="yes">GestionTodo.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" prot="private" static="no" mutable="no">
         <type>std::list&lt; <ref refid="class_todo" kindref="compound">Todo</ref> &gt;</type>
@@ -10,19 +10,20 @@
         <argsstring></argsstring>
         <name>listTodo</name>
         <briefdescription>
+<para>La liste des tâches. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="20" column="19" bodyfile="GestionTodo.h" bodystart="20" bodyend="-1"/>
-        <referencedby refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="26" endline="29">addTodo</referencedby>
-        <referencedby refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" compoundref="_gestion_todo_8cpp" startline="71" endline="83">getAllInteractionTodo</referencedby>
-        <referencedby refid="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" compoundref="_gestion_todo_8h" startline="26" endline="26">getlistTodo</referencedby>
-        <referencedby refid="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" compoundref="_gestion_todo_8h" startline="27" endline="27">getSize</referencedby>
-        <referencedby refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" compoundref="_gestion_todo_8cpp" startline="54" endline="66">removeAllInteractionTodo</referencedby>
-        <referencedby refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" compoundref="_gestion_todo_8cpp" startline="34" endline="49">removeTodo</referencedby>
-        <referencedby refid="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" compoundref="_gestion_todo_8cpp" startline="18" endline="21">~GestionTodo</referencedby>
+        <location file="GestionTodo.h" line="26" column="19" bodyfile="GestionTodo.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="33" endline="36">addTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" compoundref="_gestion_todo_8cpp" startline="85" endline="97">getAllInteractionTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a2b9096fe15ad96c286cb548a4b08e215" compoundref="_gestion_todo_8h" startline="39" endline="39">getlistTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" compoundref="_gestion_todo_8h" startline="42" endline="42">getSize</referencedby>
+        <referencedby refid="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" compoundref="_gestion_todo_8cpp" startline="65" endline="77">removeAllInteractionTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" compoundref="_gestion_todo_8cpp" startline="43" endline="58">removeTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" compoundref="_gestion_todo_8cpp" startline="23" endline="26">~GestionTodo</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -32,12 +33,15 @@
         <argsstring>()</argsstring>
         <name>GestionTodo</name>
         <briefdescription>
+<para>Constructeur par défaut. </para>
         </briefdescription>
         <detaileddescription>
+<para>Constructeur par défaut de la classe <ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref>.</para>
+<para>Rien de particulier dans ce constructeur. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="23" column="9" bodyfile="GestionTodo.cpp" bodystart="10" bodyend="13"/>
+        <location file="GestionTodo.h" line="30" column="9" bodyfile="GestionTodo.cpp" bodystart="14" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_gestion_todo_1a6c3821fb74e15c513594604616973f86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -45,27 +49,35 @@
         <argsstring>()</argsstring>
         <name>~GestionTodo</name>
         <briefdescription>
+<para>Destructeur. </para>
         </briefdescription>
         <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref>.</para>
+<para>Libération de la mémoire alloué à la liste de tâches. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="24" column="9" bodyfile="GestionTodo.cpp" bodystart="18" bodyend="21"/>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <location file="GestionTodo.h" line="32" column="9" bodyfile="GestionTodo.cpp" bodystart="23" bodyend="26"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
       </memberdef>
-      <memberdef kind="function" id="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::list&lt; <ref refid="class_todo" kindref="compound">Todo</ref> &gt;</type>
-        <definition>std::list&lt;Todo&gt; GestionTodo::getlistTodo</definition>
+      <memberdef kind="function" id="class_gestion_todo_1a2b9096fe15ad96c286cb548a4b08e215" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::list&lt; <ref refid="class_todo" kindref="compound">Todo</ref> &gt;</type>
+        <definition>const std::list&lt;Todo&gt; GestionTodo::getlistTodo</definition>
         <argsstring>() const</argsstring>
         <name>getlistTodo</name>
         <briefdescription>
+<para>Accesseur sur la liste de tâches. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette methode renvoie la liste des tâches. <simplesect kind="return"><para>une liste de tâches. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="26" column="19" bodyfile="GestionTodo.h" bodystart="26" bodyend="26"/>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <location file="GestionTodo.h" line="39" column="25" bodyfile="GestionTodo.h" bodystart="39" bodyend="39"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
+        <referencedby refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">GestionInteraction::removeInteraction</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned</type>
@@ -73,13 +85,14 @@
         <argsstring>()</argsstring>
         <name>getSize</name>
         <briefdescription>
+<para>Récupération de la taille de la liste. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="27" column="25" bodyfile="GestionTodo.h" bodystart="27" bodyend="27"/>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
+        <location file="GestionTodo.h" line="42" column="25" bodyfile="GestionTodo.h" bodystart="42" bodyend="42"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
       </memberdef>
       <memberdef kind="function" id="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -91,15 +104,27 @@
           <defname>todo</defname>
         </param>
         <briefdescription>
+<para>Pour ajouter une tâche à la liste. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction permet d&apos;ajouter une tâche à la liste. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>todo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la tâche (todo) à ajouter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="29" column="14" bodyfile="GestionTodo.cpp" bodystart="26" bodyend="29"/>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
-        <referencedby refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" compoundref="_gestion_todo_8cpp" startline="71" endline="83">getAllInteractionTodo</referencedby>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <location file="GestionTodo.h" line="44" column="14" bodyfile="GestionTodo.cpp" bodystart="33" bodyend="36"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
+        <referencedby refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" compoundref="_gestion_interaction_8cpp" startline="94" endline="119">GestionInteraction::addTodo</referencedby>
+        <referencedby refid="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" compoundref="_gestion_todo_8cpp" startline="85" endline="97">getAllInteractionTodo</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -111,14 +136,26 @@
           <defname>contenu</defname>
         </param>
         <briefdescription>
+<para>Pour supprimer une tâche de la liste. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette méthode permet supprimer une tâche en fonction de son contenu. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu de la tâche à supprimer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="30" column="14" bodyfile="GestionTodo.cpp" bodystart="34" bodyend="49"/>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <location file="GestionTodo.h" line="45" column="14" bodyfile="GestionTodo.cpp" bodystart="43" bodyend="58"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
+        <referencedby refid="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" compoundref="_gestion_interaction_8cpp" startline="127" endline="141">GestionInteraction::removeTodo</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_gestion_todo_1a84b7c92cc9affa0360ca01fae7c8b91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -130,34 +167,59 @@
           <defname>interact</defname>
         </param>
         <briefdescription>
+<para>Pour supprimer toutes les tâches liées à une intéraction donné. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette méthode parcourt toute la liste des tâches et supprime toutes celles qui correspondent à l&apos;intéraction. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;intéraction dont les tâches sont à supprimer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="31" column="14" bodyfile="GestionTodo.cpp" bodystart="54" bodyend="66"/>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <location file="GestionTodo.h" line="46" column="14" bodyfile="GestionTodo.cpp" bodystart="65" bodyend="77"/>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref></type>
         <definition>GestionTodo GestionTodo::getAllInteractionTodo</definition>
-        <argsstring>(const Interaction &amp;)</argsstring>
+        <argsstring>(const Interaction &amp;) const</argsstring>
         <name>getAllInteractionTodo</name>
         <param>
           <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
           <defname>interact</defname>
         </param>
         <briefdescription>
+<para>Pour récuperer toutes les tâches d&apos;une intéraction. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cette fonction récupère une intéraction et renvoie un gestionnaire de tâches ne contenant que celles qui lui sont liées. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: l&apos;intéraction dont on retournera les tâches; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un gestionnaire de tâches appartenant toutes à une même intéraction. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="33" column="21" bodyfile="GestionTodo.cpp" bodystart="71" bodyend="83"/>
-        <references refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="26" endline="29">addTodo</references>
-        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="20">listTodo</references>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <location file="GestionTodo.h" line="48" column="21" bodyfile="GestionTodo.cpp" bodystart="85" bodyend="97"/>
+        <references refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="33" endline="36">addTodo</references>
+        <references refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" compoundref="_gestion_todo_8h" startline="26">listTodo</references>
+        <referencedby refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">GestionInteraction::removeInteraction</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -175,17 +237,40 @@
           <defname>gest</defname>
         </param>
         <briefdescription>
+<para>Surcharge de l&apos;opérateur &lt;&lt; pour l&apos;affichage. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: de type ostream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de type <ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref> qui represente le gestionnaire à afficher.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Afficher un gestionnaire de tâches revient à afficher toutes les tâches qu&apos;elle contient. <simplesect kind="return"><para>os </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GestionTodo.h" line="35" column="16" bodyfile="GestionTodo.cpp" bodystart="88" bodyend="96"/>
+        <location file="GestionTodo.h" line="50" column="16" bodyfile="GestionTodo.cpp" bodystart="106" bodyend="114"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Cette classe permet de gérer une liste de tâches. </para>
     </briefdescription>
     <detaileddescription>
+<para>La gestion des tâches se fait indépendamment des intéractions auxquelles elles appartiennent. </para>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
@@ -199,12 +284,12 @@
         <label>list&lt; Todo &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="GestionTodo.h" line="17" column="1" bodyfile="GestionTodo.h" bodystart="18" bodyend="36"/>
+    <location file="GestionTodo.h" line="22" column="1" bodyfile="GestionTodo.h" bodystart="23" bodyend="51"/>
     <listofallmembers>
       <member refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>addTodo</name></member>
       <member refid="class_gestion_todo_1ac0940481a804915d34ef24312cde733e" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>GestionTodo</name></member>
-      <member refid="class_gestion_todo_1a83969a350fd0fd9a6eeed2ba25c32aee" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getAllInteractionTodo</name></member>
-      <member refid="class_gestion_todo_1acc224a199d23b29ecfdf8dd9367b0eec" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getlistTodo</name></member>
+      <member refid="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getAllInteractionTodo</name></member>
+      <member refid="class_gestion_todo_1a2b9096fe15ad96c286cb548a4b08e215" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getlistTodo</name></member>
       <member refid="class_gestion_todo_1a9769187262234aab8261b2a10dae79f0" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>getSize</name></member>
       <member refid="class_gestion_todo_1aa56f5e184db632696b904ce202b80aa1" prot="private" virt="non-virtual"><scope>GestionTodo</scope><name>listTodo</name></member>
       <member refid="class_gestion_todo_1a537e6a1fc2191331a73b6076d5327fd1" prot="public" virt="non-virtual"><scope>GestionTodo</scope><name>operator&lt;&lt;</name></member>

@@ -1,5 +1,5 @@
 <map id="Todo" name="Todo">
-<area shape="rect" id="node1" title="Cette classe ..." alt="" coords="55,403,194,583"/>
+<area shape="rect" id="node1" title="Cette classe permet de créer des taches dans l&#39;application avec une description et une date." alt="" coords="55,403,194,583"/>
 <area shape="rect" id="node2" href="$structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="46,5,86,83"/>
 <area shape="rect" id="node4" href="$class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;." alt="" coords="73,145,201,340"/>
 <area shape="rect" id="node3" title=" " alt="" coords="137,5,195,83"/>

@@ -27,16 +27,26 @@
 class Contact
 {
     private:
-        std::string nom; /// Le nom du contact
-        std::string prenom; /// Le prénom du contact
-        std::string entreprise; /// Le nom de l'entreprise
-        std::string telephone; /// Le numéro du contact
-        std::string URIphoto; /// La photo du contact
-        tm* dateCreation; /// La date de création du contact
-        tm* dateLastModif; /// La date de dernière modification
-        Email* mail; /// Adresse Mail du contact
-        GestionInteraction* listInteractions;/// La liste des intéractions du contact
+    /// Le nom du contact
+        std::string nom;
+    /// Le prénom du contact
+        std::string prenom;
+    /// Le nom de l'entreprise
+        std::string entreprise;
+    /// Le numéro du contact
+        std::string telephone;
+    /// La photo du contact
+        std::string URIphoto;
+    /// La date de création du contact
+        tm* dateCreation;
+    /// La date de dernière modification
+        tm* dateLastModif;
+    /// Adresse Mail du contact
+        Email* mail;
+    /// Le gestionnaire des intéractions du contact
+        GestionInteraction* listInteractions;
 
+    /// Mise à jour de la date de modification
         void modification();
 
     public:

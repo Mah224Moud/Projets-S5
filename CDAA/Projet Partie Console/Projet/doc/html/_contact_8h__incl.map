@@ -1,11 +1,14 @@
 <map id="Contact.h" name="Contact.h">
-<area shape="rect" id="node1" title="Fichier d&#39;entête de la classe Contact." alt="" coords="266,5,350,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="145,229,204,256"/>
-<area shape="rect" id="node3" title=" " alt="" coords="520,80,563,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="301,229,360,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="369,155,445,181"/>
-<area shape="rect" id="node6" href="$_email_8h.html" title="Fichier d&#39;entête de la classe Email." alt="" coords="103,80,174,107"/>
-<area shape="rect" id="node8" href="$_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="177,155,242,181"/>
-<area shape="rect" id="node9" href="$_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="256,80,360,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="21,155,101,181"/>
+<area shape="rect" id="node1" title="Fichier d&#39;entête de la classe Contact." alt="" coords="330,5,414,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="101,453,160,480"/>
+<area shape="rect" id="node3" title=" " alt="" coords="488,229,531,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="328,453,387,480"/>
+<area shape="rect" id="node5" title=" " alt="" coords="447,379,523,405"/>
+<area shape="rect" id="node6" href="$_email_8h.html" title="Fichier d&#39;entête de la classe Email." alt="" coords="98,80,169,107"/>
+<area shape="rect" id="node8" href="$_date_8h.html" title="Fichier d&#39;entête de la classe Date." alt="" coords="174,379,239,405"/>
+<area shape="rect" id="node9" href="$_gestion_interaction_8h.html" title="Fichier d&#39;en&#45;tete de la classe GestionInteraction." alt="" coords="295,80,449,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="93,155,173,181"/>
+<area shape="rect" id="node10" href="$_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="243,304,347,331"/>
+<area shape="rect" id="node11" href="$_gestion_todo_8h.html" title="Fichier d&#39;en&#45;tête de la classe GestionTodo." alt="" coords="315,155,429,181"/>
+<area shape="rect" id="node12" href="$_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="349,229,413,256"/>
 </map>

@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="class_gestion_interaction" kind="class" language="C++" prot="public">
+    <compoundname>GestionInteraction</compoundname>
+    <includes refid="_gestion_interaction_8h" local="yes">GestionInteraction.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_interaction" kindref="compound">Interaction</ref> &gt;</type>
+        <definition>std::list&lt;Interaction&gt; GestionInteraction::listInteraction</definition>
+        <argsstring></argsstring>
+        <name>listInteraction</name>
+        <briefdescription>
+<para>La liste des intéractions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="27" column="19" bodyfile="GestionInteraction.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" compoundref="_gestion_interaction_8cpp" startline="36" endline="57">addInteraction</referencedby>
+        <referencedby refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" compoundref="_gestion_interaction_8cpp" startline="94" endline="119">addTodo</referencedby>
+        <referencedby refid="class_gestion_interaction_1afc224d368b88c8178856fd94ea4da13f" compoundref="_gestion_interaction_8h" startline="37" endline="37">getListInteraction</referencedby>
+        <referencedby refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">removeInteraction</referencedby>
+        <referencedby refid="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" compoundref="_gestion_interaction_8cpp" startline="127" endline="141">removeTodo</referencedby>
+        <referencedby refid="class_gestion_interaction_1af1054a6f65a5174148837ff12fb55385" compoundref="_gestion_interaction_8h" startline="38" endline="38">SetlistInteraction</referencedby>
+        <referencedby refid="class_gestion_interaction_1a9d1b2c582d0beca5b540a086dbdb7955" compoundref="_gestion_interaction_8cpp" startline="23" endline="27">~GestionInteraction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref> *</type>
+        <definition>GestionTodo* GestionInteraction::listTodo</definition>
+        <argsstring></argsstring>
+        <name>listTodo</name>
+        <briefdescription>
+<para>Le gestionnaire de taches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="29" column="21" bodyfile="GestionInteraction.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" compoundref="_gestion_interaction_8cpp" startline="94" endline="119">addTodo</referencedby>
+        <referencedby refid="class_gestion_interaction_1a9dae747949987bc2ddba07f67a887d65" compoundref="_gestion_interaction_8cpp" startline="14" endline="17">GestionInteraction</referencedby>
+        <referencedby refid="class_gestion_interaction_1a12e2a4c7e3b4ad7171f80fb5481d2e72" compoundref="_gestion_interaction_8h" startline="40" endline="40">getListTodo</referencedby>
+        <referencedby refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">removeInteraction</referencedby>
+        <referencedby refid="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" compoundref="_gestion_interaction_8cpp" startline="127" endline="141">removeTodo</referencedby>
+        <referencedby refid="class_gestion_interaction_1a9d1b2c582d0beca5b540a086dbdb7955" compoundref="_gestion_interaction_8cpp" startline="23" endline="27">~GestionInteraction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gestion_interaction_1a9dae747949987bc2ddba07f67a887d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GestionInteraction::GestionInteraction</definition>
+        <argsstring>()</argsstring>
+        <name>GestionInteraction</name>
+        <briefdescription>
+<para>Constructeur par défaut du gestionnaire d&apos;intéraction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Construteur par défaut de la classe <ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref>.</para>
+<para>Ce constructeur initialise un gestion de tâches vide. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="33" column="9" bodyfile="GestionInteraction.cpp" bodystart="14" bodyend="17"/>
+        <references refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" compoundref="_gestion_interaction_8h" startline="29">listTodo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1a9d1b2c582d0beca5b540a086dbdb7955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GestionInteraction::~GestionInteraction</definition>
+        <argsstring>()</argsstring>
+        <name>~GestionInteraction</name>
+        <briefdescription>
+<para>Destructeur du gestionnaire d&apos;intéraction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructeur de la classe <ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref>.</para>
+<para>Libération de la mémoire allouée à la liste d&apos;intéraction et au gestionnaire de tâches. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="35" column="9" bodyfile="GestionInteraction.cpp" bodystart="23" bodyend="27"/>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+        <references refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" compoundref="_gestion_interaction_8h" startline="29">listTodo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1afc224d368b88c8178856fd94ea4da13f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_interaction" kindref="compound">Interaction</ref> &gt;</type>
+        <definition>std::list&lt;Interaction&gt; GestionInteraction::getListInteraction</definition>
+        <argsstring>() const</argsstring>
+        <name>getListInteraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="37" column="19" bodyfile="GestionInteraction.h" bodystart="37" bodyend="37"/>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1af1054a6f65a5174148837ff12fb55385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionInteraction::SetlistInteraction</definition>
+        <argsstring>(std::list&lt; Interaction &gt; val)</argsstring>
+        <name>SetlistInteraction</name>
+        <param>
+          <type>std::list&lt; <ref refid="class_interaction" kindref="compound">Interaction</ref> &gt;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="38" column="14" bodyfile="GestionInteraction.h" bodystart="38" bodyend="38"/>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1a12e2a4c7e3b4ad7171f80fb5481d2e72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref> *</type>
+        <definition>GestionTodo* GestionInteraction::getListTodo</definition>
+        <argsstring>() const</argsstring>
+        <name>getListTodo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="40" column="21" bodyfile="GestionInteraction.h" bodystart="40" bodyend="40"/>
+        <references refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" compoundref="_gestion_interaction_8h" startline="29">listTodo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionInteraction::addInteraction</definition>
+        <argsstring>(const Interaction &amp;)</argsstring>
+        <name>addInteraction</name>
+        <param>
+          <type>const <ref refid="class_interaction" kindref="compound">Interaction</ref> &amp;</type>
+          <defname>interact</defname>
+        </param>
+        <briefdescription>
+<para>Ajouter une interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Ajouter une interaction à la liste des intéractions.</para>
+<para>Avant d&apos;inserer l&apos;intéraction dans la liste, on la parcourt pour trouver une intéraction avec une date supérieure. L&apos;intéraction est placée dans la liste juste avant celle-ci, si aucune date supérieure n&apos;a été trouvé, elle est placé en fin de liste. De cette façon, on a toujours une liste d&apos;intéraction triée par ordre croissant des dates. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="43" column="14" bodyfile="GestionInteraction.cpp" bodystart="36" bodyend="57"/>
+        <references refid="class_interaction_1ac1bb679065bb3cbbf11ec02fee4da0e0" compoundref="_interaction_8cpp" startline="47" endline="50">Interaction::getDate</references>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+        <references refid="class_date_1af7f644265141e1b856af83715177a7e7" compoundref="_date_8cpp" startline="74" endline="77">Date::setDate</references>
+        <referencedby refid="class_contact_1aff5749b76c97dcd0f9eeb15999d1c193" compoundref="_contact_8cpp" startline="263" endline="267">Contact::addInteraction</referencedby>
+        <referencedby refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" compoundref="main_8cpp" startline="248" endline="298">testGestionInteraction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionInteraction::removeInteraction</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>removeInteraction</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>contenu</defname>
+        </param>
+        <briefdescription>
+<para>Supprimer une intéraction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Supprimer une intéraction de la liste.</para>
+<para>Cette fonction permet de supprimer une intéraction correspondant au contenu donné. <simplesect kind="warning"><para>La suppression d&apos;une intéraction conduit à la suppression de toutes ses tâches dans le gestionnaire de tâches. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu correspondant à la fonction à supprimer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="45" column="14" bodyfile="GestionInteraction.cpp" bodystart="65" bodyend="84"/>
+        <references refid="class_gestion_todo_1a3bb3a23c299e5bd266d15d18fd0e1371" compoundref="_gestion_todo_8cpp" startline="85" endline="97">GestionTodo::getAllInteractionTodo</references>
+        <references refid="class_gestion_todo_1a2b9096fe15ad96c286cb548a4b08e215" compoundref="_gestion_todo_8h" startline="39" endline="39">GestionTodo::getlistTodo</references>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+        <references refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" compoundref="_gestion_interaction_8h" startline="29">listTodo</references>
+        <references refid="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" compoundref="_gestion_interaction_8cpp" startline="127" endline="141">removeTodo</references>
+        <referencedby refid="class_contact_1a6690bdcb21a0bf720268f0add8944b9a" compoundref="_contact_8cpp" startline="274" endline="277">Contact::removeInteraction</referencedby>
+        <referencedby refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" compoundref="main_8cpp" startline="248" endline="298">testGestionInteraction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionInteraction::addTodo</definition>
+        <argsstring>(const std::string &amp;, Todo &amp;)</argsstring>
+        <name>addTodo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>interact_contenu</defname>
+        </param>
+        <param>
+          <type><ref refid="class_todo" kindref="compound">Todo</ref> &amp;</type>
+          <defname>td</defname>
+        </param>
+        <briefdescription>
+<para>Ajouter une tache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pour ajouter une tâche à une intéraction.</para>
+<para>Cette fonction permet d&apos;ajouter une tâche et de la relier à une intération donnée. <simplesect kind="warning"><para>Si l&apos;intéraction en question n&apos;existe pas ou n&apos;existe plus, la tâche n&apos;est pas ajoutée et un message d&apos;erreur s&apos;affiche. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interact_contenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu de l&apos;intéraction à qui ajouter la tâche; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>td</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: la tâche à ajouter; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="48" column="14" bodyfile="GestionInteraction.cpp" bodystart="94" bodyend="119"/>
+        <references refid="class_gestion_todo_1aa96385819780cf4cfed3f4af21bd1e55" compoundref="_gestion_todo_8cpp" startline="33" endline="36">GestionTodo::addTodo</references>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+        <references refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" compoundref="_gestion_interaction_8h" startline="29">listTodo</references>
+        <references refid="class_todo_1ab2912427ece19b69307d7a2f698b1e83" compoundref="_todo_8cpp" startline="68" endline="71">Todo::setInteraction</references>
+        <referencedby refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" compoundref="main_8cpp" startline="248" endline="298">testGestionInteraction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GestionInteraction::removeTodo</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;)</argsstring>
+        <name>removeTodo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>interact_contenu</defname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>todo_contenu</defname>
+        </param>
+        <briefdescription>
+<para>Supprimer une tache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pour supprimer une tâche d&apos;une intéraction.</para>
+<para>Cette fonction supprime une tâche en lui indiquant son contenu et le contenu de l&apos;intéraction à laquelle elle appartient. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interact_contenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu de l&apos;intéraction; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>todo_contenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le contenu de la tâche; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="50" column="14" bodyfile="GestionInteraction.cpp" bodystart="127" bodyend="141"/>
+        <references refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" compoundref="_gestion_interaction_8h" startline="27">listInteraction</references>
+        <references refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" compoundref="_gestion_interaction_8h" startline="29">listTodo</references>
+        <references refid="class_gestion_todo_1afc077f9c7063d22e1e180e10f9682b34" compoundref="_gestion_todo_8cpp" startline="43" endline="58">GestionTodo::removeTodo</references>
+        <referencedby refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" compoundref="_gestion_interaction_8cpp" startline="65" endline="84">removeInteraction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_gestion_interaction_1acbef9d46303918a9af14d35550ed3eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const GestionInteraction &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref> &amp;</type>
+          <defname>gest</defname>
+        </param>
+        <briefdescription>
+<para>Surcharge de l&apos;opérateur &lt;&lt; pour l&apos;affichage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: de type ostream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>de type <ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref> qui represente le gestionnaire à afficher.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Afficher un gestionnaire d&apos;intéraction revient à afficher toutes les intéractions chacune suivie de l&apos;affichage de toutes ses tâches. <simplesect kind="return"><para>os </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GestionInteraction.h" line="52" column="16" bodyfile="GestionInteraction.cpp" bodystart="150" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cette classe permet de gérer une liste d&apos;interaction ainsi que les taches (todo) liées à chaque intéraction. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Elle permet notamment l&apos;ajout d&apos;une interaction, d&apos;un todo, leur suppression et l&apos;affichage de toutes les intéractions d&apos;un contact </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>GestionTodo</label>
+        <link refid="class_gestion_todo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-listTodo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GestionInteraction</label>
+        <link refid="class_gestion_interaction"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-listTodo</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-listInteraction</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>list&lt; Interaction &gt;</label>
+      </node>
+      <node id="3">
+        <label>list&lt; Todo &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="GestionInteraction.h" line="23" column="1" bodyfile="GestionInteraction.h" bodystart="24" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>addInteraction</name></member>
+      <member refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>addTodo</name></member>
+      <member refid="class_gestion_interaction_1a9dae747949987bc2ddba07f67a887d65" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>GestionInteraction</name></member>
+      <member refid="class_gestion_interaction_1afc224d368b88c8178856fd94ea4da13f" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>getListInteraction</name></member>
+      <member refid="class_gestion_interaction_1a12e2a4c7e3b4ad7171f80fb5481d2e72" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>getListTodo</name></member>
+      <member refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" prot="private" virt="non-virtual"><scope>GestionInteraction</scope><name>listInteraction</name></member>
+      <member refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" prot="private" virt="non-virtual"><scope>GestionInteraction</scope><name>listTodo</name></member>
+      <member refid="class_gestion_interaction_1acbef9d46303918a9af14d35550ed3eb3" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>removeInteraction</name></member>
+      <member refid="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>removeTodo</name></member>
+      <member refid="class_gestion_interaction_1af1054a6f65a5174148837ff12fb55385" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>SetlistInteraction</name></member>
+      <member refid="class_gestion_interaction_1a9d1b2c582d0beca5b540a086dbdb7955" prot="public" virt="non-virtual"><scope>GestionInteraction</scope><name>~GestionInteraction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

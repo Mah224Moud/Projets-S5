@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Liste des choses à faire</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Membre <ref refid="class_gestion_contact_1aed9c969df00ec0ac22d8bf9513e0e8ed" kindref="member">GestionContact::removeContact</ref>  (const std::string &amp;)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Demander au prof comment retourner un null lorsque aucun contat trouvé </para>
+<para><anchor id="todo_1_todo000002"/>Créer la notion d&apos;identifiant, renvoyer le contact supprimé ou un booléen pour signaler la suppression. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="todo"/>
+  </compounddef>
+</doxygen>

@@ -6,7 +6,8 @@ var indexSectionsWithContent =
   3: "cdegimt",
   4: "acdefgimorst~",
   5: "cdeilmnptu",
-  6: "o"
+  6: "o",
+  7: "l"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "variables",
-  6: "related"
+  6: "related",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Fichiers",
   4: "Fonctions",
   5: "Variables",
-  6: "Amis"
+  6: "Amis",
+  7: "Pages"
 };
 

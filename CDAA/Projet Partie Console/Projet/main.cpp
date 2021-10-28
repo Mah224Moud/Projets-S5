@@ -22,9 +22,10 @@ void testGestionContact();
 int main()
 {
     //testGestionTodo();
-    testGestionInteraction();
+    //testGestionInteraction();
     //testContact();
     //testGestionContact();
+    testDateComparator();
 }
 
 void testContact()
@@ -231,9 +232,14 @@ void testDateComparator()
     d.fromDate(27, 10, 2021);
     *date2 = d.getDate();
 
-    d.setDate(*date1);
+    d.setDate(*date2);
 
-    if(d < *date2)
+    if(d <= *date1)
+        cout << "true" << endl;
+    else
+        cout << "false" << endl;
+
+    if(d >= *date1)
         cout << "true" << endl;
     else
         cout << "false" << endl;

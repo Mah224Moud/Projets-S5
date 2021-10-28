@@ -11,8 +11,7 @@ Cette classe décrit des intéractions dans l\textquotesingle{}application, le c
 
 
 
-Graphe de collaboration de Interaction\+:
-\nopagebreak
+Graphe de collaboration de Interaction\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,13 +32,13 @@ Graphe de collaboration de Interaction\+:
 std\+::string \mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{get\+Contenu}} () const
 \begin{DoxyCompactList}\small\item\em Accéder au contenu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{set\+Date}} (const \mbox{\hyperlink{structtm}{tm}} \&)
-\begin{DoxyCompactList}\small\item\em Mutateurs. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pour affecter une date à l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{set\+Contenu}} (const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Pour affecter un contenu à l\textquotesingle{}interaction. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_interaction_a34da4c3bd01038118c4fde34e1c677f8}{operator==}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
-\item 
+\begin{DoxyCompactList}\small\item\em Surchage de l\textquotesingle{}opérateur de comparaison (==) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_interaction_a6a440384be939e46cff9d90f1182ec3c}{operator=}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Surchage de l\textquotesingle{}opérateur d\textquotesingle{}affection (=) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
@@ -72,12 +71,12 @@ Constructeur par défaut.
 
 Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{14 \{}
-\DoxyCodeLine{15     time\_t n = time(0);}
-\DoxyCodeLine{16     \mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{17     this-\/>\mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(*localtime(\&n));}
-\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{19 \}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     time\_t n = time(0);}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{18     this-\/>\mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(*localtime(\&n));}
+\DoxyCodeLine{19     this-\/>\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{20 \}}
 
 \end{DoxyCode}
 
@@ -103,12 +102,12 @@ Ce constructeur initialise une interaction avec un contenu et la date courante.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{27 \{}
-\DoxyCodeLine{28     time\_t n = time(0);}
-\DoxyCodeLine{29     \mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
-\DoxyCodeLine{30     this-\/>\mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(*localtime(\&n));}
-\DoxyCodeLine{31     \textcolor{keyword}{this} -\/> \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}});}
-\DoxyCodeLine{32 \}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     time\_t n = time(0);}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}} = \textcolor{keyword}{new} \mbox{\hyperlink{structtm}{tm}}();}
+\DoxyCodeLine{31     this-\/>\mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(*localtime(\&n));}
+\DoxyCodeLine{32     \textcolor{keyword}{this} -\/> \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}});}
+\DoxyCodeLine{33 \}}
 
 \end{DoxyCode}
 
@@ -125,7 +124,7 @@ Références contenu, date, set\+Contenu(), et set\+Date().
 
 Destructeur de la classe \mbox{\hyperlink{class_interaction}{Interaction}}. 
 
-Libération de l\textquotesingle{}espace mémoire alloué par date. 
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{39 \{}
 \DoxyCodeLine{40     \textcolor{comment}{//delete date;}}
@@ -149,9 +148,9 @@ Pour recupérer le contenu de l\textquotesingle{}interaction.
 
 Cette fonction renvoie la chaine contenu de l\textquotesingle{}interaction. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{60 \{}
-\DoxyCodeLine{61     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}};}
-\DoxyCodeLine{62 \}}
+\DoxyCodeLine{57 \{}
+\DoxyCodeLine{58     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}};}
+\DoxyCodeLine{59 \}}
 
 \end{DoxyCode}
 
@@ -172,15 +171,13 @@ Référencé par operator=(), et operator==().
 
 Accéder à la date. 
 
-Accesseurs.
-
 Pour récupérer la date.
 
 Cette fonction renvoie l\textquotesingle{}instance pointée par date. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{50 \{}
-\DoxyCodeLine{51     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}};}
-\DoxyCodeLine{52 \}}
+\DoxyCodeLine{48 \{}
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} *\mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}};}
+\DoxyCodeLine{50 \}}
 
 \end{DoxyCode}
 
@@ -189,7 +186,7 @@ Références date.
 
 
 
-Référencé par operator=().
+Référencé par Gestion\+Interaction\+::add\+Interaction(), et operator=().
 
 \mbox{\Hypertarget{class_interaction_a6a440384be939e46cff9d90f1182ec3c}\label{class_interaction_a6a440384be939e46cff9d90f1182ec3c}} 
 \index{Interaction@{Interaction}!operator=@{operator=}}
@@ -198,11 +195,20 @@ Référencé par operator=().
 {\footnotesize\ttfamily void Interaction\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{autre }\end{DoxyParamCaption})}
 
 
+
+Surchage de l\textquotesingle{}opérateur d\textquotesingle{}affection (=) 
+
+L\textquotesingle{}intéraction actuelle reçoit le contenu et la date de l\textquotesingle{}autre intéraction. 
+\begin{DoxyParams}{Paramètres}
+{\em autre} & \+: l\textquotesingle{}intéraction à affecter. \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{115 \{}
-\DoxyCodeLine{116     \mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(autre.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
-\DoxyCodeLine{117     \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(autre.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}());}
-\DoxyCodeLine{118 \}}
+\DoxyCodeLine{117 \{}
+\DoxyCodeLine{118     \mbox{\hyperlink{class_interaction_ac9fc375bb97461c87e140a592f4fa122}{setDate}}(autre.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
+\DoxyCodeLine{119     \mbox{\hyperlink{class_interaction_a5ca60953b855d3e31f27a05e118f81d3}{setContenu}}(autre.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}());}
+\DoxyCodeLine{120 \}}
 
 \end{DoxyCode}
 
@@ -216,10 +222,22 @@ Références get\+Contenu(), get\+Date(), set\+Contenu(), et set\+Date().
 {\footnotesize\ttfamily bool Interaction\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{autre }\end{DoxyParamCaption})}
 
 
+
+Surchage de l\textquotesingle{}opérateur de comparaison (==) 
+
+On considère que deux intéractions sont identiques si elles ont même contenu. 
+\begin{DoxyParams}{Paramètres}
+{\em autre} & \+: l\textquotesingle{}intéraction à comparer avec l\textquotesingle{}intéraction courante. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un booléen \+: true si elles ont le même contenu, false sinon. 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{110 \{}
-\DoxyCodeLine{111     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}() == autre.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
-\DoxyCodeLine{112 \}}
+\DoxyCodeLine{107 \{}
+\DoxyCodeLine{108     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}() == autre.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
+\DoxyCodeLine{109 \}}
 
 \end{DoxyCode}
 
@@ -243,9 +261,9 @@ Pour affecter un contenu à l\textquotesingle{}interaction.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{82 \{}
-\DoxyCodeLine{83     this-\/>\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}}= c;}
-\DoxyCodeLine{84 \}}
+\DoxyCodeLine{76 \{}
+\DoxyCodeLine{77     this-\/>\mbox{\hyperlink{class_interaction_a7e16a252239dbdf2a67a6cfedfe642a1}{contenu}}= c;}
+\DoxyCodeLine{78 \}}
 
 \end{DoxyCode}
 
@@ -254,7 +272,7 @@ Références contenu.
 
 
 
-Référencé par Interaction(), operator=(), et test\+Contact().
+Référencé par Interaction(), operator=(), test\+Contact(), et test\+Gestion\+Contact().
 
 \mbox{\Hypertarget{class_interaction_ac9fc375bb97461c87e140a592f4fa122}\label{class_interaction_ac9fc375bb97461c87e140a592f4fa122}} 
 \index{Interaction@{Interaction}!setDate@{setDate}}
@@ -264,18 +282,18 @@ Référencé par Interaction(), operator=(), et test\+Contact().
 
 
 
-Mutateurs. 
-
 Pour affecter une date à l\textquotesingle{}interaction. 
+
+
 \begin{DoxyParams}{Paramètres}
 {\em t} & \+: structure tm représentant la date à affecter.\\
 \hline
 \end{DoxyParams}
 La structure tm t passée en paramètre est copié dans l\textquotesingle{}instance pointée par date. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{73 \{}
-\DoxyCodeLine{74     *\mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}}= t;}
-\DoxyCodeLine{75 \}}
+\DoxyCodeLine{67 \{}
+\DoxyCodeLine{68     *\mbox{\hyperlink{class_interaction_ac665f161e276527cfd1767abe47936b5}{date}}= t;}
+\DoxyCodeLine{69 \}}
 
 \end{DoxyCode}
 
@@ -284,7 +302,7 @@ Références date.
 
 
 
-Référencé par Interaction(), operator=(), test\+Contact(), et test\+Gestion\+Todo().
+Référencé par Interaction(), operator=(), test\+Contact(), test\+Gestion\+Contact(), test\+Gestion\+Interaction(), et test\+Gestion\+Todo().
 
 
 
@@ -308,17 +326,17 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 \end{DoxyParams}
 Pour afficher une \mbox{\hyperlink{class_interaction}{Interaction}}, on affiche la date de l\textquotesingle{}interaction, ou Aujourd\textquotesingle{}hui s\textquotesingle{}il s\textquotesingle{}agit de la date courante, suivie son contenu. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{93 \{}
-\DoxyCodeLine{94     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{95     \textcolor{keywordflow}{if}(d == i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}())    os << \textcolor{stringliteral}{"{}Aujourd'hui "{}};}
-\DoxyCodeLine{96     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{97     \{}
-\DoxyCodeLine{98         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
-\DoxyCodeLine{99         os << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<\textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{100     \}}
-\DoxyCodeLine{101     os << i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
-\DoxyCodeLine{102     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{103 \}}
+\DoxyCodeLine{87 \{}
+\DoxyCodeLine{88     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{89     \textcolor{keywordflow}{if}(d == i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}())    os << \textcolor{stringliteral}{"{}Aujourd'hui "{}};}
+\DoxyCodeLine{90     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(i.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
+\DoxyCodeLine{93         os << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}()<<\textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95     os << i.\mbox{\hyperlink{class_interaction_a0e194616267d53075169f189f6d71c60}{getContenu}}();}
+\DoxyCodeLine{96     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{97 \}}
 
 \end{DoxyCode}
 

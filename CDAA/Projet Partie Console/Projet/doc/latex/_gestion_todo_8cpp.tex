@@ -1,5 +1,10 @@
 \hypertarget{_gestion_todo_8cpp}{}\doxysection{Référence du fichier Gestion\+Todo.\+cpp}
 \label{_gestion_todo_8cpp}\index{GestionTodo.cpp@{GestionTodo.cpp}}
+
+
+Fichier CPP de la classe \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}}.  
+
+
 {\ttfamily \#include \char`\"{}Gestion\+Todo.\+h\char`\"{}}\newline
 Graphe des dépendances par inclusion de Gestion\+Todo.\+cpp\+:
 \nopagebreak
@@ -13,7 +18,17 @@ Graphe des dépendances par inclusion de Gestion\+Todo.\+cpp\+:
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \mbox{\hyperlink{_gestion_todo_8cpp_a4d1ddac09317548a32d4d2f7d3790a9d}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} \&gest)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier CPP de la classe \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}}. 
+
+\begin{DoxyAuthor}{Auteur}
+BAH Saikou Oumar 
+
+DIALLO Mamoudou 
+\end{DoxyAuthor}
 
 
 \doxysubsection{Documentation des fonctions}
@@ -24,14 +39,28 @@ std\+::ostream \& \mbox{\hyperlink{_gestion_todo_8cpp_a4d1ddac09317548a32d4d2f7d
 {\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} \&}]{gest }\end{DoxyParamCaption})}
 
 
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em gest} & de type \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} qui represente le gestionnaire à afficher.\\
+\hline
+\end{DoxyParams}
+Afficher un gestionnaire de tâches revient à afficher toutes les tâches qu\textquotesingle{}elle contient. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{89 \{}
-\DoxyCodeLine{90     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_todo_acc224a199d23b29ecfdf8dd9367b0eec}{getlistTodo}}())}
-\DoxyCodeLine{91     \{}
-\DoxyCodeLine{92         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{93     \}}
-\DoxyCodeLine{94 }
-\DoxyCodeLine{95     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{96 \}}
+\DoxyCodeLine{107 \{}
+\DoxyCodeLine{108     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_todo_a2b9096fe15ad96c286cb548a4b08e215}{getlistTodo}}())}
+\DoxyCodeLine{109     \{}
+\DoxyCodeLine{110         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{111     \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{114 \}}
 
 \end{DoxyCode}

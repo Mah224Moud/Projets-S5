@@ -134,6 +134,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:ad008c905fb780e47c5fd5d5a1ba6eef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour décomposer une adresse mail et récupérer les différentes parties.  <a href="class_email.html#ad008c905fb780e47c5fd5d5a1ba6eef6">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ad008c905fb780e47c5fd5d5a1ba6eef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd186a5418525a835fbcf2030620a9a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_email.html#acfd186a5418525a835fbcf2030620a9a">toString</a> ()</td></tr>
+<tr class="memdesc:acfd186a5418525a835fbcf2030620a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour reconstituer l'adresse mail en une String.  <a href="class_email.html#acfd186a5418525a835fbcf2030620a9a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:acfd186a5418525a835fbcf2030620a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -225,34 +226,34 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">size_t</span> foundAt, foundPoint, foundLastPoint;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    foundAt = adr.find(<span class="charliteral">&#39;@&#39;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    foundLastPoint = adr.find(<span class="charliteral">&#39;.&#39;</span>, foundAt);</div>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">size_t</span> foundAt, foundPoint, foundLastPoint;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(foundAt == string::npos || foundLastPoint == string::npos)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Adresse Mail incorrecte&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_email.html#a51c860409672625164d836055511fbe7">identifiant</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">while</span>((foundPoint = adr.find(<span class="charliteral">&#39;.&#39;</span>, foundLastPoint + 1)) != string::npos)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            foundLastPoint = foundPoint;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="class_email.html#aeada00eb01f8ec7252099b7421fe6ab1">setIdentifiant</a>(adr.substr(0,foundAt));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="class_email.html#a55e706122fc07c360e8d000a32ec2a7a">setDomaine</a>(adr.substr(foundAt+1, foundLastPoint-(foundAt+1)));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="class_email.html#a69a9d94cb62cfe37069f9046adb254a3">setMc</a>(adr.substr(foundLastPoint+1));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="ttc" id="aclass_email_html_a55e706122fc07c360e8d000a32ec2a7a"><div class="ttname"><a href="class_email.html#a55e706122fc07c360e8d000a32ec2a7a">Email::setDomaine</a></div><div class="ttdeci">void setDomaine(const std::string &amp;)</div><div class="ttdoc">Pour definir la partie domaine de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:57</div></div>
-<div class="ttc" id="aclass_email_html_a69a9d94cb62cfe37069f9046adb254a3"><div class="ttname"><a href="class_email.html#a69a9d94cb62cfe37069f9046adb254a3">Email::setMc</a></div><div class="ttdeci">void setMc(const std::string &amp;)</div><div class="ttdoc">Pour definir la partie mc de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:75</div></div>
-<div class="ttc" id="aclass_email_html_aeada00eb01f8ec7252099b7421fe6ab1"><div class="ttname"><a href="class_email.html#aeada00eb01f8ec7252099b7421fe6ab1">Email::setIdentifiant</a></div><div class="ttdeci">void setIdentifiant(const std::string &amp;)</div><div class="ttdoc">Pour definir la partie Identifiant de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:39</div></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    foundAt = adr.find(<span class="charliteral">&#39;@&#39;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    foundLastPoint = adr.find(<span class="charliteral">&#39;.&#39;</span>, foundAt);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span>(foundAt == string::npos || foundLastPoint == string::npos)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Adresse Mail incorrecte&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="class_email.html#a51c860409672625164d836055511fbe7">identifiant</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">while</span>((foundPoint = adr.find(<span class="charliteral">&#39;.&#39;</span>, foundLastPoint + 1)) != string::npos)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            foundLastPoint = foundPoint;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="class_email.html#aeada00eb01f8ec7252099b7421fe6ab1">setIdentifiant</a>(adr.substr(0,foundAt));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="class_email.html#a55e706122fc07c360e8d000a32ec2a7a">setDomaine</a>(adr.substr(foundAt+1, foundLastPoint-(foundAt+1)));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="class_email.html#a69a9d94cb62cfe37069f9046adb254a3">setMc</a>(adr.substr(foundLastPoint+1));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="ttc" id="aclass_email_html_a55e706122fc07c360e8d000a32ec2a7a"><div class="ttname"><a href="class_email.html#a55e706122fc07c360e8d000a32ec2a7a">Email::setDomaine</a></div><div class="ttdeci">void setDomaine(const std::string &amp;)</div><div class="ttdoc">Pour definir la partie domaine de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:59</div></div>
+<div class="ttc" id="aclass_email_html_a69a9d94cb62cfe37069f9046adb254a3"><div class="ttname"><a href="class_email.html#a69a9d94cb62cfe37069f9046adb254a3">Email::setMc</a></div><div class="ttdeci">void setMc(const std::string &amp;)</div><div class="ttdoc">Pour definir la partie mc de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:78</div></div>
+<div class="ttc" id="aclass_email_html_aeada00eb01f8ec7252099b7421fe6ab1"><div class="ttname"><a href="class_email.html#aeada00eb01f8ec7252099b7421fe6ab1">Email::setIdentifiant</a></div><div class="ttdeci">void setIdentifiant(const std::string &amp;)</div><div class="ttdoc">Pour definir la partie Identifiant de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:40</div></div>
 </div><!-- fragment -->
 <p class="reference">Référencé par <a class="el" href="class_contact.html#a7fc8c816308412a4cf013f39c3e461d8">Contact::setEmail()</a>, et <a class="el" href="main_8cpp.html#ac3ec4ab20ccbf8c63921f67912a6bad4">testEmail()</a>.</p>
 
@@ -274,10 +275,10 @@ Attributs privés</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la partie domaine de l'adresse. </p>
-<p>Cette fonction renvoie la partie qui se trouve entre le '@' et le dernier '.' dans l'adresse mail. </p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<p>Cette fonction renvoie la partie qui se trouve entre le '@' et le dernier '.' dans l'adresse mail. </p><dl class="section return"><dt>Renvoie</dt><dd>Le domaine de l'adresse mail dans un type String. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Référencé par <a class="el" href="main_8cpp.html#ac3ec4ab20ccbf8c63921f67912a6bad4">testEmail()</a>.</p>
 
@@ -299,10 +300,10 @@ Attributs privés</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la partie identifiant de l'adresse. </p>
-<p>Cette fonction renvoie la partie qui se trouve avant le '@' dans l'adresse mail. </p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_email.html#a51c860409672625164d836055511fbe7">identifiant</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<p>Cette fonction renvoie la partie qui se trouve avant le '@' dans l'adresse mail. </p><dl class="section return"><dt>Renvoie</dt><dd>L'identifiant dans un type String. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_email.html#a51c860409672625164d836055511fbe7">identifiant</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Référencé par <a class="el" href="main_8cpp.html#ac3ec4ab20ccbf8c63921f67912a6bad4">testEmail()</a>.</p>
 
@@ -324,10 +325,10 @@ Attributs privés</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pour récuperer la partie mc de l'adresse. </p>
-<p>Cette fonction renvoie la partie qui se trouve après le dernier '.' dans l'adresse mail. </p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<p>Cette fonction renvoie la partie qui se trouve après le dernier '.' dans l'adresse mail. </p><dl class="section return"><dt>Renvoie</dt><dd>Le mc dans un type String. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Référencé par <a class="el" href="main_8cpp.html#ac3ec4ab20ccbf8c63921f67912a6bad4">testEmail()</a>.</p>
 
@@ -356,9 +357,9 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this-&gt;<a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a>= <a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    this-&gt;<a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a>= <a class="code" href="class_email.html#adbf96bf6ecf0163270786b511ca9073f">domaine</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -385,9 +386,9 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;<a class="code" href="class_email.html#a51c860409672625164d836055511fbe7">identifiant</a> = id;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;<a class="code" href="class_email.html#a51c860409672625164d836055511fbe7">identifiant</a> = id;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -414,9 +415,9 @@ Attributs privés</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    this-&gt;<a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a>= <a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    this-&gt;<a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a>= <a class="code" href="class_email.html#a546db0116c6ef2d38440ecf35fc642f4">mc</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -434,15 +435,19 @@ Attributs privés</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">getIdentifiant</a>() !=  <span class="stringliteral">&quot;&quot;</span> &amp;&amp; <a class="code" href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">getDomaine</a>() != <span class="stringliteral">&quot;&quot;</span> &amp;&amp; <a class="code" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">getMc</a>() != <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">getIdentifiant</a>()+<span class="stringliteral">&quot;@&quot;</span>+<a class="code" href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">getDomaine</a>()+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">getMc</a>();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="ttc" id="aclass_email_html_a4fb56b50d5636ea445a204d2a0a19a04"><div class="ttname"><a href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">Email::getMc</a></div><div class="ttdeci">std::string getMc() const</div><div class="ttdoc">Pour récuperer la partie mc de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:66</div></div>
-<div class="ttc" id="aclass_email_html_a6025851513c653ec0a0a3c98624f6ec5"><div class="ttname"><a href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">Email::getDomaine</a></div><div class="ttdeci">std::string getDomaine() const</div><div class="ttdoc">Pour récuperer la partie domaine de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:48</div></div>
-<div class="ttc" id="aclass_email_html_abdf70d7f147a59a96685cd4ad3947c2c"><div class="ttname"><a href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">Email::getIdentifiant</a></div><div class="ttdeci">std::string getIdentifiant() const</div><div class="ttdoc">Pour récuperer la partie identifiant de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:30</div></div>
+
+<p>Pour reconstituer l'adresse mail en une String. </p>
+<p>Cette fonction retourne, si aucun champ (identifiant, domaine et mc) n'est vide, l'adresse mail recontituée. </p><dl class="section return"><dt>Renvoie</dt><dd>l'adresse mail dans une String. </dd></dl>
+<dl class="section warning"><dt>Avertissement</dt><dd>Si l'identifiant, le domaine ou le mc est vide elle renvoie une String vide. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">getIdentifiant</a>() !=  <span class="stringliteral">&quot;&quot;</span> &amp;&amp; <a class="code" href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">getDomaine</a>() != <span class="stringliteral">&quot;&quot;</span> &amp;&amp; <a class="code" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">getMc</a>() != <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">getIdentifiant</a>()+<span class="stringliteral">&quot;@&quot;</span>+<a class="code" href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">getDomaine</a>()+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">getMc</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="aclass_email_html_a4fb56b50d5636ea445a204d2a0a19a04"><div class="ttname"><a href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">Email::getMc</a></div><div class="ttdeci">std::string getMc() const</div><div class="ttdoc">Pour récuperer la partie mc de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:69</div></div>
+<div class="ttc" id="aclass_email_html_a6025851513c653ec0a0a3c98624f6ec5"><div class="ttname"><a href="class_email.html#a6025851513c653ec0a0a3c98624f6ec5">Email::getDomaine</a></div><div class="ttdeci">std::string getDomaine() const</div><div class="ttdoc">Pour récuperer la partie domaine de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:50</div></div>
+<div class="ttc" id="aclass_email_html_abdf70d7f147a59a96685cd4ad3947c2c"><div class="ttname"><a href="class_email.html#abdf70d7f147a59a96685cd4ad3947c2c">Email::getIdentifiant</a></div><div class="ttdeci">std::string getIdentifiant() const</div><div class="ttdoc">Pour récuperer la partie identifiant de l'adresse.</div><div class="ttdef"><b>Definition:</b> Email.cpp:31</div></div>
 </div><!-- fragment -->
 <p class="reference">Référencé par <a class="el" href="main_8cpp.html#ac3ec4ab20ccbf8c63921f67912a6bad4">testEmail()</a>.</p>
 

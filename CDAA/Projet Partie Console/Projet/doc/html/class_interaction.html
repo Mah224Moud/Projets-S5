@@ -124,14 +124,16 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a0e194616267d53075169f189f6d71c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accéder au contenu.  <a href="class_interaction.html#a0e194616267d53075169f189f6d71c60">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0e194616267d53075169f189f6d71c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9fc375bb97461c87e140a592f4fa122"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a> (const <a class="el" href="structtm.html">tm</a> &amp;)</td></tr>
-<tr class="memdesc:ac9fc375bb97461c87e140a592f4fa122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateurs.  <a href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ac9fc375bb97461c87e140a592f4fa122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour affecter une date à l'interaction.  <a href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ac9fc375bb97461c87e140a592f4fa122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca60953b855d3e31f27a05e118f81d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a> (const std::string &amp;)</td></tr>
 <tr class="memdesc:a5ca60953b855d3e31f27a05e118f81d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour affecter un contenu à l'interaction.  <a href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a5ca60953b855d3e31f27a05e118f81d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34da4c3bd01038118c4fde34e1c677f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interaction.html#a34da4c3bd01038118c4fde34e1c677f8">operator==</a> (const <a class="el" href="class_interaction.html">Interaction</a> &amp;)</td></tr>
+<tr class="memdesc:a34da4c3bd01038118c4fde34e1c677f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surchage de l'opérateur de comparaison (==)  <a href="class_interaction.html#a34da4c3bd01038118c4fde34e1c677f8">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a34da4c3bd01038118c4fde34e1c677f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a440384be939e46cff9d90f1182ec3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=</a> (const <a class="el" href="class_interaction.html">Interaction</a> &amp;)</td></tr>
+<tr class="memdesc:a6a440384be939e46cff9d90f1182ec3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surchage de l'opérateur d'affection (=)  <a href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a6a440384be939e46cff9d90f1182ec3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -170,15 +172,15 @@ Amis</h2></td></tr>
 <p>Constructeur par défaut de la classe <a class="el" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;.">Interaction</a>. </p>
 <p>Constructeur par défaut.</p>
 <p>Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante. </p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    time_t n = time(0);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    time_t n = time(0);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="ttc" id="aclass_interaction_html_a7e16a252239dbdf2a67a6cfedfe642a1"><div class="ttname"><a href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">Interaction::contenu</a></div><div class="ttdeci">std::string contenu</div><div class="ttdoc">Détails de l'intéraction.</div><div class="ttdef"><b>Definition:</b> Interaction.h:27</div></div>
 <div class="ttc" id="aclass_interaction_html_ac665f161e276527cfd1767abe47936b5"><div class="ttname"><a href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">Interaction::date</a></div><div class="ttdeci">tm * date</div><div class="ttdoc">La date de l'intéraction.</div><div class="ttdef"><b>Definition:</b> Interaction.h:25</div></div>
-<div class="ttc" id="aclass_interaction_html_ac9fc375bb97461c87e140a592f4fa122"><div class="ttname"><a href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Interaction::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Mutateurs.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:72</div></div>
+<div class="ttc" id="aclass_interaction_html_ac9fc375bb97461c87e140a592f4fa122"><div class="ttname"><a href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">Interaction::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdoc">Pour affecter une date à l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:66</div></div>
 <div class="ttc" id="astructtm_html"><div class="ttname"><a href="structtm.html">tm</a></div><div class="ttdoc">structure simple du C/C++ pour manipuler les dates</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>, <a class="el" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>, et <a class="el" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate()</a>.</p>
@@ -209,13 +211,13 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    time_t n = time(0);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(*localtime(&amp;n));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">this</span> -&gt; <a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="ttc" id="aclass_interaction_html_a5ca60953b855d3e31f27a05e118f81d3"><div class="ttname"><a href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:81</div></div>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    time_t n = time(0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a> = <span class="keyword">new</span> <a class="code" href="structtm.html">tm</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(*localtime(&amp;n));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">this</span> -&gt; <a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="aclass_interaction_html_a5ca60953b855d3e31f27a05e118f81d3"><div class="ttname"><a href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">Interaction::setContenu</a></div><div class="ttdeci">void setContenu(const std::string &amp;)</div><div class="ttdoc">Pour affecter un contenu à l'interaction.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:75</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>, <a class="el" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>, <a class="el" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu()</a>, et <a class="el" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate()</a>.</p>
 
@@ -237,7 +239,6 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructeur de la classe <a class="el" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;.">Interaction</a>. </p>
-<p>Libération de l'espace mémoire alloué par date. </p>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//delete date;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
@@ -263,9 +264,9 @@ Amis</h2></td></tr>
 <p>Accéder au contenu. </p>
 <p>Pour recupérer le contenu de l'interaction.</p>
 <p>Cette fonction renvoie la chaine contenu de l'interaction. </p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>.</p>
 
@@ -289,16 +290,15 @@ Amis</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accéder à la date. </p>
-<p>Accesseurs.</p>
 <p>Pour récupérer la date.</p>
 <p>Cette fonction renvoie l'instance pointée par date. </p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> *<a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_gestion_interaction.html#aa74a8ff644a48518c10b4b8d7932e6ae">GestionInteraction::addInteraction()</a>, et <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=()</a>.</p>
 
 </div>
 </div>
@@ -317,12 +317,20 @@ Amis</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(autre.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>());</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(autre.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>());</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="ttc" id="aclass_interaction_html_a0e194616267d53075169f189f6d71c60"><div class="ttname"><a href="class_interaction.html#a0e194616267d53075169f189f6d71c60">Interaction::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Accéder au contenu.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:59</div></div>
-<div class="ttc" id="aclass_interaction_html_ac1bb679065bb3cbbf11ec02fee4da0e0"><div class="ttname"><a href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">Interaction::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Accéder à la date.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:49</div></div>
+
+<p>Surchage de l'opérateur d'affection (=) </p>
+<p>L'intéraction actuelle reçoit le contenu et la date de l'autre intéraction. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autre</td><td>: l'intéraction à affecter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate</a>(autre.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu</a>(autre.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>());</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="ttc" id="aclass_interaction_html_a0e194616267d53075169f189f6d71c60"><div class="ttname"><a href="class_interaction.html#a0e194616267d53075169f189f6d71c60">Interaction::getContenu</a></div><div class="ttdeci">std::string getContenu() const</div><div class="ttdoc">Accéder au contenu.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:56</div></div>
+<div class="ttc" id="aclass_interaction_html_ac1bb679065bb3cbbf11ec02fee4da0e0"><div class="ttname"><a href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">Interaction::getDate</a></div><div class="ttdeci">tm getDate() const</div><div class="ttdoc">Accéder à la date.</div><div class="ttdef"><b>Definition:</b> Interaction.cpp:47</div></div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu()</a>, <a class="el" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate()</a>, <a class="el" href="class_interaction.html#a5ca60953b855d3e31f27a05e118f81d3">setContenu()</a>, et <a class="el" href="class_interaction.html#ac9fc375bb97461c87e140a592f4fa122">setDate()</a>.</p>
 
@@ -343,9 +351,18 @@ Amis</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>() == autre.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+
+<p>Surchage de l'opérateur de comparaison (==) </p>
+<p>On considère que deux intéractions sont identiques si elles ont même contenu. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">autre</td><td>: l'intéraction à comparer avec l'intéraction courante. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un booléen : true si elles ont le même contenu, false sinon. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>() == autre.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu()</a>.</p>
 
@@ -374,13 +391,13 @@ Amis</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>= c;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    this-&gt;<a class="code" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>= c;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#a7e16a252239dbdf2a67a6cfedfe642a1">contenu</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_interaction.html#a73b7a7b384ba6436d3c73c3435517e5f">Interaction()</a>, <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=()</a>, et <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_interaction.html#a73b7a7b384ba6436d3c73c3435517e5f">Interaction()</a>, <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=()</a>, <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>.</p>
 
 </div>
 </div>
@@ -400,21 +417,21 @@ Amis</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Mutateurs. </p>
-<p>Pour affecter une date à l'interaction. </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Pour affecter une date à l'interaction. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>: structure tm représentant la date à affecter.</td></tr>
   </table>
   </dd>
 </dl>
 <p>La structure tm t passée en paramètre est copié dans l'instance pointée par date. </p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    *<a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>= t;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    *<a class="code" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>= t;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Références <a class="el" href="class_interaction.html#ac665f161e276527cfd1767abe47936b5">date</a>.</p>
 
-<p class="reference">Référencé par <a class="el" href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction()</a>, <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=()</a>, <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, et <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>.</p>
+<p class="reference">Référencé par <a class="el" href="class_interaction.html#aadfd0e254296043c26508d47090ace76">Interaction()</a>, <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">operator=()</a>, <a class="el" href="main_8cpp.html#afc5a38f6d3b4f52e00189d54a2989b39">testContact()</a>, <a class="el" href="main_8cpp.html#aa8474a2c8d2877d00c2756cf694cfde6">testGestionContact()</a>, <a class="el" href="main_8cpp.html#afc7eece9c0111c5505f2a7f7478f2950">testGestionInteraction()</a>, et <a class="el" href="main_8cpp.html#a0633cf092e43a8515e33ffc610ed3a3f">testGestionTodo()</a>.</p>
 
 </div>
 </div>
@@ -462,20 +479,20 @@ Amis</h2></td></tr>
   </dd>
 </dl>
 <p>Pour afficher une <a class="el" href="class_interaction.html" title="Cette classe décrit des intéractions dans l&#39;application, le contenu et la date de l&#39;interaction;.">Interaction</a>, on affiche la date de l'interaction, ou Aujourd'hui s'il s'agit de la date courante, suivie son contenu. </p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span>(d == i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>())    os &lt;&lt; <span class="stringliteral">&quot;Aujourd&#39;hui &quot;</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        os &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>()&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    os &lt;&lt; i.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_date.html">Date</a> d;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span>(d == i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>())    os &lt;&lt; <span class="stringliteral">&quot;Aujourd&#39;hui &quot;</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        d.<a class="code" href="class_date.html#af7f644265141e1b856af83715177a7e7">setDate</a>(i.<a class="code" href="class_interaction.html#ac1bb679065bb3cbbf11ec02fee4da0e0">getDate</a>());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        os &lt;&lt; d.<a class="code" href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">toString</a>()&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    os &lt;&lt; i.<a class="code" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">getContenu</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">La classe Date permet de stocker des dates dans des structures tm.</div><div class="ttdef"><b>Definition:</b> Date.h:23</div></div>
-<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:106</div></div>
-<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:78</div></div>
+<div class="ttc" id="aclass_date_html_adebdb45904dc2fbfacc66aa7528e0c04"><div class="ttname"><a href="class_date.html#adebdb45904dc2fbfacc66aa7528e0c04">Date::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Récupération de la date avec le format jj/mm/aaaa.</div><div class="ttdef"><b>Definition:</b> Date.cpp:102</div></div>
+<div class="ttc" id="aclass_date_html_af7f644265141e1b856af83715177a7e7"><div class="ttname"><a href="class_date.html#af7f644265141e1b856af83715177a7e7">Date::setDate</a></div><div class="ttdeci">void setDate(const tm &amp;)</div><div class="ttdef"><b>Definition:</b> Date.cpp:74</div></div>
 </div><!-- fragment -->
 </div>
 </div>

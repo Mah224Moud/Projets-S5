@@ -1,0 +1,433 @@
+\hypertarget{class_gestion_interaction}{}\doxysection{Référence de la classe Gestion\+Interaction}
+\label{class_gestion_interaction}\index{GestionInteraction@{GestionInteraction}}
+
+
+Cette classe permet de gérer une liste d\textquotesingle{}interaction ainsi que les taches (todo) liées à chaque intéraction.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Gestion\+Interaction.\+h\char`\"{}}
+
+
+
+Graphe de collaboration de Gestion\+Interaction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestion_interaction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gestion_interaction_a9dae747949987bc2ddba07f67a887d65}{Gestion\+Interaction}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut du gestionnaire d\textquotesingle{}intéraction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gestion_interaction_a9d1b2c582d0beca5b540a086dbdb7955}{$\sim$\+Gestion\+Interaction}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur du gestionnaire d\textquotesingle{}intéraction. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$ \mbox{\hyperlink{class_gestion_interaction_afc224d368b88c8178856fd94ea4da13f}{get\+List\+Interaction}} () const
+\item 
+void \mbox{\hyperlink{class_gestion_interaction_af1054a6f65a5174148837ff12fb55385}{Setlist\+Interaction}} (std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$ val)
+\item 
+\mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} $\ast$ \mbox{\hyperlink{class_gestion_interaction_a12e2a4c7e3b4ad7171f80fb5481d2e72}{get\+List\+Todo}} () const
+\item 
+void \mbox{\hyperlink{class_gestion_interaction_aa74a8ff644a48518c10b4b8d7932e6ae}{add\+Interaction}} (const \mbox{\hyperlink{class_interaction}{Interaction}} \&)
+\begin{DoxyCompactList}\small\item\em Ajouter une interaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestion_interaction_ab8dd72292cecf1a01fe8be2334dda0d3}{remove\+Interaction}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Supprimer une intéraction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestion_interaction_a21d85d6165f601590684d5345cfeef38}{add\+Todo}} (const std\+::string \&, \mbox{\hyperlink{class_todo}{Todo}} \&)
+\begin{DoxyCompactList}\small\item\em Ajouter une tache. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestion_interaction_a61de803ea478bb9338b7387c74f78fa4}{remove\+Todo}} (const std\+::string \&, const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Supprimer une tache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$ \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{list\+Interaction}}
+\begin{DoxyCompactList}\small\item\em La liste des intéractions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}} $\ast$ \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{list\+Todo}}
+\begin{DoxyCompactList}\small\item\em Le gestionnaire de taches. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_gestion_interaction_acbef9d46303918a9af14d35550ed3eb3}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} \&)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Cette classe permet de gérer une liste d\textquotesingle{}interaction ainsi que les taches (todo) liées à chaque intéraction. 
+
+Elle permet notamment l\textquotesingle{}ajout d\textquotesingle{}une interaction, d\textquotesingle{}un todo, leur suppression et l\textquotesingle{}affichage de toutes les intéractions d\textquotesingle{}un contact 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_gestion_interaction_a9dae747949987bc2ddba07f67a887d65}\label{class_gestion_interaction_a9dae747949987bc2ddba07f67a887d65}} 
+\index{GestionInteraction@{GestionInteraction}!GestionInteraction@{GestionInteraction}}
+\index{GestionInteraction@{GestionInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{GestionInteraction()}{GestionInteraction()}}
+{\footnotesize\ttfamily Gestion\+Interaction\+::\+Gestion\+Interaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut du gestionnaire d\textquotesingle{}intéraction. 
+
+Construteur par défaut de la classe \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}}.
+
+Ce constructeur initialise un gestion de tâches vide. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{listTodo}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_gestion_todo}{GestionTodo}}();}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+
+
+Références list\+Todo.
+
+\mbox{\Hypertarget{class_gestion_interaction_a9d1b2c582d0beca5b540a086dbdb7955}\label{class_gestion_interaction_a9d1b2c582d0beca5b540a086dbdb7955}} 
+\index{GestionInteraction@{GestionInteraction}!````~GestionInteraction@{$\sim$GestionInteraction}}
+\index{````~GestionInteraction@{$\sim$GestionInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{$\sim$GestionInteraction()}{~GestionInteraction()}}
+{\footnotesize\ttfamily Gestion\+Interaction\+::$\sim$\+Gestion\+Interaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur du gestionnaire d\textquotesingle{}intéraction. 
+
+Destructeur de la classe \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}}.
+
+Libération de la mémoire allouée à la liste d\textquotesingle{}intéraction et au gestionnaire de tâches. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.clear();}
+\DoxyCodeLine{26     \textcolor{keyword}{delete} \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{listTodo}};}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+
+
+Références list\+Interaction, et list\+Todo.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_gestion_interaction_aa74a8ff644a48518c10b4b8d7932e6ae}\label{class_gestion_interaction_aa74a8ff644a48518c10b4b8d7932e6ae}} 
+\index{GestionInteraction@{GestionInteraction}!addInteraction@{addInteraction}}
+\index{addInteraction@{addInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{addInteraction()}{addInteraction()}}
+{\footnotesize\ttfamily void Gestion\+Interaction\+::add\+Interaction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interaction}{Interaction}} \&}]{interact }\end{DoxyParamCaption})}
+
+
+
+Ajouter une interaction. 
+
+Ajouter une interaction à la liste des intéractions.
+
+Avant d\textquotesingle{}inserer l\textquotesingle{}intéraction dans la liste, on la parcourt pour trouver une intéraction avec une date supérieure. L\textquotesingle{}intéraction est placée dans la liste juste avant celle-\/ci, si aucune date supérieure n\textquotesingle{}a été trouvé, elle est placé en fin de liste. De cette façon, on a toujours une liste d\textquotesingle{}intéraction triée par ordre croissant des dates. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{auto} it = \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.begin();}
+\DoxyCodeLine{41     \textcolor{keywordtype}{bool} placeFound = \textcolor{keyword}{false};}
+\DoxyCodeLine{42     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(interact.\mbox{\hyperlink{class_interaction_ac1bb679065bb3cbbf11ec02fee4da0e0}{getDate}}());}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordflow}{while}((it != \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.end()) \&\& (placeFound == \textcolor{keyword}{false}))}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{if}(d < it-\/>getDate())}
+\DoxyCodeLine{47             placeFound = \textcolor{keyword}{true};}
+\DoxyCodeLine{48         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{49             it++;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordflow}{if}(placeFound)}
+\DoxyCodeLine{54         \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.insert(it, interact);}
+\DoxyCodeLine{55     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{56         \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.push\_back(interact);}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+
+
+Références Interaction\+::get\+Date(), list\+Interaction, et Date\+::set\+Date().
+
+
+
+Référencé par Contact\+::add\+Interaction(), et test\+Gestion\+Interaction().
+
+\mbox{\Hypertarget{class_gestion_interaction_a21d85d6165f601590684d5345cfeef38}\label{class_gestion_interaction_a21d85d6165f601590684d5345cfeef38}} 
+\index{GestionInteraction@{GestionInteraction}!addTodo@{addTodo}}
+\index{addTodo@{addTodo}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{addTodo()}{addTodo()}}
+{\footnotesize\ttfamily void Gestion\+Interaction\+::add\+Todo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{interact\+\_\+contenu,  }\item[{\mbox{\hyperlink{class_todo}{Todo}} \&}]{td }\end{DoxyParamCaption})}
+
+
+
+Ajouter une tache. 
+
+Pour ajouter une tâche à une intéraction.
+
+Cette fonction permet d\textquotesingle{}ajouter une tâche et de la relier à une intération donnée. \begin{DoxyWarning}{Avertissement}
+Si l\textquotesingle{}intéraction en question n\textquotesingle{}existe pas ou n\textquotesingle{}existe plus, la tâche n\textquotesingle{}est pas ajoutée et un message d\textquotesingle{}erreur s\textquotesingle{}affiche. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em interact\+\_\+contenu} & \+: le contenu de l\textquotesingle{}intéraction à qui ajouter la tâche; \\
+\hline
+{\em td} & \+: la tâche à ajouter; \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95 \{}
+\DoxyCodeLine{96     \textcolor{keywordtype}{bool} interact\_found = \textcolor{keyword}{false};}
+\DoxyCodeLine{97     \textcolor{keyword}{auto} it =  \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.begin();}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \textcolor{keywordflow}{while}((it != \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.end()) \&\& (interact\_found == \textcolor{keyword}{false}))}
+\DoxyCodeLine{100     \{}
+\DoxyCodeLine{101         \textcolor{keywordflow}{if}(it-\/>getContenu() == interact\_contenu)}
+\DoxyCodeLine{102         \{}
+\DoxyCodeLine{103             interact\_found = \textcolor{keyword}{true};}
+\DoxyCodeLine{104         \}}
+\DoxyCodeLine{105         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{106             it++;}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109     \textcolor{keywordflow}{if}(interact\_found)}
+\DoxyCodeLine{110     \{}
+\DoxyCodeLine{111         td.\mbox{\hyperlink{class_todo_ab2912427ece19b69307d7a2f698b1e83}{setInteraction}}(*(it));}
+\DoxyCodeLine{112         \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{listTodo}}-\/>\mbox{\hyperlink{class_gestion_todo_aa96385819780cf4cfed3f4af21bd1e55}{addTodo}}(td);}
+\DoxyCodeLine{113     \}}
+\DoxyCodeLine{114     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{115     \{}
+\DoxyCodeLine{116         std::cout << \textcolor{stringliteral}{"{}Ajout impossible aucune intéraction correspondante à "{}} << interact\_contenu << std::endl;}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \}}
+
+\end{DoxyCode}
+
+
+Références Gestion\+Todo\+::add\+Todo(), list\+Interaction, list\+Todo, et Todo\+::set\+Interaction().
+
+
+
+Référencé par test\+Gestion\+Interaction().
+
+\mbox{\Hypertarget{class_gestion_interaction_afc224d368b88c8178856fd94ea4da13f}\label{class_gestion_interaction_afc224d368b88c8178856fd94ea4da13f}} 
+\index{GestionInteraction@{GestionInteraction}!getListInteraction@{getListInteraction}}
+\index{getListInteraction@{getListInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{getListInteraction()}{getListInteraction()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_interaction}{Interaction}}$>$ Gestion\+Interaction\+::get\+List\+Interaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}; \}}
+
+\end{DoxyCode}
+
+
+Références list\+Interaction.
+
+\mbox{\Hypertarget{class_gestion_interaction_a12e2a4c7e3b4ad7171f80fb5481d2e72}\label{class_gestion_interaction_a12e2a4c7e3b4ad7171f80fb5481d2e72}} 
+\index{GestionInteraction@{GestionInteraction}!getListTodo@{getListTodo}}
+\index{getListTodo@{getListTodo}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{getListTodo()}{getListTodo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}}$\ast$ Gestion\+Interaction\+::get\+List\+Todo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{listTodo}}; \}}
+
+\end{DoxyCode}
+
+
+Références list\+Todo.
+
+\mbox{\Hypertarget{class_gestion_interaction_ab8dd72292cecf1a01fe8be2334dda0d3}\label{class_gestion_interaction_ab8dd72292cecf1a01fe8be2334dda0d3}} 
+\index{GestionInteraction@{GestionInteraction}!removeInteraction@{removeInteraction}}
+\index{removeInteraction@{removeInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{removeInteraction()}{removeInteraction()}}
+{\footnotesize\ttfamily void Gestion\+Interaction\+::remove\+Interaction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{contenu }\end{DoxyParamCaption})}
+
+
+
+Supprimer une intéraction. 
+
+Supprimer une intéraction de la liste.
+
+Cette fonction permet de supprimer une intéraction correspondant au contenu donné. \begin{DoxyWarning}{Avertissement}
+La suppression d\textquotesingle{}une intéraction conduit à la suppression de toutes ses tâches dans le gestionnaire de tâches. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Paramètres}
+{\em contenu} & \+: le contenu correspondant à la fonction à supprimer. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \textcolor{keyword}{auto} it = \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.begin();}
+\DoxyCodeLine{68     \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordflow}{while}((it != \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.end()) \&\& (found == \textcolor{keyword}{false}))}
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72         \textcolor{keywordflow}{if}(it-\/>getContenu() == contenu)}
+\DoxyCodeLine{73         \{}
+\DoxyCodeLine{74             found = \textcolor{keyword}{true};}
+\DoxyCodeLine{75             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} td : \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{listTodo}}-\/>\mbox{\hyperlink{class_gestion_todo_a3bb3a23c299e5bd266d15d18fd0e1371}{getAllInteractionTodo}}(*it).\mbox{\hyperlink{class_gestion_todo_a2b9096fe15ad96c286cb548a4b08e215}{getlistTodo}}())}
+\DoxyCodeLine{76             \{}
+\DoxyCodeLine{77                 \mbox{\hyperlink{class_gestion_interaction_a61de803ea478bb9338b7387c74f78fa4}{removeTodo}}(it-\/>getContenu(), td.getContenu());}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79             it = \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.erase(it);}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{82             it++;}
+\DoxyCodeLine{83     \}}
+\DoxyCodeLine{84 \}}
+
+\end{DoxyCode}
+
+
+Références Gestion\+Todo\+::get\+All\+Interaction\+Todo(), Gestion\+Todo\+::getlist\+Todo(), list\+Interaction, list\+Todo, et remove\+Todo().
+
+
+
+Référencé par Contact\+::remove\+Interaction(), et test\+Gestion\+Interaction().
+
+\mbox{\Hypertarget{class_gestion_interaction_a61de803ea478bb9338b7387c74f78fa4}\label{class_gestion_interaction_a61de803ea478bb9338b7387c74f78fa4}} 
+\index{GestionInteraction@{GestionInteraction}!removeTodo@{removeTodo}}
+\index{removeTodo@{removeTodo}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{removeTodo()}{removeTodo()}}
+{\footnotesize\ttfamily void Gestion\+Interaction\+::remove\+Todo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{interact\+\_\+contenu,  }\item[{const std\+::string \&}]{todo\+\_\+contenu }\end{DoxyParamCaption})}
+
+
+
+Supprimer une tache. 
+
+Pour supprimer une tâche d\textquotesingle{}une intéraction.
+
+Cette fonction supprime une tâche en lui indiquant son contenu et le contenu de l\textquotesingle{}intéraction à laquelle elle appartient. 
+\begin{DoxyParams}{Paramètres}
+{\em interact\+\_\+contenu} & \+: le contenu de l\textquotesingle{}intéraction; \\
+\hline
+{\em todo\+\_\+contenu} & \+: le contenu de la tâche; \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128 \{}
+\DoxyCodeLine{129     \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{130     \textcolor{keyword}{auto} it =  \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.begin();}
+\DoxyCodeLine{131     \textcolor{keywordflow}{while}((it != \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}}.end()) \&\& found == \textcolor{keyword}{false})}
+\DoxyCodeLine{132     \{}
+\DoxyCodeLine{133         \textcolor{keywordflow}{if}(it-\/>getContenu() == interact\_contenu)}
+\DoxyCodeLine{134         \{}
+\DoxyCodeLine{135             found = \textcolor{keyword}{true};}
+\DoxyCodeLine{136             \mbox{\hyperlink{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}{listTodo}}-\/>\mbox{\hyperlink{class_gestion_todo_afc077f9c7063d22e1e180e10f9682b34}{removeTodo}}(todo\_contenu);}
+\DoxyCodeLine{137         \}}
+\DoxyCodeLine{138         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{139             it++;}
+\DoxyCodeLine{140     \}}
+\DoxyCodeLine{141 \}}
+
+\end{DoxyCode}
+
+
+Références list\+Interaction, list\+Todo, et Gestion\+Todo\+::remove\+Todo().
+
+
+
+Référencé par remove\+Interaction().
+
+\mbox{\Hypertarget{class_gestion_interaction_af1054a6f65a5174148837ff12fb55385}\label{class_gestion_interaction_af1054a6f65a5174148837ff12fb55385}} 
+\index{GestionInteraction@{GestionInteraction}!SetlistInteraction@{SetlistInteraction}}
+\index{SetlistInteraction@{SetlistInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{SetlistInteraction()}{SetlistInteraction()}}
+{\footnotesize\ttfamily void Gestion\+Interaction\+::\+Setlist\+Interaction (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{class_interaction}{Interaction}} $>$}]{val }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38 \{ \mbox{\hyperlink{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}{listInteraction}} = val; \}}
+
+\end{DoxyCode}
+
+
+Références list\+Interaction.
+
+
+
+\doxysubsection{Documentation des fonctions amies et associées}
+\mbox{\Hypertarget{class_gestion_interaction_acbef9d46303918a9af14d35550ed3eb3}\label{class_gestion_interaction_acbef9d46303918a9af14d35550ed3eb3}} 
+\index{GestionInteraction@{GestionInteraction}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} \&}]{gest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em os} & \+: de type ostream. \\
+\hline
+{\em gest} & de type \mbox{\hyperlink{class_gestion_interaction}{Gestion\+Interaction}} qui represente le gestionnaire à afficher.\\
+\hline
+\end{DoxyParams}
+Afficher un gestionnaire d\textquotesingle{}intéraction revient à afficher toutes les intéractions chacune suivie de l\textquotesingle{}affichage de toutes ses tâches. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151 \{}
+\DoxyCodeLine{152     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it : gest.\mbox{\hyperlink{class_gestion_interaction_afc224d368b88c8178856fd94ea4da13f}{getListInteraction}}())}
+\DoxyCodeLine{153     \{}
+\DoxyCodeLine{154         os << it << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{155         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} td : gest.\mbox{\hyperlink{class_gestion_interaction_a12e2a4c7e3b4ad7171f80fb5481d2e72}{getListTodo}}()-\/>\mbox{\hyperlink{class_gestion_todo_a3bb3a23c299e5bd266d15d18fd0e1371}{getAllInteractionTodo}}(it).\mbox{\hyperlink{class_gestion_todo_a2b9096fe15ad96c286cb548a4b08e215}{getlistTodo}}())}
+\DoxyCodeLine{156         \{}
+\DoxyCodeLine{157             os << td << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{158         \}}
+\DoxyCodeLine{159     \}}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{162 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}\label{class_gestion_interaction_ad2f8dfe7e889e72bcfa8b3cf43ee2bcd}} 
+\index{GestionInteraction@{GestionInteraction}!listInteraction@{listInteraction}}
+\index{listInteraction@{listInteraction}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{listInteraction}{listInteraction}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_interaction}{Interaction}}$>$ Gestion\+Interaction\+::list\+Interaction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La liste des intéractions. 
+
+
+
+Référencé par add\+Interaction(), add\+Todo(), get\+List\+Interaction(), remove\+Interaction(), remove\+Todo(), Setlist\+Interaction(), et $\sim$\+Gestion\+Interaction().
+
+\mbox{\Hypertarget{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}\label{class_gestion_interaction_a6eda388592139286f6ed4f4f22a0eeb0}} 
+\index{GestionInteraction@{GestionInteraction}!listTodo@{listTodo}}
+\index{listTodo@{listTodo}!GestionInteraction@{GestionInteraction}}
+\doxysubsubsection{\texorpdfstring{listTodo}{listTodo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gestion_todo}{Gestion\+Todo}}$\ast$ Gestion\+Interaction\+::list\+Todo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Le gestionnaire de taches. 
+
+
+
+Référencé par add\+Todo(), Gestion\+Interaction(), get\+List\+Todo(), remove\+Interaction(), remove\+Todo(), et $\sim$\+Gestion\+Interaction().
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gestion_interaction_8h}{Gestion\+Interaction.\+h}}\item 
+\mbox{\hyperlink{_gestion_interaction_8cpp}{Gestion\+Interaction.\+cpp}}\end{DoxyCompactItemize}

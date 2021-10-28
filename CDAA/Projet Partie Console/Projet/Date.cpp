@@ -31,11 +31,6 @@ Date::Date(const int day, const int month, const int year)
 }
 
 /**
-    *
-*/
-
-
-/**
     *@brief Récupération du jour de la date
     *@return un entier qui représente le jour
 */
@@ -65,6 +60,7 @@ int Date::getAnnee()
 /**
     *@brief Récupération de la date.
     *@details Cette fonction renvoie l'instance tm pointée par d.
+    *@return une tm contenant la date;
 */
 tm Date::getDate()
 {
@@ -113,6 +109,7 @@ string Date::toString()
     *@details Cette fonction compare deux dates.
     Elle renvoie true si les jours, mois et années sont identiques.
     *@param autre : le tm à comparer avec le tm de la date actuelle.
+    *@return un booléen : true si les deux dates ont même jour, même mois et même année et false sinon.
 */
 bool Date::operator==(const tm& autre)
 {
@@ -120,7 +117,11 @@ bool Date::operator==(const tm& autre)
 }
 
 /**
-    *@brief
+    *@brief Surcharge de l'opérateur de comparaison inférieur
+    *@details Cette fonction compare deux dates.
+    Elle renvoie true si la date actuelle est antérieure à l'autre date.
+    *@param autre : le tm à comparer avec le tm de la date actuelle.
+    *@return un booléen : true si la date actuelle est antérieure à autre.
 */
 bool Date::operator<(const tm& autre)
 {
@@ -135,4 +136,40 @@ bool Date::operator<(const tm& autre)
                     if(d->tm_mday < autre.tm_mday)
                         return true;
     return false;
+}
+
+/**
+    *@brief Surcharge de l'opérateur de comparaison supérieur
+    *@details Cette fonction compare deux dates.
+    Elle renvoie true si la date actuelle est supérieure à l'autre date.
+    *@param autre : le tm à comparer avec le tm de la date actuelle.
+    *@return un booléen : true si la date actuelle est supérieure à autre.
+*/
+bool Date::operator>(const tm& autre)
+{
+    return !(*this == autre || *this < autre);
+}
+
+/**
+    *@brief Surcharge de l'opérateur de comparaison supérieur ou égale
+    *@details Cette fonction compare deux dates.
+    Elle renvoie true si la date actuelle est supérieure ou égale à l'autre date.
+    *@param autre : le tm à comparer avec le tm de la date actuelle.
+    *@return un booléen : true si la date actuelle est supérieure ou égale à autre.
+*/
+bool Date::operator>=(const tm& autre)
+{
+    return !(*this < autre);
+}
+
+/**
+    *@brief Surcharge de l'opérateur de comparaison inférieur ou égale
+    *@details Cette fonction compare deux dates.
+    Elle renvoie true si la date actuelle est inférieure ou égale à l'autre date.
+    *@param autre : le tm à comparer avec le tm de la date actuelle.
+    *@return un booléen : true si la date actuelle est inférieure ou égale à autre.
+*/
+bool Date::operator<=(const tm& autre)
+{
+    return !(*this > autre);
 }

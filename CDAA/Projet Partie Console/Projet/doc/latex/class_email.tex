@@ -40,7 +40,7 @@ void \mbox{\hyperlink{class_email_a69a9d94cb62cfe37069f9046adb254a3}{set\+Mc}} (
 void \mbox{\hyperlink{class_email_ad008c905fb780e47c5fd5d5a1ba6eef6}{from\+String}} (const std\+::string \&)
 \begin{DoxyCompactList}\small\item\em Pour décomposer une adresse mail et récupérer les différentes parties. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{to\+String}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pour reconstituer l\textquotesingle{}adresse mail en une String. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Attributs privés}
 \begin{DoxyCompactItemize}
 \item 
@@ -110,31 +110,31 @@ Si l\textquotesingle{}adresse mail a une syntaxe incorrecte, aucune partie n\tex
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{87 \{}
-\DoxyCodeLine{88     \textcolor{keywordtype}{size\_t} foundAt, foundPoint, foundLastPoint;}
-\DoxyCodeLine{89 }
-\DoxyCodeLine{90     foundAt = adr.find(\textcolor{charliteral}{'@'});}
-\DoxyCodeLine{91     foundLastPoint = adr.find(\textcolor{charliteral}{'.'}, foundAt);}
+\DoxyCodeLine{90 \{}
+\DoxyCodeLine{91     \textcolor{keywordtype}{size\_t} foundAt, foundPoint, foundLastPoint;}
 \DoxyCodeLine{92 }
-\DoxyCodeLine{93     \textcolor{keywordflow}{if}(foundAt == string::npos || foundLastPoint == string::npos)}
-\DoxyCodeLine{94     \{}
-\DoxyCodeLine{95         cout << \textcolor{stringliteral}{"{}Adresse Mail incorrecte"{}} << endl;}
-\DoxyCodeLine{96         \mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{97         \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{98         \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}} = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{99     \}}
-\DoxyCodeLine{100     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{101     \{}
-\DoxyCodeLine{102         \textcolor{keywordflow}{while}((foundPoint = adr.find(\textcolor{charliteral}{'.'}, foundLastPoint + 1)) != string::npos)}
-\DoxyCodeLine{103         \{}
-\DoxyCodeLine{104             foundLastPoint = foundPoint;}
-\DoxyCodeLine{105         \}}
-\DoxyCodeLine{106 }
-\DoxyCodeLine{107         \mbox{\hyperlink{class_email_aeada00eb01f8ec7252099b7421fe6ab1}{setIdentifiant}}(adr.substr(0,foundAt));}
-\DoxyCodeLine{108         \mbox{\hyperlink{class_email_a55e706122fc07c360e8d000a32ec2a7a}{setDomaine}}(adr.substr(foundAt+1, foundLastPoint-\/(foundAt+1)));}
-\DoxyCodeLine{109         \mbox{\hyperlink{class_email_a69a9d94cb62cfe37069f9046adb254a3}{setMc}}(adr.substr(foundLastPoint+1));}
-\DoxyCodeLine{110     \}}
-\DoxyCodeLine{111 \}}
+\DoxyCodeLine{93     foundAt = adr.find(\textcolor{charliteral}{'@'});}
+\DoxyCodeLine{94     foundLastPoint = adr.find(\textcolor{charliteral}{'.'}, foundAt);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96     \textcolor{keywordflow}{if}(foundAt == string::npos || foundLastPoint == string::npos)}
+\DoxyCodeLine{97     \{}
+\DoxyCodeLine{98         cout << \textcolor{stringliteral}{"{}Adresse Mail incorrecte"{}} << endl;}
+\DoxyCodeLine{99         \mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{100         \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{101         \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{102     \}}
+\DoxyCodeLine{103     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{104     \{}
+\DoxyCodeLine{105         \textcolor{keywordflow}{while}((foundPoint = adr.find(\textcolor{charliteral}{'.'}, foundLastPoint + 1)) != string::npos)}
+\DoxyCodeLine{106         \{}
+\DoxyCodeLine{107             foundLastPoint = foundPoint;}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110         \mbox{\hyperlink{class_email_aeada00eb01f8ec7252099b7421fe6ab1}{setIdentifiant}}(adr.substr(0,foundAt));}
+\DoxyCodeLine{111         \mbox{\hyperlink{class_email_a55e706122fc07c360e8d000a32ec2a7a}{setDomaine}}(adr.substr(foundAt+1, foundLastPoint-\/(foundAt+1)));}
+\DoxyCodeLine{112         \mbox{\hyperlink{class_email_a69a9d94cb62cfe37069f9046adb254a3}{setMc}}(adr.substr(foundLastPoint+1));}
+\DoxyCodeLine{113     \}}
+\DoxyCodeLine{114 \}}
 
 \end{DoxyCode}
 
@@ -151,11 +151,14 @@ Référencé par Contact\+::set\+Email(), et test\+Email().
 
 Pour récuperer la partie domaine de l\textquotesingle{}adresse. 
 
-Cette fonction renvoie la partie qui se trouve entre le \textquotesingle{}@\textquotesingle{} et le dernier \textquotesingle{}.\textquotesingle{} dans l\textquotesingle{}adresse mail. 
+Cette fonction renvoie la partie qui se trouve entre le \textquotesingle{}@\textquotesingle{} et le dernier \textquotesingle{}.\textquotesingle{} dans l\textquotesingle{}adresse mail. \begin{DoxyReturn}{Renvoie}
+Le domaine de l\textquotesingle{}adresse mail dans un type String. 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{49 \{}
-\DoxyCodeLine{50     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
-\DoxyCodeLine{51 \}}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
+\DoxyCodeLine{53 \}}
 
 \end{DoxyCode}
 
@@ -172,11 +175,14 @@ Référencé par test\+Email().
 
 Pour récuperer la partie identifiant de l\textquotesingle{}adresse. 
 
-Cette fonction renvoie la partie qui se trouve avant le \textquotesingle{}@\textquotesingle{} dans l\textquotesingle{}adresse mail. 
+Cette fonction renvoie la partie qui se trouve avant le \textquotesingle{}@\textquotesingle{} dans l\textquotesingle{}adresse mail. \begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}identifiant dans un type String. 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{31 \{}
-\DoxyCodeLine{32     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}};}
-\DoxyCodeLine{33 \}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}};}
+\DoxyCodeLine{34 \}}
 
 \end{DoxyCode}
 
@@ -193,11 +199,14 @@ Référencé par test\+Email().
 
 Pour récuperer la partie mc de l\textquotesingle{}adresse. 
 
-Cette fonction renvoie la partie qui se trouve après le dernier \textquotesingle{}.\textquotesingle{} dans l\textquotesingle{}adresse mail. 
+Cette fonction renvoie la partie qui se trouve après le dernier \textquotesingle{}.\textquotesingle{} dans l\textquotesingle{}adresse mail. \begin{DoxyReturn}{Renvoie}
+Le mc dans un type String. 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{67 \{}
-\DoxyCodeLine{68     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
-\DoxyCodeLine{69 \}}
+\DoxyCodeLine{70 \{}
+\DoxyCodeLine{71     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
+\DoxyCodeLine{72 \}}
 
 \end{DoxyCode}
 
@@ -221,9 +230,9 @@ Pour definir la partie domaine de l\textquotesingle{}adresse.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{58 \{}
-\DoxyCodeLine{59     this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}}= \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
-\DoxyCodeLine{60 \}}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     this-\/>\mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}}= \mbox{\hyperlink{class_email_adbf96bf6ecf0163270786b511ca9073f}{domaine}};}
+\DoxyCodeLine{62 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_email_aeada00eb01f8ec7252099b7421fe6ab1}\label{class_email_aeada00eb01f8ec7252099b7421fe6ab1}} 
@@ -243,9 +252,9 @@ Pour definir la partie Identifiant de l\textquotesingle{}adresse.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{40 \{}
-\DoxyCodeLine{41     this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = id;}
-\DoxyCodeLine{42 \}}
+\DoxyCodeLine{41 \{}
+\DoxyCodeLine{42     this-\/>\mbox{\hyperlink{class_email_a51c860409672625164d836055511fbe7}{identifiant}} = id;}
+\DoxyCodeLine{43 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_email_a69a9d94cb62cfe37069f9046adb254a3}\label{class_email_a69a9d94cb62cfe37069f9046adb254a3}} 
@@ -265,9 +274,9 @@ Pour definir la partie mc de l\textquotesingle{}adresse.
 \end{DoxyParams}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{76 \{}
-\DoxyCodeLine{77     this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}}= \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
-\DoxyCodeLine{78 \}}
+\DoxyCodeLine{79 \{}
+\DoxyCodeLine{80     this-\/>\mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}}= \mbox{\hyperlink{class_email_a546db0116c6ef2d38440ecf35fc642f4}{mc}};}
+\DoxyCodeLine{81 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{class_email_acfd186a5418525a835fbcf2030620a9a}\label{class_email_acfd186a5418525a835fbcf2030620a9a}} 
@@ -277,13 +286,23 @@ Pour definir la partie mc de l\textquotesingle{}adresse.
 {\footnotesize\ttfamily string Email\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Pour reconstituer l\textquotesingle{}adresse mail en une String. 
+
+Cette fonction retourne, si aucun champ (identifiant, domaine et mc) n\textquotesingle{}est vide, l\textquotesingle{}adresse mail recontituée. \begin{DoxyReturn}{Renvoie}
+l\textquotesingle{}adresse mail dans une String. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Avertissement}
+Si l\textquotesingle{}identifiant, le domaine ou le mc est vide elle renvoie une String vide. 
+\end{DoxyWarning}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{115 \{}
-\DoxyCodeLine{116     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}() !=  \textcolor{stringliteral}{"{}"{}} \&\& \mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}() != \textcolor{stringliteral}{"{}"{}} \&\& \mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}() != \textcolor{stringliteral}{"{}"{}})}
-\DoxyCodeLine{117         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}()+\textcolor{stringliteral}{"{}@"{}}+\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}()+\textcolor{stringliteral}{"{}."{}}+\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}();}
-\DoxyCodeLine{118     \textcolor{keywordflow}{else}}
-\DoxyCodeLine{119         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{120 \}}
+\DoxyCodeLine{123 \{}
+\DoxyCodeLine{124     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}() !=  \textcolor{stringliteral}{"{}"{}} \&\& \mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}() != \textcolor{stringliteral}{"{}"{}} \&\& \mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}() != \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{125         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_email_abdf70d7f147a59a96685cd4ad3947c2c}{getIdentifiant}}()+\textcolor{stringliteral}{"{}@"{}}+\mbox{\hyperlink{class_email_a6025851513c653ec0a0a3c98624f6ec5}{getDomaine}}()+\textcolor{stringliteral}{"{}."{}}+\mbox{\hyperlink{class_email_a4fb56b50d5636ea445a204d2a0a19a04}{getMc}}();}
+\DoxyCodeLine{126     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{127         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{128 \}}
 
 \end{DoxyCode}
 

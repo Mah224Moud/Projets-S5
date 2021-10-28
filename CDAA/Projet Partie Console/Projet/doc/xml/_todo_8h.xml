@@ -54,28 +54,70 @@
         <link refid="_gestion_todo_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
+        <label>Contact.h</label>
+        <link refid="_contact_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>GestionTodo.cpp</label>
         <link refid="_gestion_todo_8cpp"/>
       </node>
-      <node id="4">
+      <node id="8">
         <label>main.cpp</label>
         <link refid="main_8cpp"/>
+      </node>
+      <node id="3">
+        <label>GestionInteraction.h</label>
+        <link refid="_gestion_interaction_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GestionContact.cpp</label>
+        <link refid="_gestion_contact_8cpp"/>
+      </node>
+      <node id="5">
+        <label>Contact.cpp</label>
+        <link refid="_contact_8cpp"/>
       </node>
       <node id="1">
         <label>Todo.h</label>
         <link refid="_todo_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="9">
+        <label>GestionInteraction.cpp</label>
+        <link refid="_gestion_interaction_8cpp"/>
+      </node>
+      <node id="11">
         <label>Todo.cpp</label>
         <link refid="_todo_8cpp"/>
+      </node>
+      <node id="6">
+        <label>GestionContact.h</label>
+        <link refid="_gestion_contact_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_todo" prot="public">Todo</innerclass>
@@ -106,13 +148,13 @@
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" kindref="member">Todo</ref>();</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" kindref="member">Todo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_todo_1a5fbb1de89a8e2e99941f6a175cc6da91" kindref="member">Todo</ref>(<ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref><sp/><ref refid="class_todo_1a3ee7c0d0dfb18d895758a2bb1862a5a8" kindref="member">getInteraction</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_todo_1a336fa1a249ac6acd320058902c8f40e2" kindref="member">getContenu</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtm" kindref="compound">tm</ref><sp/><ref refid="class_todo_1a8d260ac9059c249a9393d8d54067bbd3" kindref="member">getDate</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_todo_1a4bc4c583115b304d665a3169e168105e" kindref="member">setInteraction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_todo_1ab2912427ece19b69307d7a2f698b1e83" kindref="member">setInteraction</ref>(<ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_todo_1ad880a5598520b267d883ec6ce22f7f45" kindref="member">setContenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_todo_1a7585477bfb8bff408e5d5736a326ef7e" kindref="member">setDate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtm" kindref="compound">tm</ref>&amp;);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>

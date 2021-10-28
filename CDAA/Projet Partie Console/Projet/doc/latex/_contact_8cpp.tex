@@ -49,30 +49,30 @@ Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affich
 {\em c} & de type contact qui represente le contact à afficher.\\
 \hline
 \end{DoxyParams}
-Pour afficher la fiche d\textquotesingle{}un contact. 
+Pour afficher la fiche d\textquotesingle{}un contact. \begin{DoxyReturn}{Renvoie}
+os 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{243 \{}
-\DoxyCodeLine{244     \mbox{\hyperlink{class_date}{Date}} d;}
-\DoxyCodeLine{245 }
-\DoxyCodeLine{246     os << \textcolor{stringliteral}{"{}=================> Fiche Contact <=================\(\backslash\)n"{}};}
-\DoxyCodeLine{247     os << \textcolor{stringliteral}{"{}Nom : "{}} << c.\mbox{\hyperlink{class_contact_ac4ca062bf61f7adbbddc7878c0957e82}{getNom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{248     os << \textcolor{stringliteral}{"{}Prenom : "{}} << c.\mbox{\hyperlink{class_contact_a1825fa5b28052b477fb16176bb4df21e}{getPrenom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{249     os << \textcolor{stringliteral}{"{}Entreprise : "{}} << c.\mbox{\hyperlink{class_contact_a0126ff51496fe7f69db34de82ce28398}{getEntreprise}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{250     os << \textcolor{stringliteral}{"{}Mail : "{}} << c.\mbox{\hyperlink{class_contact_a8d89efed9b157ef61804cd1d1ce31ad0}{getEmail}}().\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}()<< \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{251     os << \textcolor{stringliteral}{"{}Telephone : "{}} << c.\mbox{\hyperlink{class_contact_a53ebe193a5284e27b468ababdf7577e3}{getTelephone}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{252     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_af1b8218175c3c88bc10375fe098e851a}{getDateCreation}}());}
-\DoxyCodeLine{253     os << \textcolor{stringliteral}{"{}Date de création : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{254     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_a977dfc1a358b7a34774621041837512e}{getDateLastModif}}());}
-\DoxyCodeLine{255     os << \textcolor{stringliteral}{"{}Date de derniere modification : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{256     os << \textcolor{stringliteral}{"{}Photo : "{}};}
-\DoxyCodeLine{257     \textcolor{keywordflow}{if}(c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() == \textcolor{stringliteral}{"{}"{}})  os << \textcolor{stringliteral}{"{}Aucune Photo \(\backslash\)n"{}};}
-\DoxyCodeLine{258     \textcolor{keywordflow}{else} os << c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{259     os << \textcolor{stringliteral}{"{}=================> Interactions \(\backslash\)n"{}};}
-\DoxyCodeLine{260     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} interact : c.\mbox{\hyperlink{class_contact_ae640d361eb3e8659648bbdf2c0fb6bb4}{getListInteractions}}())}
-\DoxyCodeLine{261     \{}
-\DoxyCodeLine{262         os << interact << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{263     \}}
-\DoxyCodeLine{264     \textcolor{keywordflow}{return} os;}
-\DoxyCodeLine{265 \}}
+\DoxyCodeLine{287 \{}
+\DoxyCodeLine{288     \mbox{\hyperlink{class_date}{Date}} d;}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290     os << \textcolor{stringliteral}{"{}=================> Fiche Contact <=================\(\backslash\)n"{}};}
+\DoxyCodeLine{291     os << \textcolor{stringliteral}{"{}Nom : "{}} << c.\mbox{\hyperlink{class_contact_ac4ca062bf61f7adbbddc7878c0957e82}{getNom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{292     os << \textcolor{stringliteral}{"{}Prenom : "{}} << c.\mbox{\hyperlink{class_contact_a1825fa5b28052b477fb16176bb4df21e}{getPrenom}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{293     os << \textcolor{stringliteral}{"{}Entreprise : "{}} << c.\mbox{\hyperlink{class_contact_a0126ff51496fe7f69db34de82ce28398}{getEntreprise}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{294     os << \textcolor{stringliteral}{"{}Mail : "{}} << c.\mbox{\hyperlink{class_contact_a8d89efed9b157ef61804cd1d1ce31ad0}{getEmail}}().\mbox{\hyperlink{class_email_acfd186a5418525a835fbcf2030620a9a}{toString}}()<< \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{295     os << \textcolor{stringliteral}{"{}Telephone : "{}} << c.\mbox{\hyperlink{class_contact_a53ebe193a5284e27b468ababdf7577e3}{getTelephone}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{296     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_af1b8218175c3c88bc10375fe098e851a}{getDateCreation}}());}
+\DoxyCodeLine{297     os << \textcolor{stringliteral}{"{}Date de création : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{298     d.\mbox{\hyperlink{class_date_af7f644265141e1b856af83715177a7e7}{setDate}}(c.\mbox{\hyperlink{class_contact_a977dfc1a358b7a34774621041837512e}{getDateLastModif}}());}
+\DoxyCodeLine{299     os << \textcolor{stringliteral}{"{}Date de derniere modification : "{}} << d.\mbox{\hyperlink{class_date_adebdb45904dc2fbfacc66aa7528e0c04}{toString}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{300     os << \textcolor{stringliteral}{"{}Photo : "{}};}
+\DoxyCodeLine{301     \textcolor{keywordflow}{if}(c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() == \textcolor{stringliteral}{"{}"{}})  os << \textcolor{stringliteral}{"{}Aucune Photo \(\backslash\)n"{}};}
+\DoxyCodeLine{302     \textcolor{keywordflow}{else} os << c.\mbox{\hyperlink{class_contact_a0c9099d80538c241c852d68f2630fc54}{getPhoto}}() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{303     os << \textcolor{stringliteral}{"{}=================> Interactions \(\backslash\)n"{}};}
+\DoxyCodeLine{304     os << *(c.\mbox{\hyperlink{class_contact_ae6f3b5d25bef8de2d09bae162b4d64f7}{getListInteractions}}());}
+\DoxyCodeLine{305     \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{306 \}}
 
 \end{DoxyCode}

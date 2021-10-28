@@ -89,9 +89,11 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>addInteraction()
 : <a class="el" href="class_contact.html#aff5749b76c97dcd0f9eeb15999d1c193">Contact</a>
+, <a class="el" href="class_gestion_interaction.html#aa74a8ff644a48518c10b4b8d7932e6ae">GestionInteraction</a>
 </li>
 <li>addTodo()
-: <a class="el" href="class_gestion_todo.html#aa96385819780cf4cfed3f4af21bd1e55">GestionTodo</a>
+: <a class="el" href="class_gestion_interaction.html#a21d85d6165f601590684d5345cfeef38">GestionInteraction</a>
+, <a class="el" href="class_gestion_todo.html#aa96385819780cf4cfed3f4af21bd1e55">GestionTodo</a>
 </li>
 </ul>
 
@@ -131,14 +133,20 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>GestionContact()
 : <a class="el" href="class_gestion_contact.html#a0d42db3777c1e15d557979c897acf344">GestionContact</a>
 </li>
+<li>GestionInteraction()
+: <a class="el" href="class_gestion_interaction.html#a9dae747949987bc2ddba07f67a887d65">GestionInteraction</a>
+</li>
 <li>GestionTodo()
 : <a class="el" href="class_gestion_todo.html#ac0940481a804915d34ef24312cde733e">GestionTodo</a>
 </li>
 <li>getAllInteractionTodo()
-: <a class="el" href="class_gestion_todo.html#a83969a350fd0fd9a6eeed2ba25c32aee">GestionTodo</a>
+: <a class="el" href="class_gestion_todo.html#a3bb3a23c299e5bd266d15d18fd0e1371">GestionTodo</a>
 </li>
 <li>getAnnee()
 : <a class="el" href="class_date.html#a99c5677274bdaffadaedad4c888ccbca">Date</a>
+</li>
+<li>getContactByName()
+: <a class="el" href="class_gestion_contact.html#a302ccf41069ad043a674359e7ac372f4">GestionContact</a>
 </li>
 <li>getContenu()
 : <a class="el" href="class_interaction.html#a0e194616267d53075169f189f6d71c60">Interaction</a>
@@ -173,14 +181,20 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>getJour()
 : <a class="el" href="class_date.html#a961e64bff2fdff7ee95bc335ca400d2f">Date</a>
 </li>
-<li>GetlistContact()
-: <a class="el" href="class_gestion_contact.html#a902954b29f8b86b7be326f365f8c25a3">GestionContact</a>
+<li>getlistContact()
+: <a class="el" href="class_gestion_contact.html#aa9aadd7924eeddb7a0fb202afd782916">GestionContact</a>
+</li>
+<li>getListInteraction()
+: <a class="el" href="class_gestion_interaction.html#afc224d368b88c8178856fd94ea4da13f">GestionInteraction</a>
 </li>
 <li>getListInteractions()
-: <a class="el" href="class_contact.html#ae640d361eb3e8659648bbdf2c0fb6bb4">Contact</a>
+: <a class="el" href="class_contact.html#ae6f3b5d25bef8de2d09bae162b4d64f7">Contact</a>
+</li>
+<li>getListTodo()
+: <a class="el" href="class_gestion_interaction.html#a12e2a4c7e3b4ad7171f80fb5481d2e72">GestionInteraction</a>
 </li>
 <li>getlistTodo()
-: <a class="el" href="class_gestion_todo.html#acc224a199d23b29ecfdf8dd9367b0eec">GestionTodo</a>
+: <a class="el" href="class_gestion_todo.html#a2b9096fe15ad96c286cb548a4b08e215">GestionTodo</a>
 </li>
 <li>getMc()
 : <a class="el" href="class_email.html#a4fb56b50d5636ea445a204d2a0a19a04">Email</a>
@@ -222,12 +236,24 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 
 <h3><a id="index_o"></a>- o -</h3><ul>
+<li>operator&lt;()
+: <a class="el" href="class_date.html#a57f91c24d27b9fe6796c27e12d9deb93">Date</a>
+</li>
+<li>operator&lt;=()
+: <a class="el" href="class_date.html#ac14ca0dd0252bcc04f23a74d4fb3ed4e">Date</a>
+</li>
 <li>operator=()
 : <a class="el" href="class_interaction.html#a6a440384be939e46cff9d90f1182ec3c">Interaction</a>
 </li>
 <li>operator==()
 : <a class="el" href="class_date.html#ab6e18eb4e080c723df03af0be4f0487e">Date</a>
 , <a class="el" href="class_interaction.html#a34da4c3bd01038118c4fde34e1c677f8">Interaction</a>
+</li>
+<li>operator&gt;()
+: <a class="el" href="class_date.html#af2d295ce56665af6996174ededddd34e">Date</a>
+</li>
+<li>operator&gt;=()
+: <a class="el" href="class_date.html#ac6e262f05512614bcbb89762e85b353c">Date</a>
 </li>
 </ul>
 
@@ -240,10 +266,12 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="class_gestion_contact.html#aed9c969df00ec0ac22d8bf9513e0e8ed">GestionContact</a>
 </li>
 <li>removeInteraction()
-: <a class="el" href="class_contact.html#ad69ca2095921e570fdf0734ededa36f5">Contact</a>
+: <a class="el" href="class_contact.html#a6690bdcb21a0bf720268f0add8944b9a">Contact</a>
+, <a class="el" href="class_gestion_interaction.html#ab8dd72292cecf1a01fe8be2334dda0d3">GestionInteraction</a>
 </li>
 <li>removeTodo()
-: <a class="el" href="class_gestion_todo.html#afc077f9c7063d22e1e180e10f9682b34">GestionTodo</a>
+: <a class="el" href="class_gestion_interaction.html#a61de803ea478bb9338b7387c74f78fa4">GestionInteraction</a>
+, <a class="el" href="class_gestion_todo.html#afc077f9c7063d22e1e180e10f9682b34">GestionTodo</a>
 </li>
 </ul>
 
@@ -277,7 +305,10 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="class_email.html#aeada00eb01f8ec7252099b7421fe6ab1">Email</a>
 </li>
 <li>setInteraction()
-: <a class="el" href="class_todo.html#a4bc4c583115b304d665a3169e168105e">Todo</a>
+: <a class="el" href="class_todo.html#ab2912427ece19b69307d7a2f698b1e83">Todo</a>
+</li>
+<li>SetlistInteraction()
+: <a class="el" href="class_gestion_interaction.html#af1054a6f65a5174148837ff12fb55385">GestionInteraction</a>
 </li>
 <li>setMc()
 : <a class="el" href="class_email.html#a69a9d94cb62cfe37069f9046adb254a3">Email</a>
@@ -314,6 +345,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>~GestionContact()
 : <a class="el" href="class_gestion_contact.html#a9c0d781c68963dcdc05b6d52019538f9">GestionContact</a>
+</li>
+<li>~GestionInteraction()
+: <a class="el" href="class_gestion_interaction.html#a9d1b2c582d0beca5b540a086dbdb7955">GestionInteraction</a>
 </li>
 <li>~GestionTodo()
 : <a class="el" href="class_gestion_todo.html#a6c3821fb74e15c513594604616973f86">GestionTodo</a>

@@ -32,8 +32,6 @@ Todo::Todo(Interaction& i, const std::string& c)
     this->setContenu(c);
 }
 
-/// Accesseurs
-
 /**
     *@brief Pour récuperer l'intéraction à laquelle apppartient le Todo.
     *@details Ce fontion renvoie l'instance Intéraction à laquelle appartient le Todo.
@@ -46,6 +44,7 @@ Interaction Todo::getInteraction() const
 /**
     *@brief Pour récupérer la date.
     *@details Cette fonction renvoie l'instance pointée par date.
+    *@return une tm contenant la date.
 */
 tm Todo::getDate() const
 {
@@ -55,13 +54,12 @@ tm Todo::getDate() const
 /**
     *@brief Pour recupérer le contenu de l'interaction.
     *@details Cette fonction renvoie la chaine contenu de l'interaction.
+    *@return le contenu dans une String.
 */
 std::string Todo::getContenu() const
 {
     return this->contenu;
 }
-
-/// Mutateurs
 
 /**
     *@brief Pour lier une intéraction à la classe Todo.
@@ -96,6 +94,7 @@ void Todo::setContenu(const std:: string & c)
     *@param os : de type ostream.
     *@param td: de type Todo qui represente le Todo à afficher.
     *@details Pour afficher un Todo, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui).
+    *@return os;
 */
 std::ostream& operator<<(std::ostream& os, const Todo& td)
 {

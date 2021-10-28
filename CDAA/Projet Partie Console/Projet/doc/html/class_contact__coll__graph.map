@@ -1,7 +1,10 @@
 <map id="Contact" name="Contact">
-<area shape="rect" id="node1" title="La classe Contact permet de représenter un contact." alt="" coords="168,461,331,700"/>
-<area shape="rect" id="node2" href="$class_email.html" title="La classe Email permet de stocker l&#39;adresse mail d&#39;un contact." alt="" coords="115,175,250,384"/>
-<area shape="rect" id="node3" title=" " alt="" coords="11,5,69,83"/>
-<area shape="rect" id="node4" href="$structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="275,241,315,318"/>
-<area shape="rect" id="node5" title=" " alt="" coords="346,241,489,318"/>
+<area shape="rect" id="node1" title="La classe Contact permet de représenter un contact." alt="" coords="179,704,342,943"/>
+<area shape="rect" id="node2" href="$class_email.html" title="La classe Email permet de stocker l&#39;adresse mail d&#39;un contact." alt="" coords="116,417,251,627"/>
+<area shape="rect" id="node3" title=" " alt="" coords="35,197,94,274"/>
+<area shape="rect" id="node4" href="$structtm.html" title="structure simple du C/C++ pour manipuler les dates" alt="" coords="275,483,315,561"/>
+<area shape="rect" id="node5" href="$class_gestion_interaction.html" title="Cette classe permet de gérer une liste d&#39;interaction ainsi que les taches (todo) liées à chaque intér..." alt="" coords="339,425,518,619"/>
+<area shape="rect" id="node6" href="$class_gestion_todo.html" title="Cette classe permet de gérer une liste de tâches." alt="" coords="141,145,356,325"/>
+<area shape="rect" id="node7" title=" " alt="" coords="197,5,300,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="380,197,523,274"/>
 </map>

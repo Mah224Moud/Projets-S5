@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="fr">
+  <compounddef id="_gestion_interaction_8h" kind="file" language="C++">
+    <compoundname>GestionInteraction.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">ostream</includes>
+    <includes refid="_interaction_8h" local="yes">Interaction.h</includes>
+    <includes refid="_gestion_todo_8h" local="yes">GestionTodo.h</includes>
+    <includedby refid="_contact_8h" local="yes">Contact.h</includedby>
+    <includedby refid="_gestion_interaction_8cpp" local="yes">GestionInteraction.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>list</label>
+      </node>
+      <node id="9">
+        <label>GestionTodo.h</label>
+        <link refid="_gestion_todo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GestionInteraction.h</label>
+        <link refid="_gestion_interaction_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>ostream</label>
+      </node>
+      <node id="7">
+        <label>ctime</label>
+      </node>
+      <node id="8">
+        <label>Date.h</label>
+        <link refid="_date_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Todo.h</label>
+        <link refid="_todo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>Interaction.h</label>
+        <link refid="_interaction_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Contact.h</label>
+        <link refid="_contact_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>GestionInteraction.h</label>
+        <link refid="_gestion_interaction_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GestionContact.cpp</label>
+        <link refid="_gestion_contact_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Contact.cpp</label>
+        <link refid="_contact_8cpp"/>
+      </node>
+      <node id="7">
+        <label>GestionInteraction.cpp</label>
+        <link refid="_gestion_interaction_8cpp"/>
+      </node>
+      <node id="4">
+        <label>GestionContact.h</label>
+        <link refid="_gestion_contact_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gestion_interaction" prot="public">GestionInteraction</innerclass>
+    <briefdescription>
+<para>Fichier d&apos;en-tete de la classe <ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>BAH Saikou Oumar </para>
+</simplesect>
+<simplesect kind="author"><para>DIALLO Mamoudou </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GESTIONINTERACTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GESTIONINTERACTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_interaction_8h" kindref="compound">Interaction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gestion_todo_8h" kindref="compound">GestionTodo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_gestion_interaction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::list&lt;Interaction&gt;<sp/><ref refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" kindref="member">listInteraction</ref>;</highlight></codeline>
+<codeline lineno="29" refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref>*<sp/><ref refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" kindref="member">listTodo</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gestion_interaction_1a9dae747949987bc2ddba07f67a887d65" kindref="member">GestionInteraction</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gestion_interaction_1a9d1b2c582d0beca5b540a086dbdb7955" kindref="member">~GestionInteraction</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_gestion_interaction_1afc224d368b88c8178856fd94ea4da13f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::list&lt;Interaction&gt;<sp/><ref refid="class_gestion_interaction_1afc224d368b88c8178856fd94ea4da13f" kindref="member">getListInteraction</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" kindref="member">listInteraction</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="38" refid="class_gestion_interaction_1af1054a6f65a5174148837ff12fb55385" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1af1054a6f65a5174148837ff12fb55385" kindref="member">SetlistInteraction</ref>(std::list&lt;Interaction&gt;<sp/>val)<sp/>{<sp/><ref refid="class_gestion_interaction_1ad2f8dfe7e889e72bcfa8b3cf43ee2bcd" kindref="member">listInteraction</ref><sp/>=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_gestion_interaction_1a12e2a4c7e3b4ad7171f80fb5481d2e72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gestion_todo" kindref="compound">GestionTodo</ref>*<sp/><ref refid="class_gestion_interaction_1a12e2a4c7e3b4ad7171f80fb5481d2e72" kindref="member">getListTodo</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1a6eda388592139286f6ed4f4f22a0eeb0" kindref="member">listTodo</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" kindref="member">addInteraction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_interaction" kindref="compound">Interaction</ref>&amp;);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1ab8dd72292cecf1a01fe8be2334dda0d3" kindref="member">removeInteraction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1a21d85d6165f601590684d5345cfeef38" kindref="member">addTodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/><ref refid="class_todo" kindref="compound">Todo</ref>&amp;);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction_1a61de803ea478bb9338b7387c74f78fa4" kindref="member">removeTodo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="class_gestion_interaction_1acbef9d46303918a9af14d35550ed3eb3" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_gestion_interaction" kindref="compound">GestionInteraction</ref>&amp;);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>GESTIONINTERACTION_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="GestionInteraction.h"/>
+  </compounddef>
+</doxygen>

@@ -94,16 +94,17 @@
         <argsstring>()</argsstring>
         <name>getJour</name>
         <briefdescription>
-<para>Récupération du jour de la date. </para>
+<para>Récuperer le jour. </para>
         </briefdescription>
         <detaileddescription>
+<para>Récupération du jour de la date.</para>
 <para><simplesect kind="return"><para>un entier qui représente le jour </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="38" column="13" bodyfile="Date.cpp" bodystart="42" bodyend="45"/>
+        <location file="Date.h" line="39" column="13" bodyfile="Date.cpp" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a6b16211abaa2c22418e82b8cd9d08bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -111,16 +112,17 @@
         <argsstring>()</argsstring>
         <name>getMois</name>
         <briefdescription>
-<para>Récupération du mois de la date. </para>
+<para>Récuperer le mois. </para>
         </briefdescription>
         <detaileddescription>
+<para>Récupération du mois de la date.</para>
 <para><simplesect kind="return"><para>un entier qui représente le mois </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="39" column="13" bodyfile="Date.cpp" bodystart="51" bodyend="54"/>
+        <location file="Date.h" line="41" column="13" bodyfile="Date.cpp" bodystart="46" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a99c5677274bdaffadaedad4c888ccbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -128,16 +130,17 @@
         <argsstring>()</argsstring>
         <name>getAnnee</name>
         <briefdescription>
-<para>Récupération de l&apos;année de la date. </para>
+<para>Récuperer l&apos;annee. </para>
         </briefdescription>
         <detaileddescription>
+<para>Récupération de l&apos;année de la date.</para>
 <para><simplesect kind="return"><para>un entier qui représente l&apos;année </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="40" column="13" bodyfile="Date.cpp" bodystart="60" bodyend="63"/>
+        <location file="Date.h" line="43" column="13" bodyfile="Date.cpp" bodystart="55" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1a53dcab03c7834448fd67ef453ff34195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structtm" kindref="compound">tm</ref></type>
@@ -148,14 +151,19 @@
 <para>Récupération de la date. </para>
         </briefdescription>
         <detaileddescription>
-<para>Cette fonction renvoie l&apos;instance tm pointée par d. </para>
+<para>Cette fonction renvoie l&apos;instance tm pointée par d. <simplesect kind="return"><para>une tm contenant la date; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="42" column="12" bodyfile="Date.cpp" bodystart="69" bodyend="72"/>
-        <referencedby refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="69" endline="73">Contact::modification</referencedby>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <location file="Date.h" line="45" column="12" bodyfile="Date.cpp" bodystart="65" bodyend="68"/>
+        <referencedby refid="class_contact_1a48b48fa54c3da3e928b3315735cf3b74" compoundref="_contact_8cpp" startline="77" endline="81">Contact::modification</referencedby>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" compoundref="main_8cpp" startline="223" endline="246">testDateComparator</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
+        <referencedby refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" compoundref="main_8cpp" startline="248" endline="298">testGestionInteraction</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_date_1af7f644265141e1b856af83715177a7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -172,7 +180,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="43" column="14" bodyfile="Date.cpp" bodystart="78" bodyend="81"/>
+        <location file="Date.h" line="46" column="14" bodyfile="Date.cpp" bodystart="74" bodyend="77"/>
+        <referencedby refid="class_gestion_interaction_1aa74a8ff644a48518c10b4b8d7932e6ae" compoundref="_gestion_interaction_8cpp" startline="36" endline="57">GestionInteraction::addInteraction</referencedby>
+        <referencedby refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" compoundref="main_8cpp" startline="223" endline="246">testDateComparator</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_date_1a21c46ba7a74d45d1299f92330a43533a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -224,9 +234,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="45" column="14" bodyfile="Date.cpp" bodystart="89" bodyend="100"/>
-        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="23" endline="55">testContact</referencedby>
-        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="85" endline="148">testGestionTodo</referencedby>
+        <location file="Date.h" line="48" column="14" bodyfile="Date.cpp" bodystart="85" bodyend="96"/>
+        <referencedby refid="main_8cpp_1afc5a38f6d3b4f52e00189d54a2989b39" compoundref="main_8cpp" startline="31" endline="63">testContact</referencedby>
+        <referencedby refid="main_8cpp_1a402bc28ea282ebe068abeedcbc9834a5" compoundref="main_8cpp" startline="223" endline="246">testDateComparator</referencedby>
+        <referencedby refid="main_8cpp_1aa8474a2c8d2877d00c2756cf694cfde6" compoundref="main_8cpp" startline="158" endline="221">testGestionContact</referencedby>
+        <referencedby refid="main_8cpp_1afc7eece9c0111c5505f2a7f7478f2950" compoundref="main_8cpp" startline="248" endline="298">testGestionInteraction</referencedby>
+        <referencedby refid="main_8cpp_1a0633cf092e43a8515e33ffc610ed3a3f" compoundref="main_8cpp" startline="93" endline="156">testGestionTodo</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -243,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="46" column="21" bodyfile="Date.cpp" bodystart="106" bodyend="109"/>
+        <location file="Date.h" line="49" column="21" bodyfile="Date.cpp" bodystart="102" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="class_date_1ab6e18eb4e080c723df03af0be4f0487e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -267,11 +280,133 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>un booléen : true si les deux dates ont même jour, même mois et même année et false sinon. </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Date.h" line="48" column="14" bodyfile="Date.cpp" bodystart="117" bodyend="120"/>
+        <location file="Date.h" line="51" column="14" bodyfile="Date.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1a57f91c24d27b9fe6796c27e12d9deb93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&lt;</definition>
+        <argsstring>(const tm &amp;)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
+          <defname>autre</defname>
+        </param>
+        <briefdescription>
+<para>Surcharge de l&apos;opérateur de comparaison inférieur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cette fonction compare deux dates. Elle renvoie true si la date actuelle est antérieure à l&apos;autre date. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le tm à comparer avec le tm de la date actuelle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un booléen : true si la date actuelle est antérieure à autre. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="52" column="9" bodyfile="Date.cpp" bodystart="126" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1af2d295ce56665af6996174ededddd34e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&gt;</definition>
+        <argsstring>(const tm &amp;)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
+          <defname>autre</defname>
+        </param>
+        <briefdescription>
+<para>Surcharge de l&apos;opérateur de comparaison supérieur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cette fonction compare deux dates. Elle renvoie true si la date actuelle est supérieure à l&apos;autre date. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le tm à comparer avec le tm de la date actuelle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un booléen : true si la date actuelle est supérieure à autre. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="53" column="14" bodyfile="Date.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ac14ca0dd0252bcc04f23a74d4fb3ed4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&lt;=</definition>
+        <argsstring>(const tm &amp;)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
+          <defname>autre</defname>
+        </param>
+        <briefdescription>
+<para>Surcharge de l&apos;opérateur de comparaison inférieur ou égale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cette fonction compare deux dates. Elle renvoie true si la date actuelle est inférieure ou égale à l&apos;autre date. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le tm à comparer avec le tm de la date actuelle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un booléen : true si la date actuelle est inférieure ou égale à autre. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="54" column="9" bodyfile="Date.cpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_1ac6e262f05512614bcbb89762e85b353c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Date::operator&gt;=</definition>
+        <argsstring>(const tm &amp;)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="structtm" kindref="compound">tm</ref> &amp;</type>
+          <defname>autre</defname>
+        </param>
+        <briefdescription>
+<para>Surcharge de l&apos;opérateur de comparaison supérieur ou égale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cette fonction compare deux dates. Elle renvoie true si la date actuelle est supérieure ou égale à l&apos;autre date. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: le tm à comparer avec le tm de la date actuelle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>un booléen : true si la date actuelle est supérieure ou égale à autre. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Date.h" line="55" column="14" bodyfile="Date.cpp" bodystart="160" bodyend="163"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -301,7 +436,7 @@
         <link refid="structtm"/>
       </node>
     </collaborationgraph>
-    <location file="Date.h" line="22" column="1" bodyfile="Date.h" bodystart="23" bodyend="49"/>
+    <location file="Date.h" line="22" column="1" bodyfile="Date.h" bodystart="23" bodyend="56"/>
     <listofallmembers>
       <member refid="class_date_1a51a979c64305d841600f0a25b39d01f8" prot="private" virt="non-virtual"><scope>Date</scope><name>d</name></member>
       <member refid="class_date_1a4e59ed4ba66eec61c27460c5d09fa1bd" prot="public" virt="non-virtual"><scope>Date</scope><name>Date</name></member>
@@ -311,7 +446,11 @@
       <member refid="class_date_1a53dcab03c7834448fd67ef453ff34195" prot="public" virt="non-virtual"><scope>Date</scope><name>getDate</name></member>
       <member refid="class_date_1a961e64bff2fdff7ee95bc335ca400d2f" prot="public" virt="non-virtual"><scope>Date</scope><name>getJour</name></member>
       <member refid="class_date_1a6b16211abaa2c22418e82b8cd9d08bfe" prot="public" virt="non-virtual"><scope>Date</scope><name>getMois</name></member>
+      <member refid="class_date_1a57f91c24d27b9fe6796c27e12d9deb93" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&lt;</name></member>
+      <member refid="class_date_1ac14ca0dd0252bcc04f23a74d4fb3ed4e" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&lt;=</name></member>
       <member refid="class_date_1ab6e18eb4e080c723df03af0be4f0487e" prot="public" virt="non-virtual"><scope>Date</scope><name>operator==</name></member>
+      <member refid="class_date_1af2d295ce56665af6996174ededddd34e" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&gt;</name></member>
+      <member refid="class_date_1ac6e262f05512614bcbb89762e85b353c" prot="public" virt="non-virtual"><scope>Date</scope><name>operator&gt;=</name></member>
       <member refid="class_date_1af7f644265141e1b856af83715177a7e7" prot="public" virt="non-virtual"><scope>Date</scope><name>setDate</name></member>
       <member refid="class_date_1adebdb45904dc2fbfacc66aa7528e0c04" prot="public" virt="non-virtual"><scope>Date</scope><name>toString</name></member>
     </listofallmembers>

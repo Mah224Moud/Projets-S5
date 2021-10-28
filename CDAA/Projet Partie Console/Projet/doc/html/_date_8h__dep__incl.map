@@ -1,15 +1,17 @@
 <map id="Date.h" name="Date.h">
-<area shape="rect" id="node1" title="Fichier d&#39;entête de la classe Date." alt="" coords="279,5,344,32"/>
-<area shape="rect" id="node2" href="$_contact_8h.html" title="Fichier d&#39;entête de la classe Contact." alt="" coords="225,155,309,181"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="271,304,354,331"/>
-<area shape="rect" id="node7" href="$_date_8cpp.html" title=" " alt="" coords="433,80,513,107"/>
-<area shape="rect" id="node8" href="$_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="305,80,409,107"/>
-<area shape="rect" id="node3" href="$_contact_8cpp.html" title="Fichier CPP de la classe Contact." alt="" coords="195,229,294,256"/>
-<area shape="rect" id="node4" href="$_gestion_contact_8h.html" title=" " alt="" coords="36,229,171,256"/>
-<area shape="rect" id="node5" href="$_gestion_contact_8cpp.html" title=" " alt="" coords="29,304,178,331"/>
-<area shape="rect" id="node9" href="$_gestion_todo_8h.html" title=" " alt="" coords="369,229,483,256"/>
-<area shape="rect" id="node11" href="$_interaction_8cpp.html" title="Fichier CPP de la classe Interaction." alt="" coords="483,155,601,181"/>
-<area shape="rect" id="node12" href="$_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="394,155,458,181"/>
-<area shape="rect" id="node10" href="$_gestion_todo_8cpp.html" title=" " alt="" coords="379,304,508,331"/>
-<area shape="rect" id="node13" href="$_todo_8cpp.html" title="Fichier CPP de la classe Todo." alt="" coords="508,229,587,256"/>
+<area shape="rect" id="node1" title="Fichier d&#39;entête de la classe Date." alt="" coords="555,5,621,32"/>
+<area shape="rect" id="node2" href="$_contact_8h.html" title="Fichier d&#39;entête de la classe Contact." alt="" coords="171,379,255,405"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="311,528,393,555"/>
+<area shape="rect" id="node7" href="$_date_8cpp.html" title=" " alt="" coords="685,80,765,107"/>
+<area shape="rect" id="node8" href="$_interaction_8h.html" title="Fichier en&#45;tete de la classe Interaction." alt="" coords="476,80,580,107"/>
+<area shape="rect" id="node3" href="$_contact_8cpp.html" title="Fichier CPP de la classe Contact." alt="" coords="5,453,104,480"/>
+<area shape="rect" id="node4" href="$_gestion_contact_8h.html" title="Fichier d&#39;en&#45;tete de la classe GestionContact." alt="" coords="129,453,263,480"/>
+<area shape="rect" id="node5" href="$_gestion_contact_8cpp.html" title="Le fichier CPP de la classe GestionContact." alt="" coords="121,528,271,555"/>
+<area shape="rect" id="node9" href="$_gestion_interaction_8h.html" title="Fichier d&#39;en&#45;tete de la classe GestionInteraction." alt="" coords="251,304,405,331"/>
+<area shape="rect" id="node11" href="$_gestion_todo_8h.html" title="Fichier d&#39;en&#45;tête de la classe GestionTodo." alt="" coords="483,229,597,256"/>
+<area shape="rect" id="node13" href="$_interaction_8cpp.html" title="Fichier CPP de la classe Interaction." alt="" coords="353,155,471,181"/>
+<area shape="rect" id="node14" href="$_todo_8h.html" title="Fichier en&#45;tête de la classe Todo." alt="" coords="496,155,560,181"/>
+<area shape="rect" id="node10" href="$_gestion_interaction_8cpp.html" title="Fichier CPP de la classe GestionInteraction." alt="" coords="390,379,559,405"/>
+<area shape="rect" id="node12" href="$_gestion_todo_8cpp.html" title="Fichier CPP de la classe GestionTodo." alt="" coords="430,304,559,331"/>
+<area shape="rect" id="node15" href="$_todo_8cpp.html" title="Fichier CPP de la classe Todo." alt="" coords="379,229,458,256"/>
 </map>
