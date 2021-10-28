@@ -13,7 +13,7 @@
 #include <ostream>
 /**
     *@class Todo Todo.h "Todo.h"
-    *@brief Cette classe ...
+    *@brief Cette classe permet de créer des taches dans l'application avec une description et une date.
     *@details ...
 */
 class Todo

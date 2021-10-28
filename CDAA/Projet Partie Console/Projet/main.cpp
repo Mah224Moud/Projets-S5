@@ -21,8 +21,11 @@ void testGestionContact();
 
 int main()
 {
-    testGestionContact();
- }
+    //testGestionTodo();
+    testGestionInteraction();
+    //testContact();
+    //testGestionContact();
+}
 
 void testContact()
 {
@@ -287,3 +290,4 @@ void testGestionInteraction()
     cout << gest << endl;
 
 }
+

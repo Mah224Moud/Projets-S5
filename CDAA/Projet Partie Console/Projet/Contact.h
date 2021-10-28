@@ -67,7 +67,9 @@ class Contact
     void setDateLastModif(const tm&);
     void setEmail(const std::string&);
 
+    /// Ajouter une interaction
     void addInteraction(const Interaction&);
+    /// Supprimer une interaction
     void removeInteraction(const std::string&);
 
     friend std::ostream& operator<<(std::ostream&, const Contact&);

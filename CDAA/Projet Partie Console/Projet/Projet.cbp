@@ -42,6 +42,8 @@
 		<Unit filename="Email.h" />
 		<Unit filename="GestionContact.cpp" />
 		<Unit filename="GestionContact.h" />
+		<Unit filename="GestionInteraction.cpp" />
+		<Unit filename="GestionInteraction.h" />
 		<Unit filename="GestionTodo.cpp" />
 		<Unit filename="GestionTodo.h" />
 		<Unit filename="Interaction.cpp" />

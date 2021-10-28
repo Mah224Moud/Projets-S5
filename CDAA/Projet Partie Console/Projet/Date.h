@@ -35,8 +35,11 @@ class Date
         /// Constructeur avec paramètre jour, mois et année de la classe Date
         Date(const int, const int, const int);
 
+        /// Récuperer le jour
         int getJour();
+        /// Récuperer le mois
         int getMois();
+        /// Récuperer l'annee
         int getAnnee();
 
         tm getDate();

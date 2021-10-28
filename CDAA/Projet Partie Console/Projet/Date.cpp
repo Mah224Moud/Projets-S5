@@ -120,7 +120,7 @@ bool Date::operator==(const tm& autre)
 }
 
 /**
-    *
+    *@brief
 */
 bool Date::operator<(const tm& autre)
 {
