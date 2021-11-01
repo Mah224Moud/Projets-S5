@@ -23,6 +23,18 @@
 ## Created: 2021-10-21
 
 # Transformée de fourier 1D Rapide
-function retval = TF1DR (input1, input2)
+function ITFR = TF1DR (I)
+  N = length(I);
+  for u = 1:N
+    ITFR(u) = FourierRapide(u, I);
+  endfor
+endfunction
 
+function val = FourierRapide(u,I)
+  N = length(I);
+  if N == 1
+    val = I(1);
+  else
+    val = FourierRapide(u, I(1:2:end)) + exp((-2*i*pi*(u-1)/N)) * FourierRapide(u, I(2:2:end));
+  endif
 endfunction

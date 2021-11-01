@@ -1,12 +1,15 @@
 pkg load image;
 clear all;
 
-I = [0 1 1 0 1 1 0 1 1 0 1 1 0];
+I = [1 2 1 -1];
 
 # Test Transformée de Fourier 1D Brutale
 A = TF1D(I);
-B = fft(I)
+B = TF1DR(I);
+C = fft(I);
+
 
 # Test Transformée de Fourier 1D Inverse Brutale
-C = TF1DI(A);
-D = ifft(A);
+AI = TF1DI(A)
+BI = TF1DIR(A)
+CI = ifft(A)

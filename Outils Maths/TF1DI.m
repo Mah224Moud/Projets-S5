@@ -30,9 +30,9 @@ function I = TF1DI (ITF)
   for x = 1:N
     somme  = 0;
     for u = 1:N
-      somme += (ITF(u) * exp((2 * i * pi * (u-1) * (x-1)) / double(N)));
+      somme += (ITF(u) * exp((2 * i * pi * (u-1) * (x-1)) / N));
     endfor
-    #round(somme / double(N))
-    I(x) = somme / double(N);
+    #round(somme / N)
+    I(x) = somme / N;
   endfor
 endfunction

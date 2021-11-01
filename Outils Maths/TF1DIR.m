@@ -23,6 +23,18 @@
 ## Created: 2021-10-21
 
 # Transformée de fourier 1D  Inverse Rapide
-function retval = TF1DIR (input1, input2)
+function I = TF1DIR (ITF)
+  N = length(ITF);
+  for u = 1:N
+    I(u) = FourierInverseRapide(u, ITF) / N;
+  endfor
+endfunction
 
+function val = FourierInverseRapide(u,I)
+  N = length(I);
+  if N == 1
+    val = I(1);
+  else
+    val = FourierInverseRapide(u, I(1:2:end)) + exp((2*i*pi*(u-1)/N)) * FourierInverseRapide(u, I(2:2:end));
+  endif
 endfunction

@@ -30,7 +30,7 @@ function ITF = TF1D (I)
   for u = 1:N
     somme  = 0;
     for x = 1 :N
-      somme += (I(x) * exp((-2 * i * pi * (u-1) * (x-1)) / double(N)));
+      somme += (I(x) * exp((-2 * i * pi * (u-1) * (x-1)) / N));
     endfor
     ITF(u) = somme;
   endfor

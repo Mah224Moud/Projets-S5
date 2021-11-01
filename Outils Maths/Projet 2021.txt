@@ -8,34 +8,70 @@ Les étudiants se répartiront par binomes (et non trinome....).
 Le langage de programmation est libre. Vous devez rendre, le jour de la soutenance, un rapport papier (au maximum 12 pages) expliquant les différents algorithmes utilisés.
 
 DATE de la soutenance:   Semaine du 4 décembre  2017 pendant les horaires de TPS habituels de OUTILS MATHEMATQUES
-
+================================================================
 Transformée de fourier 1D Brutal
 
 Paramètre: matrice une dimension I de taille N
-Retour : matrice une dimension I' de taille N
+Retour : matrice une dimension ITF de taille N
 
-Pour U allant de 0 à N-1
-  Pour x allant de 0 à N-1
-    I'[U] -> I'[U] + I[x] * exp((-2i*PI*U*X)/N)
+Pour U allant de 1 à N
+  Pour x allant de 1 à N
+    ITF[U] -> ITF[U] + I[x] * exp((-2i*PI*(U-1)*(x-1))/N)
   FinPour
 FinPour
 
-
-
+================================================================
 Transformée de fourier inverse 1D
 
-Paramètre: matrice une dimension I de taille N
-Retour : matrice une dimension I' de taille N
+Paramètre: matrice une dimension ITF de taille N
+Retour : matrice une dimension I de taille N
 
-Pour U allant de 0 à N-1
-  Pour x allant de 0 à N-1
-    I'[U] -> I'[U] + I[x] * exp((2i*PI*U*X)/N)
+Pour U allant de 1 à N-1
+  Pour x allant de 1 à N-1
+    I[U] -> I[U] + ITF[x] * exp((2i*PI*(U-1)*(x-1))/N)
   FinPour
 FinPour
 
+================================================================
 Transformée de fourier 1D Rapide
-Transformée de fourier inverse Rapide
+Paramètre: matrice une dimension I de taille N
+Retour : matrice une dimension ITF de taille N
 
+Pour U allant de 1 à N
+  ITF[U] = FourierRapide(U, I);   
+FinPour
+
+Fonction FourierRapide
+
+Si une seule valeur dans I
+  retourne la valeur
+Sinon
+  retourne FourierRapide(I(pair)) + exp((-2i*PI*(u-1))/Taille(I)) * FourierRapide(I(impair))
+FinSi
+
+I(pair): l'ensemble des valeurs d'indice pair du tableau I
+en Matlab: I(pair) = I(1:2:end)
+I(impair): l'ensemble des valeurs d'indice impair du tableau I
+en Matlab: I(impair) = I(2:2:end)
+
+================================================================
+Transformée de fourier inverse Rapide
+Paramètre: matrice une dimension ITF de taille N
+Retour : matrice une dimension I de taille N
+
+Pour U allant de 1 à N
+  I[U] = FourierRapide(U, ITF);   
+FinPour
+
+Fonction FourierRapide
+
+Si une seule valeur dans ITF
+  retourne la valeur
+Sinon
+  retourne FourierRapide(ITF(pair)) + exp((2i*PI*(u-1))/Taille(I)) * FourierRapide(ITF(impair))
+FinSi
+
+================================================================
 Transformée 2D
 Transformée 2D inverse
 
