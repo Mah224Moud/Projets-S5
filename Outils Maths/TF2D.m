@@ -24,6 +24,21 @@
 
 # Transformée de fourier 2D Brutale
 
-function retval = TF2D (input1, input2)
-
+function ITF = TF2D (I)
+  [nbl, nbc] = size(I);
+  
+  for u = 1:nbl
+    for v = 1:nbc
+      som = 0;
+      
+      for x = 1:nbl
+        for y = 1:nbc
+          som += double(I(x,y)) * exp((-2*i*pi)*(((u-1)*(x-1)/nbl)+((v-1)*(y-1)/nbc)));
+        endfor
+      endfor
+      
+      ITF(u,v) = som;
+    endfor
+  endfor
+  
 endfunction
