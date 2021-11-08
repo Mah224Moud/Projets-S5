@@ -30,7 +30,6 @@ void animation();
 
 /* ============> Corps */
 void initCorps();
-void Corps();
 /* ============> Queue */
 void initQueue();
 /* ============> Pattes */
@@ -62,7 +61,7 @@ int main(int argc,char **argv)
   glutInit(&argc,argv);
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
   glutInitWindowPosition(200,200);
-  glutInitWindowSize(500,500);
+  glutInitWindowSize(2000,1000);
   glutCreateWindow("Dragon");
 
   /* Initialisation d'OpenGL */
@@ -188,23 +187,121 @@ void dragon()
         // Corps
         glPushMatrix();
             initCorps();
-            //Membre();
-            Corps();
+            Membre();
         glPopMatrix();
 
-        /*
+        // Cou
+        glPushMatrix();
+            glTranslatef(0, 1.5, -0.8);
+            glRotatef(55, 1, 0, 0);
+            glutSolidCylinder(1.15, 4, 20, 20);
+        glPopMatrix();
+
+
+        //Cabeza
+        glPushMatrix();
+
+            //Crane
+            glPushMatrix();
+                glTranslatef(0, 1.25, -1.5);
+                glRotatef(55, 1, 0, 0);
+                glScalef(1,2,1);
+                glColor3f(1.0, 1.0, 0.0);
+                glutSolidSphere(1, 20, 20);
+            glPopMatrix();
+
+            //corne gauche
+                glPushMatrix();
+                glTranslatef(0.5, 1.85, -1.5);
+                glRotatef(-100, 1, 0, 0);
+                    glColor3f(1.0, 0.0, 0.0);
+                    glutSolidCone(0.2, 1.5, 10, 10);
+                glPopMatrix();
+
+            //corne droite
+                glPushMatrix();
+                glTranslatef(-0.5, 1.85, -1.5);
+                glRotatef(-100, 1, 0, 0);
+                    glColor3f(1.0, 0.0, 0.0);
+                    glutSolidCone(0.2, 1.5, 10, 10);
+                glPopMatrix();
+
+            //Oeil droite
+            glPushMatrix();
+                glTranslatef(-0.50, 1.35, -2.5);
+                glRotatef(45, 1, 0, 0);
+                glScalef(1,2,1);
+
+                glColor3f(0.0, 1.0, 0.0);
+                glutSolidSphere(0.25, 20, 20);
+
+            glPopMatrix();
+
+            //Oeil gauche
+            glPushMatrix();
+                glTranslatef(0.50, 1.35, -2.5);
+                glRotatef(45, 1, 0, 0);
+                glScalef(1,2,1);
+
+                glColor3f(0.0, 1.0, 0.0);
+                glutSolidSphere(0.25, 20, 20);
+
+            glPopMatrix();
+        glPopMatrix();
+
         // Queue
         glPushMatrix();
+            glTranslatef(0, 0, 7);
             initQueue();
             Membre();
         glPopMatrix();
-        */
-        /*
+
         // Patte devant droite
         glPushMatrix();
+            glScalef(0.5, 0.5, 0.5);
+            glTranslatef(-2.5, -7.5, 0);
+            glRotatef(90, 1, 0, 0);
+            glColor3f(0.5, 0.5, 0.5);
+            patteAvantDroite();
+        glPopMatrix();
+
+        //Patte avant gauche
+        glPushMatrix();
+            glScalef(0.5, 0.5, 0.5);
+            glTranslatef(2.5, -7.5, 0);
+            glRotatef(90, 1, 0, 0);
+            glColor3f(0.5, 0.5, 0.5);
+            patteAvantGauche();
+        glPopMatrix();
+
+        //Patte arriere droite
+        glPushMatrix();
+            glScalef(0.5, 0.5, 0.5);
+            glTranslatef(2.5, -7.5, 13.5);
+            glRotatef(90, 1, 0, 0);
+            glRotatef(2*90, 0, 0, 1);
+            glColor3f(0.5, 0.5, 0.5);
             patteArriereDroite();
         glPopMatrix();
-        */
+
+        //Patte arriere gauche
+        glPushMatrix();
+            glScalef(0.5, 0.5, 0.5);
+            glTranslatef(-2.5, -7.5, 13.5);
+            glRotatef(90, 1, 0, 0);
+            glRotatef(2*90, 0, 0, 1);
+            glColor3f(0.5, 0.5, 0.5);
+            patteArriereGauche();
+        glPopMatrix();
+
+       /* // Aile
+        glPushMatrix();
+            glBegin(GL_POLYGON);
+                glVertex3f(0,0,0);
+                glVertex3f(5,0,0);
+                glVertex3f(0,5,0);
+            glEnd();
+        glPopMatrix();*/
     glEnd();
 
     //Repère
@@ -329,28 +426,28 @@ void patteAvantDroite()
 {
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
-    glEnd();
+    glPopMatrix();
     // Avant Bras
     glPushMatrix();
-        glTranslatef(4, 0, 0);
-        glRotatef(-90, 0, 1, 0);
+        glTranslatef(0, 3, -3);
+        glRotatef(45, 1, 0, 0);
         initMembre(1.5, 0.9, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Bras
     glPushMatrix();
-        glTranslatef(0, -0.5, 4.5);
-        glRotatef(50, 1, 0, 0);
+        glTranslatef(0, 0, 0.6);
+        //glRotatef(50, 1, 0, 0);
         initMembre(0.8, 0.25, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Pied
     glPushMatrix();
-        glTranslatef(0, 0.5, 4.25);
+        glTranslatef(0, -0.5, 4.75);
         glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
-    glEnd();
+    glPopMatrix();
 }
 
 /**
@@ -360,28 +457,28 @@ void patteAvantGauche()
 {
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
-    glEnd();
+    glPopMatrix();
     // Avant Bras
     glPushMatrix();
-        glTranslatef(4, 0, 0);
-        glRotatef(-90, 0, 1, 0);
+        glTranslatef(0, 3, -3);
+        glRotatef(45, 1, 0, 0);
         initMembre(1.5, 0.9, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Bras
     glPushMatrix();
-        glTranslatef(0, -0.5, 4.5);
-        glRotatef(50, 1, 0, 0);
+        glTranslatef(0, 0, 0.6);
+        //glRotatef(50, 1, 0, 0);
         initMembre(0.8, 0.25, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Pied
     glPushMatrix();
-        glTranslatef(0, 0.5, 4.25);
+        glTranslatef(0, -0.5, 4.75);
         glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
-    glEnd();
+    glPopMatrix();
 }
 
 /**
@@ -391,28 +488,28 @@ void patteArriereDroite()
 {
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
-    glEnd();
+    glPopMatrix();
     // Avant Bras
     glPushMatrix();
-        glTranslatef(4, 0, 0);
-        glRotatef(-90, 0, 1, 0);
+        glTranslatef(0, 3, -3);
+        glRotatef(45, 1, 0, 0);
         initMembre(1.5, 0.9, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Bras
     glPushMatrix();
-        glTranslatef(0, -0.5, 4.5);
-        glRotatef(50, 1, 0, 0);
+        glTranslatef(0, 0, 0.6);
+        //glRotatef(50, 1, 0, 0);
         initMembre(0.8, 0.25, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Pied
     glPushMatrix();
-        glTranslatef(0, -0.5, 4.25);
+        glTranslatef(0, 0.5, 4.75);
         glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
-    glEnd();
+    glPopMatrix();
 }
 
 /**
@@ -422,28 +519,28 @@ void patteArriereGauche()
 {
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
-    glEnd();
+    glPopMatrix();
     // Avant Bras
     glPushMatrix();
-        glTranslatef(4, 0, 0);
-        glRotatef(-90, 0, 1, 0);
+        glTranslatef(0, 3, -3);
+        glRotatef(45, 1, 0, 0);
         initMembre(1.5, 0.9, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Bras
     glPushMatrix();
-        glTranslatef(0, -0.5, 4.5);
-        glRotatef(50, 1, 0, 0);
+        glTranslatef(0, 0, 0.6);
+        //glRotatef(50, 1, 0, 0);
         initMembre(0.8, 0.25, 4);
         Membre();
-    glEnd();
+    glPopMatrix();
     // Pied
     glPushMatrix();
-        glTranslatef(0, -0.5, 4.25);
+        glTranslatef(0, 0.5, 4.75);
         glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
-    glEnd();
+    glPopMatrix();
 }
 /*=====================================================================================================================*/
 /**
@@ -451,26 +548,19 @@ void patteArriereGauche()
 */
 void initCorps()
 {
-    double decremat = 0, r = 0.5, taille = 10;
+    double decremat = 0, r = 0.5, taille = 7.5;
     for(int i = 0; i < nbCercle; i++)
     {
+        if(i <= nbCercle/6) decremat += r * nbPointParCercle / nbCercle;
+        else if (i >= 5*nbCercle/6) decremat -= r * nbPointParCercle / nbCercle;
+
         for(int j = 0; j < nbPointParCercle; j++)
         {
-            if(i < nbCercle/2)
-            {
-                decremat += r / nbCercle;
-                ptMembre[(i*nbPointParCercle+j)].x = (r+decremat) * cos(2*PI*j/nbPointParCercle);
-                ptMembre[(i*nbPointParCercle+j)].y = (r+decremat) * sin(2*PI*j/nbPointParCercle);
-            }
-            else
-            {
-                decremat -= r / nbCercle;
-                ptMembre[(i*nbPointParCercle+j)].x = (r-decremat) * cos(2*PI*j/nbPointParCercle);
-                ptMembre[(i*nbPointParCercle+j)].y = (r-decremat) * sin(2*PI*j/nbPointParCercle);
-            }
+            ptMembre[(i*nbPointParCercle+j)].x = (r+decremat) * cos(2*PI*j/nbPointParCercle);
+            ptMembre[(i*nbPointParCercle+j)].y = (r+decremat) * sin(2*PI*j/nbPointParCercle);
             ptMembre[(i*nbPointParCercle+j)].z = i * taille / nbCercle;
 
-            //ptMembre[(i*nbPointParCercle+j)].y -= decremat;
+            ptMembre[(i*nbPointParCercle+j)].y -= decremat * 0.60;
         }
     }
 
@@ -484,14 +574,4 @@ void initCorps()
             fMembre[i * nbPointParCercle + j][3] = (i+1) * nbPointParCercle + j;
         }
     }
-}
-
-void Corps()
-{
-    glBegin(GL_POINTS);
-    for(int i = 0; i < nbCercle * nbPointParCercle; i++)
-    {
-        glVertex3f(ptMembre[i].x, ptMembre[i].y, ptMembre[i].z);
-    }
-    glEnd();
 }

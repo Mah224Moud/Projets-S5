@@ -9,3 +9,13 @@
 	<math.h>
 	<iostream>
 
+1636403768 source:/home/mamoudou/L3/S5/Projet 2021-2022/Projets-S5/Synthese Image/Dragon/Dragon.cpp
+	<cstdio>
+	<cstdlib>
+	<GL/freeglut.h>
+	<GL/glut.h>
+	<jpeglib.h>
+	<jerror.h>
+	<math.h>
+	<iostream>
+
