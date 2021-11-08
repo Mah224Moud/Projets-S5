@@ -2,4 +2,18 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="Dragon.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12234" topLine="286" />
+		</Cursor>
+		<Folding>
+			<Collapse line="245" />
+			<Collapse line="274" />
+			<Collapse line="294" />
+			<Collapse line="328" />
+			<Collapse line="359" />
+			<Collapse line="390" />
+			<Collapse line="421" />
+		</Folding>
+	</File>
 </CodeBlocks_layout_file>

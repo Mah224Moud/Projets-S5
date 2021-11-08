@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1636333428 source:/home/bah/Bureau/L3/Projets-S5/Synthese Image/Dragon/Dragon.cpp
+	<cstdio>
+	<cstdlib>
+	<GL/freeglut.h>
+	<GL/glut.h>
+	<jpeglib.h>
+	<jerror.h>
+	<math.h>
+	<iostream>
+
