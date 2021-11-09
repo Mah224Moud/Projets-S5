@@ -39,6 +39,8 @@ void patteAvantDroite();
 void patteAvantGauche();
 void patteArriereDroite();
 void patteArriereGauche();
+/* ============> Ailes */
+void Aile();
 
 
 /* ===============> Valeurs globales <=============== */
@@ -183,7 +185,7 @@ void dragon()
 
 
     glMatrixMode(GL_MODELVIEW);
-
+/*
         // Corps
         glPushMatrix();
             initCorps();
@@ -293,15 +295,13 @@ void dragon()
             glColor3f(0.5, 0.5, 0.5);
             patteArriereGauche();
         glPopMatrix();
-
-       /* // Aile
+*/
+        // Aile Gauche
         glPushMatrix();
-            glBegin(GL_POLYGON);
-                glVertex3f(0,0,0);
-                glVertex3f(5,0,0);
-                glVertex3f(0,5,0);
-            glEnd();
-        glPopMatrix();*/
+            Aile();
+        glPopMatrix();
+
+
     glEnd();
 
     //Repère
@@ -574,4 +574,111 @@ void initCorps()
             fMembre[i * nbPointParCercle + j][3] = (i+1) * nbPointParCercle + j;
         }
     }
+}
+
+void Aile()
+{
+    glLineWidth(5.0);
+//======================================//
+    glPushMatrix();
+        glBegin(GL_LINES);
+            glColor3f(0.5,0.5,0.5);
+            glVertex3f(2,5,0);
+            glVertex3f(1.5,1.5,0);
+            glVertex3f(1.5,1.5,0);
+            glVertex3f(0,0,0);
+            glVertex3f(0,0,0);
+            glVertex3f(2,5,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(1,0,0);
+            glVertex3f(2,5,0);
+            glVertex3f(1.5,1.5,0);
+            glVertex3f(0,0,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(0,1,0);
+            glVertex3f(2,5,0.01);
+            glVertex3f(1.5,1.5,0.01);
+            glVertex3f(0,0,0.01);
+        glEnd();
+    glPopMatrix();
+//======================================//
+    glPushMatrix();
+        glBegin(GL_LINES);
+            glColor3f(0.5,0.5,0.5);
+            glVertex3f(2,5,0);
+            glVertex3f(3.7,2.4,0);
+            glVertex3f(3.7,2.4,0);
+            glVertex3f(2.5,2.25,0);
+            glVertex3f(2.5,2.25,0);
+            glVertex3f(1.5,1.5,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(1,0,0);
+            glVertex3f(2,5,0);
+            glVertex3f(3.7,2.4,0);
+            glVertex3f(2.5,2.25,0);
+            glVertex3f(1.5,1.5,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(0,1,0);
+            glVertex3f(2,5,0.01);
+            glVertex3f(3.7,2.4,0.01);
+            glVertex3f(2.5,2.25,0.01);
+            glVertex3f(1.5,1.5,0.01);
+        glEnd();
+    glPopMatrix();
+//======================================//
+    glPushMatrix();
+        glBegin(GL_LINES);
+            glColor3f(0.5,0.5,0.5);
+            glVertex3f(2,5,0);
+            glVertex3f(7,3,0);
+            glVertex3f(7,3,0);
+            glVertex3f(5.25,3.25,0);
+            glVertex3f(5.25,3.25,0);
+            glVertex3f(3.7,2.4,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(1,0,0);
+            glVertex3f(2,5,0);
+            glVertex3f(7,3,0);
+            glVertex3f(5.25,3.25,0);
+            glVertex3f(3.7,2.4,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(0,1,0);
+            glVertex3f(2,5,0.01);
+            glVertex3f(7,3,0.01);
+            glVertex3f(5.25,3.25,0.01);
+            glVertex3f(3.7,2.4,0.01);
+        glEnd();
+    glPopMatrix();
+//======================================//
+    glPushMatrix();
+        glBegin(GL_LINES);
+            glColor3f(0.5,0.5,0.5);
+            glVertex3f(2,5,0);
+            glVertex3f(8,6,0);
+            glVertex3f(8,6,0);
+            glVertex3f(7,4.5,0);
+            glVertex3f(7,4.5,0);
+            glVertex3f(7,3,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(1,0,0);
+            glVertex3f(2,5,0);
+            glVertex3f(8,6,0);
+            glVertex3f(7,4.5,0);
+            glVertex3f(7,3,0);
+        glEnd();
+        glBegin(GL_POLYGON);
+            glColor3f(0,1,0);
+             glVertex3f(2,5,0.01);
+            glVertex3f(8,6,0.01);
+            glVertex3f(7,4.5,0.01);
+            glVertex3f(7,3,0.01);
+        glEnd();
+    glPopMatrix();
 }
