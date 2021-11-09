@@ -185,7 +185,7 @@ void dragon()
 
 
     glMatrixMode(GL_MODELVIEW);
-/*
+
         // Corps
         glPushMatrix();
             initCorps();
@@ -295,9 +295,20 @@ void dragon()
             glColor3f(0.5, 0.5, 0.5);
             patteArriereGauche();
         glPopMatrix();
-*/
+
         // Aile Gauche
         glPushMatrix();
+            glTranslatef(0, 0, 2);
+            glRotatef(-50, 0, 1, 1);
+            Aile();
+        glPopMatrix();
+
+        // Aile Gauche
+        glPushMatrix();
+            glTranslatef(0,  0, 2);
+            glRotatef(210, 0, 1, 0);
+            glRotatef(-30, 0, 0, 1);
+
             Aile();
         glPopMatrix();
 
@@ -448,6 +459,31 @@ void patteAvantDroite()
         glScalef(1, 2, 1);
         glutSolidCube(1);
     glPopMatrix();
+
+    ///Orteilles
+    //gauche
+    glPushMatrix();
+        glTranslatef(-0.3, -1.1, 5);
+        glRotatef(70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+        //milieu
+    glPushMatrix();
+        glTranslatef(0, -1.1, 5);
+        glRotatef(70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+    //droite
+    glPushMatrix();
+        glTranslatef(0.3, -1.1, 5);
+        glRotatef(70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
 }
 
 /**
@@ -478,6 +514,31 @@ void patteAvantGauche()
         glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
+    glPopMatrix();
+
+    ///Orteilles
+    //gauche
+    glPushMatrix();
+        glTranslatef(0.3, -1.1, 5);
+        glRotatef(70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+        //milieu
+    glPushMatrix();
+        glTranslatef(0, -1.1, 5);
+        glRotatef(70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+    //droite
+    glPushMatrix();
+        glTranslatef(-0.3, -1.1, 5);
+        glRotatef(70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 }
 
@@ -510,6 +571,31 @@ void patteArriereDroite()
         glScalef(1, 2, 1);
         glutSolidCube(1);
     glPopMatrix();
+
+    ///Orteilles
+    //gauche
+    glPushMatrix();
+        glTranslatef(5.3, 1, 5);
+        glRotatef(-70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+        //milieu
+    glPushMatrix();
+        glTranslatef(5, 1, 5);
+        glRotatef(-70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+    //droite
+    glPushMatrix();
+        glTranslatef(4.7, 1, 5);
+        glRotatef(-70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
 }
 
 /**
@@ -540,6 +626,31 @@ void patteArriereGauche()
         glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
+    glPopMatrix();
+
+    ///Orteilles
+    //gauche
+    glPushMatrix();
+        glTranslatef(-5.3, 1, 5);
+        glRotatef(-70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+        //milieu
+    glPushMatrix();
+        glTranslatef(-5, 1, 5);
+        glRotatef(-70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
+    glPopMatrix();
+
+    //droite
+    glPushMatrix();
+        glTranslatef(-4.7, 1, 5);
+        glRotatef(-70, 1, 0, 0);
+        glColor3f(0, 1.0, 1.0);
+        glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 }
 /*=====================================================================================================================*/
