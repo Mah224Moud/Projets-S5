@@ -26,10 +26,14 @@ void reshape(int x,int y);
 void idle();
 void mouse(int bouton,int etat,int x,int y);
 void mousemotion(int x,int y);
-void animation();
 
+/* ============> */
+double animationAiles = 0;
+bool fin = false;
+void animation();
 /* ============> Corps */
 void initCorps();
+void Corps();
 /* ============> Queue */
 void initQueue();
 /* ============> Pattes */
@@ -40,11 +44,23 @@ void patteAvantGauche();
 void patteArriereDroite();
 void patteArriereGauche();
 /* ============> Ailes */
-void Aile();
+void Aile(int i);
+
+/* ===============> Textures <=============== */
+
+void loadImage1(char* fichier);
+const int hautimg1 = 255, largimg1 = 256;
+unsigned char imageEcaille1[hautimg1*largimg1*3];
+unsigned char textureEcaille1[hautimg1][largimg1][3];
+
+void loadImage2(char* fichier);
+const int hautimg2 = 512, largimg2 = 512;
+unsigned char imageEcaille2[hautimg2*largimg2*3];
+unsigned char textureEcaille2[hautimg2][largimg2][3];
 
 
 /* ===============> Valeurs globales <=============== */
-double zoom = 6.0;
+double zoom = 10.0;
 //
 const int nbCercle = 20;
 const int nbPointParCercle = 20;
@@ -59,30 +75,47 @@ int anglex,angley,x,y,xold,yold;
 
 int main(int argc,char **argv)
 {
-  /* initialisation de glut et creation de la fenetre */
-  glutInit(&argc,argv);
-  glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
-  glutInitWindowPosition(200,200);
-  glutInitWindowSize(2000,1000);
-  glutCreateWindow("Dragon");
 
-  /* Initialisation d'OpenGL */
-  glClearColor(0.0,0.0,0.0,0.0);
-  glColor3f(1.0,1.0,1.0);
-  glPointSize(2.0);
-  glEnable(GL_DEPTH_TEST);
+    loadImage1("./textures/ecailles1.jpg");
+    loadImage2("./textures/ecailles2.jpg");
+    /* initialisation de glut et creation de la fenetre */
+    glutInit(&argc,argv);
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
+    glutInitWindowPosition(200,200);
+    glutInitWindowSize(2000,1000);
+    glutCreateWindow("Dragon");
 
-  /* enregistrement des fonctions de rappel */
-  glutDisplayFunc(dragon);
-  //glutIdleFunc(animation);
-  glutKeyboardFunc(clavier);
-  glutReshapeFunc(reshape);
-  glutMouseFunc(mouse);
-  glutMotionFunc(mousemotion);
+    /* Initialisation d'OpenGL */
+    glClearColor(0.0,0.0,0.0,0.0);
+    glColor3f(1.0, 1.0, 1.0);
+    glShadeModel(GL_FLAT);
+    glEnable(GL_DEPTH_TEST);
 
-  /* Entree dans la boucle principale glut */
-  glutMainLoop();
-  return 0;
+    /* Mise en place de la projection perspective */
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    //gluPerspective(45.0,1,1.0,5.0);
+    glMatrixMode(GL_MODELVIEW);
+
+    /* Parametrage du placage de textures */
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
+    /*
+    glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg1,largimg1,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille1);
+    glEnable(GL_TEXTURE_2D);
+    */
+
+    /* enregistrement des fonctions de rappel */
+    glutDisplayFunc(dragon);
+    glutIdleFunc(animation);
+    glutKeyboardFunc(clavier);
+    glutReshapeFunc(reshape);
+    glutMouseFunc(mouse);
+    glutMotionFunc(mousemotion);
+
+    /* Entree dans la boucle principale glut */
+    glutMainLoop();
+    return 0;
 }
 
 /**
@@ -172,6 +205,117 @@ void mousemotion(int x,int y)
     yold=y;
 }
 
+void loadImage1(char* fichier)
+{
+    struct jpeg_decompress_struct cinfo;
+    struct jpeg_error_mgr jerr;
+    FILE *file;
+    unsigned char *ligne;
+
+    cinfo.err = jpeg_std_error(&jerr);
+    jpeg_create_decompress(&cinfo);
+    #ifdef __WIN32
+    if (fopen_s(&file,fichier,"rb") != 0)
+    {
+        fprintf(stderr,"Erreur : impossible d'ouvrir le fichier texture.jpg\n");
+        exit(1);
+    }
+    #elif __GNUC__
+    if ((file = fopen(fichier,"rb")) == 0)
+    {
+        fprintf(stderr,"Erreur : impossible d'ouvrir le fichier %s\n", fichier);
+        exit(1);
+    }
+    #endif
+    jpeg_stdio_src(&cinfo, file);
+    jpeg_read_header(&cinfo, TRUE);
+
+    if ((cinfo.image_width!=largimg1)||(cinfo.image_height!=hautimg1)) {
+    fprintf(stdout,"Erreur : l'image doit etre de taille %dx%d\n", hautimg1, largimg1);
+    exit(1);
+    }
+    if (cinfo.jpeg_color_space==JCS_GRAYSCALE) {
+    fprintf(stdout,"Erreur : l'image doit etre de type RGB\n");
+    exit(1);
+    }
+
+    jpeg_start_decompress(&cinfo);
+    ligne = imageEcaille1;
+    while (cinfo.output_scanline<cinfo.output_height)
+    {
+        ligne=imageEcaille1+3*largimg1*cinfo.output_scanline;
+        jpeg_read_scanlines(&cinfo,&ligne,1);
+    }
+    jpeg_finish_decompress(&cinfo);
+    jpeg_destroy_decompress(&cinfo);
+
+  //============================================================
+    for(int i = 0; i < hautimg1; i++){
+        for(int j = 0; j < largimg1; j++){
+            textureEcaille1[i][j][0] = imageEcaille1[i*largimg1*3 + j*3];
+            textureEcaille1[i][j][1] = imageEcaille1[i*largimg1*3 + j*3 + 1];
+            textureEcaille1[i][j][2] = imageEcaille1[i*largimg1*3 + j*3 + 2];
+        }
+    }
+}
+
+void loadImage2(char* fichier)
+{
+    struct jpeg_decompress_struct cinfo;
+    struct jpeg_error_mgr jerr;
+    FILE *file;
+    unsigned char *ligne;
+
+    cinfo.err = jpeg_std_error(&jerr);
+    jpeg_create_decompress(&cinfo);
+    #ifdef __WIN32
+    if (fopen_s(&file,fichier,"rb") != 0)
+    {
+        fprintf(stderr,"Erreur : impossible d'ouvrir le fichier texture.jpg\n");
+        exit(1);
+    }
+    #elif __GNUC__
+    if ((file = fopen(fichier,"rb")) == 0)
+    {
+        fprintf(stderr,"Erreur : impossible d'ouvrir le fichier %s\n", fichier);
+        exit(1);
+    }
+    #endif
+    jpeg_stdio_src(&cinfo, file);
+    jpeg_read_header(&cinfo, TRUE);
+
+    if ((cinfo.image_width!=largimg2)||(cinfo.image_height!=hautimg2)) {
+    fprintf(stdout,"Erreur : l'image doit etre de taille %dx%d\n", hautimg2, largimg2);
+    exit(1);
+    }
+    if (cinfo.jpeg_color_space==JCS_GRAYSCALE) {
+    fprintf(stdout,"Erreur : l'image doit etre de type RGB\n");
+    exit(1);
+    }
+
+    jpeg_start_decompress(&cinfo);
+    ligne = imageEcaille2;
+    while (cinfo.output_scanline<cinfo.output_height)
+    {
+        ligne=imageEcaille2+3*largimg2*cinfo.output_scanline;
+        jpeg_read_scanlines(&cinfo,&ligne,1);
+    }
+    jpeg_finish_decompress(&cinfo);
+    jpeg_destroy_decompress(&cinfo);
+
+  //============================================================
+    for(int i = 0; i < hautimg2; i++){
+        for(int j = 0; j < largimg2; j++){
+            textureEcaille2[i][j][0] = imageEcaille2[i*largimg2*3 + j*3];
+            textureEcaille2[i][j][1] = imageEcaille2[i*largimg2*3 + j*3 + 1];
+            textureEcaille2[i][j][2] = imageEcaille2[i*largimg2*3 + j*3 + 2];
+        }
+    }
+}
+/*========================================================================================*/
+/**
+    *
+*/
 void dragon()
 {
     /* effacement de l'image avec la couleur de fond */
@@ -186,14 +330,15 @@ void dragon()
 
     glMatrixMode(GL_MODELVIEW);
 
+        glColor3f(0.75, 0.75, 0.75);
         // Corps
         glPushMatrix();
             initCorps();
-            Membre();
+            Corps();
         glPopMatrix();
-
         // Cou
         glPushMatrix();
+            glColor3f(0.25, 0.25, 0.25);
             glTranslatef(0, 1.5, -0.8);
             glRotatef(55, 1, 0, 0);
             glutSolidCylinder(1.15, 4, 20, 20);
@@ -208,7 +353,7 @@ void dragon()
                 glTranslatef(0, 1.25, -1.5);
                 glRotatef(55, 1, 0, 0);
                 glScalef(1,2,1);
-                glColor3f(1.0, 1.0, 0.0);
+                //glColor3f(1.0, 1.0, 0.0);
                 glutSolidSphere(1, 20, 20);
             glPopMatrix();
 
@@ -216,7 +361,7 @@ void dragon()
                 glPushMatrix();
                 glTranslatef(0.5, 1.85, -1.5);
                 glRotatef(-100, 1, 0, 0);
-                    glColor3f(1.0, 0.0, 0.0);
+                    glColor3f(0.5, 0.5, 0.5);
                     glutSolidCone(0.2, 1.5, 10, 10);
                 glPopMatrix();
 
@@ -224,7 +369,7 @@ void dragon()
                 glPushMatrix();
                 glTranslatef(-0.5, 1.85, -1.5);
                 glRotatef(-100, 1, 0, 0);
-                    glColor3f(1.0, 0.0, 0.0);
+                    glColor3f(0.5, 0.5, 0.5);
                     glutSolidCone(0.2, 1.5, 10, 10);
                 glPopMatrix();
 
@@ -233,8 +378,7 @@ void dragon()
                 glTranslatef(-0.50, 1.35, -2.5);
                 glRotatef(45, 1, 0, 0);
                 glScalef(1,2,1);
-
-                glColor3f(0.0, 1.0, 0.0);
+                glColor3f(1.0, 0.0, 0.0);
                 glutSolidSphere(0.25, 20, 20);
 
             glPopMatrix();
@@ -244,8 +388,7 @@ void dragon()
                 glTranslatef(0.50, 1.35, -2.5);
                 glRotatef(45, 1, 0, 0);
                 glScalef(1,2,1);
-
-                glColor3f(0.0, 1.0, 0.0);
+                glColor3f(1.0, 0.0, 0.0);
                 glutSolidSphere(0.25, 20, 20);
 
             glPopMatrix();
@@ -253,6 +396,7 @@ void dragon()
 
         // Queue
         glPushMatrix();
+            glColor3f(0.5, 0.5, 0.5);
             glTranslatef(0, 0, 7);
             initQueue();
             Membre();
@@ -263,7 +407,6 @@ void dragon()
             glScalef(0.5, 0.5, 0.5);
             glTranslatef(-2.5, -7.5, 0);
             glRotatef(90, 1, 0, 0);
-            glColor3f(0.5, 0.5, 0.5);
             patteAvantDroite();
         glPopMatrix();
 
@@ -272,7 +415,6 @@ void dragon()
             glScalef(0.5, 0.5, 0.5);
             glTranslatef(2.5, -7.5, 0);
             glRotatef(90, 1, 0, 0);
-            glColor3f(0.5, 0.5, 0.5);
             patteAvantGauche();
         glPopMatrix();
 
@@ -282,7 +424,6 @@ void dragon()
             glTranslatef(2.5, -7.5, 13.5);
             glRotatef(90, 1, 0, 0);
             glRotatef(2*90, 0, 0, 1);
-            glColor3f(0.5, 0.5, 0.5);
             patteArriereDroite();
         glPopMatrix();
 
@@ -292,24 +433,26 @@ void dragon()
             glTranslatef(-2.5, -7.5, 13.5);
             glRotatef(90, 1, 0, 0);
             glRotatef(2*90, 0, 0, 1);
-            glColor3f(0.5, 0.5, 0.5);
             patteArriereGauche();
         glPopMatrix();
 
         // Aile Gauche
         glPushMatrix();
-            glTranslatef(0, 0, 2);
+            glTranslatef(0, 0, 4);
+            glRotatef(animationAiles, 0, 0, 1);
             glRotatef(-50, 0, 1, 1);
-            Aile();
+            glRotatef(-90, 1, 0, 0);
+            Aile(0);
         glPopMatrix();
 
         // Aile Gauche
         glPushMatrix();
-            glTranslatef(0,  0, 2);
+            glTranslatef(0,  0, 4);
+            glRotatef(-animationAiles, 0, 0, 1);
             glRotatef(210, 0, 1, 0);
             glRotatef(-30, 0, 0, 1);
-
-            Aile();
+            glRotatef(90, 1, 0, 0);
+            Aile(1);
         glPopMatrix();
 
 
@@ -343,7 +486,13 @@ void dragon()
 
 void animation()
 {
+    if(fin) animationAiles -= 0.5;
+    else animationAiles += 0.5;
 
+    if(animationAiles <= 0) fin = false;
+    if(animationAiles >= 60) fin = true;
+
+    glutPostRedisplay( );
 }
 
 /*=====================================================================================================================*/
@@ -383,16 +532,27 @@ void Membre()
 {
     int nbFaces = (nbCercle - 1) * nbPointParCercle;
 
+    // Texture 2
+    // Application d'une seule texture sur toutes les faces
+    glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg2,largimg2,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille2);
+    glEnable(GL_TEXTURE_2D);
     for(int i = 0; i < nbFaces; i++)
     {
         glBegin(GL_POLYGON);
-            //glColor3f(1.0, 1.0, 1.0);
+            glTexCoord2f((i % nbPointParCercle)/(float)nbPointParCercle, ((nbCercle-1)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][0]].x, ptMembre[fMembre[i][0]].y, ptMembre[fMembre[i][0]].z);
+
+            glTexCoord2f(((i % nbPointParCercle)+1)/(float)nbPointParCercle, ((nbCercle-1)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][1]].x, ptMembre[fMembre[i][1]].y, ptMembre[fMembre[i][1]].z);
+
+            glTexCoord2f(((i % nbPointParCercle)+1)/(float)nbPointParCercle, ((nbCercle-2)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][2]].x, ptMembre[fMembre[i][2]].y, ptMembre[fMembre[i][2]].z);
+
+            glTexCoord2f((i % nbPointParCercle)/(float)nbPointParCercle, ((nbCercle-2)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][3]].x, ptMembre[fMembre[i][3]].y, ptMembre[fMembre[i][3]].z);
         glEnd();
     }
+    glDisable(GL_TEXTURE_2D);
 }
 
 /*=====================================================================================================================*/
@@ -435,6 +595,8 @@ void initQueue()
 */
 void patteAvantDroite()
 {
+    glColor3f(0.5, 0.5, 0.5);
+
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
     glPopMatrix();
@@ -455,7 +617,6 @@ void patteAvantDroite()
     // Pied
     glPushMatrix();
         glTranslatef(0, -0.5, 4.75);
-        glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
     glPopMatrix();
@@ -465,7 +626,6 @@ void patteAvantDroite()
     glPushMatrix();
         glTranslatef(-0.3, -1.1, 5);
         glRotatef(70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 
@@ -473,7 +633,6 @@ void patteAvantDroite()
     glPushMatrix();
         glTranslatef(0, -1.1, 5);
         glRotatef(70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 
@@ -481,7 +640,6 @@ void patteAvantDroite()
     glPushMatrix();
         glTranslatef(0.3, -1.1, 5);
         glRotatef(70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 }
@@ -491,6 +649,8 @@ void patteAvantDroite()
 */
 void patteAvantGauche()
 {
+    glColor3f(0.5, 0.5, 0.5);
+
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
     glPopMatrix();
@@ -511,7 +671,6 @@ void patteAvantGauche()
     // Pied
     glPushMatrix();
         glTranslatef(0, -0.5, 4.75);
-        glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
     glPopMatrix();
@@ -521,7 +680,6 @@ void patteAvantGauche()
     glPushMatrix();
         glTranslatef(0.3, -1.1, 5);
         glRotatef(70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 
@@ -529,7 +687,6 @@ void patteAvantGauche()
     glPushMatrix();
         glTranslatef(0, -1.1, 5);
         glRotatef(70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 
@@ -537,7 +694,6 @@ void patteAvantGauche()
     glPushMatrix();
         glTranslatef(-0.3, -1.1, 5);
         glRotatef(70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 }
@@ -547,6 +703,8 @@ void patteAvantGauche()
 */
 void patteArriereDroite()
 {
+    glColor3f(0.5, 0.5, 0.5);
+
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
     glPopMatrix();
@@ -567,7 +725,6 @@ void patteArriereDroite()
     // Pied
     glPushMatrix();
         glTranslatef(0, 0.5, 4.75);
-        glColor3f(1,1,1);
         glScalef(1, 2, 1);
         glutSolidCube(1);
     glPopMatrix();
@@ -577,7 +734,6 @@ void patteArriereDroite()
     glPushMatrix();
         glTranslatef(5.3, 1, 5);
         glRotatef(-70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 
@@ -585,7 +741,6 @@ void patteArriereDroite()
     glPushMatrix();
         glTranslatef(5, 1, 5);
         glRotatef(-70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 
@@ -593,7 +748,6 @@ void patteArriereDroite()
     glPushMatrix();
         glTranslatef(4.7, 1, 5);
         glRotatef(-70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
         glutSolidCone(0.15, 2, 10, 10);
     glPopMatrix();
 }
@@ -603,6 +757,8 @@ void patteArriereDroite()
 */
 void patteArriereGauche()
 {
+    glColor3f(0.5, 0.5, 0.5);
+
     glPushMatrix();
         glutSolidSphere(1, 20, 20);
     glPopMatrix();
@@ -620,37 +776,38 @@ void patteArriereGauche()
         initMembre(0.8, 0.25, 4);
         Membre();
     glPopMatrix();
+
     // Pied
-    glPushMatrix();
-        glTranslatef(0, 0.5, 4.75);
-        glColor3f(1,1,1);
-        glScalef(1, 2, 1);
-        glutSolidCube(1);
-    glPopMatrix();
 
-    ///Orteilles
-    //gauche
     glPushMatrix();
-        glTranslatef(-5.3, 1, 5);
-        glRotatef(-70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        glPushMatrix();
+            glTranslatef(0, 0.5, 4.75);
+            glScalef(1, 2, 1);
+            glutSolidCube(1);
+        glPopMatrix();
 
-        //milieu
-    glPushMatrix();
-        glTranslatef(-5, 1, 5);
-        glRotatef(-70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        ///Orteilles
+        //gauche
+        glPushMatrix();
+            glTranslatef(-5.3, 1, 5);
+            glRotatef(-70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
 
-    //droite
-    glPushMatrix();
-        glTranslatef(-4.7, 1, 5);
-        glRotatef(-70, 1, 0, 0);
-        glColor3f(0, 1.0, 1.0);
-        glutSolidCone(0.15, 2, 10, 10);
+            //milieu
+        glPushMatrix();
+            glTranslatef(-5, 1, 5);
+            glRotatef(-70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
+
+        //droite
+        glPushMatrix();
+            glTranslatef(-4.7, 1, 5);
+            glRotatef(-70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
+
     glPopMatrix();
 }
 /*=====================================================================================================================*/
@@ -687,9 +844,44 @@ void initCorps()
     }
 }
 
-void Aile()
+/**
+    *@brief
+*/
+void Corps()
+{
+    int nbFaces = (nbCercle - 1) * nbPointParCercle;
+
+    // Texture 1
+    // Application de la texture sur chaque face
+    glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg1,largimg1,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille1);
+    glEnable(GL_TEXTURE_2D);
+
+    for(int i = 0; i < nbFaces; i++)
+    {
+        glBegin(GL_POLYGON);
+            //glColor3f(1.0, 1.0, 1.0);
+            glTexCoord2d(0.0, 0.0);
+            glVertex3f(ptMembre[fMembre[i][0]].x, ptMembre[fMembre[i][0]].y, ptMembre[fMembre[i][0]].z);
+            glTexCoord2d(0.0, 1.0);
+            glVertex3f(ptMembre[fMembre[i][1]].x, ptMembre[fMembre[i][1]].y, ptMembre[fMembre[i][1]].z);
+            glTexCoord2d(1.0, 1.0);
+            glVertex3f(ptMembre[fMembre[i][2]].x, ptMembre[fMembre[i][2]].y, ptMembre[fMembre[i][2]].z);
+            glTexCoord2d(1.0, 0.0);
+            glVertex3f(ptMembre[fMembre[i][3]].x, ptMembre[fMembre[i][3]].y, ptMembre[fMembre[i][3]].z);
+        glEnd();
+    }
+    glDisable(GL_TEXTURE_2D);
+
+}
+
+/*=====================================================================================================================*/
+void Aile(int i)
 {
     glLineWidth(5.0);
+
+    glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg1,largimg1,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille1);
+    glEnable(GL_TEXTURE_2D);
+
 //======================================//
     glPushMatrix();
         glBegin(GL_LINES);
@@ -702,22 +894,28 @@ void Aile()
             glVertex3f(2,5,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(1,0,0);
+            glColor3f(0.5,0.5,0.5);
+            if(i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0);
+            if(i)glTexCoord2d(0, 1);
             glVertex3f(1.5,1.5,0);
+            if(i)glTexCoord2d(1, 0.5);
             glVertex3f(0,0,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(0,1,0);
+            glColor3f(0.5,0.5,0.5);
+            if(!i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0.01);
+            if(!i)glTexCoord2d(0, 1);
             glVertex3f(1.5,1.5,0.01);
+            if(!i)glTexCoord2d(1, 0.5);
             glVertex3f(0,0,0.01);
         glEnd();
     glPopMatrix();
 //======================================//
     glPushMatrix();
+        glColor3f(0.5,0.5,0.5);
         glBegin(GL_LINES);
-            glColor3f(0.5,0.5,0.5);
             glVertex3f(2,5,0);
             glVertex3f(3.7,2.4,0);
             glVertex3f(3.7,2.4,0);
@@ -726,24 +924,30 @@ void Aile()
             glVertex3f(1.5,1.5,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(1,0,0);
+            if(i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0);
+            if(i)glTexCoord2d(0, 1);
             glVertex3f(3.7,2.4,0);
+            if(i)glTexCoord2d(1, 1);
             glVertex3f(2.5,2.25,0);
+            if(i)glTexCoord2d(1, 0);
             glVertex3f(1.5,1.5,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(0,1,0);
+            if(!i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0.01);
+            if(!i)glTexCoord2d(0, 1);
             glVertex3f(3.7,2.4,0.01);
+            if(!i)glTexCoord2d(1, 1);
             glVertex3f(2.5,2.25,0.01);
+            if(!i)glTexCoord2d(1, 0);
             glVertex3f(1.5,1.5,0.01);
         glEnd();
     glPopMatrix();
 //======================================//
     glPushMatrix();
+    glColor3f(0.5,0.5,0.5);
         glBegin(GL_LINES);
-            glColor3f(0.5,0.5,0.5);
             glVertex3f(2,5,0);
             glVertex3f(7,3,0);
             glVertex3f(7,3,0);
@@ -752,24 +956,30 @@ void Aile()
             glVertex3f(3.7,2.4,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(1,0,0);
+            if(i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0);
+            if(i)glTexCoord2d(0, 1);
             glVertex3f(7,3,0);
+            if(i)glTexCoord2d(1, 1);
             glVertex3f(5.25,3.25,0);
+            if(i)glTexCoord2d(1, 0);
             glVertex3f(3.7,2.4,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(0,1,0);
+            if(!i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0.01);
+            if(!i)glTexCoord2d(0, 1);
             glVertex3f(7,3,0.01);
+            if(!i)glTexCoord2d(1, 1);
             glVertex3f(5.25,3.25,0.01);
+            if(!i)glTexCoord2d(1, 0);
             glVertex3f(3.7,2.4,0.01);
         glEnd();
     glPopMatrix();
 //======================================//
     glPushMatrix();
+    glColor3f(0.5,0.5,0.5);
         glBegin(GL_LINES);
-            glColor3f(0.5,0.5,0.5);
             glVertex3f(2,5,0);
             glVertex3f(8,6,0);
             glVertex3f(8,6,0);
@@ -778,18 +988,26 @@ void Aile()
             glVertex3f(7,3,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(1,0,0);
+            if(i)glTexCoord2d(0, 0);
             glVertex3f(2,5,0);
+            if(i)glTexCoord2d(0, 1);
             glVertex3f(8,6,0);
+            if(i)glTexCoord2d(1, 1);
             glVertex3f(7,4.5,0);
+            if(i)glTexCoord2d(1, 0);
             glVertex3f(7,3,0);
         glEnd();
         glBegin(GL_POLYGON);
-            glColor3f(0,1,0);
-             glVertex3f(2,5,0.01);
+            if(!i)glTexCoord2d(0, 0);
+            glVertex3f(2,5,0.01);
+            if(!i)glTexCoord2d(0, 1);
             glVertex3f(8,6,0.01);
+            if(!i)glTexCoord2d(1, 1);
             glVertex3f(7,4.5,0.01);
+            if(!i)glTexCoord2d(1, 0);
             glVertex3f(7,3,0.01);
         glEnd();
     glPopMatrix();
+
+glDisable(GL_TEXTURE_2D);
 }
