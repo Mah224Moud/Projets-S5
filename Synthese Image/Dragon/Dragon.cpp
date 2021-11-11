@@ -21,14 +21,15 @@ class Point{
 
 /* ============> Prototype des fonctions <============ */
 void dragon();
-void clavier(unsigned char touche,int x,int y);
+void clavier(unsigned char touche, int x, int y);
+void sclavier(int touche, int x, int y);
 void reshape(int x,int y);
 void idle();
 void mouse(int bouton,int etat,int x,int y);
 void mousemotion(int x,int y);
 
-/* ============> */
-double animationAiles = 0; bool fin = false;
+/* ============> Animation*/
+double animationAiles = 0; bool fin = false; bool anim = false;
 
 double animationMarche1 = 45; bool finMarche1 = false;
 double animationMarche2 = 0; bool finMarche2 = false;
@@ -65,8 +66,7 @@ unsigned char textureEcaille2[hautimg2][largimg2][3];
 
 
 /* ===============> Valeurs globales <=============== */
-double zoom = 10.0;
-//
+double zoom = 10;
 const int nbCercle = 20;
 const int nbPointParCercle = 20;
 // Tableau contenant les points
@@ -114,6 +114,7 @@ int main(int argc,char **argv)
     glutDisplayFunc(dragon);
     glutIdleFunc(animation);
     glutKeyboardFunc(clavier);
+    glutSpecialFunc(sclavier);
     glutReshapeFunc(reshape);
     glutMouseFunc(mouse);
     glutMotionFunc(mousemotion);
@@ -126,7 +127,7 @@ int main(int argc,char **argv)
 /**
     *@brief Fonction intéraction avec le clavier
 */
-void clavier(unsigned char touche,int x,int y)
+void clavier(unsigned char touche, int x, int y)
 {
     switch (touche)
     {
@@ -158,11 +159,47 @@ void clavier(unsigned char touche,int x,int y)
             zoom --;
             glutPostRedisplay();
             break;
-        case'r':
+        case 'a':
+        case 'A':
+            anim = true;
             break;
         case 'q' : /*la touche 'q' permet de quitter le programme */
           exit(0);
     }
+}
+
+/**
+    *@brief Fonction intéraction avec le clavier touches spéciales
+*/
+void sclavier(int touche, int x, int y)
+{
+    switch(touche)
+    {
+        case GLUT_KEY_UP:
+        //std::cout << "Touche Haute" << std::endl;
+            angley -= 2;
+            glutPostRedisplay();
+        break;
+
+        case GLUT_KEY_DOWN:
+        //std::cout << "Touche Basse" << std::endl;
+            angley += 2;
+            glutPostRedisplay();
+        break;
+
+        case GLUT_KEY_RIGHT:
+        //std::cout << "Touche Droite" << std::endl;
+            anglex += 2;
+            glutPostRedisplay();
+        break;
+
+        case GLUT_KEY_LEFT:
+        //std::cout << "Touche Gauche" << std::endl;
+            anglex -= 2;
+            glutPostRedisplay();
+        break;
+    }
+
 }
 
 /**
@@ -332,6 +369,7 @@ void dragon()
     glLoadIdentity();
     glRotatef(angley,1.0,0.0,0.0);
     glRotatef(anglex,0.0,1.0,0.0);
+
     glOrtho(-zoom, zoom, -zoom, zoom, -zoom, zoom);
 
 
@@ -500,10 +538,16 @@ void dragon()
 
 void animation()
 {
-    if(fin) animationAiles -= 0.5;
-    else animationAiles += 0.5;
-    if(animationAiles <= 0) fin = false;
-    if(animationAiles >= 60) fin = true;
+    if(anim)
+    {
+        if(fin) animationAiles -= 0.5;
+        else animationAiles += 0.5;
+        if(animationAiles <= 0){
+            fin = false;
+            anim = false;
+        }
+        if(animationAiles >= 60) fin = true;
+    }
 
     // Patte avant gauche bouge
     if(finMarche1) animationMarche1 -= 0.5;
