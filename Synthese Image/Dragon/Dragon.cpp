@@ -28,8 +28,13 @@ void mouse(int bouton,int etat,int x,int y);
 void mousemotion(int x,int y);
 
 /* ============> */
-double animationAiles = 0;
-bool fin = false;
+double animationAiles = 0; bool fin = false;
+
+double animationMarche1 = 45; bool finMarche1 = false;
+double animationMarche2 = 0; bool finMarche2 = false;
+double animationMarche3 = 0; bool finMarche3 = false;
+double animationMarche4 = 45; bool finMarche4 = false;
+
 void animation();
 /* ============> Corps */
 void initCorps();
@@ -152,6 +157,8 @@ void clavier(unsigned char touche,int x,int y)
         case 'Z':
             zoom --;
             glutPostRedisplay();
+            break;
+        case'r':
             break;
         case 'q' : /*la touche 'q' permet de quitter le programme */
           exit(0);
@@ -358,12 +365,12 @@ void dragon()
             glPopMatrix();
 
             //corne gauche
-                glPushMatrix();
+            glPushMatrix();
                 glTranslatef(0.5, 1.85, -1.5);
                 glRotatef(-100, 1, 0, 0);
-                    glColor3f(0.5, 0.5, 0.5);
-                    glutSolidCone(0.2, 1.5, 10, 10);
-                glPopMatrix();
+                glColor3f(0.5, 0.5, 0.5);
+                glutSolidCone(0.2, 1.5, 10, 10);
+            glPopMatrix();
 
             //corne droite
                 glPushMatrix();
@@ -455,7 +462,14 @@ void dragon()
             Aile(1);
         glPopMatrix();
 
-
+/*
+    glPushMatrix();
+        glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg2,largimg2,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille2);
+        glEnable(GL_TEXTURE_2D);
+            glutSolidSphere(2, 20, 20);
+        glDisable(GL_TEXTURE_2D);
+    glPopMatrix();
+*/
     glEnd();
 
     //Repère
@@ -488,9 +502,33 @@ void animation()
 {
     if(fin) animationAiles -= 0.5;
     else animationAiles += 0.5;
-
     if(animationAiles <= 0) fin = false;
     if(animationAiles >= 60) fin = true;
+
+    // Patte avant gauche bouge
+    if(finMarche1) animationMarche1 -= 0.5;
+    else animationMarche1 += 0.5;
+    if(animationMarche1 <= -45) finMarche1 = false;
+    if(animationMarche1 >= 45) finMarche1 = true;
+
+    // Patte avant droite bouge
+    if(finMarche2) animationMarche2 -= 0.5;
+    else animationMarche2 += 0.5;
+    if(animationMarche2 <= -45) finMarche2 = false;
+    if(animationMarche2 >= 45) finMarche2 = true;
+
+
+    // Patte arriere droite bouge
+    if(finMarche3) animationMarche3 -= 0.5;
+    else animationMarche3 += 0.5;
+    if(animationMarche3 <= -45) finMarche3 = false;
+    if(animationMarche3 >= 45) finMarche3 = true;
+
+    // Patte Arriere gauche bouge
+    if(finMarche4) animationMarche4 -= 0.5;
+    else animationMarche4 += 0.5;
+    if(animationMarche4 <= -45) finMarche4 = false;
+    if(animationMarche4 >= 45) finMarche4 = true;
 
     glutPostRedisplay( );
 }
@@ -607,40 +645,44 @@ void patteAvantDroite()
         initMembre(1.5, 0.9, 4);
         Membre();
     glPopMatrix();
-    // Bras
-    glPushMatrix();
-        glTranslatef(0, 0, 0.6);
-        //glRotatef(50, 1, 0, 0);
-        initMembre(0.8, 0.25, 4);
-        Membre();
-    glPopMatrix();
-    // Pied
-    glPushMatrix();
-        glTranslatef(0, -0.5, 4.75);
-        glScalef(1, 2, 1);
-        glutSolidCube(1);
-    glPopMatrix();
 
-    ///Orteilles
-    //gauche
     glPushMatrix();
-        glTranslatef(-0.3, -1.1, 5);
-        glRotatef(70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        glRotated(animationMarche1, 1, 0, 0);
+        // Bras
+        glPushMatrix();
+            glTranslatef(0, 0, 0.6);
+            //glRotatef(50, 1, 0, 0);
+            initMembre(0.8, 0.25, 4);
+            Membre();
+        glPopMatrix();
+        // Pied
+        glPushMatrix();
+            glTranslatef(0, -0.5, 4.75);
+            glScalef(1, 2, 1);
+            glutSolidCube(1);
+        glPopMatrix();
 
-        //milieu
-    glPushMatrix();
-        glTranslatef(0, -1.1, 5);
-        glRotatef(70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        ///Orteilles
+        //gauche
+        glPushMatrix();
+            glTranslatef(-0.3, -1.1, 5);
+            glRotatef(70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
 
-    //droite
-    glPushMatrix();
-        glTranslatef(0.3, -1.1, 5);
-        glRotatef(70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
+            //milieu
+        glPushMatrix();
+            glTranslatef(0, -1.1, 5);
+            glRotatef(70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
+
+        //droite
+        glPushMatrix();
+            glTranslatef(0.3, -1.1, 5);
+            glRotatef(70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
     glPopMatrix();
 }
 
@@ -661,40 +703,44 @@ void patteAvantGauche()
         initMembre(1.5, 0.9, 4);
         Membre();
     glPopMatrix();
-    // Bras
-    glPushMatrix();
-        glTranslatef(0, 0, 0.6);
-        //glRotatef(50, 1, 0, 0);
-        initMembre(0.8, 0.25, 4);
-        Membre();
-    glPopMatrix();
-    // Pied
-    glPushMatrix();
-        glTranslatef(0, -0.5, 4.75);
-        glScalef(1, 2, 1);
-        glutSolidCube(1);
-    glPopMatrix();
 
-    ///Orteilles
-    //gauche
     glPushMatrix();
-        glTranslatef(0.3, -1.1, 5);
-        glRotatef(70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        glRotatef(animationMarche2, 1, 0, 0);
+        // Bras
+        glPushMatrix();
+            glTranslatef(0, 0, 0.6);
+            //glRotatef(50, 1, 0, 0);
+            initMembre(0.8, 0.25, 4);
+            Membre();
+        glPopMatrix();
+        // Pied
+        glPushMatrix();
+            glTranslatef(0, -0.5, 4.75);
+            glScalef(1, 2, 1);
+            glutSolidCube(1);
+        glPopMatrix();
 
-        //milieu
-    glPushMatrix();
-        glTranslatef(0, -1.1, 5);
-        glRotatef(70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        ///Orteilles
+        //gauche
+        glPushMatrix();
+            glTranslatef(0.3, -1.1, 5);
+            glRotatef(70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
 
-    //droite
-    glPushMatrix();
-        glTranslatef(-0.3, -1.1, 5);
-        glRotatef(70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
+            //milieu
+        glPushMatrix();
+            glTranslatef(0, -1.1, 5);
+            glRotatef(70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
+
+        //droite
+        glPushMatrix();
+            glTranslatef(-0.3, -1.1, 5);
+            glRotatef(70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
     glPopMatrix();
 }
 
@@ -715,40 +761,44 @@ void patteArriereDroite()
         initMembre(1.5, 0.9, 4);
         Membre();
     glPopMatrix();
-    // Bras
-    glPushMatrix();
-        glTranslatef(0, 0, 0.6);
-        //glRotatef(50, 1, 0, 0);
-        initMembre(0.8, 0.25, 4);
-        Membre();
-    glPopMatrix();
-    // Pied
-    glPushMatrix();
-        glTranslatef(0, 0.5, 4.75);
-        glScalef(1, 2, 1);
-        glutSolidCube(1);
-    glPopMatrix();
 
-    ///Orteilles
-    //gauche
     glPushMatrix();
-        glTranslatef(5.3, 1, 5);
-        glRotatef(-70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        glRotatef(-animationMarche3, 1, 0, 0);
+        // Bras
+        glPushMatrix();
+            glTranslatef(0, 0, 0.6);
+            //glRotatef(50, 1, 0, 0);
+            initMembre(0.8, 0.25, 4);
+            Membre();
+        glPopMatrix();
+        // Pied
+        glPushMatrix();
+            glTranslatef(0, 0.5, 4.75);
+            glScalef(1, 2, 1);
+            glutSolidCube(1);
+        glPopMatrix();
 
-        //milieu
-    glPushMatrix();
-        glTranslatef(5, 1, 5);
-        glRotatef(-70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
-    glPopMatrix();
+        ///Orteilles
+        //gauche
+        glPushMatrix();
+            glTranslatef(-0.3, 1, 5);
+            glRotatef(-70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
 
-    //droite
-    glPushMatrix();
-        glTranslatef(4.7, 1, 5);
-        glRotatef(-70, 1, 0, 0);
-        glutSolidCone(0.15, 2, 10, 10);
+            //milieu
+        glPushMatrix();
+            glTranslatef(0, 1, 5);
+            glRotatef(-70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
+
+        //droite
+        glPushMatrix();
+            glTranslatef(0.3, 1, 5);
+            glRotatef(-70, 1, 0, 0);
+            glutSolidCone(0.15, 2, 10, 10);
+        glPopMatrix();
     glPopMatrix();
 }
 
@@ -769,17 +819,18 @@ void patteArriereGauche()
         initMembre(1.5, 0.9, 4);
         Membre();
     glPopMatrix();
-    // Bras
-    glPushMatrix();
-        glTranslatef(0, 0, 0.6);
-        //glRotatef(50, 1, 0, 0);
-        initMembre(0.8, 0.25, 4);
-        Membre();
-    glPopMatrix();
-
-    // Pied
 
     glPushMatrix();
+        // Bras
+        glRotatef(-animationMarche4, 1, 0, 0);
+
+        glPushMatrix();
+            glTranslatef(0, 0, 0.6);
+            //glRotatef(50, 1, 0, 0);
+            initMembre(0.8, 0.25, 4);
+            Membre();
+        glPopMatrix();
+
         glPushMatrix();
             glTranslatef(0, 0.5, 4.75);
             glScalef(1, 2, 1);
@@ -789,25 +840,24 @@ void patteArriereGauche()
         ///Orteilles
         //gauche
         glPushMatrix();
-            glTranslatef(-5.3, 1, 5);
+            glTranslatef(0.3, 1, 5);
             glRotatef(-70, 1, 0, 0);
             glutSolidCone(0.15, 2, 10, 10);
         glPopMatrix();
 
-            //milieu
+        //milieu
         glPushMatrix();
-            glTranslatef(-5, 1, 5);
+            glTranslatef(0, 1, 5);
             glRotatef(-70, 1, 0, 0);
             glutSolidCone(0.15, 2, 10, 10);
         glPopMatrix();
 
         //droite
         glPushMatrix();
-            glTranslatef(-4.7, 1, 5);
+            glTranslatef(-0.3, 1, 5);
             glRotatef(-70, 1, 0, 0);
             glutSolidCone(0.15, 2, 10, 10);
         glPopMatrix();
-
     glPopMatrix();
 }
 /*=====================================================================================================================*/
