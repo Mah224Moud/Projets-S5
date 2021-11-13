@@ -29,7 +29,9 @@ void mouse(int bouton,int etat,int x,int y);
 void mousemotion(int x,int y);
 
 /* ============> Animation*/
-double animationAiles = 0; bool fin = false; bool anim = false;
+bool anim = false;
+double animationAiles = 0; bool fin = false;
+double animationMonteedragon = 0; bool finMontee = false;
 
 double animationMarche1 = 45; bool finMarche1 = false;
 double animationMarche2 = 0; bool finMarche2 = false;
@@ -64,6 +66,21 @@ const int hautimg2 = 512, largimg2 = 512;
 unsigned char imageEcaille2[hautimg2*largimg2*3];
 unsigned char textureEcaille2[hautimg2][largimg2][3];
 
+
+/* ===============> Illumination <=============== */
+
+//coord homogènes : position
+    GLfloat source[] = {-5.0, 15.0, 0.0, 1.0};
+    //direction source à distance infinie
+    GLfloat direction[] = {0.0, 0.0, 0.0, 0.0};
+    //composante diffuse
+    GLfloat dif[] = {1.0, 1.0, 1.0, 1.0};
+    //composante ambiante
+    GLfloat amb[] = {1.0, 1.0, 1.0, 1.0};
+    //composante spéculaire
+    GLfloat spec[] = {1.0, 1.0, 1.0, 1.0};
+
+void illumination();
 
 /* ===============> Valeurs globales <=============== */
 double zoom = 10;
@@ -105,10 +122,8 @@ int main(int argc,char **argv)
     /* Parametrage du placage de textures */
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
-    /*
-    glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg1,largimg1,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille1);
-    glEnable(GL_TEXTURE_2D);
-    */
+
+    illumination();
 
     /* enregistrement des fonctions de rappel */
     glutDisplayFunc(dragon);
@@ -375,6 +390,7 @@ void dragon()
 
     glMatrixMode(GL_MODELVIEW);
 
+        glTranslatef(0, animationMonteedragon, 0);
         glColor3f(0.75, 0.75, 0.75);
         // Corps
         glPushMatrix();
@@ -502,13 +518,11 @@ void dragon()
 
 /*
     glPushMatrix();
-        glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg2,largimg2,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille2);
-        glEnable(GL_TEXTURE_2D);
-            glutSolidSphere(2, 20, 20);
-        glDisable(GL_TEXTURE_2D);
+        initMembre(2, 2, 5);
+        Membre();
     glPopMatrix();
+    //glDisable(GL_TEXTURE_2D);
 */
-    glEnd();
 
     //Repère
     //axe x en rouge
@@ -540,39 +554,63 @@ void animation()
 {
     if(anim)
     {
-        if(fin) animationAiles -= 0.5;
-        else animationAiles += 0.5;
-        if(animationAiles <= 0){
-            fin = false;
+        if(fin) animationAiles -= 2;
+        else animationAiles += 2;
+        if(animationAiles <= 0) fin = false;
+        if(animationAiles >= 60) fin = true;
+
+        if(finMontee) animationMonteedragon -= 0.05;
+        else animationMonteedragon += 0.05;
+        if(animationMonteedragon >= 15) finMontee = true;
+        if(animationMonteedragon <= 0)
+        {
+            finMontee = false;
             anim = false;
         }
-        if(animationAiles >= 60) fin = true;
+
+        if(!anim)
+        {
+            animationMarche1 = 45;
+            animationMarche2 = 0;
+            animationMarche3 = 0;
+            animationMarche4 = 45;
+        }
+        else
+        {
+            animationMarche1 = 45;
+            animationMarche2 = 45;
+            animationMarche3 = -45;
+            animationMarche4 = -45;
+        }
     }
+    else
+    {
+        // Patte avant gauche
+        if(finMarche1) animationMarche1 -= 0.5;
+        else animationMarche1 += 0.5;
+        if(animationMarche1 <= -45) finMarche1 = false;
+        if(animationMarche1 >= 45) finMarche1 = true;
 
-    // Patte avant gauche bouge
-    if(finMarche1) animationMarche1 -= 0.5;
-    else animationMarche1 += 0.5;
-    if(animationMarche1 <= -45) finMarche1 = false;
-    if(animationMarche1 >= 45) finMarche1 = true;
-
-    // Patte avant droite bouge
-    if(finMarche2) animationMarche2 -= 0.5;
-    else animationMarche2 += 0.5;
-    if(animationMarche2 <= -45) finMarche2 = false;
-    if(animationMarche2 >= 45) finMarche2 = true;
+        // Patte avant droite
+        if(finMarche2) animationMarche2 -= 0.5;
+        else animationMarche2 += 0.5;
+        if(animationMarche2 <= -45) finMarche2 = false;
+        if(animationMarche2 >= 45) finMarche2 = true;
 
 
-    // Patte arriere droite bouge
-    if(finMarche3) animationMarche3 -= 0.5;
-    else animationMarche3 += 0.5;
-    if(animationMarche3 <= -45) finMarche3 = false;
-    if(animationMarche3 >= 45) finMarche3 = true;
+        // Patte arriere droite
+        if(finMarche3) animationMarche3 -= 0.5;
+        else animationMarche3 += 0.5;
+        if(animationMarche3 <= -45) finMarche3 = false;
+        if(animationMarche3 >= 45) finMarche3 = true;
 
-    // Patte Arriere gauche bouge
-    if(finMarche4) animationMarche4 -= 0.5;
-    else animationMarche4 += 0.5;
-    if(animationMarche4 <= -45) finMarche4 = false;
-    if(animationMarche4 >= 45) finMarche4 = true;
+        // Patte Arriere gauche
+        if(finMarche4) animationMarche4 -= 0.5;
+        else animationMarche4 += 0.5;
+        if(animationMarche4 <= -45) finMarche4 = false;
+        if(animationMarche4 >= 45) finMarche4 = true;
+
+    }
 
     glutPostRedisplay( );
 }
@@ -613,7 +651,7 @@ void initMembre(double r1, double r2, double taille)
 void Membre()
 {
     int nbFaces = (nbCercle - 1) * nbPointParCercle;
-
+    double x, y;
     // Texture 2
     // Application d'une seule texture sur toutes les faces
     glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,hautimg2,largimg2,0,GL_RGB,GL_UNSIGNED_BYTE,textureEcaille2);
@@ -621,6 +659,11 @@ void Membre()
     for(int i = 0; i < nbFaces; i++)
     {
         glBegin(GL_POLYGON);
+
+            x = (ptMembre[fMembre[i][0]].x+ptMembre[fMembre[i][2]].x)/2.0;
+            y = (ptMembre[fMembre[i][0]].y+ptMembre[fMembre[i][2]].y)/2.0;
+            glNormal3f(x, y, 0);
+
             glTexCoord2f((i % nbPointParCercle)/(float)nbPointParCercle, ((nbCercle-1)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][0]].x, ptMembre[fMembre[i][0]].y, ptMembre[fMembre[i][0]].z);
 
@@ -633,8 +676,21 @@ void Membre()
             glTexCoord2f((i % nbPointParCercle)/(float)nbPointParCercle, ((nbCercle-2)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][3]].x, ptMembre[fMembre[i][3]].y, ptMembre[fMembre[i][3]].z);
         glEnd();
+/*
+glPointSize(3);
+        glBegin(GL_LINES);
+        if(i==0)glColor3f(1, 0, 0);
+        else glColor3f(1,1,1);
+            x = (ptMembre[fMembre[i][0]].x+ptMembre[fMembre[i][2]].x)/2.0;
+            y = (ptMembre[fMembre[i][0]].y+ptMembre[fMembre[i][2]].y)/2.0;
+            z = (ptMembre[fMembre[i][0]].z+ptMembre[fMembre[i][2]].z)/2.0;
+            //z = i;
+            glVertex3f(x, y, z);
+            glVertex3f(0, 0, z);
+        glEnd();
+    std::cout << "i = " << i << " -> ( " << x << " ; " << y << " ; " << z << " )" << std::endl;
+*/
     }
-    glDisable(GL_TEXTURE_2D);
 }
 
 /*=====================================================================================================================*/
@@ -944,6 +1000,7 @@ void initCorps()
 void Corps()
 {
     int nbFaces = (nbCercle - 1) * nbPointParCercle;
+    double x, y;
 
     // Texture 1
     // Application de la texture sur chaque face
@@ -953,7 +1010,11 @@ void Corps()
     for(int i = 0; i < nbFaces; i++)
     {
         glBegin(GL_POLYGON);
-            //glColor3f(1.0, 1.0, 1.0);
+
+            x = (ptMembre[fMembre[i][0]].x+ptMembre[fMembre[i][2]].x)/2.0;
+            y = (ptMembre[fMembre[i][0]].y+ptMembre[fMembre[i][2]].y)/2.0;
+            glNormal3f(x, y, 0);
+
             glTexCoord2d(0.0, 0.0);
             glVertex3f(ptMembre[fMembre[i][0]].x, ptMembre[fMembre[i][0]].y, ptMembre[fMembre[i][0]].z);
             glTexCoord2d(0.0, 1.0);
@@ -1104,4 +1165,20 @@ void Aile(int i)
     glPopMatrix();
 
 glDisable(GL_TEXTURE_2D);
+}
+
+
+void illumination()
+{
+    /* Illumination */
+  glEnable(GL_LIGHTING);
+    //spécification des propriétés
+    glLightfv(GL_LIGHT0, GL_POSITION,source);
+    glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, spec);
+    glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction);
+    // activation de la lumière
+  glEnable(GL_LIGHT0);
+
 }
