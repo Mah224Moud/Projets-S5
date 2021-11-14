@@ -24,9 +24,6 @@ void dragon();
 void clavier(unsigned char touche, int x, int y);
 void sclavier(int touche, int x, int y);
 void reshape(int x,int y);
-void idle();
-void mouse(int bouton,int etat,int x,int y);
-void mousemotion(int x,int y);
 
 /* ============> Animation*/
 bool anim = false;
@@ -68,19 +65,28 @@ unsigned char textureEcaille2[hautimg2][largimg2][3];
 
 
 /* ===============> Illumination <=============== */
+    // Lumière
+    GLfloat couleur[] = {0.75, 0.75, 0.75, 1.0};
 
-//coord homogènes : position
-    GLfloat source[] = {-5.0, 15.0, 0.0, 1.0};
-    //direction source à distance infinie
-    GLfloat direction[] = {0.0, 0.0, 0.0, 0.0};
-    //composante diffuse
-    GLfloat dif[] = {1.0, 1.0, 1.0, 1.0};
-    //composante ambiante
-    GLfloat amb[] = {1.0, 1.0, 1.0, 1.0};
-    //composante spéculaire
-    GLfloat spec[] = {1.0, 1.0, 1.0, 1.0};
+void illumination_ambiant();
 
-void illumination();
+
+    // Lumière spot
+        // position
+    GLfloat source_spot[] = {0.0, 5.0, 0.0, 1.0};
+        // direction
+    GLfloat direction_spot[] = {0.0, -1.0, 0.0};
+        // composante diffuse
+    GLfloat dif_spot[] = {1.0, 0.0, 0.0, 1.0};
+        // composante ambiante
+    GLfloat amb_spot[] = {0.75, 0.0, 0.0, 1.0};
+        // composante spéculaire
+    GLfloat spec_spot[] = {1.0, 1.0, 1.0, 1.0};
+
+    double move_spot_light = 0;
+    bool spot_light_on = false;
+
+void illumination_spot();
 
 /* ===============> Valeurs globales <=============== */
 double zoom = 10;
@@ -97,9 +103,10 @@ int anglex,angley,x,y,xold,yold;
 
 int main(int argc,char **argv)
 {
-
+    /* chargement des textures */
     loadImage1("./textures/ecailles1.jpg");
     loadImage2("./textures/ecailles2.jpg");
+
     /* initialisation de glut et creation de la fenetre */
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
@@ -116,14 +123,16 @@ int main(int argc,char **argv)
     /* Mise en place de la projection perspective */
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    //gluPerspective(45.0,1,1.0,5.0);
     glMatrixMode(GL_MODELVIEW);
 
     /* Parametrage du placage de textures */
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
 
-    illumination();
+    glEnable(GL_LIGHTING);
+    illumination_ambiant();
+    illumination_spot();
+
 
     /* enregistrement des fonctions de rappel */
     glutDisplayFunc(dragon);
@@ -131,8 +140,6 @@ int main(int argc,char **argv)
     glutKeyboardFunc(clavier);
     glutSpecialFunc(sclavier);
     glutReshapeFunc(reshape);
-    glutMouseFunc(mouse);
-    glutMotionFunc(mousemotion);
 
     /* Entree dans la boucle principale glut */
     glutMainLoop();
@@ -146,39 +153,23 @@ void clavier(unsigned char touche, int x, int y)
 {
     switch (touche)
     {
-        case 'p': /* affichage du carre plein */
-            glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);
-            glutPostRedisplay();
-            break;
-        case 'f': /* affichage en mode fil de fer */
-            glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
-            glutPostRedisplay();
-            break;
-        case 's' : /* Affichage en mode sommets seuls */
-            glPolygonMode(GL_FRONT_AND_BACK,GL_POINT);
-            glutPostRedisplay();
-            break;
-        case 'd':
-            glEnable(GL_DEPTH_TEST);
-            glutPostRedisplay();
-            break;
-        case 'D':
-            glDisable(GL_DEPTH_TEST);
-            glutPostRedisplay();
-            break;
-        case 'z':
+        case 'z': // Zoomer
             zoom ++;
             glutPostRedisplay();
             break;
-        case 'Z':
+        case 'Z': // Dezoomer
             zoom --;
             glutPostRedisplay();
             break;
         case 'a':
-        case 'A':
+        case 'A': // Lancer l'animation vol
             anim = true;
             break;
-        case 'q' : /*la touche 'q' permet de quitter le programme */
+        case 's':
+        case 'S': // Activer et desativer la lumière spot
+            spot_light_on = !spot_light_on;
+            break;
+        case 'q' : // Quitter
           exit(0);
     }
 }
@@ -218,7 +209,7 @@ void sclavier(int touche, int x, int y)
 }
 
 /**
-    *@brief Fonction de rappel de remodelage de la fenetre
+    *
 */
 void reshape(int x,int y)
 {
@@ -226,42 +217,6 @@ void reshape(int x,int y)
     glViewport(0,(y-x)/2,x,x);
   else
     glViewport((x-y)/2,0,y,y);
-}
-
-/**
-    *@brief Fonction de
-*/
-void mouse(int button, int state,int x,int y)
-{
-  /* si on appuie sur le bouton gauche */
-  if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
-  {
-    presse = 1; /* le booleen presse passe a 1 (vrai) */
-    xold = x; /* on sauvegarde la position de la souris */
-    yold=y;
-  }
-  /* si on relache le bouton gauche */
-  if (button == GLUT_LEFT_BUTTON && state == GLUT_UP)
-    presse=0; /* le booleen presse passe a 0 (faux) */
-}
-
-/**
-    *@brief Fonction de
-*/
-void mousemotion(int x,int y)
-{
-    if (presse) /* si le bouton gauche est presse */
-    {
-      /* on modifie les angles de rotation de l'objet
-	 en fonction de la position actuelle de la souris et de la derniere
-	 position sauvegardee */
-      anglex=anglex+(x-xold);
-      angley=angley+(y-yold);
-      glutPostRedisplay(); /* on demande un rafraichissement de l'affichage */
-    }
-
-    xold=x; /* sauvegarde des valeurs courante de le position de la souris */
-    yold=y;
 }
 
 void loadImage1(char* fichier)
@@ -381,6 +336,8 @@ void dragon()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glShadeModel(GL_SMOOTH);
 
+    glEnable(GL_COLOR_MATERIAL);
+
     glLoadIdentity();
     glRotatef(angley,1.0,0.0,0.0);
     glRotatef(anglex,0.0,1.0,0.0);
@@ -391,7 +348,14 @@ void dragon()
     glMatrixMode(GL_MODELVIEW);
 
         glTranslatef(0, animationMonteedragon, 0);
+
+        glPushMatrix();
+            glTranslatef(0.0, 0.0, move_spot_light);
+            glLightfv(GL_LIGHT0, GL_POSITION,source_spot);
+        glPopMatrix();
+
         glColor3f(0.75, 0.75, 0.75);
+
         // Corps
         glPushMatrix();
             initCorps();
@@ -414,7 +378,7 @@ void dragon()
                 glTranslatef(0, 1.25, -1.5);
                 glRotatef(55, 1, 0, 0);
                 glScalef(1,2,1);
-                //glColor3f(1.0, 1.0, 0.0);
+                glColor3f(0.25, 0.25, 0.25);
                 glutSolidSphere(1, 20, 20);
             glPopMatrix();
 
@@ -441,7 +405,6 @@ void dragon()
                 glScalef(1,2,1);
                 glColor3f(1.0, 0.0, 0.0);
                 glutSolidSphere(0.25, 20, 20);
-
             glPopMatrix();
 
             //Oeil gauche
@@ -515,14 +478,6 @@ void dragon()
             glRotatef(90, 1, 0, 0);
             Aile(1);
         glPopMatrix();
-
-/*
-    glPushMatrix();
-        initMembre(2, 2, 5);
-        Membre();
-    glPopMatrix();
-    //glDisable(GL_TEXTURE_2D);
-*/
 
     //Repère
     //axe x en rouge
@@ -611,6 +566,15 @@ void animation()
         if(animationMarche4 >= 45) finMarche4 = true;
 
     }
+
+    if(spot_light_on)
+    {
+        glEnable(GL_LIGHT0);
+        move_spot_light += 0.025;
+        if(move_spot_light >= 15) move_spot_light = 0;
+    }
+    else
+        glDisable(GL_LIGHT0);
 
     glutPostRedisplay( );
 }
@@ -1167,18 +1131,23 @@ void Aile(int i)
 glDisable(GL_TEXTURE_2D);
 }
 
-
-void illumination()
+void illumination_ambiant()
 {
-    /* Illumination */
-  glEnable(GL_LIGHTING);
-    //spécification des propriétés
-    glLightfv(GL_LIGHT0, GL_POSITION,source);
-    glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
-    glLightfv(GL_LIGHT0, GL_SPECULAR, spec);
-    glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction);
-    // activation de la lumière
-  glEnable(GL_LIGHT0);
-
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, couleur);
 }
+
+void illumination_spot()
+{
+    //spécification des propriétés
+    glLightfv(GL_LIGHT0, GL_POSITION,source_spot);
+
+    glLightfv(GL_LIGHT0, GL_AMBIENT, amb_spot);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, dif_spot);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, spec_spot);
+    glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 4.0);
+    glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 30.0);
+    glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction_spot);
+    // activation de la lumière
+  //glEnable(GL_LIGHT0);
+}
+
