@@ -66,7 +66,7 @@ unsigned char textureEcaille2[hautimg2][largimg2][3];
 
 /* ===============> Illumination <=============== */
     // Lumière
-    GLfloat couleur[] = {0.75, 0.75, 0.75, 1.0};
+    GLfloat couleur[] = {1.0, 1.0, 0.75, 1.0};
 
 void illumination_ambiant();
 
@@ -98,7 +98,7 @@ Point ptMembre[nbCercle * nbPointParCercle];
 int fMembre[(nbCercle-1)*nbPointParCercle][4];
 
 char presse;
-int anglex,angley,x,y,xold,yold;
+int anglex =  90,angley = 0,x,y;
 
 
 int main(int argc,char **argv)
