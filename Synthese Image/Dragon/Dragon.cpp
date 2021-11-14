@@ -97,8 +97,7 @@ Point ptMembre[nbCercle * nbPointParCercle];
 // Tableau contenant les faces
 int fMembre[(nbCercle-1)*nbPointParCercle][4];
 
-char presse;
-int anglex =  90,angley = 0,x,y;
+int anglex =  90,angley = 0;
 
 
 int main(int argc,char **argv)
@@ -129,6 +128,7 @@ int main(int argc,char **argv)
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
 
+    /* Lumières */
     glEnable(GL_LIGHTING);
     illumination_ambiant();
     illumination_spot();
@@ -182,25 +182,20 @@ void sclavier(int touche, int x, int y)
     switch(touche)
     {
         case GLUT_KEY_UP:
-        //std::cout << "Touche Haute" << std::endl;
             angley -= 2;
             glutPostRedisplay();
         break;
 
         case GLUT_KEY_DOWN:
-        //std::cout << "Touche Basse" << std::endl;
-            angley += 2;
             glutPostRedisplay();
         break;
 
         case GLUT_KEY_RIGHT:
-        //std::cout << "Touche Droite" << std::endl;
             anglex += 2;
             glutPostRedisplay();
         break;
 
         case GLUT_KEY_LEFT:
-        //std::cout << "Touche Gauche" << std::endl;
             anglex -= 2;
             glutPostRedisplay();
         break;
@@ -479,26 +474,6 @@ void dragon()
             Aile(1);
         glPopMatrix();
 
-    //Repère
-    //axe x en rouge
-    glBegin(GL_LINES);
-        glColor3f(1.0,0.0,0.0);
-    	glVertex3f(0, 0,0.0);
-    	glVertex3f(1, 0,0.0);
-    glEnd();
-    //axe des y en vert
-    glBegin(GL_LINES);
-    	glColor3f(0.0,1.0,0.0);
-    	glVertex3f(0, 0,0.0);
-    	glVertex3f(0, 1,0.0);
-    glEnd();
-    //axe des z en bleu
-    glBegin(GL_LINES);
-    	glColor3f(0.0,0.0,1.0);
-    	glVertex3f(0, 0,0.0);
-    	glVertex3f(0, 0,1.0);
-    glEnd();
-
   glFlush();
   //On echange les buffers
   glutSwapBuffers();
@@ -574,8 +549,10 @@ void animation()
         if(move_spot_light >= 15) move_spot_light = 0;
     }
     else
+    {
         glDisable(GL_LIGHT0);
-
+        move_spot_light = 0;
+    }
     glutPostRedisplay( );
 }
 
@@ -640,20 +617,6 @@ void Membre()
             glTexCoord2f((i % nbPointParCercle)/(float)nbPointParCercle, ((nbCercle-2)-(i/nbPointParCercle))/(float)(nbCercle-1));
             glVertex3f(ptMembre[fMembre[i][3]].x, ptMembre[fMembre[i][3]].y, ptMembre[fMembre[i][3]].z);
         glEnd();
-/*
-glPointSize(3);
-        glBegin(GL_LINES);
-        if(i==0)glColor3f(1, 0, 0);
-        else glColor3f(1,1,1);
-            x = (ptMembre[fMembre[i][0]].x+ptMembre[fMembre[i][2]].x)/2.0;
-            y = (ptMembre[fMembre[i][0]].y+ptMembre[fMembre[i][2]].y)/2.0;
-            z = (ptMembre[fMembre[i][0]].z+ptMembre[fMembre[i][2]].z)/2.0;
-            //z = i;
-            glVertex3f(x, y, z);
-            glVertex3f(0, 0, z);
-        glEnd();
-    std::cout << "i = " << i << " -> ( " << x << " ; " << y << " ; " << z << " )" << std::endl;
-*/
     }
 }
 
@@ -1147,7 +1110,6 @@ void illumination_spot()
     glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 4.0);
     glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 30.0);
     glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction_spot);
-    // activation de la lumière
-  //glEnable(GL_LIGHT0);
+
 }
 
