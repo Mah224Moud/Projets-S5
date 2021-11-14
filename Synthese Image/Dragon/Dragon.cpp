@@ -182,21 +182,22 @@ void sclavier(int touche, int x, int y)
     switch(touche)
     {
         case GLUT_KEY_UP:
-            angley -= 2;
+            angley -= 2; //activer la rotation vers le haut
             glutPostRedisplay();
         break;
 
         case GLUT_KEY_DOWN:
+            angley += 2; //activer la rotation vers le bas
             glutPostRedisplay();
         break;
 
         case GLUT_KEY_RIGHT:
-            anglex += 2;
+            anglex += 2; //activer la rotation vers la droite
             glutPostRedisplay();
         break;
 
         case GLUT_KEY_LEFT:
-            anglex -= 2;
+            anglex -= 2; //activer la rotation vers la gauche
             glutPostRedisplay();
         break;
     }
@@ -204,7 +205,7 @@ void sclavier(int touche, int x, int y)
 }
 
 /**
-    *
+    * @brief Redefinition de la fenetre lorsqu'elle est redimensionnée
 */
 void reshape(int x,int y)
 {
@@ -214,6 +215,10 @@ void reshape(int x,int y)
     glViewport((x-y)/2,0,y,y);
 }
 
+
+/**
+    * @brief Chargement de la texture 1 qui represente le corps
+*/
 void loadImage1(char* fichier)
 {
     struct jpeg_decompress_struct cinfo;
@@ -268,6 +273,9 @@ void loadImage1(char* fichier)
     }
 }
 
+/**
+    * @brief Chargement de la texture 2 qui represente les autres membres du corp
+*/
 void loadImage2(char* fichier)
 {
     struct jpeg_decompress_struct cinfo;
@@ -323,7 +331,8 @@ void loadImage2(char* fichier)
 }
 /*========================================================================================*/
 /**
-    *
+    *@brief Montage des differentes parties du dragon i.e de la tête à la queue
+    @details Fonction permettant d'afficher le dragon
 */
 void dragon()
 {
@@ -480,6 +489,9 @@ void dragon()
 
 }
 
+/**
+    * @brief Animations des ailes, montée et lumière
+*/
 void animation()
 {
     if(anim)
@@ -542,6 +554,7 @@ void animation()
 
     }
 
+    //lumière
     if(spot_light_on)
     {
         glEnable(GL_LIGHT0);
@@ -587,7 +600,7 @@ void initMembre(double r1, double r2, double taille)
 }
 
 /**
-    *@brief
+    *@brief Fonction d'affiche du membre du dragon
 */
 void Membre()
 {
@@ -656,7 +669,7 @@ void initQueue()
 
 /*=====================================================================================================================*/
 /**
-    *@brief
+    *@brief Fonction affichage de la patte avant droite
 */
 void patteAvantDroite()
 {
@@ -678,7 +691,6 @@ void patteAvantDroite()
         // Bras
         glPushMatrix();
             glTranslatef(0, 0, 0.6);
-            //glRotatef(50, 1, 0, 0);
             initMembre(0.8, 0.25, 4);
             Membre();
         glPopMatrix();
@@ -714,7 +726,7 @@ void patteAvantDroite()
 }
 
 /**
-    *@brief
+    *@brief Fonction affichage de la patte avant gauche
 */
 void patteAvantGauche()
 {
@@ -736,7 +748,6 @@ void patteAvantGauche()
         // Bras
         glPushMatrix();
             glTranslatef(0, 0, 0.6);
-            //glRotatef(50, 1, 0, 0);
             initMembre(0.8, 0.25, 4);
             Membre();
         glPopMatrix();
@@ -772,7 +783,7 @@ void patteAvantGauche()
 }
 
 /**
-    *@brief
+    *@brief Fonction affichage de la patte arrière droite
 */
 void patteArriereDroite()
 {
@@ -794,7 +805,6 @@ void patteArriereDroite()
         // Bras
         glPushMatrix();
             glTranslatef(0, 0, 0.6);
-            //glRotatef(50, 1, 0, 0);
             initMembre(0.8, 0.25, 4);
             Membre();
         glPopMatrix();
@@ -830,7 +840,7 @@ void patteArriereDroite()
 }
 
 /**
-    *@brief
+    *@brief Fonction affichage de la patte arrière gauche
 */
 void patteArriereGauche()
 {
@@ -853,7 +863,6 @@ void patteArriereGauche()
 
         glPushMatrix();
             glTranslatef(0, 0, 0.6);
-            //glRotatef(50, 1, 0, 0);
             initMembre(0.8, 0.25, 4);
             Membre();
         glPopMatrix();
@@ -889,7 +898,7 @@ void patteArriereGauche()
 }
 /*=====================================================================================================================*/
 /**
-    *@brief
+    *@brief Initialisation primitive de construction du corps
 */
 void initCorps()
 {
@@ -922,7 +931,7 @@ void initCorps()
 }
 
 /**
-    *@brief
+    *@brief Fonction affiche du coprs
 */
 void Corps()
 {
@@ -957,6 +966,10 @@ void Corps()
 }
 
 /*=====================================================================================================================*/
+
+/**
+    * @brief Fonction de contrcution des ailes
+*/
 void Aile(int i)
 {
     glLineWidth(5.0);
@@ -1094,11 +1107,19 @@ void Aile(int i)
 glDisable(GL_TEXTURE_2D);
 }
 
+
+/**
+    * @brief Création de la lumière ambiante
+*/
 void illumination_ambiant()
 {
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT, couleur);
 }
 
+
+/**
+    * @brief Création de la lumière de type spot
+*/
 void illumination_spot()
 {
     //spécification des propriétés
@@ -1112,4 +1133,3 @@ void illumination_spot()
     glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, direction_spot);
 
 }
-
