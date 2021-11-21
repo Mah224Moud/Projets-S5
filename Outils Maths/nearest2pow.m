@@ -24,8 +24,8 @@
 
 function x = nearest2pow(val)
   i = 0;
-  while pow2(i) <= val
+  while pow2(i) < val
     i++;
   endwhile
-  x = pow2(i-1);
+  x = pow2(i);
 endfunction

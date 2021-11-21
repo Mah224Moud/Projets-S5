@@ -28,6 +28,7 @@ function ITF = TF2DR (I)
   [M,N] = size(I);
   for u = 1:M
     for v = 1:N
+      u,v
       ITF(u,v) = FourierRapide2D(u,v,I);
     endfor
   endfor
@@ -35,22 +36,18 @@ endfunction
 
 function val = FourierRapide2D(u, v, I)
   [M,N] = size(I);
-  val = 0;
-  #[u,v]
-  for x = 1:M
-    val += exp(-2*i*pi*(u-1)*(x-1)/M) * FourierRapide1D(v,I(x,:));
-    #val = FourierRapide1D(v,I(x,:))
-  endfor
+  if M == 1
+    val = FourierRapide1D(v, I);
+  else
+    val = FourierRapide2D(u, v, I(1:2:end, :)) + exp(-2*i*pi*(u-1)/M) * FourierRapide2D(u, v, I(2:2:end, :));
+  endif
 endfunction
 
 function val = FourierRapide1D(v,I)
   N = length(I);
-  #N
   if N == 1
     val = I(1);
   else
-    val = FourierRapide1D(v, I(1:2:end)) + exp((-2*i*pi*(v-1)/N)) * FourierRapide1D(v, I(2:2:end));
-  #else
-    
+    val = FourierRapide1D(v, I(1:2:end)) + exp(-2*i*pi*(v-1)/N) * FourierRapide1D(v, I(2:2:end));   
   endif
 endfunction

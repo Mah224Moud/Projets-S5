@@ -29,6 +29,7 @@ function ITF = TF2D (I)
   
   for u = 1:nbl
     for v = 1:nbc
+      u,v
       som = 0;
       
       for x = 1:nbl
@@ -39,6 +40,7 @@ function ITF = TF2D (I)
       
       ITF(u,v) = som;
     endfor
+    u
   endfor
   
 endfunction

@@ -1,38 +1,35 @@
 pkg load image;
 clear all;
 
-#I = [1 2 1 -1];
-
-
-# Test Transformée de Fourier 1D Brutale
-#A = TF1D(I);
-#B = TF1DR(I);
-#C = fft(I);
-
-
-# Test Transformée de Fourier 1D Inverse Brutale
-#AI = TF1DI(A)
-#BI = TF1DIR(A)
-#CI = ifft(A)
-
+#I = [1 2 1 -1 5 7 1 1];
 ########################################################
-#I = [100 102 220; 11 221 21; 80 130 222; 112 192 91; 85 24 210; 55 16 110];
-#I = I/255
-#I = imread("img.jpg");
+# Test Transformée de Fourier 1D Brutale et rapide
+#A = fft(I);
+#B = TF1D(I);
+#C = TF1DR(I);
 
-#I = [0 0 0 0 0 0; 1 1 1 1 1 1; 0 0 0 0 0 0];
+# Test Transformée de Fourier 1D Inverse Brutale et rapide
+#AI = ifft(A)
+#BI = TF1DI(A)
+#CI = TF1DIR(A)
+########################################################
 
-I = [0 0 2 1 1 1 5 2 2];
+#I = [1 2 0 1; 1 -5 -2 1; 2 2 0 -1; 1 2 1 1];
+I = imread('calimero.jpg');
+I = rgb2gray(I);
+I = double(I)/255;
+imshow(I);
+########################################################
+# Test Transformée de Fourier 2D Brutale et rapide
+A = fft2(I);
+figure, imshow(A);
+#B = TF2D(I);
+#figure, imshow(B);
+C = TF2DR(I);
+figure, imshow(C);
 
-#figure;imshow(I);
+# Test Transformée de Fourier 2D Inverse Brutale et rapide
+#AI = ifft2(A);
+#BI = TF2DI(A);
+#CI = TF2DIR(A);
 
-A = fft(I)
-B = TF1DR(I)
-
-#figure;imshow(A);
-#figure;imshow(B);
-
-#C = ifft2(A);
-#D = TF2DI(A);
-#figure;imshow(C);
-#figure;imshow(D);

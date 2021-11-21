@@ -24,7 +24,6 @@
 
 # Transformée de fourier 1D Rapide
 
-#todo : problème avec la tranformée si N != 2^n
 function ITFR = TF1DR (I)
   N = length(I);
   for u = 1:N
