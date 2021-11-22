@@ -24,18 +24,17 @@
 
 # Transformée de fourier 1D Rapide
 
-function ITFR = TF1DR (I)
+function ITF = TF1DR (I)
   N = length(I);
-  for u = 1:N
-    ITFR(u) = FourierRapide(u, I);
-  endfor
-endfunction
-
-function val = FourierRapide(u,I)
-  N = length(I);
-  if N == 1
-    val = I(1);
+  if N <= 1
+    ITF = I;
   else
-    val = FourierRapide(u, I(1:2:end)) + exp((-2*i*pi*(u-1)/N)) * FourierRapide(u, I(2:2:end));
+    ITFimpaire = TF1DR(I(1:2:end));
+    ITFpaire = TF1DR(I(2:2:end));
+    
+    for k = 1:N/2
+      ITF(k) = ITFimpaire(k) + exp(-2*i*pi*(k-1)/N) * ITFpaire(k);
+      ITF(k+N/2) = ITFimpaire(k) - exp(-2*i*pi*(k-1)/N) * ITFpaire(k);
+    endfor
   endif
 endfunction

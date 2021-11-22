@@ -26,27 +26,12 @@
 
 function I = TF2DIR (ITF)
   [M,N] = size(ITF);
+  
   for u = 1:M
-    for v = 1:N
-      I(u,v) = FourierInverseRapide2D(u,v,ITF)/(N*M);
-    endfor
-    u
+    ILine(u,:) = TF1DIR(ITF(u,:));
   endfor
-endfunction
-
-function val = FourierInverseRapide2D(u, v, ITF)
-  [M,N] = size(ITF);
-  val = 0;
-  for x = 1:M
-    val += exp(2*i*pi*(u-1)*(x-1)/M) * FourierInverseRapide1D(v,ITF(x,:));
-  endfor
-endfunction
-
-function val = FourierInverseRapide1D(v,I)
-  N = length(I);
-  if N == 1
-    val = I(1);
-  else
-    val = FourierInverseRapide1D(v, I(1:2:end)) + exp((2*i*pi*(v-1)/N)) * FourierInverseRapide1D(v, I(2:2:end));   
-  endif
+  
+  for v = 1:N
+    I(:,v) = TF1DIR(ILine(:,v));
+  endfor  
 endfunction

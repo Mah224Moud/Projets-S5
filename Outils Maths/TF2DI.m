@@ -39,7 +39,6 @@ function I = TF2DI (ITF)
       
       I(u,v) = som/(nbl*nbc);
     endfor
-    u
   endfor
   
 endfunction
