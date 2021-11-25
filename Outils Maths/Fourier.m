@@ -1,17 +1,17 @@
 pkg load image;
 clear all;
 
-#I = [1 2 1 -1 5 7 1 1];
+I = [1 2 1 -1 5 7 1 1];
 #I = ones(1,1024);
 
 ########################################################
 # Test Transformée de Fourier 1D Brutale et rapide
-#A = fft(I);
+A = fft(I)
 #tic
-#B = TF1D(I);
+B = TF1D(I)
 #toc
 #tic
-#C = TF1DR(I);
+C = TF1DR(I)
 #toc
 
 # Test Transformée de Fourier 1D Inverse Brutale et rapide
