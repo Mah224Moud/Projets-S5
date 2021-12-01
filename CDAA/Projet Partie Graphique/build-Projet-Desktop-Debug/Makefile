@@ -52,10 +52,20 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../Projet/main.cpp \
-		../Projet/mainwindow.cpp moc_mainwindow.cpp
-OBJECTS       = main.o \
+SOURCES       = ../Projet/contact.cpp \
+		../Projet/email.cpp \
+		../Projet/gestiontodo.cpp \
+		../Projet/interaction.cpp \
+		../Projet/main.cpp \
+		../Projet/mainwindow.cpp \
+		../Projet/todo.cpp moc_mainwindow.cpp
+OBJECTS       = contact.o \
+		email.o \
+		gestiontodo.o \
+		interaction.o \
+		main.o \
 		mainwindow.o \
+		todo.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
@@ -114,6 +124,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
+		../Projet/.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -134,8 +145,18 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		../Projet/Projet.pro ../Projet/mainwindow.h ../Projet/main.cpp \
-		../Projet/mainwindow.cpp
+		../Projet/Projet.pro ../Projet/contact.h \
+		../Projet/email.h \
+		../Projet/gestiontodo.h \
+		../Projet/interaction.h \
+		../Projet/mainwindow.h \
+		../Projet/todo.h ../Projet/contact.cpp \
+		../Projet/email.cpp \
+		../Projet/gestiontodo.cpp \
+		../Projet/interaction.cpp \
+		../Projet/main.cpp \
+		../Projet/mainwindow.cpp \
+		../Projet/todo.cpp
 QMAKE_TARGET  = Projet
 DESTDIR       = 
 TARGET        = Projet
@@ -204,6 +225,7 @@ Makefile: ../Projet/Projet.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/q
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -283,6 +305,7 @@ Makefile: ../Projet/Projet.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/q
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf:
@@ -319,8 +342,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../Projet/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../Projet/main.cpp ../Projet/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../Projet/contact.h ../Projet/email.h ../Projet/gestiontodo.h ../Projet/interaction.h ../Projet/mainwindow.h ../Projet/todo.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Projet/contact.cpp ../Projet/email.cpp ../Projet/gestiontodo.cpp ../Projet/interaction.cpp ../Projet/main.cpp ../Projet/mainwindow.cpp ../Projet/todo.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -356,6 +379,7 @@ compiler_moc_header_make_all: moc_mainwindow.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_mainwindow.cpp
 moc_mainwindow.cpp: ../Projet/mainwindow.h \
+		../Projet/email.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/bah/Bureau/L3/CDAA/Projet/build-Projet-Desktop-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/bah/Bureau/L3/CDAA/Projet/Projet -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../Projet/mainwindow.h -o moc_mainwindow.cpp
@@ -376,11 +400,42 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean
 
 ####### Compile
 
-main.o: ../Projet/main.cpp ../Projet/mainwindow.h
+contact.o: ../Projet/contact.cpp ../Projet/contact.h \
+		../Projet/email.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o contact.o ../Projet/contact.cpp
+
+email.o: ../Projet/email.cpp ../Projet/email.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o email.o ../Projet/email.cpp
+
+gestiontodo.o: ../Projet/gestiontodo.cpp ../Projet/gestiontodo.h \
+		../Projet/todo.h \
+		../Projet/interaction.h \
+		../Projet/contact.h \
+		../Projet/email.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o gestiontodo.o ../Projet/gestiontodo.cpp
+
+interaction.o: ../Projet/interaction.cpp ../Projet/interaction.h \
+		../Projet/contact.h \
+		../Projet/email.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o interaction.o ../Projet/interaction.cpp
+
+main.o: ../Projet/main.cpp ../Projet/mainwindow.h \
+		../Projet/email.h \
+		../Projet/interaction.h \
+		../Projet/contact.h \
+		../Projet/todo.h \
+		../Projet/gestiontodo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Projet/main.cpp
 
-mainwindow.o: ../Projet/mainwindow.cpp ../Projet/mainwindow.h
+mainwindow.o: ../Projet/mainwindow.cpp ../Projet/mainwindow.h \
+		../Projet/email.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../Projet/mainwindow.cpp
+
+todo.o: ../Projet/todo.cpp ../Projet/todo.h \
+		../Projet/interaction.h \
+		../Projet/contact.h \
+		../Projet/email.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o todo.o ../Projet/todo.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
