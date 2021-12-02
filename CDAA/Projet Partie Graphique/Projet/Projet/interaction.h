@@ -33,11 +33,11 @@ private:
 
 public:
     /// Constructeur par défaut de la classe Interaction
-    Interaction();
+    Interaction(Contact*);
     /// Constructeur avec paramètres date et contenu de la classe Interaction
-    Interaction(const QString&);
-    /// Destructeur de la classe Interaction
-    ~Interaction();
+    Interaction(Contact *, const QString&);
+    /// Constructeur de recopie
+    Interaction(const Interaction&);
 
     QString getID() const;
     QDate getDate() const;
@@ -45,12 +45,11 @@ public:
     QString getContenu() const;
     Contact* getContact() const;
 
-
     void setDate(const QDate&);
     void setDateFromString(const QString&);
     void setContenu(const QString&);
     void setID(const QString&);
-    void setContact(Contact*);
+    void setContact(Contact *);
 
     friend QDebug operator<<(QDebug, const Interaction&);
     QString toString() const;

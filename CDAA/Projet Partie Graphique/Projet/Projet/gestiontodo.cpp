@@ -39,9 +39,12 @@ void GestionTodo::addTodo(const Todo& todo)
     *@brief Pour supprimer une tâche de la liste.
     *@details Cette méthode permet supprimer une tâche en fonction de son contenu.
     *@param contenu :  le contenu de la tâche à supprimer.
+    *@return La tâche supprimée
 */
-void GestionTodo::removeTodo(const QString& id)
+Todo GestionTodo::removeTodo(const QString& id)
 {
+    Todo td;
+    td.setID("0");
     auto it = listTodo.begin();
     bool found = false;
     while((it != listTodo.end()) && (found == false))
@@ -49,11 +52,13 @@ void GestionTodo::removeTodo(const QString& id)
         if(it->getID() == id)
         {
             found = true;
+            td = *it;
             it = listTodo.erase(it);
         }
         else
             it++;
     }
+    return td;
 }
 
 /**
@@ -109,7 +114,7 @@ QDebug operator<<(QDebug os, const GestionTodo& gest)
 {
     for(auto it : gest.getlistTodo())
     {
-        os << it.toString();
+        os << it.getInteraction()->getID() << " : " << it.toString() << "\n";
     }
 
     return os;

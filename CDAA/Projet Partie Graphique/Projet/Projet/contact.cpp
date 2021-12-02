@@ -47,6 +47,23 @@ Contact::Contact(const QString& name, const QString& lastname, const QString& en
 }
 
 /**
+   *
+   *
+*/
+Contact::Contact(const Contact& autre)
+{
+    id = autre.getID();
+    nom = autre.getNom();
+    prenom = autre.getPrenom();
+    entreprise = autre.getTelephone();
+    telephone = autre.getTelephone();
+    URIphoto = autre.getPhoto();
+    dateCreation = autre.getDateCreation();
+    dateLastModif = autre.getDateLastModif();
+    setEmail(autre.getEmail());
+}
+
+/**
     *@brief Destructeur de la classe Contact
     *@details Rien de particulier, les espaces alloués sont effacés en même tant que le gestionnaire de contact.
 */
@@ -195,9 +212,9 @@ QString Contact::getEmail() const
     *@warning Cette opération entraine une mise à jour de la date de modification.
     *@param name : L'identifiant du contact.
 */
-void Contact::setID(const QString& name)
+void Contact::setID(const QString& id)
 {
-    this->nom = name;
+    this->id = id;
     modification();
 }
 
@@ -337,10 +354,28 @@ QString Contact::toString() const
     *@details Deux contacts sont identiques s'ils ont le même identifiant.
     *@return true si les deux contacts sont identiques false sinon.
 */
-bool Contact::operator==(Contact& autre)
+bool Contact::operator==(const Contact& autre)
 {
     return getID() == autre.getID();
 }
+
+/**
+    *
+    *
+*/
+void Contact::operator=(const Contact & autre)
+{
+    id = autre.getID();
+    nom = autre.getNom();
+    prenom = autre.getPrenom();
+    entreprise = autre.getTelephone();
+    telephone = autre.getTelephone();
+    URIphoto = autre.getPhoto();
+    dateCreation = autre.getDateCreation();
+    dateLastModif = autre.getDateLastModif();
+    setEmail(autre.getEmail());
+}
+
 
 /**
     *@brief Surcharge de l'opérateur << pour l'affichage.

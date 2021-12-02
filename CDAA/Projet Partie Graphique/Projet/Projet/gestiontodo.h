@@ -42,7 +42,7 @@ class GestionTodo
         inline unsigned getSize(){return listTodo.size();}
 
         void addTodo(const Todo&);
-        void removeTodo(const QString&);
+        Todo removeTodo(const QString&);
         void removeAllInteractionTodo(const QString&);
         GestionTodo getAllInteractionTodo(const QString&) const;
 

@@ -51,6 +51,8 @@ class Contact
     Contact();
     /// Constructeur avec paramètre nom, prénom, entreprise.
     Contact(const QString&, const QString&, const QString&);
+    ///
+    Contact(const Contact&);
     /// Destructeur de la classe Contact
     ~Contact();
 
@@ -80,7 +82,8 @@ class Contact
 
     friend QDebug operator<<(QDebug, const Contact&);
     QString toString() const;
-    bool operator==(Contact&);
+    bool operator==(const Contact&);
+    void operator= (const Contact&);
 };
 
 #endif // CONTACT_H_INCLUDED

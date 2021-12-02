@@ -54,6 +54,7 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../Projet/contact.cpp \
 		../Projet/email.cpp \
+		../Projet/gestioninteraction.cpp \
 		../Projet/gestiontodo.cpp \
 		../Projet/interaction.cpp \
 		../Projet/main.cpp \
@@ -61,6 +62,7 @@ SOURCES       = ../Projet/contact.cpp \
 		../Projet/todo.cpp moc_mainwindow.cpp
 OBJECTS       = contact.o \
 		email.o \
+		gestioninteraction.o \
 		gestiontodo.o \
 		interaction.o \
 		main.o \
@@ -147,11 +149,13 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		../Projet/Projet.pro ../Projet/contact.h \
 		../Projet/email.h \
+		../Projet/gestioninteraction.h \
 		../Projet/gestiontodo.h \
 		../Projet/interaction.h \
 		../Projet/mainwindow.h \
 		../Projet/todo.h ../Projet/contact.cpp \
 		../Projet/email.cpp \
+		../Projet/gestioninteraction.cpp \
 		../Projet/gestiontodo.cpp \
 		../Projet/interaction.cpp \
 		../Projet/main.cpp \
@@ -342,8 +346,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../Projet/contact.h ../Projet/email.h ../Projet/gestiontodo.h ../Projet/interaction.h ../Projet/mainwindow.h ../Projet/todo.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../Projet/contact.cpp ../Projet/email.cpp ../Projet/gestiontodo.cpp ../Projet/interaction.cpp ../Projet/main.cpp ../Projet/mainwindow.cpp ../Projet/todo.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../Projet/contact.h ../Projet/email.h ../Projet/gestioninteraction.h ../Projet/gestiontodo.h ../Projet/interaction.h ../Projet/mainwindow.h ../Projet/todo.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Projet/contact.cpp ../Projet/email.cpp ../Projet/gestioninteraction.cpp ../Projet/gestiontodo.cpp ../Projet/interaction.cpp ../Projet/main.cpp ../Projet/mainwindow.cpp ../Projet/todo.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -407,6 +411,12 @@ contact.o: ../Projet/contact.cpp ../Projet/contact.h \
 email.o: ../Projet/email.cpp ../Projet/email.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o email.o ../Projet/email.cpp
 
+gestioninteraction.o: ../Projet/gestioninteraction.cpp ../Projet/gestioninteraction.h \
+		../Projet/interaction.h \
+		../Projet/contact.h \
+		../Projet/email.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o gestioninteraction.o ../Projet/gestioninteraction.cpp
+
 gestiontodo.o: ../Projet/gestiontodo.cpp ../Projet/gestiontodo.h \
 		../Projet/todo.h \
 		../Projet/interaction.h \
@@ -424,7 +434,8 @@ main.o: ../Projet/main.cpp ../Projet/mainwindow.h \
 		../Projet/interaction.h \
 		../Projet/contact.h \
 		../Projet/todo.h \
-		../Projet/gestiontodo.h
+		../Projet/gestiontodo.h \
+		../Projet/gestioninteraction.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Projet/main.cpp
 
 mainwindow.o: ../Projet/mainwindow.cpp ../Projet/mainwindow.h \

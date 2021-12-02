@@ -11,11 +11,12 @@
     *@brief Constructeur par défaut.
     *@details Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante.
 */
-Interaction::Interaction()
+Interaction::Interaction(Contact* c)
 {
+    contact = c;
     date = QDate::currentDate();
-    this -> contenu = "";
-    this -> id = genID();
+    contenu = "";
+    id = genID();
 }
 
 /**
@@ -23,19 +24,27 @@ Interaction::Interaction()
     *@details Ce constructeur initialise une interaction avec un contenu et la date courante.
     *@param c : le contenu de l'interaction
 */
-Interaction::Interaction(const QString& contenu)
+Interaction::Interaction(Contact* c, const QString& cont)
 {
     date = QDate::currentDate();
-    this -> contenu = contenu;
-    this -> id = genID();
+    contenu = cont;
+    contact = c;
+    id = genID();
 }
 
-/**
-    *@brief Destructeur de la classe Interaction.
-*/
-Interaction::~Interaction()
-{
 
+/**
+    *@brief Constructeur de recopie
+    *@details Ce constructeur initialise une nouvelle interaction en copiant une autre.
+    *@param autre : l'interaction à copier
+*/
+
+Interaction::Interaction(const Interaction& autre)
+{
+    date = autre.getDate();
+    contenu = autre.getContenu();
+    id = autre.getID();
+    contact = autre.getContact();
 }
 
 /**
@@ -100,7 +109,7 @@ QString Interaction::getContenu() const
 */
 Contact* Interaction::getContact() const
 {
-    return this->contact;
+    return contact;
 }
 
 /**
@@ -143,9 +152,9 @@ void Interaction::setContenu(const QString& c)
     *@brief Pour affecter un contact à l'interaction.
     *@param c : adresse sur contact.
 */
-void Interaction::setContact(Contact* c)
+void Interaction::setContact(Contact *c)
 {
-    this->contact = c;
+    contact = c;
 }
 
 /**
@@ -157,7 +166,7 @@ void Interaction::setContact(Contact* c)
 QDebug operator<<(QDebug os, const Interaction& i)
 {
     os << "Interaction " << i.getID() << i.getStringDate();
-    os << i.getContenu();
+    os << i.getContenu() << " adresse contact : " << i.getContact();
     return os;
 }
 
@@ -190,6 +199,7 @@ bool Interaction::operator==(const Interaction& autre)
 */
 void Interaction::operator=(const Interaction& autre)
 {
-    setDate(autre.getDate());
-    setContenu(autre.getContenu());
+    id = autre.getID();
+    date = autre.getDate();
+    contenu = autre.getContenu();
 }
