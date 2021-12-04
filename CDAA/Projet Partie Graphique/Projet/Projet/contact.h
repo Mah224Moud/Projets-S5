@@ -25,7 +25,6 @@ class Contact
     private:
     /// L'identifiant du contact
         QString id;
-        QString genID() const;
     /// Le nom du contact
         QString nom;
     /// Le prénom du contact
@@ -41,7 +40,7 @@ class Contact
     /// La date de dernière modification
         QDate dateLastModif;
     /// Adresse Mail du contact
-        Email* mail;
+        Email mail;
 
     /// Mise à jour de la date de modification
         void modification();

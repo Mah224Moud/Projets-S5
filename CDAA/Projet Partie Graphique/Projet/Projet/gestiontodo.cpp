@@ -35,6 +35,23 @@ void GestionTodo::addTodo(const Todo& todo)
     listTodo.push_back(todo);
 }
 
+Todo GestionTodo::getTodo(const QString& idTodo)
+{
+    Todo td; td.setID("NULL");
+    auto it = listTodo.begin();
+    bool found = false;
+    while((it != listTodo.end()) && (!found))
+    {
+        if(it->getID() == idTodo)
+        {
+            found = true;
+            td = *it;
+        }
+            it++;
+    }
+    return td;
+}
+
 /**
     *@brief Pour supprimer une tâche de la liste.
     *@details Cette méthode permet supprimer une tâche en fonction de son contenu.
@@ -44,10 +61,10 @@ void GestionTodo::addTodo(const Todo& todo)
 Todo GestionTodo::removeTodo(const QString& id)
 {
     Todo td;
-    td.setID("0");
+    td.setID("NULL");
     auto it = listTodo.begin();
     bool found = false;
-    while((it != listTodo.end()) && (found == false))
+    while((it != listTodo.end()) && (!found))
     {
         if(it->getID() == id)
         {
@@ -88,7 +105,7 @@ void GestionTodo::removeAllInteractionTodo(const QString& idInteract)
     *@param interact : l'intéraction dont on retournera les tâches;
     *@return un gestionnaire de tâches appartenant toutes à une même intéraction.
 */
-GestionTodo GestionTodo::getAllInteractionTodo(const QString& idInteract) const
+GestionTodo GestionTodo::getAllInteractionTodo(const QString& idInteract)
 {
     GestionTodo gest;
     auto it = listTodo.begin();

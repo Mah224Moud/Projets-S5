@@ -11,7 +11,7 @@
 */
 Todo::Todo()
 {
-    id = genID();
+    id = "";
     date = QDate::currentDate();
     this->contenu = "";
 }
@@ -22,7 +22,7 @@ Todo::Todo()
 */
 Todo::Todo(Interaction* i, const QString& c)
 {
-    id = genID();
+    id ="";
     this -> date = QDate::currentDate();
     lienInteraction = i;
     this->setContenu(c);
@@ -42,24 +42,10 @@ Todo::Todo(const Todo& td)
 */
 Todo::Todo(Interaction* i, const QString& c, const QDate& d)
 {
-    id = genID();
+    id = "";
     this -> date = d;
     lienInteraction = i;
     this->setContenu(c);
-}
-
-/**
-    *@brief Génération d'un identifiant unique pour la tâche.
-    *@details l'identifiant commence par "td" suivie de la date courante (yyMMdd)
-    et l'heure actuelle heure, minute, seconde et microseconde (hhmmsszzz).
-    *@warning Cette méthode est privée.
-*/
-QString Todo::genID() const
-{
-    QString id = "td";
-    id += QDate::currentDate().toString("yyMMdd");
-    id += QTime::currentTime().toString("hhmmsszzz");
-    return id;
 }
 
 /**
@@ -164,19 +150,14 @@ void Todo::setContenu(const QString & c)
     *@details Pour afficher un Todo, on affiche son contenu suivie de sa date si elle est différente de la date courante (Aujourd'hui).
     *@return os;
 */
-/*
-std::ostream& operator<<(std::ostream& os, const Todo& td)
+QDebug operator<<(QDebug os, const Todo& td)
 {
-    Date d;
-    os << "@todo " << td.getContenu() << " ";
-    if(!(d == td.getDate()))
-    {
-        d.setDate(td.getDate());
-        os << "@date " << d.toString();
-    }
+    os << "It " << td.getInteraction()->getID() << " : @todo " << td.getContenu() << " ";
+    if(td.getDate() != QDate::currentDate())
+        os << "@date " << td.getStringDate() << "\n";
     return os;
 }
-*/
+
 QString Todo::toString()
 {
     QString t = "@todo ("+id+") " + getContenu();

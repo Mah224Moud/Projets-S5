@@ -121,7 +121,7 @@ bool Email::fromString(const string& adr)
     *@return l'adresse mail dans une String.
     *@warning Si l'identifiant, le domaine ou le mc est vide elle renvoie une String vide.
 */
-string Email:: toString()
+string Email:: toString() const
 {
     if(getIdentifiant() !=  "" && getDomaine() != "" && getMc() != "")
         return getIdentifiant()+"@"+getDomaine()+"."+getMc();

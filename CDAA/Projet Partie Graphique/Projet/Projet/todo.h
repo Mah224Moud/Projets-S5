@@ -9,8 +9,8 @@
 #define TODO_H_INCLUDED
 
 #include <QDate>
-#include <QTime>
 #include <QString>
+#include <QDebug>
 
 #include "interaction.h"
 
@@ -30,7 +30,6 @@ class Todo
         QDate date;
         /// L'identifiant
         QString id;
-        QString genID() const;
 
     public:
         /// Constructeur par défaut
@@ -52,7 +51,7 @@ class Todo
         void setDateFromString(const QString&);
         void setID(const QString&);
 
-        //friend std::ostream& operator<<(std::ostream&, const Todo&);
+        friend QDebug operator<<(QDebug, const Todo&);
         QString toString();
         bool operator==(const Todo&);
         void operator=(const Todo&);

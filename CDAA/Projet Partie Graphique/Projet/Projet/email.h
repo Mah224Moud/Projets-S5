@@ -41,7 +41,7 @@ class Email
         void setMc(const std::string&);
 
         bool fromString(const std:: string &);
-        std::string toString();
+        std::string toString() const;
 };
 
 #endif // EMAIL_H_INCLUDED

@@ -14,11 +14,10 @@
 */
 Contact::Contact()
 {
-    id = genID();
+    id = "";
     nom = "";
     prenom = "";
     entreprise = "";
-    mail = new Email();
     telephone = "";
     URIphoto = "";
     dateCreation = QDate::currentDate();
@@ -35,11 +34,10 @@ Contact::Contact()
 */
 Contact::Contact(const QString& name, const QString& lastname, const QString& entr)
 {
-    id = genID();
+    id = "";
     nom = name;
     prenom = lastname;
     entreprise = entr;
-    mail =  new Email();
     telephone = "";
     URIphoto = "";
     dateCreation = QDate::currentDate();
@@ -69,21 +67,7 @@ Contact::Contact(const Contact& autre)
 */
 Contact::~Contact()
 {
-    delete mail;
-}
 
-/**
-    *@brief Génération d'un identifiant unique pour le contact.
-    *@details l'identifiant commence par "ct" suivie de la date courante (yyMMdd)
-    et l'heure actuelle heure, minute, seconde et microseconde (hhmmsszzz).
-    *@warning Cette méthode est privée.
-*/
-QString Contact::genID() const
-{
-    QString id = "ct";
-    id += QDate::currentDate().toString("yyMMdd");
-    id += QTime::currentTime().toString("hhmmsszzz");
-    return id;
 }
 
 /**
@@ -197,7 +181,7 @@ QString Contact::getStringDateLastModif() const
 */
 QString Contact::getEmail() const
 {
-    return QString::fromStdString(mail -> toString());
+    return QString::fromStdString(mail.toString());
 }
 
 /**
@@ -322,7 +306,7 @@ void Contact::setDateLastModif(const QDate& date)
 */
 void Contact::setEmail(const QString &email)
 {
-    mail->fromString(email.toStdString());
+    mail.fromString(email.toStdString());
     modification();
 }
 

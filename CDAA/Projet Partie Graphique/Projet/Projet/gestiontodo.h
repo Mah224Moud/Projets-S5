@@ -44,7 +44,8 @@ class GestionTodo
         void addTodo(const Todo&);
         Todo removeTodo(const QString&);
         void removeAllInteractionTodo(const QString&);
-        GestionTodo getAllInteractionTodo(const QString&) const;
+        GestionTodo getAllInteractionTodo(const QString&);
+        Todo getTodo(const QString&);
 
         friend QDebug operator<<(QDebug, const GestionTodo&);
         QString toString();

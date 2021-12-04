@@ -48,10 +48,7 @@ void GestionInteraction::addInteraction(const Interaction& interact)
         listInteraction.insert(it, interact);
     else
         listInteraction.push_back(interact);
-
-    //qDebug() <<"Contact avant insertion : " << interact.getContact();
-    //qDebug() <<"Contact apres insertion : " << listInteraction.end()->getContact();
-}
+ }
 
 /**
     *@brief Supprimer une intéraction de la liste.
@@ -74,6 +71,58 @@ bool GestionInteraction::removeInteraction(const QString& idInteract)
             it++;
     }
     return found;
+}
+
+/**
+ * @brief Pour récuperer une intéraction connaissant son identifiant.
+ * @param idInteract : l'identifiant de l'intéraction.
+ * @return l'intéraction correspondante.
+ * @warning Si l'intéraction n'a pas été trouvé, l'intéraction retourné aura un id égale à "NULL".
+ */
+Interaction GestionInteraction::getInteraction(const QString & idInteract)
+{
+    Interaction interact;
+    interact.setID("NULL");
+    auto it = listInteraction.begin();
+    bool found = false;
+
+    while((it != listInteraction.end()) && (!found))
+    {
+        if(it->getID() == idInteract)
+        {
+            found = true;
+            interact = *it;
+        }
+        else
+            it++;
+    }
+    return interact;
+}
+
+/**
+ * @brief GestionInteraction::getInteractionAdr
+ * @param idInteract
+ * @return
+ */
+Interaction* GestionInteraction::getInteractionAdr(const QString & idInteract)
+{
+    Interaction* interact = new Interaction();
+    interact->setID("NULL");
+    auto it = listInteraction.begin();
+    bool found = false;
+
+    while((it != listInteraction.end()) && (!found))
+    {
+        if(it->getID() == idInteract)
+        {
+            found = true;
+            delete interact;
+            interact = &(*it);
+        }
+        else
+            it++;
+    }
+    return interact;
 }
 
 /**

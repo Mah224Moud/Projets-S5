@@ -33,10 +33,16 @@ class GestionInteraction
         std::list<Interaction> getListInteraction() const{ return listInteraction; }
         void setListInteraction(std::list<Interaction> val) { listInteraction = val; }
 
+        /// Taille de la liste
+        inline unsigned getSize(){return listInteraction.size();}
+
         /// Ajouter une interaction
         void addInteraction(const Interaction&);
         /// Supprimer une intéraction
         bool removeInteraction(const QString&);
+        /// Récuperer une intéraction
+        Interaction getInteraction(const QString&);
+        Interaction* getInteractionAdr(const QString&);
         /// Récuperer toutes les intéractions liées à un contact
         GestionInteraction getAllContactInteraction(const QString&);
         /// Supprimer toutes les intéractions liées à un contact

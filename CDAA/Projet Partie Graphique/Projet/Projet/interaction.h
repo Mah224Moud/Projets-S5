@@ -25,7 +25,6 @@ private:
     QDate date;
     /// L'identifiant de l'intéraction
     QString id;
-    QString genID() const;
     /// Détails de l'intéraction
     QString contenu;
     /// Le contact associé
@@ -33,9 +32,13 @@ private:
 
 public:
     /// Constructeur par défaut de la classe Interaction
+    Interaction();
+    /// Constructeur avec paramètre Contact associé
     Interaction(Contact*);
-    /// Constructeur avec paramètres date et contenu de la classe Interaction
+    /// Constructeur avec paramètres Contact associé et contenu de la classe Interaction
     Interaction(Contact *, const QString&);
+    /// Constructeur avec paramètres Contact associé, date et contenu de la classe Interaction
+    Interaction(Contact *, const QString&, const QDate&);
     /// Constructeur de recopie
     Interaction(const Interaction&);
 

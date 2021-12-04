@@ -9,6 +9,7 @@
 #include "todo.h"
 #include "gestiontodo.h"
 #include "gestioninteraction.h"
+#include "gestioncontact.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,22 +23,22 @@ int main(int argc, char *argv[])
     c1.setID("ct1");
     //qDebug() << c1;
 
-    Interaction i(&c);
+    Interaction i;
     i.setContenu("Test Contenu intéraction");
     i.setDateFromString("14/07/2021");
-    i.setContact(&c);
     i.setID("it01");
     Interaction i1(&c);
     i1.setContenu("Test Contenu intéraction 2");
-    i1.setContact(&c);
     i1.setID("it02");
     Interaction i2(&c1, "Test Contenu intéraction 3");
     i2.setDateFromString("16/12/1978");
     i2.setID("it03");
     Interaction i3(&c1, "Test Contenu intéraction 4");
     i3.setID("it04");
-    i3.setContact(&c1);
+    Interaction i4;
+    i4.setContenu("Test contenu 5");
 
+/*
     GestionInteraction gesti;
     gesti.addInteraction(i);
     gesti.addInteraction(i1);
@@ -45,12 +46,10 @@ int main(int argc, char *argv[])
     gesti.addInteraction(i3);
 
     //gesti.removeInteraction("it01");
-
     //qDebug() << gesti.getAllContactInteraction(c1.getID());
-
     //gesti.removeAllContactInteraction(c1.getID());
-    qDebug() << gesti;
-
+    //qDebug() << gesti;
+*/
     Todo td(&i, "Test Todo 1", QDate::currentDate());
     td.setDateFromString("10/12/2021");
     Todo td1(&i, "Test Todo 2", QDate::fromString("12102022", "ddMMyyyy"));
@@ -60,7 +59,7 @@ int main(int argc, char *argv[])
     Todo td3(&i2, "Test Todo 4");
     Todo td4(&i2, "Test Todo 5");
     Todo td5(&i3, "Test Todo 6", QDate::fromString("01112001", "ddMMyyyy"));
-
+/*
     GestionTodo gtd;
     gtd.addTodo(td);
     gtd.addTodo(td1);
@@ -68,9 +67,28 @@ int main(int argc, char *argv[])
     gtd.addTodo(td3);
     gtd.addTodo(td4);
     gtd.addTodo(td5);
+    //qDebug() << gtd;
+*/
 
-    qDebug() << gtd;
+    GestionContact gest;
+    gest.addContact(c);
+    gest.addContact(c1);
+    gest.addContactInteraction(c.getID(), i);
+    gest.addContactInteraction(c1.getID(), i1);
+    gest.addContactInteraction(c.getID(), i2);
+    gest.addContactInteraction(c1.getID(), i3);
+    if(!gest.addContactInteraction("yo", i4))
+        qDebug()<< "Ajout Impossible, Contact introuvable";
 
+    gest.addInteractionTodo(i.getID(), td);
+/*
+    qDebug() << gest.getContactByID(c.getID());
+    gest.removeContact(c1.getID());
+    qDebug() << gest.getInteraction(i1.getID());
+    if(gest.getInteraction("yo").getID() == "NULL")
+        qDebug("Interaction non trouvé");
+*/
+    qDebug() << gest;
     w.show();
     return a.exec();
 }

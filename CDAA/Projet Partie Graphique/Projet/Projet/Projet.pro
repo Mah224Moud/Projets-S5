@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     contact.cpp \
     email.cpp \
+    gestioncontact.cpp \
     gestioninteraction.cpp \
     gestiontodo.cpp \
     interaction.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
 HEADERS += \
     contact.h \
     email.h \
+    gestioncontact.h \
     gestioninteraction.h \
     gestiontodo.h \
     interaction.h \

@@ -11,12 +11,23 @@
     *@brief Constructeur par défaut.
     *@details Ce constructeur initialise une interaction avec un contenu vide et horodaté avec la date courante.
 */
+Interaction::Interaction()
+{
+    date = QDate::currentDate();
+    contenu = "";
+    id = "";
+}
+
+/**
+ * @brief Constructeur avec paramètre contact associé.
+ * @param c : pointeur sur le contact associé.
+ */
 Interaction::Interaction(Contact* c)
 {
     contact = c;
     date = QDate::currentDate();
     contenu = "";
-    id = genID();
+    id = "";
 }
 
 /**
@@ -29,9 +40,21 @@ Interaction::Interaction(Contact* c, const QString& cont)
     date = QDate::currentDate();
     contenu = cont;
     contact = c;
-    id = genID();
+    id = "";
 }
 
+/**
+    *@brief Constructeur avec paramètre
+    *@details Ce constructeur initialise une interaction avec un contenu et une date donnée.
+    *@param c : le contenu de l'interaction
+*/
+Interaction::Interaction(Contact* c, const QString& cont, const QDate& d)
+{
+    date = d;
+    contenu = cont;
+    contact = c;
+    id = "";
+}
 
 /**
     *@brief Constructeur de recopie
@@ -45,20 +68,6 @@ Interaction::Interaction(const Interaction& autre)
     contenu = autre.getContenu();
     id = autre.getID();
     contact = autre.getContact();
-}
-
-/**
-    *@brief Génération d'un identifiant unique pour l'intéraction.
-    *@details l'identifiant commence par "it" suivie de la date courante (yyMMdd)
-    et l'heure actuelle heure, minute, seconde et microseconde (hhmmsszzz).
-    *@warning Cette méthode est privée.
-*/
-QString Interaction::genID() const
-{
-    QString id = "it";
-    id += QDate::currentDate().toString("yyMMdd");
-    id += QTime::currentTime().toString("hhmmsszzz");
-    return id;
 }
 
 /**
@@ -165,8 +174,8 @@ void Interaction::setContact(Contact *c)
 */
 QDebug operator<<(QDebug os, const Interaction& i)
 {
-    os << "Interaction " << i.getID() << i.getStringDate();
-    os << i.getContenu() << " adresse contact : " << i.getContact();
+    os << "Ct " << i.getContact()->getID() << " : Interaction " << i.getID() << i.getStringDate();
+    os << i.getContenu() << "\n";
     return os;
 }
 
@@ -202,4 +211,5 @@ void Interaction::operator=(const Interaction& autre)
     id = autre.getID();
     date = autre.getDate();
     contenu = autre.getContenu();
+    contact = autre.getContact();
 }
